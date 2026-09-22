@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 177 186 45 }
+monarch_names = {
+	"Ahmad Arslan Toghan #1" = 10
+	"Awrang #0" = 0
+	"Aydogan #1" = 10
+	"Buzurgmehr #0" = 0
+	"Dogan #1" = 10
+	"Ibrahim #1" = 10
+	"Ilgazi #0" = 0
+	"Mengucek #1" = 10
+	"Muhammad #1" = 10
+	"Saruca #0" = 0
+	"Sinan #1" = 10
+	"Sotan #1" = 10
+	"Touran #0" = -1
+	"Tugrul #1" = 10
+	"Wuge #0" = 0
+	"Yahya #1" = 10
+	"Yesunge #0" = 0
+}

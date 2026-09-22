@@ -1,0 +1,15 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 40 95 45 }
+monarch_names = {
+	"Ejei #2" = 10
+	"Guluun #1" = 10
+	"Jebe #2" = 10
+	"Khermen #1" = 10
+	"Namgar #1" = -1
+	"Oljaitu #2" = 10
+	"Shono #1" = 10
+	"Solbon #1" = 10
+	"Tseden #1" = 10
+	"Tsyrendashi #1" = 10
+}

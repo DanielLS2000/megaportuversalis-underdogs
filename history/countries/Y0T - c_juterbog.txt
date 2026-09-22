@@ -1,0 +1,59 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = arpitan
+capital = 1759
+fixed_capital = 1759
+mercantilism = 25
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Téodule"
+		dynasty = "de Jüterbog"
+		adm = 3
+		dip = 3
+		mil = 2
+		birth_date = 1395.7.9
+		religion = catholic
+		culture = arpitan
+	}
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Azalaïs"
+		dynasty = "de Rogemont"
+		adm = 6
+		dip = 2
+		mil = 5
+		country_of_origin = Y0T
+		birth_date = 1395.12.22
+		death_date = 1455.12.22
+		female = yes
+		religion = catholic
+		culture = arpitan
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Carlòta"
+		monarch_name = "Carlòta"
+		dynasty = "de Jüterbog"
+		adm = 4
+		dip = 1
+		mil = 5
+		birth_date = 1434.10.3
+		death_date = 1499.10.3
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = arpitan
+	}
+	add_heir_personality = fierce_negotiator_personality
+	add_heir_personality = well_connected_personality
+}
+1444.11.11= {
+	add_prestige = 50
+	add_treasury = 67
+}

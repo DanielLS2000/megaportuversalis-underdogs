@@ -1,0 +1,110 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 231 152 79 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	indian_shock_cavalry
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	reformed_mughal_musketeer
+}
+monarch_names = {
+	"Abhirajadeva #1" = 10
+	"Alp Yurek #1" = 10
+	"Alptigin #1" = 10
+	"Ashokdeva #1" = 10
+	"Ayse #0" = -1
+	"Basantadeva #1" = 10
+	"Basudeva #1" = 10
+	"Bhudeva #1" = 10
+	"Bina #1" = 10
+	"Biradeva #1" = 10
+	"Brahmadeva #1" = 10
+	"Danismend #0" = 0
+	"Dattadevi #0" = -1
+	"Deshtadeva #1" = 10
+	"Dhamdeva #1" = 10
+	"Hammira #1" = 10
+	"Ichchhatadeva #1" = 10
+	"Ishtaganadeva #1" = 10
+	"Junpala #1" = 10
+	"Kharparadeva #1" = 10
+	"Lakshminarayan #1" = 10
+	"Lalitansuradeva #1" = 10
+	"Nagihan #0" = -1
+	"Narsinghdeva #1" = 10
+	"Nimbartadeva #1" = 10
+	"Padmatadeva #1" = 10
+	"Pritamdeva #1" = 10
+	"Rawatdeva #1" = 10
+	"Rupa #2" = 10
+	"Salonaditya #1" = 10
+	"Sinhad-Deo #3" = 10
+	"Subhikshrajyadeva #1" = 10
+	"Tribhuvanarajadeva #1" = 10
+	"Uluç #0" = 0
+	"Vashudeva #1" = 10
+}
+leader_names = {
+	"Bahadur"
+	"Bikram"
+	"Chand"
+	"Chhettri"
+	"Dev"
+	"Gurung"
+	"Koirala"
+	"Limbu"
+	"Madhesi"
+	"Magar"
+	"Malla"
+	"Rai"
+	"Rana"
+	"Thapa"
+	"Yadav"
+}
+ship_names = {
+	"Arun"
+	"Behri"
+	"Bhote Kosi"
+	"Devi"
+	"Dudh Kosi"
+	"Durga"
+	"Gayatri"
+	"Jalsena"
+	"Kala Jahazi"
+	"Kali Gandaki"
+	"Karnali"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Narayani"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Rapti"
+	"Ratri"
+	"Sagar"
+	"Sapt Kosi"
+	"Sarasvati"
+	"Seti"
+	"Sita"
+	"Sun Kosi"
+	"Trishuli"
+}

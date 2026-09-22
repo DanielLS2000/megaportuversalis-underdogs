@@ -1,0 +1,15 @@
+owner = CDL
+controller = CDL
+capital = "Mong Nai"
+is_city = yes
+culture = central_thai
+religion = mahayana
+trade_goods = cotton
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = AYU
+add_core = CDL
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

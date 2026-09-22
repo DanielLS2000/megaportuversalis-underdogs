@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 255 150 31 }
+monarch_names = {
+	"Damayanti #0" = -1
+	"Darab #0" = 0
+	"Gangeya #2" = 10
+	"Kuntuvdi #1" = 10
+	"Mahpal #1" = 10
+	"Mu'azzam #1" = 10
+	"Narpal #1" = 10
+	"Pulad #3" = 10
+	"Sahaja #1" = -1
+	"Tekçe #0" = -1
+	"Viranarayana #4" = 10
+}

@@ -1,0 +1,16 @@
+owner = AVA
+controller = AVA
+capital = "Imphal"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = cloth
+base_tax = 1
+base_production = 4
+base_manpower = 1
+add_core = AVA
+add_core = TAU
+add_permanent_claim = ASS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

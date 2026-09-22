@@ -1,0 +1,15 @@
+owner = RYU
+controller = RYU
+capital = "Sibsongbanna"
+is_city = yes
+culture = bai
+religion = vajrayana
+trade_goods = tea
+base_tax = 5
+base_production = 3
+base_manpower = 2
+add_core = RYU
+add_core = Z6E
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

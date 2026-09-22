@@ -1,0 +1,14 @@
+owner = Z7L
+controller = Z7L
+capital = "Otog"
+is_city = yes
+culture = chihan
+religion = buddhism
+trade_goods = livestock
+base_tax = 3
+base_production = 2
+base_manpower = 3
+add_core = YAN
+add_core = Z7L
+discovered_by = chinese
+discovered_by = nomad_group

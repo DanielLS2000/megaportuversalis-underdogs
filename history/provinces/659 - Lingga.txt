@@ -1,0 +1,17 @@
+owner = Z1K
+controller = Z1K
+capital = "Lingga"
+is_city = yes
+culture = sumatran
+religion = mahayana
+trade_goods = fish
+base_tax = 1
+base_production = 4
+base_manpower = 1
+add_core = JMB
+add_core = Z1K
+add_permanent_claim = PLB
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

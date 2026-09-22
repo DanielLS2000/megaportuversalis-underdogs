@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 80 100 212 }
+monarch_names = {
+	"Azmun #0" = 0
+	"Cenhulagæ #1" = 10
+	"Chuner #0" = 0
+	"Fanca #1" = 10
+	"Hezhenbao #1" = 10
+	"Itkun #0" = 0
+	"Kekhan #0" = 0
+	"Keksike #0" = 0
+	"Lushkura #0" = -1
+	"Naduošï #1" = 10
+	"Parkizin #0" = 0
+	"Peramonkoro #0" = -1
+	"Pungat #0" = 0
+	"Tatuk #0" = -1
+	"Ulu #0" = -1
+	"Šentumen #1" = 10
+	"Šïlungha #1" = 10
+}

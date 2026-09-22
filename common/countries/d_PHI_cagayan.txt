@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 247 113 25 }
+monarch_names = {
+	"Agbulos #1" = 10
+	"Binidayan #1" = 10
+	"Bulalayaw #0" = -1
+	"Chéngqìng #0" = 0
+	"Diaya #0" = -1
+	"Lunti #1" = 10
+	"Lìzhen #0" = 0
+	"Marantao #1" = 10
+	"Mèiér #0" = -1
+	"Parang #1" = 10
+	"Putri #0" = -1
+	"Shaowei #0" = 0
+	"Shàozong #0" = 0
+	"Siagu #2" = 10
+	"Takderan #0" = 0
+	"Tungga #1" = 10
+	"Tíngzhi #0" = 0
+	"Yuàn #0" = -1
+	"Ashen #0" = -1
+}

@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = muslim
+religion = catholic
+primary_culture = dynamic-al_misr_arabic-pruthenian-culture-num1
+capital = 358
+add_accepted_culture = al_misr_arabic
+1444.11.11= {
+	add_prestige = 105
+	add_treasury = 75
+}

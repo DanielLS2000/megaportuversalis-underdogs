@@ -1,0 +1,139 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 186 14 92 }
+revolutionary_colors = { 16 8 16 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	religious_ideas
+	quantity_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Chhean #0" = -1
+	"Chieu #0" = -1
+	"Hang #0" = -1
+	"Haradevi #0" = -1
+	"Hung #0" = 0
+	"Huy #0" = 0
+	"Khai #0" = 0
+	"Khue #0" = -1
+	"Lan #0" = -1
+	"Layang #0" = -1
+	"Long #0" = 0
+	"Mahadevi #0" = -1
+	"Mahsuri #0" = -1
+	"Nghia #0" = 0
+	"Ngo #0" = 0
+	"Phuc #0" = 0
+	"Pián #1" = 10
+	"Rénzé #0" = 0
+	"Thanh #0" = -1
+	"Toan #0" = 0
+	"Truc #0" = -1
+	"Truong #0" = 0
+	"Vedavati #0" = -1
+	"Zhèngzé #0" = 0
+}
+leader_names = {
+	"Banh"
+	"Bui"
+	"Cao"
+	"Chau"
+	"Chu"
+	"Chung"
+	"Dam"
+	"Dang"
+	"Dao"
+	"Diep"
+	"Dinh"
+	"Do"
+	"Doan"
+	"Duong"
+	"Giang"
+	"Ha"
+	"Han"
+	"Ho"
+	"Huynh"
+	"Kieu"
+	"Kim"
+	"La"
+	"Lac"
+	"Lam"
+	"Lieu"
+	"Luc"
+	"Luong"
+	"Luu"
+	"Ly"
+	"Lê"
+	"Ma"
+	"Mac"
+	"Mach"
+	"Mai"
+	"Nghiem"
+	"Ngo"
+	"Nguyen"
+	"Pham"
+	"Phan"
+	"Pho"
+	"Phung"
+	"Quach"
+	"Quang"
+	"Quyen"
+	"Ta"
+	"Thach"
+	"Thai"
+	"Thi"
+	"Thuy"
+	"Tieu"
+	"To"
+	"Ton"
+	"Tran"
+	"Trang"
+	"Trieu"
+	"Trinh"
+	"Truong"
+	"Van"
+	"Vinh"
+	"Vu"
+	"Vuong"
+}
+ship_names = {
+	"Anh Tông"
+	"Du Tông"
+	"Due Tông"
+	"Duong Nhat Lê"
+	"Hien Tông"
+	"Minh Tông"
+	"Nghe Tông"
+	"Nhân Tông"
+	"Thuan Tông"
+	"Thái Tông"
+	"Thánh Tông"
+	"Tran An"
+	"Tran Canh"
+	"Tran Hao"
+	"Tran Hien"
+	"Tran Hoang"
+	"Tran Khâm"
+	"Tran Kính"
+	"Tran Manh"
+	"Tran Ngung"
+	"Tran Phu"
+	"Tran Thuyên"
+	"Tran Vuong"
+}
+special_unit_culture = south_east_asian_special

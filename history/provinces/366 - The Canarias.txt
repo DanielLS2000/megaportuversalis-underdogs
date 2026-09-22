@@ -1,0 +1,13 @@
+owner = CNR
+controller = CNR
+capital = "Las Palmas"
+is_city = yes
+culture = dalmatian
+religion = catholic
+trade_goods = unknown
+base_tax = 2
+base_production = 5
+base_manpower = 4
+add_core = CNR
+native_size = 5
+native_ferocity = 1

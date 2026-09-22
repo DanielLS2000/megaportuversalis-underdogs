@@ -1,0 +1,17 @@
+owner = Z8J
+controller = Z8J
+capital = "Malang"
+is_city = yes
+culture = javanese
+religion = hinduism
+trade_goods = fish
+base_tax = 6
+base_production = 6
+base_manpower = 6
+add_core = MAJ
+add_core = Z8J
+add_permanent_claim = MTR
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

@@ -1,0 +1,15 @@
+owner = CDL
+controller = CDL
+capital = "Katha"
+is_city = yes
+culture = kachin
+religion = vajrayana
+trade_goods = tea
+fort_15th = yes
+base_tax = 3
+base_production = 2
+base_manpower = 2
+add_core = CDL
+add_core = WPG
+discovered_by = chinese
+discovered_by = indian

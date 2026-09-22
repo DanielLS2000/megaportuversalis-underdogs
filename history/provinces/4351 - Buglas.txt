@@ -1,0 +1,13 @@
+owner = Z85
+controller = Z85
+capital = "Silay"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = sugar
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = SUL
+add_core = Z85
+discovered_by = chinese

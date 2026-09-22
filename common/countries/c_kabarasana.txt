@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 110 110 50 }
+monarch_names = {
+	"Bahac #0" = -1
+	"Bannu #4" = 10
+	"Fuluku #1" = 10
+	"Gartee #1" = 10
+	"Guiniane #0" = -1
+	"Irgen #0" = 0
+	"Jamal #0" = 0
+	"Meq'wran #1" = 10
+	"Muhammad #0" = 0
+	"Nowa #0" = -1
+	"Pennon #1" = 10
+	"Sakoura #1" = 10
+	"Tehpoe #1" = 10
+	"Tizemt #0" = -1
+	"Urz'ig #0" = 0
+	"Zaowolo #2" = 10
+	"Zokaya #1" = 10
+}

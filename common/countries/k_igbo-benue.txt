@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 58 83 133 }
+monarch_names = {
+	"Abégúndé #0" = 0
+	"Af0lábí #1" = 10
+	"Ayédùn #0" = -1
+	"Bannu #1" = 10
+	"Benyepo Eye #1" = -1
+	"Deye #0" = -1
+	"Fadazaw #1" = 10
+	"Igoumou #1" = 10
+	"Nen #0" = -1
+	"Odùmádé #0" = -1
+	"Olóyèdé #1" = 10
+	"Soga #1" = 10
+	"Tókí #0" = 0
+	"W0`s0la´ #0" = 0
+	"Yel0lá #1" = 10
+	"Òsàr0`mí #0" = -1
+	"Ò0àbánk0´ #1" = 10
+	"Ò0àdíyà #0" = -1
+	"0ládélé #0" = 0
+}

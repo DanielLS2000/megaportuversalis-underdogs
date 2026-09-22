@@ -1,0 +1,14 @@
+owner = Z4Q
+controller = Z4Q
+capital = "Sadiya"
+is_city = yes
+culture = nepali
+religion = vajrayana
+trade_goods = tea
+base_tax = 3
+base_production = 2
+base_manpower = 1
+add_core = Z4Q
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

@@ -1,0 +1,17 @@
+owner = PAL
+controller = PAL
+capital = "Rothenburg ob der Tauber"
+is_city = yes
+culture = franconian
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = PAL
+add_permanent_claim = FKN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

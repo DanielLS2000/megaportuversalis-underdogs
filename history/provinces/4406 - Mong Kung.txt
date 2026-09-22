@@ -1,0 +1,15 @@
+owner = Y2H
+controller = Y2H
+capital = "Mong Kung"
+is_city = yes
+culture = karen
+religion = jain
+trade_goods = tropical_wood
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = KNY
+add_core = Y2H
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

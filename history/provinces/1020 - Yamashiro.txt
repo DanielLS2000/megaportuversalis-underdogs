@@ -1,0 +1,23 @@
+owner = Z70
+controller = Z70
+capital = "Kyoto"
+is_city = yes
+culture = japanese
+religion = buddhism
+trade_goods = silk
+fort_15th = yes
+base_tax = 3
+base_production = 4
+base_manpower = 2
+add_core = MRI
+add_core = Z70
+discovered_by = ANU
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese
+add_permanent_province_modifier = {
+	name = heian_kyo
+	duration = -1
+}

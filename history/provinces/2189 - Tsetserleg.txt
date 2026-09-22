@@ -1,0 +1,17 @@
+owner = Y3O
+controller = Y3O
+capital = "Tsetserleg"
+is_city = yes
+culture = buryat
+religion = tengri_pagan
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = BRT
+add_core = Y3O
+discovered_by = chinese
+discovered_by = nomad_group
+latent_trade_goods = {
+	coal
+}

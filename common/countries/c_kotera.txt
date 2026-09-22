@@ -1,0 +1,13 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 50 80 100 }
+monarch_names = {
+	"Aguchu #1" = 10
+	"Anu #1" = 10
+	"Botokhui #1" = -1
+	"Geleg #1" = 10
+	"Jebe #1" = 10
+	"Namzil #1" = 10
+	"Osor #1" = 10
+	"Yesui #1" = -1
+}

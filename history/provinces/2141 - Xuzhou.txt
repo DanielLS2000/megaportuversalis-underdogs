@@ -1,0 +1,14 @@
+owner = Z0U
+controller = Z0U
+capital = "Xuzhou"
+is_city = yes
+culture = zhongyuan
+religion = buddhism
+trade_goods = iron
+base_tax = 5
+base_production = 5
+base_manpower = 5
+add_core = LNG
+add_core = Z0U
+discovered_by = chinese
+discovered_by = nomad_group

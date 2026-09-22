@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 200 105 130 }
+monarch_names = {
+	"Arelis #2" = 10
+	"Bajoras #1" = 10
+	"Bezprzym #1" = 10
+	"Budo #1" = 10
+	"Dagas #1" = -1
+	"Gelennis #0" = -1
+	"Gulbis #1" = -1
+	"Jauguttis #1" = 10
+	"Karatas #2" = 10
+	"Klukis #2" = 10
+	"Milyuns #0" = -1
+	"Milzas #0" = 0
+	"Prusas #1" = 10
+	"Przybyslaw #1" = 10
+	"Sergonis #1" = 10
+	"Ziedas #0" = -1
+}

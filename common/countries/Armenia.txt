@@ -1,0 +1,129 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 145 30 75 }
+revolutionary_colors = { 5 13 6 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	maritime_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Abas #1" = 10
+	"Abirad #2" = 10
+	"Ammaraja #0" = 0
+	"Ananias #1" = 10
+	"Andryu #0" = 0
+	"Anna #0" = -1
+	"Artashes #0" = 0
+	"Artavazd #0" = 0
+	"Ashot #6" = 10
+	"Aspuraces #0" = 0
+	"Basilie #0" = -1
+	"Berjanoush #0" = -1
+	"Berjouhi #0" = -1
+	"Burkhan #0" = 0
+	"Dan #0" = 0
+	"Desta #0" = -1
+	"Eliz #0" = -1
+	"Enu #0" = 0
+	"Fevronia #0" = -1
+	"Gagik #3" = 10
+	"Houri #0" = -1
+	"Hripsimeh #0" = -1
+	"Kapriel #0" = 0
+	"Kyud #0" = 0
+	"Latavri #0" = -1
+	"Mara #0" = -1
+	"Nane #0" = -1
+	"Nerseh #0" = 0
+	"Roupen #0" = 0
+	"Sabas #0" = 0
+	"Sarkis #0" = 0
+	"Satenik #0" = -1
+	"Sergia #0" = -1
+	"Smbat #3" = 10
+	"Tachat #1" = 10
+	"Tigran #0" = 0
+	"Trdat #1" = 10
+	"Vahag #0" = 0
+	"Vahram #0" = 0
+	"Smiechna #0" = -1
+	"Šemšon #0" = 0
+}
+leader_names = {
+	"Adamian"
+	"Adomian"
+	"Aghajanian"
+	"Altounyan"
+	"Apkarian"
+	"Babaian"
+	"Babikian"
+	"Bagian"
+	"Bhobanyan"
+	"Chobanian"
+	"Damadian"
+	"Eskandarian"
+	"Kapikian"
+	"Kazanjian"
+	"Kebabian"
+	"Kevorkian"
+	"Khachikyan"
+	"Khatchaturian"
+	"Kirlian"
+	"Mergelyan"
+	"Meymarian"
+	"Orbeli"
+	"Pogosyan"
+	"Sadian"
+	"Sevanian"
+	"Shahinian"
+	"Simjian"
+}
+ship_names = {
+	"Ani"
+	"Aramu"
+	"Ararat"
+	"Argishtis"
+	"Artsakh"
+	"Dvin"
+	"Erimena"
+	"Haik"
+	"Haldi"
+	"Ishpuinis"
+	"Kars"
+	"Lutipri"
+	"Manzikert"
+	"Menuas"
+	"Musasir"
+	"Parisos"
+	"Rusas II"
+	"Sarduri I"
+	"Sarduris II"
+	"Selardi"
+	"Siwini"
+	"Vaspurakan"
+	"Yerevan"
+}

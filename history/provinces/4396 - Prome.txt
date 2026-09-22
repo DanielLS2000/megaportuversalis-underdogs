@@ -1,0 +1,16 @@
+owner = Z6H
+controller = Z6H
+capital = "Prome"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = ivory
+fort_15th = yes
+base_tax = 2
+base_production = 4
+base_manpower = 1
+add_core = TAU
+add_core = Z6H
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

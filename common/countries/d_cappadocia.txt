@@ -1,0 +1,6 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 200 77 52 }
+monarch_names = {
+	"Hierotheos #0" = 0
+}

@@ -1,0 +1,16 @@
+owner = Z1I
+controller = Z1I
+capital = "Cagayan"
+is_city = yes
+culture = filipino
+religion = jain
+trade_goods = unknown
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = SUL
+add_core = Z1I
+discovered_by = chinese
+native_size = 50
+native_ferocity = 1
+native_hostileness = 3

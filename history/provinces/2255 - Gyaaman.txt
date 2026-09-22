@@ -1,0 +1,12 @@
+owner = Z3R
+controller = Z3R
+capital = "Amanvi"
+is_city = yes
+culture = mali
+religion = sunni
+trade_goods = coffee
+base_tax = 3
+base_production = 1
+base_manpower = 1
+add_core = Z3R
+discovered_by = sub_saharan

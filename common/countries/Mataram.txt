@@ -1,0 +1,85 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 227 162 94 }
+revolutionary_colors = { 0 5 13 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	religious_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Ajnadewi #0" = -1
+	"Atmayadarma Hariwangsa #0" = 0
+	"Chandut #0" = -1
+	"Cudamani #0" = 0
+	"Darmawan #1" = 10
+	"Dewi Pramuni #0" = -1
+	"Dharmasetu #0" = 0
+	"Dwi #0" = -1
+	"Eka #0" = -1
+	"Eti #0" = -1
+	"Itam #1" = 10
+	"Kemas #0" = 0
+	"Limbur Kancana #1" = 10
+	"Mahadzir #0" = 0
+	"Mara #1" = 10
+	"Mega #0" = -1
+	"Megawati #0" = -1
+	"Mùyàn #0" = -1
+	"Ndari #0" = -1
+	"Rani #0" = -1
+	"Samaragrawira #1" = 10
+	"Sara #1" = -1
+	"Sri Indravarman #0" = 0
+	"Suprabha #0" = -1
+	"Tirta #1" = 10
+	"Ulum #0" = -1
+	"Van #0" = -1
+	"Wira #1" = 10
+}
+leader_names = {
+	"Djajadiningrat"
+	"Djojopoespito"
+	"Ernalia"
+	"Karsumaatmaja"
+	"Mollema"
+	"Nasution"
+	"Nitisastro"
+	"Prawiranega"
+	"Purbacaraka"
+	"Subadio"
+	"Sumual"
+}
+ship_names = {
+	"Amgarawa"
+	"Boja"
+	"Cepu"
+	"Delanggu"
+	"Grobogan"
+	"Gunung Lawu"
+	"Gunung Merbabu"
+	"Ngawi"
+	"Purwodarli"
+	"Salatiga"
+	"Semarang"
+	"Sragen"
+	"Sukoharjo"
+	"Surakarta"
+	"Wonosari"
+	"Yogyakarta"
+}

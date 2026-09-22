@@ -1,0 +1,15 @@
+owner = YZD
+controller = YZD
+capital = "Abarquh"
+is_city = yes
+culture = dynamic-oghuz-culture-num4
+religion = sunni
+trade_goods = livestock
+base_tax = 4
+base_production = 4
+base_manpower = 4
+add_core = YZD
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman

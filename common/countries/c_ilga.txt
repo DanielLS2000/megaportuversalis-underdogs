@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 60 70 90 }
+monarch_names = {
+	"Dashinima #1" = 10
+	"Habich Baghatur #1" = 10
+	"Hulegu #1" = 10
+	"Khermen #1" = 10
+	"Khojin #1" = -1
+	"Liuge #1" = 10
+	"Mönkhtömör #1" = 10
+	"Njura #1" = -1
+	"Okhotur #1" = 10
+	"Sokhatai #1" = -1
+	"Tseden #1" = 10
+}

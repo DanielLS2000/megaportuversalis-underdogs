@@ -1,0 +1,17 @@
+owner = ANN
+controller = ANN
+capital = "Ha Tinh"
+is_city = yes
+culture = lao
+religion = buddhism
+trade_goods = fish
+base_tax = 3
+base_production = 4
+base_manpower = 1
+add_core = ANN
+add_core = LUA
+add_permanent_claim = Z3Y
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

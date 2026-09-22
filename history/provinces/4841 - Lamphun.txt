@@ -1,0 +1,13 @@
+owner = AVA
+controller = AVA
+capital = "Lamphun"
+is_city = yes
+culture = bai
+religion = vajrayana
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = AVA
+discovered_by = chinese
+discovered_by = indian

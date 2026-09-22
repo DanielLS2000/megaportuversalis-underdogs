@@ -1,0 +1,97 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 223 228 192 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Adiputra #1" = 10
+	"Arya Tunggalningrat #2" = 10
+	"Bhavashankari #0" = 0
+	"Bima #0" = 0
+	"Catur #0" = 0
+	"Darmeswara #0" = 0
+	"Deva #1" = 10
+	"Dharmawangsa #1" = 10
+	"Embun #0" = 0
+	"Garung #0" = 0
+	"Hulukujang #1" = 10
+	"Jayadrata #0" = -1
+	"Jebang #0" = 0
+	"Kamuning #1" = 10
+	"Kasih #0" = -1
+	"Laksmidhara #0" = -1
+	"Lokapala #0" = 0
+	"Mahadewi #0" = -1
+	"Mahardika #1" = -1
+	"Menun #0" = -1
+	"Mundig Ganawirya #0" = 0
+	"Mura #0" = -1
+	"Pramuni #0" = -1
+	"Ragajaya #0" = 0
+	"Raya #0" = -1
+	"Sanghyang Ageung #1" = 10
+	"Sri Jayanasa #0" = 0
+	"Suriana #0" = 0
+	"Susila #0" = 0
+	"Tariwulan #1" = 10
+	"Tautal #0" = -1
+	"Ugrasena #0" = 0
+	"Vina #0" = -1
+}
+leader_names = {
+	"Abdulfatah"
+	"Ahmad"
+	"Amir"
+	"Anwar"
+	"Azmi"
+	"Batuta"
+	"Chairul"
+	"Hamzah"
+	"Hasanuddin"
+	"Ibnu"
+	"Kyai"
+	"Mahat"
+	"Mukhtar"
+	"Najamuddin"
+	"Natzar"
+	"Nazmizan"
+	"Roem"
+	"Syarifuddin"
+	"Zulkifli"
+}
+ship_names = {
+	"Alas"
+	"Gunung Peuetsagoe"
+	"Jamboaye"
+	"Malik Al-Salih"
+	"Malik ul Salih"
+	"Peg Pusat"
+	"Peg Serbeulangit"
+	"Peusangen"
+	"Pulau Breueh"
+	"Pulau we"
+	"Samandara"
+	"Siak"
+	"Simpang-kiri"
+	"Teunom"
+	"Tripa"
+}
+special_unit_culture = south_east_asian_special

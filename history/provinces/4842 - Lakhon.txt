@@ -1,0 +1,14 @@
+owner = ANN
+controller = ANN
+capital = "Lakhon"
+is_city = yes
+culture = dynamic-central_thai-culture-num1
+religion = mahayana
+trade_goods = grain
+base_tax = 1
+base_production = 4
+base_manpower = 1
+add_core = ANN
+add_core = AYU
+discovered_by = chinese
+discovered_by = indian

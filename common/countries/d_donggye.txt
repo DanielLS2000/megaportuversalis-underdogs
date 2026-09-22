@@ -1,0 +1,15 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 178 69 17 }
+monarch_names = {
+	"A-yeong #0" = -1
+	"Dong-jeong #1" = 10
+	"Gurbesu #1" = -1
+	"Gyeong-ae #0" = -1
+	"Gyeong-jong #0" = 0
+	"Ji-so #0" = -1
+	"Seon-gang #0" = -1
+	"Sin-mun #0" = 0
+	"Sin-yeong #0" = 0
+	"Yeon-hwa #0" = 0
+}

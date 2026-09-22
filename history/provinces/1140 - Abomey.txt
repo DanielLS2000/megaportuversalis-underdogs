@@ -1,0 +1,17 @@
+owner = Z3W
+controller = Z3W
+capital = "Allada"
+is_city = yes
+culture = fon
+religion = sunni
+trade_goods = slaves
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = DAH
+add_core = Z3W
+add_permanent_claim = OYO
+discovered_by = sub_saharan
+native_size = 60
+native_ferocity = 4
+native_hostileness = 9

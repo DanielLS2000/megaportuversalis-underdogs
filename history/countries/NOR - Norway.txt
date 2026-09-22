@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = norwegian
+capital = 20
+1444.11.11= {
+	monarch = {
+		name = "Arnfast"
+		dynasty = "Yngling-Eynir"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 1420.8.9
+		religion = catholic
+		culture = norwegian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = free_thinker_personality
+	queen = {
+		name = "Tailefhlaith"
+		dynasty = "gCais-Fearna"
+		adm = 5
+		dip = 3
+		mil = 6
+		country_of_origin = NOR
+		birth_date = 1427.4.24
+		death_date = 1487.4.24
+		female = yes
+		religion = catholic
+		culture = highland_scottish
+	}
+	add_queen_personality = greedy_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Áskell"
+		monarch_name = "Áskell"
+		dynasty = "Yngling-Eynir"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1419.4.16
+		death_date = 1484.4.16
+		claim = 89
+		religion = catholic
+		culture = norwegian
+	}
+	add_heir_personality = benevolent_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 85
+	add_treasury = 53
+}

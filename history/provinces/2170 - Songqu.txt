@@ -1,0 +1,14 @@
+owner = Z3Q
+controller = Z3Q
+capital = "Songqu"
+is_city = yes
+culture = tibetan
+religion = bon_reformed
+trade_goods = livestock
+base_tax = 1
+base_production = 3
+base_manpower = 1
+add_core = UTS
+add_core = Z3Q
+discovered_by = chinese
+discovered_by = nomad_group

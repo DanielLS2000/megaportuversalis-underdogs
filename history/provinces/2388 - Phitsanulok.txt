@@ -1,0 +1,15 @@
+owner = ANN
+controller = ANN
+capital = "Phitsanulok"
+is_city = yes
+culture = dynamic-central_thai-culture-num1
+religion = vajrayana
+trade_goods = livestock
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = ANN
+add_core = AYU
+discovered_by = chinese
+discovered_by = indian

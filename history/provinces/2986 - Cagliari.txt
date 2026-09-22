@@ -1,0 +1,19 @@
+owner = Z0R
+controller = Z0R
+capital = "Cagliari"
+is_city = yes
+culture = dynamic-sardinian-culture-num1
+religion = catholic
+trade_goods = copper
+fort_15th = yes
+base_tax = 2
+base_production = 3
+base_manpower = 5
+add_core = Z0R
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

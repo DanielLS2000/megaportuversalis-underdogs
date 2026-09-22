@@ -1,0 +1,15 @@
+owner = Z21
+controller = Z21
+capital = "Damxung"
+is_city = yes
+culture = sumpa
+religion = confucianism
+trade_goods = wool
+base_tax = 3
+base_production = 3
+base_manpower = 1
+add_core = TIB
+add_core = Z21
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

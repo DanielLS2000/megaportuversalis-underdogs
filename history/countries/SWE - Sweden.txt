@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = swedish
+capital = 1
+1444.11.11= {
+	monarch = {
+		name = "Orvar II"
+		dynasty = "af Munsö"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1405.1.16
+		religion = catholic
+		culture = swedish
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Ninni"
+		dynasty = "Karjalainen"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = SWE
+		birth_date = 1411.3.18
+		death_date = 1471.3.18
+		female = yes
+		religion = orthodox
+		culture = estonian
+	}
+	add_queen_personality = midas_touched_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Joël"
+		monarch_name = "Joël"
+		dynasty = "af Munsö"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1414.7.30
+		death_date = 1479.7.30
+		claim = 89
+		religion = catholic
+		culture = swedish
+	}
+	add_heir_personality = fertile_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 92
+	add_treasury = 64
+}

@@ -1,0 +1,16 @@
+owner = Z0A
+controller = Z0A
+capital = "Bilanga"
+is_city = yes
+culture = mali
+religion = sunni
+trade_goods = ivory
+base_tax = 3
+base_production = 1
+base_manpower = 1
+add_core = Z0A
+add_permanent_claim = GUR
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

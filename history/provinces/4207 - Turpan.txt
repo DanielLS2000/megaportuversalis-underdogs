@@ -1,0 +1,14 @@
+owner = Z46
+controller = Z46
+capital = "Balikul"
+is_city = yes
+culture = mongol
+religion = mahayana
+trade_goods = wine
+base_tax = 1
+base_production = 3
+base_manpower = 1
+add_core = KHA
+add_core = Z46
+discovered_by = chinese
+discovered_by = nomad_group

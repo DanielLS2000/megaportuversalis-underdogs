@@ -1,0 +1,17 @@
+owner = NAV
+controller = NAV
+capital = "Segovia"
+is_city = yes
+culture = castillian
+religion = catholic
+trade_goods = wool
+base_tax = 4
+base_production = 4
+base_manpower = 2
+add_core = CAS
+add_core = NAV
+add_permanent_claim = GUY
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

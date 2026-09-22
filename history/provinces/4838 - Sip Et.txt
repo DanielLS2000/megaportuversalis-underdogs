@@ -1,0 +1,15 @@
+owner = Z63
+controller = Z63
+capital = "Sip Et"
+is_city = yes
+culture = lao
+religion = hinduism
+trade_goods = ivory
+base_tax = 3
+base_production = 1
+base_manpower = 1
+add_core = LUA
+add_core = Z58
+add_core = Z63
+discovered_by = chinese
+discovered_by = indian

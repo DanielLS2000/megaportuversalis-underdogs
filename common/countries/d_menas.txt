@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 141 70 23 }
+monarch_names = {
+	"Afuribe #1" = 10
+	"Aykoraynu #1" = 10
+	"Dorjne Naljorma #0" = -1
+	"Elu #1" = 10
+	"Gyatso #0" = -1
+	"Ihalacï #1" = 10
+	"Lhai #0" = -1
+	"Lodrösenggé #0" = 0
+	"Moliye #1" = 10
+	"Namkha #0" = -1
+	"Nuba #0" = -1
+	"Sahpo #0" = 0
+	"Sirotmaaynu #0" = 0
+	"Subetei #0" = 0
+	"Ulin #1" = -1
+	"Yangtsémé #0" = 0
+}

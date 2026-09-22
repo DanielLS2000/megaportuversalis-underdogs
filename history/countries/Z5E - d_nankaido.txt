@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = japanese
+capital = 4186
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Kin'akira"
+		dynasty = "Uda"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1388.10.27
+		religion = vajrayana
+		culture = japanese
+	}
+	add_ruler_personality = loose_lips_personality
+	add_ruler_personality = sinner_personality
+	queen = {
+		name = "Yoshiko"
+		dynasty = "Doudleby"
+		adm = 3
+		dip = 3
+		mil = 3
+		country_of_origin = Z5E
+		birth_date = 1390.1.31
+		death_date = 1450.1.31
+		female = yes
+		religion = buddhism
+		culture = japanese
+	}
+	add_queen_personality = malevolent_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Nobutada"
+		monarch_name = "Nobutada"
+		dynasty = "Uda"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1406.7.30
+		death_date = 1471.7.30
+		claim = 89
+		religion = vajrayana
+		culture = japanese
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = well_connected_personality
+}
+1444.11.11= {
+	add_prestige = 98
+	add_treasury = 69
+}

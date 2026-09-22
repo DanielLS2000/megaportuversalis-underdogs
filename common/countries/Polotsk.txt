@@ -1,0 +1,93 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 16 113 155 }
+revolutionary_colors = { 5 5 10 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Aimo #0" = -1
+	"Azyren #0" = 0
+	"Chudur #1" = -1
+	"Davyd #0" = 0
+	"Dergun #0" = 0
+	"Dobroslava #0" = -1
+	"Ewyas #0" = 0
+	"Fevronia #0" = -1
+	"Ganya #0" = -1
+	"Gremislava #0" = -1
+	"Kariton #0" = 0
+	"Pivtsay #0" = 0
+	"Sviatopolk #0" = 0
+	"Sviatoslav #0" = 0
+	"Temüjin #1" = 10
+	"Venno #1" = 10
+	"Wujun #1" = 10
+	"Yefimia #0" = -1
+}
+leader_names = {
+	"Aladyin"
+	"Beznosov"
+	"Bokeev"
+	"Borovsky"
+	"Burukhin"
+	"Dalmatov"
+	"Dursky"
+	"Galisky"
+	"Galitsky"
+	"Izyaslavsky"
+	"Kisleevsky"
+	"Korobyin"
+	"Mozhaisky"
+	"Satin"
+	"Shemyakin"
+	"Shukalovsky"
+	"Travin"
+	"Tsyplyatev"
+	"Uglisky"
+	"Vereisky"
+	"Vitebsky"
+	"Vnukov"
+	"Volotsky"
+	"Zabolotsky"
+}
+ship_names = {
+	"Bolotovo"
+	"Chudskoye"
+	"Izborsk"
+	"Kulikovo"
+	"Ostrov"
+	"Pechory"
+	"Polotsk"
+	"Porhov"
+	"Pskovskoye"
+	"Rakovor"
+	"Sebezh"
+	"Velikaya"
+	"Velikiye Luki"
+}

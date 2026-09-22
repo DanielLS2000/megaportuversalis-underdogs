@@ -1,0 +1,103 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 122 179 97 }
+revolutionary_colors = { 8 5 0 }
+historical_idea_groups = {
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	spy_ideas
+	economic_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ama #1" = 10
+	"Andhraka #0" = 0
+	"Bhagabhadra #0" = 0
+	"Bhatta #0" = 0
+	"Bhoja #2" = 10
+	"Dev Singh #0" = 0
+	"Dundaka #1" = 10
+	"Elek #0" = 0
+	"Gayakarna #1" = 10
+	"Hammiravarman #0" = 0
+	"Hormoz #1" = 10
+	"Indrayudha #1" = 10
+	"Keshabsen #1" = 10
+	"Mahendrapala #2" = 10
+	"Mahendrasingha #0" = 0
+	"Mahipala #1" = 10
+	"Manava #0" = 0
+	"Nagabhata #1" = 10
+	"Nar Singh #1" = 10
+	"Narayana #1" = 10
+	"Narayanapala #0" = 0
+	"Rajabhata #0" = 0
+	"Ramabhadra #1" = 10
+	"Sal #0" = -1
+	"Shurapala #1" = 10
+	"Susarman #1" = 10
+	"Vajrayudha #1" = 10
+	"Vijaynarayan #0" = 0
+	"Vishwasingha #0" = 0
+	"Yasovarman #1" = 10
+	"Anrén #0" = 0
+}
+leader_names = {
+	"Afridi"
+	"Awadhi"
+	"Bahadur"
+	"Bangash"
+	"Chand"
+	"Ghori"
+	"Hindustani"
+	"Karrani"
+	"Khan"
+	"Khilji"
+	"Lodi"
+	"Pundir"
+	"Sahgal"
+	"Sarwar"
+	"Satsangi"
+	"Sharqi"
+	"Siddiqui"
+	"Uzbek"
+	"Yousafzai"
+	"ud Daula"
+}
+ship_names = {
+	"Alia"
+	"Betwa"
+	"Fatimah"
+	"Gandak"
+	"Ghagra"
+	"Gomti"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Sagar"
+	"Satlaj"
+	"Yamuna"
+	"Yasmine"
+}

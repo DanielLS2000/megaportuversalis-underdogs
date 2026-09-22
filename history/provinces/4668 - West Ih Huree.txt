@@ -1,0 +1,14 @@
+owner = Z5R
+controller = Z5R
+capital = "Orkhon"
+is_city = yes
+culture = dynamic-mongol-culture-num9
+religion = sunni
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z5O
+add_core = Z5R
+discovered_by = chinese
+discovered_by = nomad_group

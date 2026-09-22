@@ -1,0 +1,14 @@
+owner = FRM
+controller = FRM
+capital = "Caminawit"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = gems
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = FRM
+add_core = SUL
+discovered_by = chinese

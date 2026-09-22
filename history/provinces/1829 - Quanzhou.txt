@@ -1,0 +1,14 @@
+owner = Z09
+controller = Z09
+capital = "Quanzhou"
+is_city = yes
+culture = chimin
+religion = buddhism
+trade_goods = tea
+base_tax = 9
+base_production = 6
+base_manpower = 7
+add_core = MIN
+add_core = Z09
+discovered_by = chinese
+discovered_by = nomad_group

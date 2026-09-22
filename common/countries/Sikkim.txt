@@ -1,0 +1,84 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 93 180 76 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Bidha #1" = -1
+	"Birapala #2" = 10
+	"Bok-chang #0" = -1
+	"Byeok-hwa #0" = -1
+	"Dattadevi #1" = -1
+	"Dronyer #2" = 10
+	"Gyaltshen #1" = 10
+	"Harshavarman #1" = 10
+	"Heon-suk #0" = 0
+	"Jangcchub #1" = 10
+	"Ji-ui #0" = -1
+	"Khamsum #1" = 10
+	"Khedrup #1" = 10
+	"Kuengzang #2" = 10
+	"Lhendup #1" = 10
+	"Lyonpo #1" = 10
+	"Minjur #1" = 10
+	"Namlungpa #1" = 10
+	"Ngodrup #1" = 10
+	"Passang #1" = 10
+	"Pekar #1" = 10
+	"Pralambha #1" = 10
+	"Rukbo #1" = 10
+	"Sin-jong #0" = 0
+	"Tamzhing #1" = 10
+	"Thekung Adek #1" = 10
+	"Tshewang #1" = 10
+	"Virabahu #1" = 10
+	"Zhelngo #1" = 10
+	"Zhidhar #1" = 10
+}
+leader_names = {
+	"Chomphel"
+	"Gyaltshen"
+	"Gyamtsho"
+	"Lhopi"
+	"Peljor"
+	"Phuntsho"
+	"Rabgye"
+	"Tshering"
+	"Wangchuk"
+	"Wangpo"
+}
+ship_names = {
+	"Barkam"
+	"Dartsendo"
+	"Gartse"
+	"Gyantse"
+	"Lhasa"
+	"Lhotse"
+	"Makalu"
+	"Nagqu"
+	"Nedong"
+	"Nyingchi"
+	"Pelbar"
+	"Qamdo"
+	"Sakya"
+	"Shigatse"
+	"Tinggri"
+}

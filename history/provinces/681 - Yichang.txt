@@ -1,0 +1,14 @@
+owner = Z0Y
+controller = Z0Y
+capital = "Yichang"
+is_city = yes
+culture = chihan
+religion = confucianism
+trade_goods = tea
+base_tax = 7
+base_production = 3
+base_manpower = 6
+add_core = YAN
+add_core = Z0Y
+discovered_by = chinese
+discovered_by = nomad_group

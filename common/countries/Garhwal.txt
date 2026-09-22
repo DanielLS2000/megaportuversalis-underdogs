@@ -1,0 +1,104 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 60 154 135 }
+revolutionary_colors = { 0 10 0 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	quality_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abhirajadeva #1" = 10
+	"Asaraja #2" = 10
+	"Ashokdeva #1" = 10
+	"Basantadeva #1" = 10
+	"Basudeva #1" = 10
+	"Bhudeva #1" = 10
+	"Bina #1" = 10
+	"Biradeva #1" = 10
+	"Brahmadeva #1" = 10
+	"Chandanaraja #1" = 10
+	"Chandraleksha #0" = -1
+	"Dasharath #1" = 10
+	"Deshtadeva #1" = 10
+	"Dhamdeva #1" = 10
+	"Gopi #0" = 0
+	"Gulika #0" = -1
+	"Hammira #1" = 10
+	"Harshadeva #0" = 0
+	"Ichchhatadeva #1" = 10
+	"Ishtaganadeva #1" = 10
+	"Kharparadeva #1" = 10
+	"Lalitansuradeva #1" = 10
+	"Mengucek #1" = 10
+	"Mithila #0" = 0
+	"Mitra #0" = 0
+	"Narsinghdeva #1" = 10
+	"Nimbartadeva #1" = 10
+	"Padmatadeva #1" = 10
+	"Prakul #1" = 10
+	"Pritamdeva #1" = 10
+	"Rawatdeva #1" = 10
+	"Rupa #1" = 10
+	"Rameshwari #0" = -1
+	"Salonaditya #1" = 10
+	"Santosh #0" = 0
+	"Subhikshrajyadeva #1" = 10
+	"Tribhuvanarajadeva #1" = 10
+	"Umur #1" = 10
+	"Vashudeva #1" = 10
+	"Vijayaraja #1" = 10
+	"Çaka #1" = 10
+}
+leader_names = {
+	"Bais"
+	"Bhaal"
+	"Bhangalia"
+	"Chattar"
+	"Chudasama"
+	"Jadeja"
+	"Katoch"
+	"Minha"
+	"Pahore"
+	"Pakhral"
+	"Pundir"
+	"Saran"
+	"Singh"
+}
+ship_names = {
+	"Beas"
+	"Chenab"
+	"Devi"
+	"Gayatri"
+	"Guru"
+	"Indus"
+	"Jalsena"
+	"Jhelum"
+	"Lakshmi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Ravi"
+	"Sagar"
+	"Sarasvati"
+	"Sita"
+	"Sutlej"
+}

@@ -1,0 +1,89 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 255 134 0 }
+revolutionary_colors = { 8 10 8 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_cavalry_archers
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	shaybani
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Ali Tigin #1" = 10
+	"Ayasun #0" = -1
+	"Baybars #2" = 10
+	"Bidun #1" = 10
+	"Bunyat #1" = 10
+	"Chotan #0" = -1
+	"Dilek #0" = -1
+	"Galsan #1" = 10
+	"Hasan Bughra #1" = 10
+	"Ibrahim #2" = 10
+	"Isma'il #1" = 10
+	"Jochi #0" = 0
+	"Kaiqobad #1" = 10
+	"Khatun #1" = -1
+	"Khuyildar #0" = 0
+	"Muhammad #1" = 10
+	"Nasr #1" = 10
+	"Ot-tegin #1" = 10
+	"Parsak #1" = 10
+	"Qutayba #1" = 10
+	"Rani #0" = -1
+	"Sakan #1" = 10
+	"Sotan #2" = 10
+	"Subetei #0" = 0
+	"Tarxun #1" = 10
+	"Tsyrendulma #1" = -1
+	"Tughshada #1" = 10
+	"Äsuka #0" = 0
+}
+leader_names = {
+	"Altan Vachir"
+	"Arigh Gan"
+	"Bayan Checheg"
+	"Boke Arslan"
+	"Bora Chinua"
+	"Chagan Erdene"
+	"Mongke Bayar"
+	"Mongke Enq"
+	"Mongke Nasan"
+	"Qara Temur"
+	"Shria Gal"
+	"Suren Unegen"
+	"Yeke Burilgi"
+}
+ship_names = {
+	"Amudarja"
+	"Bajsun"
+	"Chiva"
+	"Chudzand"
+	"Cimkent"
+	"Gizduvan"
+	"Gulistan"
+	"Guzar"
+	"Jangijul"
+	"Karakul"
+	"Karsi"
+	"Kerki"
+	"Mukry"
+	"Syrdarja"
+}

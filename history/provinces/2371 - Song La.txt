@@ -1,0 +1,14 @@
+owner = ANN
+controller = ANN
+capital = "Song La"
+is_city = yes
+culture = vietnamese
+religion = buddhism
+trade_goods = tea
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = ANN
+add_core = DAI
+discovered_by = chinese
+discovered_by = indian

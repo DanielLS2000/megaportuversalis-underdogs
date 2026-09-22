@@ -1,0 +1,83 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 171 175 40 }
+revolutionary_colors = { 8 9 8 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	spy_ideas
+	quality_ideas
+	economic_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Bubong #1" = 10
+	"Buisan #1" = 10
+	"Cendera #0" = 0
+	"Entirong #2" = 10
+	"Indaulu #0" = -1
+	"Indra #1" = 10
+	"Lanka #0" = 0
+	"Matahum #1" = -1
+	"Mayang #1" = 10
+	"Naladewa #1" = 10
+	"Pula #1" = 10
+	"Sangaji #1" = 10
+	"Sattumpugi #1" = 10
+	"Wirgala #1" = 10
+}
+leader_names = {
+	"Abdulfatah"
+	"Ahmad"
+	"Amir"
+	"Anwar"
+	"Azmi"
+	"Batuta"
+	"Chairul"
+	"Hamzah"
+	"Hasanuddin"
+	"Ibnu"
+	"Kyai"
+	"Mahat"
+	"Mukhtar"
+	"Najamuddin"
+	"Natzar"
+	"Nazmizan"
+	"Roem"
+	"Syarifuddin"
+	"Zulkifli"
+}
+ship_names = {
+	"Bangar"
+	"Batang"
+	"Batang Baram"
+	"Batu Danau"
+	"Kuala Baram"
+	"Kuala Belait"
+	"Kuala Medamit"
+	"Labi"
+	"Lumut"
+	"Lungai Limbang"
+	"Penanjong"
+	"Sukang"
+	"Sungai Bakong"
+	"Sungai Belait"
+	"Sungai Pandaruan"
+	"Sungai Tembureng"
+	"Sungai Tinjar"
+	"Sungai Tutoh"
+	"Sungai Tutong"
+	"Telingan"
+	"Trusan"
+}

@@ -1,0 +1,17 @@
+owner = Z1A
+controller = Z1A
+capital = "Api-Api"
+is_city = yes
+culture = dayak
+religion = hinduism
+trade_goods = spices
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = Z1A
+add_permanent_claim = BEI
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

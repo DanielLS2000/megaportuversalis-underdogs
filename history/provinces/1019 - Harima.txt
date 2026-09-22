@@ -1,0 +1,17 @@
+owner = Z38
+controller = Z38
+capital = "Himeji"
+is_city = yes
+culture = japanese
+religion = shinto
+trade_goods = grain
+base_tax = 3
+base_production = 8
+base_manpower = 2
+add_core = MRI
+add_core = Z38
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese

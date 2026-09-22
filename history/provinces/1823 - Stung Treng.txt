@@ -1,0 +1,15 @@
+owner = Z63
+controller = Z63
+capital = "Stung Treng"
+is_city = yes
+culture = cham
+religion = hinduism
+trade_goods = grain
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = CHA
+add_core = Z63
+discovered_by = chinese
+discovered_by = indian

@@ -1,0 +1,8 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 200 125 80 }
+monarch_names = {
+	"Aoluwo #1" = 10
+	"Duolu #1" = 10
+	"Pogu #1" = 10
+}

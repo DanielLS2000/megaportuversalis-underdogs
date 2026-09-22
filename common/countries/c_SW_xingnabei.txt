@@ -1,0 +1,18 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 215 170 170 }
+monarch_names = {
+	"Bin #1" = -1
+	"Dewen #1" = 10
+	"Diela #1" = 10
+	"Erxuan #1" = 10
+	"Hachi Hülüg #1" = 10
+	"Heluwo #0" = 0
+	"Saige #1" = -1
+	"Shao #0" = 0
+	"Shige #0" = -1
+	"Shiraghul #1" = 10
+	"Yali #1" = 10
+	"Yundeshi #1" = 10
+	"Zongxun #0" = 0
+}

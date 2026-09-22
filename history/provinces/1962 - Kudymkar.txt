@@ -1,0 +1,15 @@
+owner = Z7A
+controller = Z7A
+capital = "Kudymkar"
+is_city = yes
+culture = turko_iranian
+religion = sunni
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = TRS
+add_core = Z7A
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

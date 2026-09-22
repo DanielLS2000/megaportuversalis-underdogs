@@ -1,0 +1,97 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 90 138 133 }
+revolutionary_colors = { 2 0 1 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Bóyù #0" = 0
+	"Chang #0" = 0
+	"Chóngsì #0" = 0
+	"Chóngyè #0" = 0
+	"Jingang #0" = -1
+	"Kèràng #0" = 0
+	"Liuxù #0" = -1
+	"Lìnglìng #0" = -1
+	"Lìzhì #0" = -1
+	"Mílè #0" = -1
+	"Shiniáng #0" = -1
+	"Sili #0" = 0
+	"Yuánqìng #0" = 0
+	"Yìxuán #0" = -1
+	"Zhèngzé #0" = -1
+	"Zhijié #0" = 0
+}
+leader_names = {
+	"Agarie"
+	"Arakachi"
+	"Ba"
+	"Fija"
+	"Ikegusuku"
+	"Kanagusuku"
+	"Mo"
+	"Nagusuku"
+	"O"
+	"Shimabuku"
+	"Sho"
+	"Tamagusuku"
+	"Tera"
+	"Toyomigusuku"
+	"Ufugusuku"
+	"Wibaru"
+	"Yamagusuku"
+}
+ship_names = {
+	"Bunei"
+	"Chuzan"
+	"Eiji"
+	"Eiso"
+	"Gihon"
+	"Gusuku"
+	"Hokuzan"
+	"Naha"
+	"Nakijin"
+	"Nanzan"
+	"Satto"
+	"Sei"
+	"Sho"
+	"Sho Chu"
+	"Sho Ei"
+	"Sho En"
+	"Sho Gen"
+	"Sho Hashi"
+	"Sho Ho"
+	"Sho Ken"
+	"Sho Kinpuku"
+	"Sho Nei"
+	"Sho Sei"
+	"Sho Sen'i"
+	"Sho Shin"
+	"Sho Shisho"
+	"Sho Shitatsu"
+	"Sho Shitsu"
+	"Sho Taikyu"
+	"Sho Toku"
+	"Shun Bajunki"
+	"Shunten"
+	"Shuri"
+	"Taisei"
+	"Tamagusuku"
+}

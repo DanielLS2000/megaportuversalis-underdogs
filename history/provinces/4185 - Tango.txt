@@ -1,0 +1,17 @@
+owner = Z37
+controller = Z37
+capital = "Miyazu"
+is_city = yes
+culture = japanese
+religion = buddhism
+trade_goods = fish
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = MRI
+add_core = Z37
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese

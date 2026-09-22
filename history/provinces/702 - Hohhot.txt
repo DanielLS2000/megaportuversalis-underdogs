@@ -1,0 +1,14 @@
+owner = Z6V
+controller = Z6V
+capital = "Hohhot"
+is_city = yes
+culture = tangut
+religion = mahayana
+trade_goods = iron
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = TAU
+add_core = Z6V
+discovered_by = chinese
+discovered_by = nomad_group

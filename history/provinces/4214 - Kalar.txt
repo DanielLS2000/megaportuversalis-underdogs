@@ -1,0 +1,14 @@
+owner = Z7X
+controller = Z7X
+capital = "Kalar"
+is_city = yes
+culture = nivkh
+religion = mahayana
+trade_goods = fur
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = NVK
+add_core = Z7X
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,15 @@
+owner = Z0H
+controller = Z0H
+capital = "Nanjing"
+is_city = yes
+culture = jianghuai
+religion = vajrayana
+trade_goods = silk
+fort_15th = yes
+base_tax = 10
+base_production = 5
+base_manpower = 8
+add_core = MNG
+add_core = Z0H
+discovered_by = chinese
+discovered_by = nomad_group

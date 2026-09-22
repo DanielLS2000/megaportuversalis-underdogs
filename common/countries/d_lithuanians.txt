@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 81 0 0 }
+monarch_names = {
+	"Abd al-Azim #1" = 10
+	"Aldona #0" = -1
+	"Butigeidis #0" = 0
+	"Cirulis #1" = 10
+	"Imanta #1" = 10
+	"Jamil #0" = 0
+	"Kernius #1" = 10
+	"Kiras #1" = 10
+	"Kukovaitis #1" = 10
+	"Kunos #1" = 10
+	"Manvydas #1" = 10
+	"Mastana #0" = -1
+	"Muhammad #1" = 10
+	"Palemon #1" = 10
+	"Rimvydas #1" = 10
+	"Utenis #1" = 10
+	"Vakare #0" = -1
+	"Vizgirdas #0" = 0
+	"Šventaragis #1" = 10
+}

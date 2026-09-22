@@ -1,0 +1,15 @@
+owner = Z3Q
+controller = Z3Q
+capital = "Garze"
+is_city = yes
+culture = tibetan
+religion = sunni
+trade_goods = grain
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = UTS
+add_core = Z3Q
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

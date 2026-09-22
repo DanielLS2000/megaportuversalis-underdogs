@@ -1,0 +1,15 @@
+owner = MDV
+controller = MDV
+capital = "Torzhok"
+is_city = yes
+culture = dynamic-russian_culture-culture-num4
+religion = catholic
+trade_goods = naval_supplies
+base_tax = 4
+base_production = 3
+base_manpower = 1
+add_core = MDV
+add_permanent_claim = NOV
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

@@ -1,0 +1,17 @@
+owner = Z7L
+controller = Z7L
+capital = "Ordos"
+is_city = yes
+culture = chihan
+religion = confucianism
+trade_goods = livestock
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = YAN
+add_core = Z7L
+discovered_by = chinese
+discovered_by = nomad_group
+latent_trade_goods = {
+	coal
+}

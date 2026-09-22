@@ -1,0 +1,20 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 47 51 66 }
+monarch_names = {
+	"Chóngyè #0" = 0
+	"Dàozhen #0" = -1
+	"Geng #1" = 10
+	"Jiànzhen #0" = -1
+	"Jìngzhong #0" = 0
+	"Miàohuá #0" = -1
+	"Ràngying #0" = -1
+	"Shàozong #0" = 0
+	"Siyuan #0" = 0
+	"Tugi #0" = -1
+	"Xuánshì #0" = -1
+	"Yánqìng #0" = 0
+	"Yìdé #0" = -1
+	"Ahuán #0" = -1
+	"Aqiào #0" = -1
+}

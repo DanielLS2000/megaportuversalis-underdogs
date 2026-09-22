@@ -1,0 +1,17 @@
+owner = Z6G
+controller = Z6G
+capital = "Kumamoto"
+is_city = yes
+culture = kyushuan
+religion = shinto
+trade_goods = fish
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = OTM
+add_core = Z6G
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese

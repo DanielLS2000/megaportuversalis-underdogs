@@ -1,0 +1,59 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = arpitan
+capital = 4766
+fixed_capital = 4766
+add_accepted_culture = cosmopolitan_french
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Eudon"
+		dynasty = "de Marcq"
+		adm = 5
+		dip = 3
+		mil = 3
+		birth_date = 1406.12.18
+		religion = catholic
+		culture = arpitan
+	}
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Adeltrudis"
+		dynasty = "de Aubonne"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = Z9J
+		birth_date = 1409.2.14
+		death_date = 1469.2.14
+		female = yes
+		religion = catholic
+		culture = arpitan
+	}
+	add_queen_personality = infertile_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Chiandine"
+		monarch_name = "Chiandine"
+		dynasty = "de Marcq"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1444.1.21
+		death_date = 1509.1.21
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = arpitan
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 63
+	add_treasury = 62
+}

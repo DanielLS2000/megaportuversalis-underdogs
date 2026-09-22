@@ -1,0 +1,14 @@
+version="1.0.0"
+tags={
+	"Alternative History"
+	"Converted From CKII"
+	"Balance"
+	"Events"
+	"Gameplay"
+	"National Ideas"
+	"New Nations"
+	"Missions And Decisions"
+}
+name="MegaPortuversalis: Underdogs"
+picture="thumbnail.jpg"
+supported_version="v1.37.5.0"

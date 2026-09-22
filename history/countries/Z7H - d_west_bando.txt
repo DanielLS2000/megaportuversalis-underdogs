@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = togoku
+capital = 4189
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Morohiro"
+		dynasty = "Boso"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1398.9.23
+		religion = vajrayana
+		culture = togoku
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Muneko"
+		dynasty = "Oe"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = Z7H
+		birth_date = 1412.11.13
+		death_date = 1472.11.13
+		female = yes
+		religion = vajrayana
+		culture = japanese
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Tametada"
+		monarch_name = "Tametada"
+		dynasty = "Boso"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1423.8.3
+		death_date = 1488.8.3
+		claim = 89
+		religion = vajrayana
+		culture = japanese
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 93
+	add_treasury = 67
+}

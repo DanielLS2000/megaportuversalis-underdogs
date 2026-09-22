@@ -1,0 +1,17 @@
+owner = Z5I
+controller = Z5I
+capital = "Tsushima"
+is_city = yes
+culture = kyushuan
+religion = shinto
+trade_goods = chinaware
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = OTM
+add_core = Z5I
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese

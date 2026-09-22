@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = great_man
+government_rank = 1
+technology_group = chinese
+religion = hinduism
+primary_culture = dayak
+capital = 637
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Melaka"
+		dynasty = "Bantuan-Tamontaka"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1407.6.6
+		religion = hinduism
+		culture = dayak
+	}
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Men"
+		dynasty = "Kapuadyah"
+		adm = 5
+		dip = 3
+		mil = 4
+		country_of_origin = Z1A
+		birth_date = 1410.7.21
+		death_date = 1470.7.21
+		female = yes
+		religion = hinduism
+		culture = dayak
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = secretive_personality
+	heir = {
+		name = "Prabu Mula"
+		monarch_name = "Prabu Mula"
+		dynasty = "Bantuan-Tamontaka"
+		adm = 4
+		dip = 5
+		mil = 2
+		birth_date = 1432.7.26
+		death_date = 1497.7.26
+		claim = 89
+		religion = hinduism
+		culture = dayak
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 79
+	add_treasury = 46
+}

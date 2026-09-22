@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 55 70 100 }
+monarch_names = {
+	"Ambaghai #0" = 0
+	"Ay-dash #2" = 10
+	"Bala #0" = 0
+	"Chechen #1" = 10
+	"Choyan-ool #1" = 10
+	"Chudur #1" = -1
+	"Daru #0" = 0
+	"Gunes #1" = -1
+	"Horkhudagh #0" = 0
+	"Huquan #0" = -1
+	"Khorilartai #0" = 0
+	"Khutulun #0" = -1
+	"Kobyak #2" = 10
+	"Kokachin #0" = -1
+	"Koza #1" = 10
+	"Liujin #1" = 10
+	"Shiraghul #0" = 0
+	"Sotan #1" = 10
+	"Tokhtamis #0" = 0
+	"Xüren #1" = 10
+	"Yesugun #0" = -1
+	"Yunying #0" = -1
+}

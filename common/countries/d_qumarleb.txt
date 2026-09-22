@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 8 99 191 }
+monarch_names = {
+	"Don-ui #0" = 0
+	"Gong-ui #0" = 0
+	"Hwon-yeong #0" = -1
+	"Ji-ui #0" = -1
+	"Jo-chung #0" = 0
+	"Luòér #0" = -1
+	"Mipham #0" = 0
+	"Miàofa #0" = -1
+	"Seong-jin #0" = 0
+	"Talib #0" = 0
+	"Won-gi #0" = 0
+	"Won-hye #0" = 0
+}

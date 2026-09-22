@@ -1,0 +1,14 @@
+owner = Y3G
+controller = Y3G
+capital = "Tadmekka al-Suq"
+is_city = yes
+culture = tuareg
+religion = sunni
+trade_goods = wool
+base_tax = 1
+base_production = 3
+base_manpower = 2
+add_core = AIR
+add_core = Y3G
+add_permanent_claim = Z0W
+discovered_by = sub_saharan

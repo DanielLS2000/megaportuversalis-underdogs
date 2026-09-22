@@ -1,0 +1,14 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 145 165 160 }
+monarch_names = {
+	"Aibek #1" = 10
+	"Koza #1" = 10
+	"Kozel #1" = 10
+	"Kutan #1" = 10
+	"Saru #1" = 10
+	"Songul #1" = -1
+	"Taalay #1" = 10
+	"Tardush #1" = 10
+	"Çilbu #1" = 10
+}

@@ -1,0 +1,95 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 169 168 101 }
+revolutionary_colors = { 15 0 15 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_clubmen
+	african_dragoon
+	african_hussar
+	african_somali_cavalry
+	african_western_franchise_warfare
+	bantu_gunpowder_warfare
+	bantu_plains_warfare
+	bantu_tribal_warfare
+	westernized_bantu
+}
+monarch_names = {
+	"Abdullah #0" = 0
+	"Abushiri #0" = 0
+	"Ahmed #0" = 0
+	"Ali #0" = 0
+	"Alwy #0" = 0
+	"Amalo #0" = -1
+	"Ambilike #0" = 0
+	"Amne #0" = -1
+	"Asha #0" = -1
+	"Chowaka #0" = -1
+	"Danchille #0" = -1
+	"Dhakku #1" = 10
+	"Digalu #1" = 10
+	"Ducaale #0" = 0
+	"Famao #0" = 0
+	"Gabisso #0" = -1
+	"Garasu #1" = 10
+	"Hamad #0" = 0
+	"Ibrahim #1" = 10
+	"Idris #0" = 0
+	"Ishaq #0" = 0
+	"Jawe #0" = 0
+	"Jawi #0" = -1
+	"Johari #0" = -1
+	"Khalifa #0" = 0
+	"Magal #1" = 10
+	"Majid #0" = 0
+	"Mohamed #0" = 0
+	"Ngara #0" = 0
+	"Oboo #1" = 10
+	"Qumman #0" = -1
+	"Rashid #0" = 0
+	"Ruwei #0" = 0
+	"Salim #0" = 0
+	"Sawadu #0" = -1
+	"Sirba #0" = 0
+	"Suleiman #0" = 0
+	"Uru #1" = 10
+	"Wuro #1" = 10
+	"Xaadsan #0" = -1
+	"Zuberi #0" = 0
+	"Zunku #0" = 0
+}
+leader_names = {
+	"Birir"
+	"Chirombo"
+	"Chrima"
+	"Kagona"
+	"Moyo"
+	"Mutasa"
+	"Njie"
+	"Nkomo"
+	"Rise"
+	"Tembo"
+}
+ship_names = {
+	"Dziva"
+	"Dzivaguru"
+	"Mai Vedu"
+	"Mazendere"
+	"Mbonga"
+	"Mulungu"
+	"Musikavanhu"
+	"Mutorwa"
+	"Mwari"
+	"Svikiro"
+}

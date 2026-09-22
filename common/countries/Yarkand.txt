@@ -1,0 +1,115 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 255 245 220 }
+revolutionary_colors = { 0 8 0 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	chinese_dragoon
+	chinese_footsoldier
+	chinese_longspear
+	chinese_steppe
+	eastern_bow
+	han_banner
+	manchu_banner
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+	reformed_manchu_rifle
+}
+monarch_names = {
+	"Altan #0" = 0
+	"Amala #1" = 10
+	"Ananta #2" = 10
+	"Andara #1" = 10
+	"Arin-Taiz #0" = 0
+	"Baybars #1" = 10
+	"Bok-chang #0" = -1
+	"Checheyigen #0" = -1
+	"Chéngen #0" = 0
+	"Dharma #4" = 10
+	"Dhondhros #1" = 10
+	"Doregene #0" = -1
+	"Dukak #1" = 10
+	"Gulçiçek #0" = -1
+	"Gur #0" = 0
+	"Gwi-gang #0" = -1
+	"Ilqa Sangun #0" = 0
+	"Jagambu #0" = 0
+	"Jamuqa #0" = 0
+	"Javanqad #0" = 0
+	"Jaya #4" = 10
+	"Kereyidei #1" = 10
+	"Khemeg #1" = 10
+	"Khutulan #0" = -1
+	"Kirti #4" = 10
+	"Kumara #1" = 10
+	"Nakshatra #1" = 10
+	"Oghul #0" = -1
+	"Pala #3" = 10
+	"Pulad #1" = 10
+	"Qatarqa #0" = 0
+	"Quchar #0" = 0
+	"Saigrama #2" = 10
+	"Sambhava #3" = 10
+	"Sangrama #7" = 10
+	"Sata #2" = 10
+	"Satra #1" = 10
+	"Shima #2" = 10
+	"Simha #3" = 10
+	"Surapati #1" = 10
+	"Taibuka #1" = 10
+	"Vahana #2" = 10
+	"Vikarma #2" = 10
+	"Yuánzong #0" = 0
+}
+leader_names = {
+	"Altan Unegen"
+	"Altanqai"
+	"Arigh Erdene"
+	"Bayan Vachir"
+	"Bayardai"
+	"Boke Qorchi"
+	"Boketei"
+	"Delger Dash"
+	"Qadancher"
+	"Suren Chinua"
+	"Tegusteni"
+	"Tolui-gene"
+	"Yekedai"
+}
+ship_names = {
+	"Alghu Khan"
+	"Amir Husayn"
+	"Amo Darya"
+	"Baraq Khan"
+	"Chagatai"
+	"Duwa"
+	"Genghis Khan"
+	"Güyük"
+	"Irtysh"
+	"Jagatai Khan"
+	"Mubarak Shah"
+	"Möngke Khan"
+	"Orghina"
+	"Qazan Khan"
+	"Qipchaq"
+	"Qubilai Khan"
+	"Samarqand"
+	"Syr Darya"
+	"Timur i Leng"
+	"Tughlugh Timur"
+	"Yesünto'a"
+	"Ögedai Khan"
+}

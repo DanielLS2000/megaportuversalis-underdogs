@@ -1,0 +1,15 @@
+owner = Z0X
+controller = Z0X
+capital = "Gatiga"
+is_city = yes
+culture = kanuri
+religion = coptic
+trade_goods = grain
+base_tax = 2
+base_production = 3
+base_manpower = 1
+extra_cost = 16
+center_of_trade = 2
+add_core = Z0X
+add_permanent_claim = KBO
+discovered_by = sub_saharan

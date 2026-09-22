@@ -1,0 +1,14 @@
+owner = Z0N
+controller = Z0N
+capital = "Jinhua"
+is_city = yes
+culture = wu
+religion = confucianism
+trade_goods = grain
+base_tax = 6
+base_production = 4
+base_manpower = 7
+add_core = WUU
+add_core = Z0N
+discovered_by = chinese
+discovered_by = nomad_group

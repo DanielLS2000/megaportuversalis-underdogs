@@ -1,0 +1,23 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 121 34 9 }
+monarch_names = {
+	"Aepak #0" = 0
+	"Anangga #1" = 10
+	"Anindita #1" = 10
+	"Botei #1" = 10
+	"Burinya #1" = -1
+	"Byeok-hwa #0" = -1
+	"Cipta #1" = 10
+	"Deok-man #0" = -1
+	"Gwi-gang #0" = -1
+	"Ja-gyeom #0" = 0
+	"Ji-hyo #0" = 0
+	"Lephe #1" = -1
+	"Mun-mu #0" = 0
+	"Mura #1" = 10
+	"Ratna #1" = 10
+	"Ratnacandra #1" = 10
+	"Weutoma #2" = 10
+	"Zhongyuan #0" = 0
+}

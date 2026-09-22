@@ -1,0 +1,15 @@
+owner = Z5R
+controller = Z5R
+capital = "Mergen"
+is_city = yes
+culture = mongol
+religion = mahayana
+trade_goods = naval_supplies
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KHA
+add_core = Z5R
+add_core = Z8N
+discovered_by = chinese
+discovered_by = nomad_group

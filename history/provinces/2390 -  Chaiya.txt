@@ -1,0 +1,16 @@
+owner = Z8U
+controller = Z8U
+capital = "Chaiya"
+is_city = yes
+culture = malayan
+religion = mahayana
+trade_goods = fish
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = Z8U
+add_permanent_claim = MLC
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

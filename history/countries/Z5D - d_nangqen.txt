@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = mahayana
+primary_culture = dynamic-tibetan-culture-num4
+capital = 705
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Jungné"
+		dynasty = "Gyêgumdo"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1394.9.17
+		religion = mahayana
+		culture = dynamic-tibetan-culture-num4
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = cruel_personality
+	queen = {
+		name = "Bönmo"
+		dynasty = "Doudleby"
+		adm = 5
+		dip = 5
+		mil = 3
+		country_of_origin = Z5D
+		birth_date = 1409.2.17
+		death_date = 1469.2.17
+		female = yes
+		religion = mahayana
+		culture = tibetan
+	}
+	add_queen_personality = kind_hearted_personality
+	add_queen_personality = naive_personality
+	heir = {
+		name = "Selbar"
+		monarch_name = "Selbar"
+		dynasty = "Gyêgumdo"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1436.5.21
+		death_date = 1501.5.21
+		claim = 89
+		religion = mahayana
+		culture = dynamic-tibetan-culture-num4
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 49
+	add_treasury = 54
+}

@@ -1,0 +1,897 @@
+#
+# Scripted by Plati 
+#
+# 2023
+#
+#
+namespace = plati_ck_new_flavor
+country_event = {
+	id = plati_ck_new_flavor.8
+	
+	title = "plati_ck_new_flavor.EVTNAME8"				#Byzantium
+	desc = "plati_ck_new_flavor.EVTDESC8"				#
+	
+	picture = PLATI_BYZANTIUM
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_egh
+				duration = -1											#once per campaign
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+			random_known_country = {											#bizzare way to do it, but if it works, it works
+				limit = {
+					tag = BYZ
+				}
+				save_event_target_as = plati_ck_flavor_new_byzantium_country
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA8"							#interesting, just FYI
+		if = {
+			limit = {
+				BYZ = {
+					NOT = { has_reform = byzantine_autocracy_reform }
+					government = monarchy
+					ai = yes																		#players probably won't appreciate their government changing without permission
+				}
+			}
+			BYZ = { add_government_reform = byzantine_autocracy_reform }
+		}
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.10
+	
+	title = "plati_ck_new_flavor.EVTNAME10"				#The Government of NAME
+	desc = "plati_ck_new_flavor.EVTDESC10"				#It has been reported on several occasions by users that upon converted save, the entirety of Europe has Chartered (English) Monarch, with parliament and no nobility; If we don't readjust convertor, then I am of the belief that there at least must be an option at the beginning of the campaign to reconsider starting tier of the government - including the nuansed culture specific governments (provided by dlc, included the latest ones in Domination), such as Tanistry
+	
+	picture = PLATI_CK_MAIN
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_ten
+				duration = -1											#Once per campaign, no second chances
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA10"							#always available
+		ai_chance = { factor = 1 }
+		add_government_reform = feudalism_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB10"							#always available
+		ai_chance = { factor = 1 }
+		add_government_reform = autocracy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTC10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			OR = {
+				tag = HAB
+				tag = STY
+				was_tag = HAB
+				has_reform = austrian_archduchy_reform
+				have_had_reform = austrian_archduchy_reform
+				primary_culture = austrian
+			}
+		}
+		add_government_reform = austrian_archduchy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTD10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			has_dlc = "Domination" 
+			tag = FRA
+		}
+		add_government_reform = feudal_france_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTE10"							#
+		ai_chance = { factor = 100 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			tag = BYZ
+		}
+		add_government_reform = byzantine_autocracy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTF10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			primary_culture = irish
+		}
+		add_government_reform = tanistry_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTG10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			primary_culture = portugese
+		}
+		add_government_reform = portuguese_monarchy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTH10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			has_dlc = "Domination"
+			tag = HLR
+		}
+		add_government_reform = holy_imperial_monarchy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTI10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				primary_culture = frisian
+				primary_culture = flemish
+			}
+		}
+		add_government_reform = stadthalter_monarchy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTU10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			OR = {
+				tag = POL
+				culture_group = west_slavic
+			}
+		}
+		add_government_reform = polish_great_sejm
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTV10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			OR = {
+				tag = NOR
+				primary_culture = norse
+				primary_culture = cooler_norwegian
+				primary_culture = holmgardrian
+				primary_culture = marisbaltician
+				primary_culture = miklagardrian
+				primary_culture = serklandic
+				primary_culture = romsborgian
+			}
+		}
+		add_government_reform = norwegian_parliamentary_monarchy						#scandinavian ting, essentially
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTP10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			OR = {
+				tag = NOR
+				primary_culture = norse
+				primary_culture = cooler_norwegian
+				primary_culture = holmgardrian
+				primary_culture = marisbaltician
+				primary_culture = miklagardrian
+				primary_culture = serklandic
+				primary_culture = romsborgian
+			}
+		}
+		add_government_reform = danish_archkingdom										#more variety for norsemen	
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTR10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			has_dlc = "Lions of the North"
+			tag = SCA
+		}
+		add_government_reform = kalmar_union
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTN10"							#not the polish elective monarchy, this one was added in domination
+		ai_chance = { factor = 0 }											#a ruler wouldn't give up power so easily
+		trigger = {
+			has_dlc = "Domination"
+		}
+		add_government_reform = elective_monarchy_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTM10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			religion_group = muslim												#bizzare, but can happen
+		}
+		add_government_reform = iqta
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTQ10"							#
+		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
+		trigger = {
+			tag = IRE
+			has_dlc = "Domination"
+		}
+		add_government_reform = irish_highkingdom_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTL10"									#Pirates
+		ai_chance = { factor = 100 }											#from tests I've made, this creates roughly 3-5 pirate micro-nations on tiny islands in the mediterranean or British isles
+		trigger = {
+			OR = {
+				has_dlc = "Golden Century"
+				has_dlc = "Lions of the North"
+			}
+			NOT = { tag = PAP } # just no
+			is_emperor = no
+			NOT = { num_of_cities = 10 }
+			NOT = { government_rank = 2 }
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						AND = {
+							has_port = yes
+							province_is_on_an_island = yes
+						}
+					}
+				}
+			}
+		}
+		change_government = republic
+		add_government_reform = pirate_republic_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTX10"							#leave as is, thanks
+		ai_chance = { factor = 0 }											#the purpose of this event in the first place is to let the world have some diversity and color
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.11
+	
+	title = "plati_ck_new_flavor.EVTNAME11"				#Andalusian Government
+	desc = "plati_ck_new_flavor.EVTDESC11"				#
+	
+	picture = PLATI_AL_ANDALUSIAN
+	
+	trigger = {
+		OR = {
+			has_country_modifier = plati_ck_flavor_DEBUG_cooldown_ten
+			NOT = { has_reform = english_monarchy }											#so the event fires AFTER the first one that offers government change
+		}
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_elv }
+		NOT = { has_reform = al_andalusia_government }
+		religion_group = muslim
+		government = monarchy
+		OR = {
+			capital_scope = { region = france_region }
+			capital_scope = { region = italy_region }							#For West European muslims only
+			capital_scope = { region = iberia_region }
+			tag = ADU
+		}
+		NOT = {
+			tag = TUR
+			tag = RUM
+			tag = BYZ
+			tag = HLR
+			tag = ROM
+		}
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 50
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_elv
+				duration = -1												#once per campaign
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA11"							#enact
+		ai_chance = { factor = 90 }
+		if = {
+			limit = {
+				NOT = { primary_culture = andalucian }									#necessary for government reform to work; also gives access to sweet Sufi Holy Orders
+			}
+			change_primary_culture = andalucian
+		}
+		add_government_reform = al_andalusia_government
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB11"							#no thanks
+		ai_chance = { factor = 10 }
+		add_prestige = 5
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.12
+	
+	title = "plati_ck_new_flavor.EVTNAME12"				#West / East Francia Namechange option
+	desc = "plati_ck_new_flavor.EVTDESC12"				#a simple optional name change event, disguised as reform and policy making one
+	
+	picture = PLATI_CK_MAIN
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_twe }
+		OR = {
+			tag = FRA
+			tag = GER
+		}
+		dynasty = "Karling"																	#Completely possible that even ai Karlings last this long, resulting in archaic naming of France and Germany - East Francia and West Francia
+		government = monarchy
+		current_age = age_of_discovery
+	}
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_twe
+				duration = -1												#Once
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA12"							#placeholder, scrapped Italy
+		trigger = {
+			always = no
+		}
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB12"							#West Francia to France
+		ai_chance = { factor = 99 }
+		trigger = {
+			tag = FRA
+		}
+		if = {
+			limit = {
+				NOT = { culture_group = french }
+			}
+			change_primary_culture = cosmopolitan_french
+		}
+		add_reform_progress_small_effect = yes
+		override_country_name = PLATI_DEFAULT_FRANCE_NAME
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTC12"							#East Francia to Germany
+		ai_chance = { factor = 99 }
+		trigger = {
+			tag = GER
+		}
+		if = {
+			limit = {
+				NOT = { culture_group = germanic }
+			}
+			change_primary_culture = german
+		}
+		add_reform_progress_small_effect = yes
+		override_country_name = PLATI_DEFAULT_GERMANY_NAME
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTD12"							#no, our name is awesome
+		ai_chance = { factor = 1 }
+		add_prestige = 5
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.13
+	
+	title = "plati_ck_new_flavor.EVTNAME13"				#Persia Flavor informative event
+	desc = "plati_ck_new_flavor.EVTDESC13"				#
+	
+	picture = PLATI_TURKIC_PERSIAN_RIDER
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_thi
+				duration = -1												#once per game
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+			random_known_country = {											#bizzare way to do it, but if it works, it works
+				limit = {
+					tag = PER
+				}
+				save_event_target_as = plati_ck_flavor_new_persia_country
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA13"							#informative, just FYI
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.14
+	
+	title = "plati_ck_new_flavor.EVTNAME14"				#Al Andalus - informative event
+	desc = "plati_ck_new_flavor.EVTDESC14"				#
+	
+	picture = PLATI_AL_ANDALUSIAN
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_frt }
+		ai = no																		#just for players
+		capital_scope = { continent = europe }
+		NOT = { tag = ADU }
+		ADU = {
+			exists = yes
+			is_great_power = yes
+		}
+		current_age = age_of_discovery
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_frt
+				duration = -1												#Informative, once per campaign
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+			random_known_country = {											#bizzare way to do it, but if it works, it works
+				limit = {
+					tag = ADU
+				}
+				save_event_target_as = plati_ck_flavor_new_andalusia_country
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA14"							#
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.17
+	
+	title = "plati_ck_new_flavor.EVTNAME17"				#Anti-Byzantine coalition;
+	desc = "plati_ck_new_flavor.EVTDESC17"				#Converted CK Byzantium always remains among the strongest powers in the world and in EU4 - ends up eating half the world and unlike Ottomans, have no 'decadence mechanic. I added a 'safeguard mechanism' event to give one chance to halt their insane blobbing;
+	
+	picture = PLATI_BYZANTIUM
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_svt }
+		NOT = { tag = BYZ }
+		NOT = { alliance_with = BYZ }
+		is_year = 1468													#arbitrary year, just so it doesnt fire right away
+		is_great_power = yes
+		ai = no															#for players only
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { region = egypt_region }
+			capital_scope = { region = maghreb_region }
+			capital_scope = { region = mashriq_region }
+			capital_scope = { region = anatolia_region }
+			capital_scope = { region = persia_region }
+			capital_scope = { region = khorasan_region }
+			capital_scope = { region = caucasia_region }
+			capital_scope = { region = arabia_region }
+		}
+		BYZ = {
+			exists = yes
+			is_great_power = yes
+		}
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			any_country = { religion = germanic_pagan }
+			any_country = { religion = anglo_pagan }
+			any_country = { religion = scythian_pagan }
+			any_country = { religion = zamolxism }
+			any_country = { religion = mithraism }
+			any_country = { religion = iberian_pagan }
+			any_country = { religion = canaanite }
+			any_country = { religion = kemetism }							#this way we can keep this event exclusive to CK3-EU4 save by excluding Imperator religions
+			any_country = { religion = mardukism }							#See: https://discord.com/channels/612683871112396800/741848366077444191/1135216438228029441 ; https://discord.com/channels/612683871112396800/741848366077444191/1135298049124618340
+			any_country = { religion = arab_pagan }
+			any_country = { religion = armenian_pagan }
+			any_country = { religion = caucasian_pagan }
+			any_country = { religion = atenism }
+			any_country = { religion = druidism }
+			any_country = { religion = briton_pagan }
+			any_country = { religion = gallic_pagan }
+			any_country = { religion = gaelic_pagan }
+			any_country = { religion = celtiberian_pagan }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_svt
+				duration = -1												#you only got one shot, one opportunity
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+			random_known_country = {
+				limit = {
+					tag = BYZ
+				}
+				save_event_target_as = plati_ck_flavor_new_the_again_byzantines
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA17"							#yes
+		add_dip_power = -50
+		add_historical_rival = BYZ
+		BYZ = { add_historical_rival = ROOT }
+		add_casus_belli = {
+			target = BYZ
+			type = cb_annex
+			months = 240
+		}
+		custom_tooltip = "plati_ck_new_flavor_byzantium_accepted_coalition_tooltip"
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_byzantium_coalition_trickle_down
+				duration = 18250														#50 years
+				hidden = yes															#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB17"							#no
+		BYZ = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+		}
+		custom_tooltip = "plati_ck_new_flavor_byzantium_refused_coalition_tooltip"
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.18
+	
+	title = "plati_ck_new_flavor.EVTNAME18"				#
+	desc = "plati_ck_new_flavor.EVTDESC18"				#
+	
+	picture = PLATI_BYZANTIUM
+	
+	major = yes
+	
+	is_triggered_only = yes								#by decision
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_eht
+				duration = 9000												#So doesn't fire too often
+				hidden = yes												#Debug timer modifier, stays hidden
+			}
+			random_known_country = {
+				limit = {
+					has_country_modifier = plati_ck_flavor_DEBUG_byzantium_coalition_trickle_down
+					offensive_war_with = BYZ
+				}
+				save_event_target_as = plati_ck_flavor_new_country_fighting_byzantines
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA18"							#les go (ai auotaccepts)
+		join_all_offensive_wars_of = event_target:plati_ck_flavor_new_country_fighting_byzantines
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB18"							#not interested
+		trigger = {
+			ai = no
+		}
+		add_prestige = -20
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.21
+	
+	title = "plati_ck_new_flavor.EVTNAME21"				#Latin Empire?
+	desc = "plati_ck_new_flavor.EVTDESC21"				#Unfortunately, no missions 
+	
+	picture = PLATI_BYZANTIUM
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_twtone }
+		religion = catholic
+		government = monarchy
+		NOT = {
+			tag = TUR
+			tag = RUM
+			tag = PAP
+			tag = MUG
+		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { region = anatolia_region }
+		}
+		ai = no																			#its quite bizzare, lets keep it a player-only event
+		ROM = { exists = no }
+		LAE = { exists = no }
+		is_great_power = yes
+		owns_core_province = 151
+		owns_core_province = 149
+		owns_core_province = 148
+		owns_core_province = 316
+		owns_core_province = 318
+		owns_core_province = 147
+		stability = 1
+		current_age = age_of_discovery
+	}
+	
+	mean_time_to_happen = {
+		days = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_twtone
+				duration = -1												#once
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA21"							#
+		change_tag = LAE
+		on_change_tag_effect = yes
+		restore_country_name_effect = yes
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		151 = {
+			move_capital_effect = yes
+			change_religion = catholic
+		}
+		add_papal_influence = 25
+		add_reform_desire = -0.015
+		add_government_reform = holy_state_reform
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB21"							#
+		add_prestige = 5
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.25
+	
+	title = "plati_ck_new_flavor.EVTNAME25"				#The Biggest City in Europe
+	desc = "plati_ck_new_flavor.EVTDESC25"				#Reward for playing tall and having biggest city post CK
+	
+	picture = CITY_VIEW_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_twtfiv }
+		NOT = { any_country = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_twtfiv } }				#considering how dev map looks after conversion, its probably easy to cheese it at the start of the game by adding 1-2 dev points, but oh well!
+		current_age = age_of_discovery
+		capital_scope = {
+			continent = europe
+			AND = {																	##The most likely candidates to have highest development
+				OR = {
+					province_id = 112
+					higher_development_than = 112									#Venice
+				}
+				OR = {
+					province_id = 101
+					higher_development_than = 101									#Genoa
+				}
+				OR = {
+					province_id = 118
+					higher_development_than = 118									#Rome
+				}
+				OR = {
+					province_id = 225
+					higher_development_than = 225									#Cordoba
+				}
+				OR = {
+					province_id = 97
+					higher_development_than = 97									#Amsterdam
+				}
+				OR = {
+					province_id = 183
+					higher_development_than = 183									#Paris
+				}
+				OR = {
+					province_id = 121
+					higher_development_than = 121									#Naples
+				}
+				OR = {
+					province_id = 266
+					higher_development_than = 266									#Prague
+				}
+				OR = {
+					province_id = 104
+					higher_development_than = 104									#Milan
+				}
+				OR = {
+					province_id = 151
+					higher_development_than = 151									#Constantinople
+				}
+				OR = {
+					province_id = 236
+					higher_development_than = 236									#London
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_twtfiv
+				duration = -1												#So doesn't fire too often
+				hidden = yes											#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA25"							#always enabled
+		ai_chance = { factor = 20 }
+		capital_scope = {
+			add_permanent_province_modifier = { 
+				name = plati_ck_new_flavor_modifier_province_capital_of_europe_generic
+				duration = -1  
+			}
+		}
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB25"							#
+		ai_chance = { factor = 40 }
+		trigger = {
+			capital_scope = {
+				NOT = {
+					trade_goods = glass
+					trade_goods = paper
+					trade_goods = silk
+				}
+			}
+		}
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = plati_ck_new_flavor_modifier_province_capital_of_europe_economic
+				duration = -1  
+			}
+		}
+		random_list = {
+			40 = { capital_scope = { change_trade_goods = glass } }
+			40 = { capital_scope = { change_trade_goods = paper } }
+			20 = { capital_scope = { change_trade_goods = silk } }
+		}
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTC25"							#
+		ai_chance = { factor = 40 }
+		trigger = {
+			capital_scope = {
+				NOT = {
+					trade_goods = spices
+					trade_goods = dyes
+					trade_goods = incense
+					trade_goods = chinaware
+				}
+			}
+		}
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = plati_ck_new_flavor_modifier_province_capital_of_europe_trade
+				duration = -1  
+			}
+		}
+		random_list = {
+			30 = { capital_scope = { change_trade_goods = spices } }
+			30 = { capital_scope = { change_trade_goods = dyes } }
+			30 = { capital_scope = { change_trade_goods = incense } }
+			10 = { capital_scope = { change_trade_goods = chinaware } }
+		}
+	}
+}
+country_event = {
+	id = plati_ck_new_flavor.26
+	
+	title = "plati_ck_new_flavor.EVTNAME26"				#ROME
+	desc = "plati_ck_new_flavor.EVTDESC26"				#
+	
+	picture = PLATI_ROME
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = plati_ck_flavor_DEBUG_cooldown_twtsix }
+		NOT = { is_year = 1500 }																#so this event doesnt fire later on when player becomes Rome through formation
+		is_great_power = yes
+		tag = ROM
+	}
+	
+	mean_time_to_happen = {
+		days = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = plati_ck_flavor_DEBUG_cooldown_twtsix
+				duration = -1												#once
+				hidden = yes												#Debug timer modifier, stays hidden
+			}
+		}
+	}
+	
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTA26"							#
+		ai_chance = { factor = 90 }
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 100
+		}
+		if = {
+			limit = {
+				has_dlc = "Domination"
+				NOT = { has_reform = roman_empire_reform }
+				government = monarchy
+				primary_culture = roman
+			}
+			add_government_reform = roman_empire_reform
+		}
+		if = {
+			limit = {
+				has_dlc = "Domination"
+				NOT = { has_reform = roman_republic_government }
+				government = republic
+				primary_culture = roman
+			}
+			add_government_reform = roman_republic_government
+		}
+	}
+	option = {
+		name = "plati_ck_new_flavor.EVTOPTB26"							#in case player doesnt want to have cool unique government
+		ai_chance = { factor = 10 }
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 100
+		}
+	}
+}

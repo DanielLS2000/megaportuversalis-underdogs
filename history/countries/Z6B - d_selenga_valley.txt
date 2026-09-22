@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan
+primary_culture = mongol
+capital = 4220
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Abika"
+		dynasty = "Belgütei"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 1425.5.31
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Mongoljin"
+		dynasty = "Jamughid"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = Z6B
+		birth_date = 1411.6.3
+		death_date = 1471.6.3
+		female = yes
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_queen_personality = embezzler_personality
+	add_queen_personality = greedy_personality
+	heir = {
+		name = "Ambaghai"
+		monarch_name = "Ambaghai"
+		dynasty = "Belgütei"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1444.7.7
+		death_date = 1509.7.7
+		claim = 89
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 56
+	add_treasury = 36
+}

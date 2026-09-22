@@ -1,0 +1,14 @@
+owner = Y0I
+controller = Y0I
+capital = "Sainshand"
+is_city = yes
+culture = mongol
+religion = mahayana
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KHA
+add_core = Y0I
+discovered_by = chinese
+discovered_by = nomad_group

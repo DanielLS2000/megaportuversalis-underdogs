@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 210 185 185 }
+monarch_names = {
+	"Alian #1" = 10
+	"Chage #1" = 10
+	"Doregene #1" = -1
+	"Heluwo #0" = 0
+	"Jeguredei #1" = 10
+	"Odchigin #1" = 10
+	"Shao #0" = 0
+	"Shige #0" = -1
+	"Yange #1" = 10
+	"Yangliu #1" = 10
+	"Yeke #1" = 10
+	"Zongxun #0" = 0
+}

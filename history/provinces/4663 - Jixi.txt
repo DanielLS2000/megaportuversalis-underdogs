@@ -1,0 +1,17 @@
+owner = Z8B
+controller = Z8B
+capital = "Jixi"
+is_city = yes
+culture = mongol
+religion = tengri_pagan
+trade_goods = naval_supplies
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KHA
+add_core = Z8B
+discovered_by = chinese
+discovered_by = nomad_group
+latent_trade_goods = {
+	coal
+}

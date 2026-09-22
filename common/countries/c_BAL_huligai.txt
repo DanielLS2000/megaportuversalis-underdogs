@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 170 35 95 }
+monarch_names = {
+	"Cala #1" = 10
+	"Duhe #1" = 10
+	"Dumu #1" = 10
+	"Guyug #1" = 10
+	"Hanšï #1" = 10
+	"Jaligi #1" = 10
+	"Nibucï #1" = 10
+	"Ohænægæ #1" = 10
+	"Pogu #1" = 10
+	"Tamachi #1" = 10
+	"Udisa'æ #1" = 10
+}

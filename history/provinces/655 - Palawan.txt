@@ -1,0 +1,14 @@
+owner = FRM
+controller = FRM
+capital = "Palawan"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = sugar
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = FRM
+add_core = SUL
+add_core = TDO
+discovered_by = chinese

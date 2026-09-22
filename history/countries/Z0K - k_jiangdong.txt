@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = chinese
+religion = confucianism
+primary_culture = jianghuai
+capital = 2145
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Chéngyù"
+		dynasty = "Xí"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1394.5.31
+		religion = confucianism
+		culture = jianghuai
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = drunkard_personality
+	queen = {
+		name = "Yóuyú"
+		dynasty = "Zhu"
+		adm = 4
+		dip = 2
+		mil = 5
+		country_of_origin = Z0K
+		birth_date = 1427.8.4
+		death_date = 1487.8.4
+		female = yes
+		religion = confucianism
+		culture = chihan
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = loose_lips_personality
+	heir = {
+		name = "Zi'ang"
+		monarch_name = "Zi'ang"
+		dynasty = "Xí"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1424.5.1
+		death_date = 1489.5.1
+		claim = 89
+		religion = confucianism
+		culture = chihan
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 65
+	add_treasury = 65
+}

@@ -1,0 +1,57 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan
+primary_culture = mongol
+capital = 4206
+fixed_capital = 4206
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Nugu"
+		dynasty = "Nugu"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 1401.1.16
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = just_personality
+	queen = {
+		name = "Checheyigen"
+		dynasty = "Doudleby"
+		adm = 6
+		dip = 4
+		mil = 6
+		country_of_origin = Y0Q
+		birth_date = 1401.8.15
+		death_date = 1461.8.15
+		female = yes
+		religion = sunni
+		culture = oirats
+	}
+	add_queen_personality = cruel_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Bogen"
+		monarch_name = "Bogen"
+		dynasty = "Nugu"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1434.3.3
+		death_date = 1499.3.3
+		claim = 89
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_heir_personality = industrious_personality
+	add_heir_personality = lawgiver_personality
+}
+1444.11.11= {
+	add_prestige = 59
+	add_treasury = 45
+}

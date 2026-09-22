@@ -1,0 +1,15 @@
+owner = PLT
+controller = PLT
+capital = "Ula"
+is_city = yes
+culture = lithuanian
+religion = catholic
+trade_goods = iron
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = PLT
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

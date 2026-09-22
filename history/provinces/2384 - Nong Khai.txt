@@ -1,0 +1,14 @@
+owner = Y25
+controller = Y25
+capital = "Nong Khai"
+is_city = yes
+culture = lao
+religion = hinduism
+trade_goods = silk
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = LUA
+add_core = Y25
+discovered_by = chinese
+discovered_by = indian

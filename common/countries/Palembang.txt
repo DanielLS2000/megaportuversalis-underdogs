@@ -1,0 +1,102 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 163 68 149 }
+revolutionary_colors = { 10 8 10 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Arya Tunggalningrat #1" = 10
+	"Asmara #0" = -1
+	"Bagus #0" = 0
+	"Balaputradewa #1" = 10
+	"Cahaya #0" = 0
+	"Catur #0" = -1
+	"Cudamani #1" = 10
+	"Damar #0" = 0
+	"Darmawan #1" = 10
+	"Demang #0" = 0
+	"Deva #1" = 10
+	"Dharanindra #1" = 10
+	"Haji #1" = 10
+	"Hulukujang #1" = 10
+	"Jati #1" = 10
+	"Kamuning #1" = 10
+	"Kemala #0" = -1
+	"Langlangbhumi #1" = 10
+	"Maha Sajan #0" = 0
+	"Mahardika #1" = -1
+	"Maravijayottungavarman #1" = 10
+	"Meuligoe #0" = 0
+	"Panca #0" = 0
+	"Ratna #0" = -1
+	"Saladu #1" = 10
+	"Samaratungga #1" = 10
+	"Sanghyang Ageung #1" = 10
+	"Sangrama Vijayatunggavarman #1" = 10
+	"Siti #0" = -1
+	"Sri Indravarman #2" = 10
+	"Sri Jayanasa #1" = 10
+	"Sumatrabhumi #1" = 10
+	"Susilawati #0" = -1
+	"Tara #1" = -1
+	"Tariwulan #1" = 10
+	"Udayaditya #1" = 10
+	"Aguan #0" = -1
+}
+leader_names = {
+	"Abdulfatah"
+	"Ahmad"
+	"Amir"
+	"Anwar"
+	"Azmi"
+	"Batuta"
+	"Chairul"
+	"Hamzah"
+	"Hasanuddin"
+	"Ibnu"
+	"Kyai"
+	"Mahat"
+	"Mukhtar"
+	"Najamuddin"
+	"Natzar"
+	"Nazmizan"
+	"Roem"
+	"Syarifuddin"
+	"Zulkifli"
+}
+ship_names = {
+	"Alas"
+	"Gunung Peuetsagoe"
+	"Jamboaye"
+	"Malik Al-Salih"
+	"Malik ul Salih"
+	"Peg Pusat"
+	"Peg Serbeulangit"
+	"Peusangen"
+	"Pulau Breueh"
+	"Pulau we"
+	"Samandara"
+	"Siak"
+	"Simpang-kiri"
+	"Teunom"
+	"Tripa"
+}
+special_unit_culture = south_east_asian_special

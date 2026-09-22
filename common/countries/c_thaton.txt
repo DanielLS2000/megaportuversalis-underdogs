@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 95 59 118 }
+monarch_names = {
+	"Alaungpaya #2" = 10
+	"Aminna #1" = 10
+	"Bayinnaung #0" = 0
+	"Chéngyù #1" = 10
+	"Dhamma #1" = 10
+	"Ganda #1" = 10
+	"Kyawswa #1" = 10
+	"Lin #1" = 10
+	"Maddaka #1" = 10
+	"Maha Seitta #1" = 10
+	"Manuha #1" = 10
+	"Maradi #1" = 10
+	"Narathihapate #0" = 0
+	"Salin Minthami #0" = -1
+	"Thumana #1" = 10
+	"Thuzar #1" = -1
+	"Udinna #1" = 10
+	"Yáoxiá #0" = -1
+	"Zayar #2" = 10
+	"Zeya #1" = 10
+	"Zeyar #1" = 10
+}

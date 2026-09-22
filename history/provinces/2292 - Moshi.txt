@@ -1,0 +1,15 @@
+owner = Z04
+controller = Z04
+capital = "Bajibo"
+is_city = yes
+culture = yorumba
+religion = shamanism
+trade_goods = tropical_wood
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = Z04
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

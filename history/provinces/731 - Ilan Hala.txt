@@ -1,0 +1,14 @@
+owner = Z5R
+controller = Z5R
+capital = "Ilan Hala"
+is_city = yes
+culture = dynamic-mongol-culture-num7
+religion = tengri_pagan
+trade_goods = naval_supplies
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z17
+add_core = Z5R
+discovered_by = chinese
+discovered_by = nomad_group

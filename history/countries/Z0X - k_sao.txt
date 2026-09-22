@@ -1,0 +1,59 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = east_african
+religion = coptic
+primary_culture = amhara
+capital = 1159
+mercantilism = 15
+add_accepted_culture = kanuri
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Säyfä"
+		dynasty = "Zagwe-Dherbe"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1384.9.24
+		religion = coptic
+		culture = amhara
+	}
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = drunkard_personality
+	queen = {
+		name = "Gelennis"
+		dynasty = "iš Varme"
+		adm = 2
+		dip = 4
+		mil = 2
+		country_of_origin = Z0X
+		birth_date = 1384.9.2
+		death_date = 1444.9.2
+		female = yes
+		religion = coptic
+		culture = pruthenian
+	}
+	add_queen_personality = charismatic_negotiator_personality
+	add_queen_personality = free_thinker_personality
+	heir = {
+		name = "Bilén Saba"
+		monarch_name = "Bilén Saba"
+		dynasty = "Zagwe-Dherbe"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1410.8.5
+		death_date = 1475.8.5
+		female = yes
+		claim = 89
+		religion = coptic
+		culture = amhara
+	}
+	add_heir_personality = secretive_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 85
+	add_treasury = 63
+}

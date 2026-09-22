@@ -1,0 +1,18 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 0 85 40 }
+monarch_names = {
+	"Agbarjin #1" = 10
+	"Aldar #1" = 10
+	"Ariq #1" = 10
+	"Bodi #1" = 10
+	"Bolot #1" = 10
+	"Darayisung #1" = 10
+	"Dashi-Dorzho #1" = 10
+	"Guluun #1" = 10
+	"Jebe #1" = 10
+	"Oljaitu #1" = 10
+	"Tekhe #1" = 10
+	"Toghun #1" = 10
+	"Zamso #1" = 10
+}

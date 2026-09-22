@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 80 50 23 }
+monarch_names = {
+	"Afuribe #1" = 10
+	"Guranduk #0" = -1
+	"Jogosang #1" = 10
+	"Kanetuaynu #0" = 0
+	"Kanririka #2" = 10
+	"Kinarapuk #0" = -1
+	"Menkakus #2" = 10
+	"Onipis #0" = 0
+	"Ponni #1" = 10
+	"Sahpo #0" = 0
+	"Sirotmaaynu #0" = 0
+	"Sisratoka #0" = 0
+	"Sokhatai #0" = -1
+	"Sonko #0" = 0
+	"Yìfang #1" = 10
+	"Šišihuan #1" = 10
+}

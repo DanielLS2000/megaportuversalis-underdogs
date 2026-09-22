@@ -1,0 +1,15 @@
+owner = FRA
+controller = FRA
+capital = "Charolles"
+is_city = yes
+culture = burgundian
+religion = catholic
+trade_goods = salt
+base_tax = 4
+base_production = 4
+base_manpower = 3
+add_core = FRA
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

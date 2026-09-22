@@ -1,0 +1,16 @@
+owner = Z0J
+controller = Z0J
+capital = "Nupe"
+is_city = yes
+culture = nupe
+religion = coptic
+trade_goods = coffee
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = NUP
+add_core = Z0J
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

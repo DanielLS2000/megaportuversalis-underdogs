@@ -1,0 +1,131 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 154 69 116 }
+revolutionary_colors = { 9 0 5 }
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	economic_ideas
+	quality_ideas
+	diplomatic_ideas
+	administrative_ideas
+	aristocracy_ideas
+	quantity_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	russian_cuirassier
+	russian_lancer
+	russian_mass
+	slavic_stradioti
+}
+monarch_names = {
+	"Agnieszka #0" = -1
+	"Alexandr #0" = 0
+	"Bezprym #0" = 0
+	"Czcibór #0" = 0
+	"Czyrzniech #0" = 0
+	"Danhadlwen #0" = -1
+	"Daniel #0" = 0
+	"Dobroniega #0" = -1
+	"Domawuj #0" = 0
+	"Elzbieta #0" = -1
+	"Gedivilas #1" = 10
+	"Glande #0" = 0
+	"Golding #1" = 10
+	"Gulbis #0" = -1
+	"Gurbesu #0" = -1
+	"Janusz #0" = 0
+	"Jolanta #0" = -1
+	"Karol #0" = 0
+	"Kukovaitis #1" = 10
+	"Lasukas #2" = 10
+	"Margit #0" = -1
+	"Minigaila #0" = 0
+	"Mun-hui #0" = -1
+	"Ostman #1" = 10
+	"Prusas #1" = 10
+	"Rasa #1" = -1
+	"Rimvydas #1" = 10
+	"Samthann #0" = -1
+	"Snowid #0" = 0
+	"Spytko #0" = 0
+	"Stefan #0" = 0
+	"Stig #0" = 0
+	"Trojden #0" = 0
+	"Wszemila #0" = -1
+	"Wladyslaw #0" = 0
+	"Swietopelk #0" = 0
+	"Swietoslaw #0" = 0
+	"Swietoslawa #0" = -1
+}
+leader_names = {
+	"Alseniskis"
+	"Astikas"
+	"Chodkevicius"
+	"Daukantas"
+	"Dauksa"
+	"Denhofas"
+	"Giedraitis"
+	"Gosevskis"
+	"Gostautas"
+	"Kesgaila"
+	"Kiska"
+	"Kosakovskis"
+	"Kulvietis"
+	"Lietuvis"
+	"Masalskis"
+	"Mazvydas"
+	"Nemirovicius"
+	"Oginskis"
+	"Ostrogiskis"
+	"Pacas"
+	"Pociejus"
+	"Radvila"
+	"Rapolionis"
+	"Rimsa"
+	"Sanguska"
+	"Sapiega"
+	"Simonavicius"
+	"Sirvydas"
+	"Skorina"
+	"Sluska"
+	"Sosnovskis"
+	"Svyriskis"
+	"Tiskevicius"
+	"Valancius"
+	"Valavicius"
+	"Visniovieckis"
+	"Zabiela"
+}
+ship_names = {
+	"Alytus"
+	"Birzai"
+	"Druskininkai"
+	"Gardinas"
+	"Jonava"
+	"Kaunas"
+	"Kretinga"
+	"Kreva"
+	"Lazdijai"
+	"Naugardukas"
+	"Palanga"
+	"Raseiniai"
+	"Siauliai"
+	"Sventoji"
+	"Taurage"
+	"Telsiai"
+	"Trakai"
+	"Utena"
+	"Vilkmerge"
+}

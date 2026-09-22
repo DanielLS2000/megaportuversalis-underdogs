@@ -1,0 +1,13 @@
+owner = Y3V
+controller = Y3V
+capital = "Kobdo"
+is_city = yes
+culture = dynamic-mongol-culture-num4
+religion = nestorian
+trade_goods = cloth
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Y3V
+discovered_by = chinese
+discovered_by = nomad_group

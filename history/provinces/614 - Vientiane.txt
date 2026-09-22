@@ -1,0 +1,17 @@
+owner = ANN
+controller = ANN
+capital = "Vientiane"
+is_city = yes
+culture = vietnamese
+religion = hinduism
+trade_goods = grain
+base_tax = 3
+base_production = 3
+base_manpower = 1
+extra_cost = 8
+center_of_trade = 1
+add_core = ANN
+add_core = CHK
+add_core = DAI
+discovered_by = chinese
+discovered_by = indian

@@ -1,0 +1,15 @@
+owner = Y2S
+controller = Y2S
+capital = "Kratie"
+is_city = yes
+culture = cham
+religion = jain
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = CHA
+add_core = Y2S
+add_permanent_claim = Z63
+discovered_by = chinese
+discovered_by = indian

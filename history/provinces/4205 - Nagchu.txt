@@ -1,0 +1,15 @@
+owner = Z5A
+controller = Z5A
+capital = "Nagchu"
+is_city = yes
+culture = sumpa
+religion = mahayana
+trade_goods = livestock
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = TIB
+add_core = Z5A
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

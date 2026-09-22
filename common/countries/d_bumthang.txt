@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 134 173 35 }
+monarch_names = {
+	"Byeok-hwa #0" = -1
+	"Chung-gong #0" = 0
+	"Dechan Zapa #1" = 10
+	"Deok-man #0" = -1
+	"Hyeon-seok #0" = 0
+	"Ji-ui #0" = -1
+	"Jinpa Skamar #1" = 10
+	"Lobsang Tsewang #1" = 10
+	"Mun-hui #0" = -1
+	"Ngawang Rinchen #1" = 10
+	"Nima Assam #1" = 10
+	"Pemba Goba #1" = 10
+	"Sangye Wangdak #1" = 10
+	"Sindhu #1" = 10
+	"Tenzin Gyaltso #1" = 10
+	"Thubten Zonpa #1" = 10
+	"Ui-ja #0" = 0
+	"Ui-yeong #0" = 0
+	"Yeshe Lhakpa #1" = 10
+	"Yongten Nam-kha #1" = 10
+	"Zenji Jigme #2" = 10
+}

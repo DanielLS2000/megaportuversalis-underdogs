@@ -1,0 +1,16 @@
+owner = Z75
+controller = Z75
+capital = "Phetchaburi"
+is_city = yes
+culture = central_thai
+religion = confucianism
+trade_goods = tropical_wood
+base_tax = 1
+base_production = 3
+base_manpower = 1
+add_core = AYU
+add_core = Z75
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

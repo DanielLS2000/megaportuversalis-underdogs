@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 115 170 195 }
+monarch_names = {
+	"Gulçiçek #0" = -1
+	"Gunes #1" = -1
+	"Ipekel #0" = -1
+	"Itlar #0" = 0
+	"Khorchi #0" = 0
+	"Kuntuvdi #0" = 0
+	"Parush #1" = 10
+	"Peksen #0" = -1
+	"Sibel #0" = -1
+	"Sirçan #0" = 0
+	"Sokal #1" = 10
+	"Sugr #0" = 0
+	"Taalay #0" = 0
+	"Tugor #0" = 0
+	"Tuhan #1" = 10
+	"Uzur #0" = 0
+	"Çilbu #1" = 10
+}

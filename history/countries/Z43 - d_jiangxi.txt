@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = chinese
+religion = buddhism
+primary_culture = gan
+capital = 683
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Jìngxuán"
+		dynasty = "Shen"
+		adm = 2
+		dip = 4
+		mil = 2
+		birth_date = 1407.9.2
+		religion = buddhism
+		culture = gan
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Fachéng"
+		dynasty = "Xí"
+		adm = 5
+		dip = 3
+		mil = 4
+		country_of_origin = Z43
+		birth_date = 1421.5.13
+		death_date = 1481.5.13
+		female = yes
+		religion = buddhism
+		culture = chihan
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = drunkard_personality
+	heir = {
+		name = "Chéngyù"
+		monarch_name = "Chéngyù"
+		dynasty = "Yuán"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1371.10.2
+		death_date = 1436.10.2
+		claim = 89
+		religion = confucianism
+		culture = chihan
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 64
+}

@@ -1,0 +1,14 @@
+owner = NBI
+controller = NBI
+capital = "Fofa"
+is_city = yes
+culture = sidamo
+religion = coptic
+trade_goods = slaves
+base_tax = 1
+base_production = 3
+base_manpower = 1
+add_core = KAF
+add_core = NBI
+discovered_by = east_african
+discovered_by = muslim

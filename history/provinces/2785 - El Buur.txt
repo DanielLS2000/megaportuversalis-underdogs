@@ -1,0 +1,16 @@
+owner = ZAN
+controller = ZAN
+capital = "El Buur"
+is_city = yes
+culture = somali
+religion = sunni
+trade_goods = iron
+base_tax = 4
+base_production = 1
+base_manpower = 2
+add_core = ZAN
+add_permanent_claim = MDI
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

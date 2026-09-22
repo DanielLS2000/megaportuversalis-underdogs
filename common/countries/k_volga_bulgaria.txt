@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 97 56 55 }
+monarch_names = {
+	"Akhad Moskha #1" = 10
+	"Ashraf Baluq #2" = 10
+	"Azgar #1" = 10
+	"Buzan #1" = 10
+	"Hilppa #0" = 0
+	"Ibrahim #1" = 10
+	"Kariton #1" = 10
+	"Koma #0" = 0
+	"Masgut #1" = 10
+	"Ovtay #1" = 10
+	"Pokshayka #0" = 0
+	"Rateg #0" = 0
+	"Selim Kolyn #1" = 10
+	"Sirin #0" = -1
+	"Sokhron #1" = 10
+	"Talib Mumin #1" = 10
+	"Timar Mumin Badjanak #1" = 10
+	"Trifon #0" = 0
+	"Ulita #0" = -1
+	"Vidyava #0" = -1
+	"Wujun #1" = 10
+}

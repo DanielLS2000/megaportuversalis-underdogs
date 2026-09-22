@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 63 69 176 }
+monarch_names = {
+	"Afuribe #1" = 10
+	"Asiriro #1" = -1
+	"Atvuk #1" = 10
+	"Dingju #1" = 10
+	"Ikokina #0" = 0
+	"Juguta #1" = 10
+	"Kakura #1" = -1
+	"Kazume #0" = -1
+	"Komahiru #0" = 0
+	"Kuniharu #1" = 10
+	"Kunime #1" = -1
+	"Michitarime #0" = -1
+	"Morome #1" = -1
+	"Nailahu #1" = -1
+	"Oyasu #0" = -1
+	"Ponashk #0" = -1
+	"Ponni #1" = 10
+	"Tohashiko #0" = 0
+	"Tomitada #1" = 10
+	"Umkhun #0" = -1
+	"Vadun #0" = 0
+	"Yurik #0" = -1
+}

@@ -1,0 +1,15 @@
+owner = ANN
+controller = ANN
+capital = "Sukhothai"
+is_city = yes
+culture = mon
+religion = mahayana
+trade_goods = chinaware
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = ANN
+add_core = AYU
+add_core = PEG
+discovered_by = chinese
+discovered_by = indian

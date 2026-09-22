@@ -1,0 +1,14 @@
+owner = Z7M
+controller = Z7M
+capital = "Shigatse"
+is_city = yes
+culture = dynamic-tibetan-culture-num2
+religion = sunni
+trade_goods = incense
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = Z7M
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

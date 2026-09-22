@@ -1,0 +1,15 @@
+owner = NOV
+controller = NOV
+capital = "Kholm"
+is_city = yes
+culture = dynamic-russian_culture-culture-num2
+religion = catholic
+trade_goods = naval_supplies
+base_tax = 1
+base_production = 4
+base_manpower = 2
+add_core = NOV
+add_permanent_claim = NOV
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

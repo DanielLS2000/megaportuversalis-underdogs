@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = chinese
+religion = mahayana
+primary_culture = korean
+capital = 596
+fixed_capital = 596
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Eung-gu"
+		dynasty = "Tuodong Wang"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1385.2.12
+		religion = mahayana
+		culture = korean
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = secretive_personality
+	queen = {
+		name = "Bo-hui"
+		dynasty = "Doudleby"
+		adm = 6
+		dip = 3
+		mil = 5
+		country_of_origin = Z8L
+		birth_date = 1409.1.25
+		death_date = 1469.1.25
+		female = yes
+		religion = mahayana
+		culture = korean
+	}
+	add_queen_personality = conqueror_personality
+	add_queen_personality = industrious_personality
+	heir = {
+		name = "Jeong-hyeon"
+		monarch_name = "Jeong-hyeon"
+		dynasty = "Tuodong Wang"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1416.8.30
+		death_date = 1481.8.30
+		claim = 89
+		religion = mahayana
+		culture = korean
+	}
+	add_heir_personality = careful_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 78
+	add_treasury = 48
+}

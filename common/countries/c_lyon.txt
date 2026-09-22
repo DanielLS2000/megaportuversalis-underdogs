@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 95 6 70 }
+monarch_names = {
+	"Arsenda #1" = -1
+	"Artau #4" = 10
+	"Bakr #1" = 10
+	"Cleirui #0" = -1
+	"Guilhèm #3" = 10
+	"Guiraud #2" = 10
+	"Gurmael #0" = 0
+	"Lothaire #1" = 10
+	"Medâr #1" = 10
+	"Modestus #1" = 10
+	"Oddon #1" = 10
+	"Peyre #1" = 10
+	"Raeddeg #0" = 0
+	"Ramhilde #1" = -1
+	"Rumun #0" = -1
+	"Vuodo #1" = 10
+}

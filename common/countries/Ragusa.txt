@@ -1,0 +1,79 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 160 82 128 }
+revolutionary_colors = { 5 13 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	administrative_ideas
+	maritime_ideas
+	economic_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Andela #1" = -1
+	"Branimir #0" = 0
+	"Domald #1" = 10
+	"Filici #0" = 0
+	"Koloman #0" = 0
+	"Mladen #0" = 0
+	"Màura #0" = -1
+	"Priaslav #1" = 10
+	"Radoslav #0" = 0
+	"Rinaldu #0" = 0
+	"Vjekoslava #0" = -1
+}
+leader_names = {
+	"Bona"
+	"Bosdari"
+	"Boshko"
+	"Caboga"
+	"Cerva"
+	"Ghetaldi"
+	"Giorgi"
+	"Gondola"
+	"Gozze"
+	"Gradic"
+	"Gundulic"
+	"Luccari"
+	"Pozza"
+	"Reesti"
+	"Saraca"
+	"Sorgo"
+	"Tudisi"
+	"Vucic"
+	"Zamagna"
+	"Zlataric"
+}
+ship_names = {
+	"Dubac"
+	"Gromaca"
+	"Kolocap"
+	"Komlac"
+	"Kupari"
+	"Mokosica"
+	"Orasac"
+	"Ragusa"
+	"Rozat"
+	"Trsteno"
+	"Zanton"
+}

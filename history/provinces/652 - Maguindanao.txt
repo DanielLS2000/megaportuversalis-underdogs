@@ -1,0 +1,13 @@
+owner = BTU
+controller = BTU
+capital = "Maguindanao"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = BTU
+add_core = SUL
+discovered_by = chinese

@@ -1,0 +1,17 @@
+owner = MDV
+controller = MDV
+capital = "Kashin"
+is_city = yes
+culture = dynamic-mordvin-russian_culture-culture-num1
+religion = catholic
+trade_goods = livestock
+fort_15th = yes
+base_tax = 4
+base_production = 6
+base_manpower = 3
+add_core = MDV
+add_permanent_claim = MOS
+discovered_by = KAZ
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

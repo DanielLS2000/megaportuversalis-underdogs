@@ -1,0 +1,17 @@
+owner = TER
+controller = TER
+capital = "Butuan"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = gems
+base_tax = 1
+base_production = 2
+base_manpower = 3
+extra_cost = 8
+center_of_trade = 1
+add_core = MAS
+add_core = SUL
+add_core = TER
+add_permanent_claim = BTU
+discovered_by = chinese

@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = muslim
+religion = catholic
+primary_culture = andalucian
+capital = 220
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Jahwar III"
+		dynasty = "Jahwarid"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1427.2.17
+		religion = catholic
+		culture = andalucian
+	}
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Ibtisam"
+		dynasty = "Ayyaid"
+		adm = 4
+		dip = 2
+		mil = 4
+		country_of_origin = VAL
+		birth_date = 1425.10.24
+		death_date = 1485.10.24
+		female = yes
+		religion = catholic
+		culture = andalucian
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = secretive_personality
+	heir = {
+		name = "Thashim"
+		monarch_name = "Thashim"
+		dynasty = "Jahwarid"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1428.10.10
+		death_date = 1493.10.10
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = andalucian
+	}
+	add_heir_personality = conqueror_personality
+	add_heir_personality = expansionist_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 72
+}

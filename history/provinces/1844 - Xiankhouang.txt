@@ -1,0 +1,14 @@
+owner = ANN
+controller = ANN
+capital = "Muang Khoun"
+is_city = yes
+culture = vietnamese
+religion = buddhism
+trade_goods = grain
+base_tax = 1
+base_production = 4
+base_manpower = 3
+add_core = ANN
+add_core = DAI
+discovered_by = chinese
+discovered_by = indian

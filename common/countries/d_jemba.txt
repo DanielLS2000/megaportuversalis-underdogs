@@ -1,0 +1,11 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 186 13 53 }
+monarch_names = {
+	"Asalup #1" = 10
+	"Aydogan #1" = 10
+	"Dash-demir #1" = 10
+	"Tekçe #1" = -1
+	"Tetr #1" = 10
+	"Yaman #1" = 10
+}

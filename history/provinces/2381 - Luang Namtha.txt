@@ -1,0 +1,14 @@
+owner = RYU
+controller = RYU
+capital = "Luang Namtha"
+is_city = yes
+culture = bai
+religion = zoroastrian
+trade_goods = tea
+base_tax = 3
+base_production = 2
+base_manpower = 2
+add_core = RYU
+add_core = Z6E
+discovered_by = chinese
+discovered_by = indian

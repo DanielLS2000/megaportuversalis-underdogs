@@ -1,0 +1,15 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 80 130 160 }
+monarch_names = {
+	"Aldar #1" = 10
+	"Begünütei #1" = 10
+	"Bodonchar Munkhag #1" = 10
+	"Damba #1" = 10
+	"Doquz #1" = -1
+	"Dzhirgan #1" = 10
+	"Kharkhul #1" = 10
+	"Kolor #1" = 10
+	"Mingian #1" = 10
+	"Sayn #1" = 10
+}

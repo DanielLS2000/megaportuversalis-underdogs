@@ -1,0 +1,15 @@
+owner = BNG
+controller = BNG
+capital = "Purang"
+is_city = yes
+culture = bengali
+religion = vajrayana
+trade_goods = wool
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = BNG
+add_permanent_claim = GUG
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

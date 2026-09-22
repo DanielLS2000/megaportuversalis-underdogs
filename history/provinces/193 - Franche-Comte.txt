@@ -1,0 +1,17 @@
+owner = BUR
+controller = BUR
+capital = "Besançon"
+is_city = yes
+culture = arpitan
+religion = catholic
+trade_goods = salt
+fort_15th = yes
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = BUR
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

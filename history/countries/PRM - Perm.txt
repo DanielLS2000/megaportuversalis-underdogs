@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = buddhism
+primary_culture = bashkir
+capital = 2444
+fixed_capital = 2444
+1444.11.11= {
+	monarch = {
+		name = "Ebegei"
+		dynasty = "Borjigin"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1393.5.13
+		female = yes
+		religion = buddhism
+		culture = bashkir
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Baghpala"
+		dynasty = "Doudleby"
+		adm = 5
+		dip = 1
+		mil = 5
+		country_of_origin = PRM
+		birth_date = 1399.6.21
+		death_date = 1459.6.21
+		religion = buddhism
+		culture = rajput
+	}
+	add_queen_personality = free_thinker_personality
+	add_queen_personality = sinner_personality
+	heir = {
+		name = "Sonu"
+		monarch_name = "Sonu"
+		dynasty = "Borjigin"
+		adm = 5
+		dip = 6
+		mil = 6
+		birth_date = 1417.2.16
+		death_date = 1482.2.16
+		claim = 89
+		religion = catholic
+		culture = dynamic-sindhi-culture-num1
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = infertile_personality
+}
+1444.11.11= {
+	add_prestige = 89
+	add_treasury = 47
+}

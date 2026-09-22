@@ -1,0 +1,16 @@
+owner = Z2A
+controller = Z2A
+capital = "Caceres"
+is_city = yes
+culture = galician
+religion = catholic
+trade_goods = wool
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = Z2A
+add_permanent_claim = Z01
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = nestorian
+primary_culture = mongol
+capital = 1970
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Aitungga"
+		dynasty = "Aitunggid"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 1389.2.20
+		religion = nestorian
+		culture = mongol
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Temülün"
+		dynasty = "Doudleby"
+		adm = 2
+		dip = 4
+		mil = 2
+		country_of_origin = Z6L
+		birth_date = 1399.2.9
+		death_date = 1459.2.9
+		female = yes
+		religion = nestorian
+		culture = mongol
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Bolkhadar"
+		monarch_name = "Bolkhadar"
+		dynasty = "Aitunggid"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1424.9.8
+		death_date = 1489.9.8
+		claim = 89
+		religion = nestorian
+		culture = mongol
+	}
+	add_heir_personality = lawgiver_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 69
+	add_treasury = 29
+}

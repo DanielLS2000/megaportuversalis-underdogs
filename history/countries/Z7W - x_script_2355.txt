@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = tengri_pagan
+primary_culture = manchu
+capital = 4216
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Hulubu"
+		dynasty = "Sahaliula"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1380.11.2
+		religion = tengri_pagan
+		culture = manchu
+	}
+	add_ruler_personality = midas_touched_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Usunbike"
+		dynasty = "Kutan"
+		adm = 3
+		dip = 3
+		mil = 3
+		country_of_origin = Z7W
+		birth_date = 1386.4.6
+		death_date = 1446.4.6
+		female = yes
+		religion = tengri_pagan
+		culture = nogaybak
+	}
+	add_queen_personality = charismatic_negotiator_personality
+	add_queen_personality = pious_personality
+	heir = {
+		name = "Šielihu"
+		monarch_name = "Šielihu"
+		dynasty = "Sahaliula"
+		adm = 6
+		dip = 2
+		mil = 4
+		birth_date = 1403.9.22
+		death_date = 1468.9.22
+		claim = 89
+		religion = tengri_pagan
+		culture = manchu
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 81
+	add_treasury = 52
+}

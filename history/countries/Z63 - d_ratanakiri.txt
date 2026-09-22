@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = hinduism
+primary_culture = cham
+capital = 1823
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "(Regency Council)"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1.1.1
+		regent = yes
+		religion = hinduism
+		culture = cham
+	}
+	heir = {
+		name = "Sakrasvami III"
+		dynasty = "Gajveta"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1439.5.28
+		death_date = 1504.5.28
+		claim = 89
+		religion = hinduism
+		culture = cham
+	}
+}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 66
+}

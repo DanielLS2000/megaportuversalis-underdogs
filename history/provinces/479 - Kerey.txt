@@ -1,0 +1,7 @@
+capital = "Kerey"
+culture = nogaybak
+religion = vajrayana
+trade_goods = copper
+base_tax = 1
+base_production = 1
+base_manpower = 1

@@ -1,0 +1,13 @@
+owner = LUW
+controller = LUW
+capital = "Laguna"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = LUW
+add_core = SUL
+discovered_by = chinese

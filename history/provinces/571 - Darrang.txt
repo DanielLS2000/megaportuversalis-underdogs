@@ -1,0 +1,14 @@
+owner = Z57
+controller = Z57
+capital = "Koliabar"
+is_city = yes
+culture = nepali
+religion = mahayana
+trade_goods = silk
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = Z57
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

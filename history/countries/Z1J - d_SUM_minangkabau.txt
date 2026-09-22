@@ -1,0 +1,57 @@
+government = tribal
+add_government_reform = feudal_tribe
+government_rank = 1
+technology_group = chinese
+religion = mahayana
+primary_culture = sumatran
+capital = 2682
+add_accepted_culture = javanese
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Sri Jayanasa"
+		dynasty = "Tulang"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1410.5.30
+		religion = mahayana
+		culture = sumatran
+	}
+	add_ruler_personality = loose_lips_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Dewi Somya"
+		dynasty = "Dieng"
+		adm = 3
+		dip = 1
+		mil = 3
+		country_of_origin = Z1J
+		birth_date = 1409.7.2
+		death_date = 1469.7.2
+		female = yes
+		religion = mahayana
+		culture = javanese
+	}
+	add_queen_personality = bold_fighter_personality
+	add_queen_personality = free_thinker_personality
+	heir = {
+		name = "Bima"
+		monarch_name = "Bima"
+		dynasty = "Tulang"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1430.10.6
+		death_date = 1495.10.6
+		claim = 89
+		religion = mahayana
+		culture = sumatran
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 84
+	add_treasury = 79
+}

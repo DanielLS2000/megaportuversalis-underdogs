@@ -1,0 +1,15 @@
+owner = FRM
+controller = FRM
+capital = "Manila"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = chinaware
+base_tax = 1
+base_production = 1
+base_manpower = 3
+extra_cost = 16
+center_of_trade = 2
+add_core = FRM
+add_core = SUL
+discovered_by = chinese
