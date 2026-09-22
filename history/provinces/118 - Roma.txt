@@ -5,7 +5,6 @@ is_city = yes
 culture = umbrian
 religion = catholic
 trade_goods = paper
-hre = yes
 base_tax = 14
 base_production = 7
 base_manpower = 6
