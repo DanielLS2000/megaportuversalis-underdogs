@@ -1,0 +1,4 @@
+the_great_migration =  {
+    land_forcelimit_modifier = 0.25
+	colonist_placement_chance = 0.05
+}

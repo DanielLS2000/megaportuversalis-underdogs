@@ -1,6 +1,7 @@
 country_decisions = {
 	dalmatian_migration = {
         major = yes
+        color = { 46 128 188 }
         potential = {
             tag = CNR
             NOT = { capital = 490 }
@@ -22,7 +23,7 @@ country_decisions = {
                 add_base_production = -50
                 add_base_manpower = -50
                 
-                # Remove os núcleos, reivindicações e abandona as ilhas
+                # Remove os cores, reivindicações e abandona as ilhas
                 remove_core = ROOT
                 remove_claim = ROOT
                 cede_province = --- 
@@ -40,7 +41,7 @@ country_decisions = {
             # Total de +5 de Dev por vizinho
             490 = {
                 every_neighbor_province = {
-                    limit = { 
+                    limit = {
                         is_sea = no
                         is_wasteland = no
                         owned_by = ROOT 
@@ -57,8 +58,8 @@ country_decisions = {
             
             # Mensagem ou lore na interface (Opcional - Adiciona fervor e moral para compensar as perdas)
             add_country_modifier = {
-                name = "the_great_migration_spirit"
-                duration = 3650 # 10 anos de bônus por sobreviverem à viagem
+                name = "the_great_migration"
+                duration = 3650
             }
         }
     }

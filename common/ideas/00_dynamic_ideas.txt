@@ -581,6 +581,8 @@ dynamic-mordvin-russian_culture-culture-num1_ideas = {
 	}
 	trigger = {
 		culture = dynamic-mordvin-russian_culture-culture-num1
+		NOT = { tag = MDV }
+		NOT = { tag = RUS }
 	}
 	free = yes
 
@@ -2056,6 +2058,8 @@ dynamic-croatian-sicilian-culture-num1_ideas = {
 	}
 	trigger = {
 		culture = dynamic-croatian-sicilian-culture-num1
+		NOT = { tag = BSB }
+		NOT = { tag = ILY }
 	}
 	free = yes
 

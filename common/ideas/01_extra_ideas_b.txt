@@ -528,7 +528,7 @@ african_christian_ideas = {
 			capital_scope = { region = maghreb_region }
 			culture_group = maghrebi
 		}
-		NOT = {TAG = Z06}
+		NOT = {TAG = CNR}
 	}
 	free = yes
 
