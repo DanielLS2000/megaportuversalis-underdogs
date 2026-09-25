@@ -1,0 +1,65 @@
+country_decisions = {
+	dalmatian_migration = {
+        major = yes
+        potential = {
+            tag = CNR
+            NOT = { capital = 490 }
+            has_discovered = 490
+        }
+        allow = {
+            owns_core_province = 490
+            is_at_war = no
+            owns_entire_area = macaronesia_area 
+        }
+        
+        effect = {
+            # 1. O GRANDE ÊXODO (Descolonizar Macaronésia)
+            macaronesia_area = {
+                limit = { owned_by = ROOT }
+                
+                # Zera o desenvolvimento para o mínimo (1/1/1)
+                add_base_tax = -50
+                add_base_production = -50
+                add_base_manpower = -50
+                
+                # Remove os núcleos, reivindicações e abandona as ilhas
+                remove_core = ROOT
+                remove_claim = ROOT
+                cede_province = --- 
+            }
+
+            # 2. A FUNDAÇÃO DA NOVA BANI (Reflete a sociedade original: focada em Tax/Manpower)
+            # Total de +27 de Dev
+            490 = {
+                add_base_tax = 12
+                add_base_production = 6
+                add_base_manpower = 9
+            }
+
+            # 3. COLONIZAÇÃO DO INTERIOR (Para cada província vizinha controlada)
+            # Total de +5 de Dev por vizinho
+            490 = {
+                every_neighbor_province = {
+                    limit = { 
+                        is_sea = no
+                        is_wasteland = no
+                        owned_by = ROOT 
+                    }
+                    add_base_tax = 2
+                    add_base_production = 1
+                    add_base_manpower = 2
+                }
+            }
+
+            # 4. NOVA CAPITAL E CONSOLIDAÇÃO
+            set_capital = 490
+            add_prestige = 25
+            
+            # Mensagem ou lore na interface (Opcional - Adiciona fervor e moral para compensar as perdas)
+            add_country_modifier = {
+                name = "the_great_migration_spirit"
+                duration = 3650 # 10 anos de bônus por sobreviverem à viagem
+            }
+        }
+    }
+}
