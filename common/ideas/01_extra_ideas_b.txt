@@ -173,6 +173,8 @@ albion_cultural_ideas = {
 
 	trigger = {
 		culture_group = british							#Mostly for independent duchies in Britain
+		NOT = { tag = ENG }
+		NOT = { tag = GBR }
 	}
 	free = yes
 

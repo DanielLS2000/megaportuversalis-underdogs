@@ -1,27 +1,5 @@
 ### Nation specific idea groups
 
-ENG_ideas = {
-	trigger = {
-		NOT = { tag = GBR } #To force GB into getting British ideas
-		OR = {
-			tag = ENG
-			AND = {
-				num_of_ports = 5
-				num_of_cities = 10
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				is_subject = no
-				OR = {
-					primary_culture = anglosaxon
-					primary_culture = english
-				}
-			}
-		}
-	}
-}
-
 SWE_ideas = {
 	trigger = {
 		OR = {
@@ -904,24 +882,6 @@ ARM_ideas = {
 					government_rank = 3
 				}
 				primary_culture = armenian
-			}
-		}
-	}
-}
-
-
-WLS_ideas = {
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				num_of_cities = 15
-				is_subject = no
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				primary_culture = welsh
 			}
 		}
 	}
