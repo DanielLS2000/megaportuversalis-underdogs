@@ -737,6 +737,7 @@ dynamic-sardinian-culture-num1_ideas = {
 	}
 	trigger = {
 		culture = dynamic-sardinian-culture-num1
+		NOT = { tag = AFR }
 	}
 	free = yes
 

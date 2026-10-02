@@ -7230,52 +7230,6 @@ HAM_ideas = {
 	}
 }
 
-jerusalem_ideas = {
-	start = {
-		global_missionary_strength = 0.02
-		land_morale = 0.15
-	}
-	
-	bonus = {
-		global_manpower_modifier = 0.25
-	}
-	
-	trigger = {
-		tag = KOJ
-		religion_group = christian
-	}
-	free = yes
-	
-	crown_of_thorns = {
-		prestige = 1
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-	latin_patriarch = {
-		papal_influence = 2
-		curia_powers_cost = -0.1
-	}
-	frontier_state = {
-		discipline = 0.05
-	}
-	land_of_the_heathen = {
-		missionaries = 1
-		missionary_maintenance_cost = -0.25
-	}
-	crusader_aristocracy = {
-		leader_land_shock = 1
-	}
-	crusader_castles = {
-		defensiveness = 0.25
-	}
-	cosmopolitan_nobility = {
-		diplomatic_reputation = 2
-	}
-}
-
 KHM_ideas = {
 	start = {
 		advisor_cost = -0.10

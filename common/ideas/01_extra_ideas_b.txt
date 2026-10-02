@@ -531,6 +531,7 @@ african_christian_ideas = {
 			culture_group = maghrebi
 		}
 		NOT = {TAG = CNR}
+		NOT = { TAG = AFR }
 	}
 	free = yes
 

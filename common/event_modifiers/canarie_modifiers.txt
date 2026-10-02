@@ -2,3 +2,143 @@ the_great_migration =  {
     land_forcelimit_modifier = 0.25
 	colonist_placement_chance = 0.05
 }
+
+consolato_del_mar = {
+    colonist_placement_chance = 0.01
+	global_colonial_growth = 5
+}
+
+cnr_arsenal_marines = {
+    allowed_marine_fraction = 0.25
+}
+
+cnr_port_to_the_new_world = {
+    province_trade_power_value = 20
+}
+
+cnr_new_capital = {
+    country_admin_power = 1 
+    country_diplomatic_power = 1 
+}
+
+cnr_new_world_dollar_modifier = {
+    global_trade_power = 0.1
+	inflation_reduction = 0.15
+	burghers_loyalty_modifier = 0.05
+}
+
+cnr_political_monopolist = {
+    unjustified_demands = -0.1
+	diplomatic_upkeep = 1
+}
+
+cnr_conquest_of_california_modifier = {
+	reduced_trade_penalty_on_non_main_tradenode = 0.25
+	trade_efficiency = 0.1
+}
+
+cnr_trade_with_asia_modifier = {
+	merchants = 1
+	trade_company_governing_cost = -0.25
+	trade_steering = 0.05
+}
+
+cnr_wolf_vanguard_morale = {
+	land_morale = 0.05
+	naval_morale = 0.05
+}
+
+cnr_aztecs_conquest_modifier = {
+	center_of_trade_upgrade_cost = -0.25
+	gold_depletion_chance_modifier = -0.33
+}
+
+cnr_universal_monarchy_modifier = {
+	governing_capacity_modifier = 0.1
+	diplomatic_annexation_cost = -0.25
+}
+
+cnr_powerful_trade_ships_modifier = {
+	treasure_fleet_income = 1 
+	global_ship_trade_power = 0.35
+	trade_efficiency = 0.05
+}
+
+cnr_employ_galleon_modifier = {
+	allowed_galleon_fraction = 0.1
+	allowed_caravel_fraction = 0.1
+	has_caravel = yes 
+	has_galleon = yes
+}
+
+cnr_nova_dalmacia = {
+	global_tariffs = 0.1
+	liberty_desire_from_subject_development = -0.1
+	free_dip_policy = 1 
+}
+
+cnr_northern_frontier_modifier = {
+	centralize_state_cost = -0.25
+	country_admin_power = 1
+	reform_progress_growth = 0.1
+}
+
+cnr_iron_wall_of_the_americas_modifier = {
+	force_march_free = yes
+	movement_speed = 0.05
+	fire_damage_received = -0.05
+}
+
+refugee_nation = {
+	development_cost = -0.05
+}
+
+completing_the_conquista = {
+	land_morale = 0.1
+	global_missionary_strength = 0.02
+	papal_influence_from_cardinals = 0.25
+}
+
+cnr_global_presence_modifier = {
+	global_ship_cost = -0.05
+	naval_tradition_from_trade = 0.5
+	max_admiral_maneuver = 1
+}
+
+cnr_terra_firme = {
+	global_tariffs = 0.25
+	global_trade_power = 0.1
+}
+
+cnr_new_world_silver_and_gold_modifier = {
+	trade_goods_size_modifier = 0.33
+}
+
+cnr_first_printshops_of_america_modifier = {
+	technology_cost = -0.05
+	yearly_innovativeness = 0.2
+}
+
+cnr_defensive_stance_modifier = {
+	local_defensiveness = 0.2
+	local_development_cost = -0.1
+	local_manpower_modifier = 0.25
+}
+
+cnr_office_of_foreign_commercial_affairs = {
+	trade_company_investment_cost = -0.05
+	trade_steering = 0.1
+	center_of_trade_upgrade_cost = -0.05
+}
+
+cnr_messico_court_modifier = {
+	monthly_reform_progress = 0.1
+}
+
+cnr_san_domenico_court_modifier = {
+	state_governing_cost = -0.05
+}
+
+cnr_colonial_outpost_modifier = {
+	trade_value = 3
+}

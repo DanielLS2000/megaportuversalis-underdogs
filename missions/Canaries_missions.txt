@@ -1,10 +1,9 @@
 canarie_1 = {
 	slot = 1
 	generic = no
-	potential = { 
-		tag = Z06
+	potential = {
+		tag = CNR
 	}
-	has_country_shield = yes
 	canarie_havana = {
 		icon = mission_found_havana
 		required_missions = {
@@ -51,17 +50,14 @@ canarie_1 = {
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = spa_house_of_trade_flag
-					}
-					NOT = {
-						mission_completed = spa_dominate_sevilla
+						has_country_flag = cnr_house_of_trade_flag
 					}
 				}
-				set_country_flag = spa_house_of_trade_flag
+				set_country_flag = cnr_house_of_trade_flag
 				country_event = {
-					id = flavor_spa.1003
+					id = flavor_cnr.1
 				}
-				custom_tooltip = spa_event_insight_1003_tt
+				custom_tooltip = cnr_event_insight_1_tt
 			}
 			else = {
 				change_ruler_stat = {
@@ -136,42 +132,21 @@ canarie_1 = {
 			canarie_aztec
 		}
 		provinces_to_highlight = {
-			OR = {
-				owned_by = HAB
-				owned_by = AUH
-			}
+			owned_by = AZT
 		}
 		trigger = {
 			OR = {
-				AND = {
-					NOT = {
-						exists = HAB
-					}
-					NOT = {
-						exists = AUH
-					}
+				NOT = {
+					exists = AZT
 				}
-				AND = {
-					HAB = {
-						is_subject_of = ROOT
-					}
-					NOT = {
-						exists = AUH
-					}
-				}
-				AND = {
-					AUH = {
-						is_subject_of = ROOT
-					}
-					NOT = {
-						exists = HAB
-					}
+				AZT = {
+					is_subject_of = ROOT
 				}
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "ven_political_monopolist"
+				name = "cnr_political_monopolist"
 				duration = -1
 			}
 		}
@@ -245,13 +220,13 @@ canarie_1 = {
 		}
 		position = 9
 		provinces_to_highlight = {
-			region = low_countries_region
+			region = california_region
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			low_countries_region = {
+			california_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 				religion = ROOT
@@ -259,7 +234,7 @@ canarie_1 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = spa_victory_netherlands_modifier
+				name = cnr_conquest_of_california_modifier
 				duration = -1
 			}
 		}
@@ -272,8 +247,8 @@ canarie_1 = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = tihama_al_yemen_area
-				area = yemen_area
+				area = northern_polynesia_area
+				area = eastern_polynesia_area
 			}
 			NOT = {
 				has_discovered = ROOT
@@ -282,16 +257,16 @@ canarie_1 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = ven_discover_lower_arabia_tt
-				tihama_al_yemen_area = {
+				northern_polynesia_area = {
 					has_discovered = ROOT
 				}
-				yemen_area = {
+				eastern_polynesia_area = {
 					has_discovered = ROOT
 				}
 			}
 		}
 		effect = {
-			tihama_al_yemen_area = {
+			northern_polynesia_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -302,7 +277,7 @@ canarie_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			yemen_area = {
+			eastern_polynesia_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -313,7 +288,7 @@ canarie_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			4346 = {
+			1692 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300
@@ -323,16 +298,16 @@ canarie_1 = {
 			}
 			if = {
 				limit = {
-					1099 = {
+					1240 = {
 						owned_by = ROOT
 					}
 				}
 				custom_tooltip = ven_yes_suqutra_owned_tt
 				tooltip = {
-					1099 = {
+					1240 = {
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = cnr_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -341,10 +316,10 @@ canarie_1 = {
 			else = {
 				custom_tooltip = ven_no_suqutra_owned_tt
 				tooltip = {
-					1099 = {
+					1240 = {
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = cnr_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -353,14 +328,14 @@ canarie_1 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						1099 = {
+						1240 = {
 							owned_by = ROOT
 						}
 					}
-					1099 = {
+					1240 = {
 						center_of_trade = 1
 						add_province_modifier = {
-							name = ven_colonial_outpost_modifier
+							name = cnr_colonial_outpost_modifier
 							duration = -1
 						}
 					}
@@ -375,10 +350,10 @@ canarie_1 = {
 			canarie_hawaii
 		}
 		provinces_to_highlight = {
-			province_id = 1340
+			province_id = 1692
 		}
 		trigger = {
-			1340 = {
+			1692 = {
 				trade_share = {
 					country = ROOT
 					share = 40
@@ -386,7 +361,7 @@ canarie_1 = {
 			}
 		}
 		effect = {
-			504 = {
+			1371 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
@@ -394,7 +369,7 @@ canarie_1 = {
 					key = VEN_PRESENCE_IN_INDIA_KEY
 				}
 			}
-			1343 = {
+			1376 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
@@ -403,7 +378,7 @@ canarie_1 = {
 				}
 			}
 			add_country_modifier = {
-				name = ven_wealth_of_india_modifier
+				name = cnr_trade_with_asia_modifier
 				duration = -1
 			}
 		}
@@ -419,9 +394,9 @@ canarie_1 = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_ven.40
+				id = flavor_cnr.2
 			}
-			custom_tooltip = event_insight_flavor_ven.40
+			custom_tooltip = event_insight_flavor_cnr.2
 		}
 	}
 	canarie_new_pillings = {
@@ -431,16 +406,16 @@ canarie_1 = {
 			canarie_renaissance
 		}
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 484
 		}
 		trigger = {
-			112 = {
+			484 = {
 				owned_by = ROOT
 				grown_by_development = 8
 			}
 		}
 		effect = {
-			112 = {
+			484 = {
 				add_province_modifier = {
 					name = urban_expansion_modifier
 					duration = 7300
@@ -455,20 +430,16 @@ canarie_1 = {
 			canarie_new_pillings
 		}
 		provinces_to_highlight = {
-			province_id = 112
-			NOT = {
-				owned_by = ROOT
-			}
+			is_capital_of = root
 		}
 		trigger = {
-			112 = {
+			capital_scope = {
 				num_of_buildings_in_province = 4
-				owned_by = ROOT
 			}
 		}
 		effect = {
 			country_event = {
-				id = flavor_ven.46
+				id = flavor_cnr.3
 			}
 			custom_tooltip = event_insight_flavor_ven.46
 		}
@@ -493,8 +464,7 @@ canarie_1 = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_ven.42
-				#*
+				id = flavor_cnr.4
 			}
 			if = {
 				limit = {
@@ -523,7 +493,7 @@ canarie_1 = {
 			remove_plague_events = yes
 			if = {
 				limit = {
-					government = republic
+					government = monarchy
 				}
 				custom_tooltip = ven_lichking_rulers_tt
 				set_country_flag = ven_lichking_rulers_flag
@@ -541,38 +511,28 @@ canarie_1 = {
 canarie_2 = {
 	slot = 2
 	generic = no
-	potential = { 
-		tag = Z06
+	potential = {
+		tag = CNR
 	}
-	has_country_shield = yes
 	canarie_conquistador = {
-		#Duplicate
-		icon = mission_unite_home_region
+		icon = mission_assemble_an_army
 		required_missions = {
 			canarie_caribbean_discovery
 		}
+		completed_by = 1445.1.1
 		position = 3
-		provinces_to_highlight = {
-			area = upper_andalucia_area
-			NOT = {
-				owned_by = ROOT
-			}
-		}
+		# free mission
 		trigger = {
-			upper_andalucia_area = {
-				type = all
-				owned_by = ROOT
-			}
+			army_size_percentage = 1
+			navy_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
-			set_country_flag = fate_of_granada_mission_flag
-			country_event = {
-				id = flavor_spa.8
+			add_country_modifier = {
+				name = cnr_wolf_vanguard_morale
+				duration = 5475
 			}
-			126 = {
-				add_permanent_claim = ROOT
-			}
-			northern_morocco_area = {
+			hispaniola_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -582,6 +542,17 @@ canarie_2 = {
 					}
 				}
 				add_permanent_claim = ROOT
+			}
+			492 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -618,7 +589,7 @@ canarie_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = spa_aztecs_conquest_modifier
+				name = cnr_aztecs_conquest_modifier
 				duration = 7300
 			}
 			add_years_of_income = 1
@@ -645,20 +616,20 @@ canarie_2 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 795
+					province_id = 856
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 				AND = {
-					province_id = 809
+					province_id = 852
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 				AND = {
 					OR = {
-						province_id = 809
+						province_id = 1551
 						province_id = 835
 						province_id = 1516
 					}
@@ -667,7 +638,7 @@ canarie_2 = {
 					}
 				}
 				AND = {
-					province_id = 809
+					province_id = 852
 					NOT = {
 						province_has_center_of_trade_of_level = 3
 					}
@@ -675,28 +646,28 @@ canarie_2 = {
 			}
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 809
-			owns_or_non_sovereign_subject_of = 795
-			809 = {
+			owns_or_non_sovereign_subject_of = 852
+			owns_or_non_sovereign_subject_of = 856
+			852 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			if = {
 				limit = {
 					has_dlc = "Dharma"
 				}
-				809 = {
+				852 = {
 					province_has_center_of_trade_of_level = 3
 				}
 			}
 			else = {
-				809 = {
+				852 = {
 					OR = {
 						has_building = trade_depot
 						has_building = stock_exchange
 					}
 				}
 			}
-			809 = {
+			1551 = {
 				is_strongest_trade_power = ROOT
 			}
 			835 = {
@@ -707,61 +678,37 @@ canarie_2 = {
 			}
 		}
 		effect = {
-			custom_tooltip = gc_cas_spa_potosi_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						any_subject_country = {
-							OR = {
-								is_subject_of_type = colony
-								is_subject_of_type = crown_colony
-								is_subject_of_type = private_enterprise
-								is_subject_of_type = self_governing_colony
-							}
-							owns = 809
-						}
-					}
-					every_subject_country = {
-						limit = {
-							owns = 809
-						}
-						809 = {
-							prev_move_capital_effect = yes
-						}
-					}
-				}
-			}
 			if = {
 				limit = {
 					has_dlc = "Leviathan"
 				}
-				795 = {
+				856 = {
 					set_great_project_tier_2 = {
-						type = potosi
+						type = zacatecas_mine_city
 					}
 				}
 			}
 			else = {
-				795 = {
+				856 = {
 					add_province_modifier = {
 						name = "spa_rb_gold_rush"
 						duration = 5475
 					}
 				}
 			}
-			2946 = {
+			852 = {
 				add_province_modifier = {
 					name = "spa_rb_gold_rush"
 					duration = 5475
 				}
 			}
-			2941 = {
+			4570 = {
 				add_province_modifier = {
 					name = "spa_rb_gold_rush"
 					duration = 5475
 				}
 			}
-			804 = {
+			4571 = {
 				add_province_modifier = {
 					name = "spa_rb_gold_rush"
 					duration = 5475
@@ -793,7 +740,7 @@ canarie_2 = {
 			custom_tooltip = spa_every_gold_province_tt
 			tooltip = {
 				add_province_modifier = {
-					name = spa_spanish_silver_and_gold_modifier
+					name = cnr_new_world_silver_and_gold_modifier
 					duration = -1
 				}
 			}
@@ -804,7 +751,7 @@ canarie_2 = {
 						trade_goods = gold
 					}
 					add_province_modifier = {
-						name = spa_spanish_silver_and_gold_modifier
+						name = cnr_new_world_silver_and_gold_modifier
 						duration = -1
 					}
 				}
@@ -843,7 +790,7 @@ canarie_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = spa_universal_monarchy_modifier
+				name = cnr_universal_monarchy_modifier
 				duration = -1
 			}
 			if = {
@@ -901,7 +848,7 @@ canarie_2 = {
 			custom_tooltip = empty_line_tt
 			capital_scope = {
 				add_province_modifier = {
-					name = ven_first_printshops_of_italy_modifier
+					name = cnr_first_printshops_of_america_modifier
 					duration = 3650
 				}
 			}
@@ -924,7 +871,7 @@ canarie_2 = {
 				has_building = university
 				value = 10
 			}
-			112 = {
+			capital_scope = {
 				owned_by = ROOT
 				has_building = university
 			}
@@ -932,7 +879,7 @@ canarie_2 = {
 		effect = {
 			set_country_flag = ven_academy_of_the_unknowns_reward_flag
 			country_event = {
-				id = flavor_ven.47
+				id = flavor_cnr.5
 			}
 			custom_tooltip = event_insight_flavor_ven.47
 		}
@@ -957,11 +904,11 @@ canarie_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = spa_powerful_trade_ships_modifier
+				name = cnr_powerful_trade_ships_modifier
 				duration = 9125
 			}
 			add_country_modifier = {
-				name = spa_employ_galleon_modifier
+				name = cnr_employ_galleon_modifier
 				duration = -1
 			}
 			add_navy_tradition = 10
@@ -971,10 +918,9 @@ canarie_2 = {
 canarie_3 = {
 	slot = 3
 	generic = no
-	potential = { 
-		tag = Z06
+	potential = {
+		tag = CNR
 	}
-	has_country_shield = yes
 	canarie_plus_ultra = {
 		icon = mission_look_west
 		position = 1
@@ -1160,7 +1106,7 @@ canarie_3 = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Marinus Ragus"
 			}
 			490 = {
 				add_base_production = 3
@@ -1189,8 +1135,8 @@ canarie_3 = {
 	canarie_mayans = {
 		icon = mission_mayan_conquest
 		required_missions = {
-			canarie_caribbean_home
 			canarie_aztec
+			canarie_caribbean_home
 			canarie_jungle
 		}
 		position = 6
@@ -1265,25 +1211,19 @@ canarie_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "viceroyalty_of_new_spain"
+				name = cnr_nova_dalmacia
 				duration = -1
 			}
 			if = {
 				limit = {
-					any_subject_country = {
-						OR = {
-							is_subject_of_type = colony
-							is_subject_of_type = crown_colony
-							is_subject_of_type = private_enterprise
-							is_subject_of_type = self_governing_colony
-						}
+					ROOT = {
 						owns = 852
 					}
 					852 = {
 						is_capital = no
 					}
 				}
-				every_subject_country = {
+				ROOT = {
 					limit = {
 						owns = 852
 					}
@@ -1316,7 +1256,7 @@ canarie_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			mississippi_area = {
+			rio_grande_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1337,7 +1277,10 @@ canarie_3 = {
 			canarie_new_empire
 		}
 		provinces_to_highlight = {
-			region = italy_region
+			OR = {
+				region = rio_grande_region
+				region = california_region
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1345,12 +1288,15 @@ canarie_3 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 50
-				region = italy_region
+				OR = {
+					region = rio_grande_region
+					region = california_region
+				}
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_united_italy_modifier
+				name = cnr_northern_frontier_modifier
 				duration = 7300
 			}
 		}
@@ -1422,14 +1368,14 @@ canarie_3 = {
 		icon = expand_the_arsenal
 		position = 13
 		provinces_to_highlight = {
-			province_id = 112
+			province_id = 490
 		}
 		trigger = {
 			if = {
 				limit = {
 					has_dlc = "Leviathan"
 				}
-				112 = {
+				490 = {
 					OR = {
 						has_great_project = {
 							type = venetian_arsenal_gp
@@ -1440,17 +1386,17 @@ canarie_3 = {
 				}
 			}
 			else = {
-				112 = {
+				490 = {
 					num_of_times_improved = 4
 					has_dock_building_trigger = yes
 				}
 			}
-			112 = {
+			490 = {
 				has_any_ongoing_construction = no
 			}
 		}
 		effect = {
-			morea_area = {
+			greater_antilles_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1459,7 +1405,7 @@ canarie_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			aegean_archipelago_area = {
+			lucayan_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1468,7 +1414,7 @@ canarie_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			151 = {
+			493 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1480,7 +1426,7 @@ canarie_3 = {
 				}
 			}
 			country_event = {
-				id = flavor_ven.50
+				id = flavor_cnr.6
 			}
 			custom_tooltip = event_insight_flavor_ven.50
 		}
@@ -1605,11 +1551,11 @@ canarie_3 = {
 						limit = {
 							has_fort_building_trigger = yes
 							NOT = {
-								has_province_modifier = ven_defensive_stance_modifier
+								has_province_modifier = cnr_defensive_stance_modifier
 							}
 						}
 						add_province_modifier = {
-							name = ven_defensive_stance_modifier
+							name = cnr_defensive_stance_modifier
 							duration = -1
 							hidden = yes
 						}
@@ -1672,7 +1618,7 @@ canarie_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_iron_wall_of_italy_modifier
+				name = cnr_iron_wall_of_the_americas_modifier
 				duration = -1
 			}
 		}
@@ -1681,10 +1627,9 @@ canarie_3 = {
 canarie_4 = {
 	slot = 4
 	generic = no
-	potential = { 
-		tag = Z06
+	potential = {
+		tag = CNR
 	}
-	has_country_shield = yes
 	canarie_immigrants = {
 		icon = mission_noble_council
 		required_missions = {
@@ -1694,14 +1639,14 @@ canarie_4 = {
 		provinces_to_highlight = { }
 		trigger = {
 			num_of_owned_provinces_with = {
-				area = slavonia_area
+				area = dominica_area
 				development = 10
 				value = 3
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "gosti_guests"
+				name = refugee_nation
 				duration = -1
 			}
 		}
@@ -1717,23 +1662,23 @@ canarie_4 = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			area = northern_morocco_area
+			area = cordillera_occidental_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			northern_morocco_area = {
+			cordillera_occidental_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "completing_the_reconquista"
+				name = completing_the_conquista
 				duration = 5475
 			}
-			western_morocco_area = {
+			bogota_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -1744,7 +1689,7 @@ canarie_4 = {
 				}
 				add_claim = ROOT
 			}
-			algiers_area = {
+			popayan_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -1765,13 +1710,13 @@ canarie_4 = {
 		}
 		position = 7
 		provinces_to_highlight = {
-			province_id = 224
+			province_id = 828
 		}
 		trigger = {
-			224 = {
+			828 = {
 				owned_by = ROOT
 			}
-			224 = {
+			828 = {
 				if = {
 					limit = {
 						has_dlc = "Leviathan"
@@ -1779,25 +1724,25 @@ canarie_4 = {
 					num_of_times_expanded_infrastructure = 1
 				}
 			}
-			224 = {
+			828 = {
 				num_of_times_improved = 10
 			}
-			224 = {
+			828 = {
 				has_trade_building_trigger = yes
 			}
-			224 = {
+			828 = {
 				has_dock_building_trigger = yes
 			}
-			224 = {
+			828 = {
 				has_shipyard_building_trigger = yes
 			}
 		}
 		effect = {
 			set_country_flag = sevilla_trade_center_flag
 			country_event = {
-				id = flavor_spa.3153
+				id = flavor_cnr.7
 			}
-			224 = {
+			828 = {
 				upgrade_building = {
 					trade = yes
 				}
@@ -1812,18 +1757,19 @@ canarie_4 = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				# West Route
 				AND = {
 					OR = {
 						if = {
 							limit = {
 								is_random_new_world = no
 							}
-							province_id = 1516
+							province_id = 2935
 						}
 						province_id = 1466
-						province_id = 358
-						province_id = 1320
-						province_id = 137
+						province_id = 809
+						province_id = 1692
+						province_id = 1507
 					}
 					NOT = {
 						trade_share = {
@@ -1832,12 +1778,13 @@ canarie_4 = {
 						}
 					}
 				}
+				# East Route
 				AND = {
 					OR = {
-						province_id = 1293
-						province_id = 1295
-						province_id = 4346
-						province_id = 1322
+						province_id = 4637
+						province_id = 2499
+						province_id = 1692
+						province_id = 4358
 					}
 					NOT = {
 						trade_share = {
@@ -1848,8 +1795,8 @@ canarie_4 = {
 				}
 				AND = {
 					OR = {
-						province_id = 1308
-						province_id = 1298
+						province_id = 1551
+						province_id = 1516
 					}
 					NOT = {
 						trade_share = {
@@ -1861,15 +1808,16 @@ canarie_4 = {
 			}
 		}
 		trigger = {
-			358 = {
+			835 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
 			OR = {
+				# West Route
 				AND = {
-					1298 = {
+					1516 = {
 						trade_share = {
 							country = ROOT
 							share = 85
@@ -1879,7 +1827,7 @@ canarie_4 = {
 						limit = {
 							is_random_new_world = no
 						}
-						1516 = {
+						2935 = {
 							trade_share = {
 								country = ROOT
 								share = 50
@@ -1892,45 +1840,46 @@ canarie_4 = {
 							share = 50
 						}
 					}
-					1293 = {
+					809 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
-					1295 = {
+					1507 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
 				}
+				# East Route
 				AND = {
-					1308 = {
+					1551 = {
 						trade_share = {
 							country = ROOT
 							share = 85
 						}
 					}
-					1320 = {
+					4637 = {
 						trade_share = {
 							country = ROOT
 							share = 50
 						}
 					}
-					137 = {
+					2499 = {
 						trade_share = {
 							country = ROOT
 							share = 50
 						}
 					}
-					1322 = {
+					1692 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
-					4346 = {
+					4358 = {
 						trade_share = {
 							country = ROOT
 							share = 25
@@ -1941,18 +1890,18 @@ canarie_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_global_presence_modifier
+				name = cnr_global_presence_modifier
 				duration = -1
 			}
 			if = {
 				limit = {
-					1298 = {
+					1516 = {
 						trade_share = {
 							country = ROOT
 							share = 85
 						}
 					}
-					1516 = {
+					2935 = {
 						trade_share = {
 							country = ROOT
 							share = 50
@@ -1964,13 +1913,13 @@ canarie_4 = {
 							share = 50
 						}
 					}
-					1293 = {
+					809 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
-					1295 = {
+					1692 = {
 						trade_share = {
 							country = ROOT
 							share = 25
@@ -1979,7 +1928,7 @@ canarie_4 = {
 				}
 				custom_tooltip = ven_genoa_reward_yes_tt
 				tooltip = {
-					1298 = {
+					1516 = {
 						add_trade_node_income = 30
 					}
 				}
@@ -1987,38 +1936,38 @@ canarie_4 = {
 			else = {
 				custom_tooltip = ven_genoa_reward_no_tt
 				tooltip = {
-					1298 = {
+					1516 = {
 						add_trade_node_income = 30
 					}
 				}
 			}
 			if = {
 				limit = {
-					1308 = {
+					1551 = {
 						trade_share = {
 							country = ROOT
 							share = 85
 						}
 					}
-					1320 = {
+					4637 = {
 						trade_share = {
 							country = ROOT
 							share = 50
 						}
 					}
-					137 = {
+					2499 = {
 						trade_share = {
 							country = ROOT
 							share = 50
 						}
 					}
-					1322 = {
+					1507 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
-					4346 = {
+					4358 = {
 						trade_share = {
 							country = ROOT
 							share = 25
@@ -2027,7 +1976,7 @@ canarie_4 = {
 				}
 				custom_tooltip = ven_venice_reward_yes_tt
 				tooltip = {
-					1308 = {
+					1551 = {
 						add_trade_node_income = 30
 					}
 				}
@@ -2035,7 +1984,7 @@ canarie_4 = {
 			else = {
 				custom_tooltip = ven_venice_reward_no_tt
 				tooltip = {
-					1308 = {
+					1551 = {
 						add_trade_node_income = 30
 					}
 				}
@@ -2043,43 +1992,43 @@ canarie_4 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						1298 = {
+						1516 = {
 							trade_share = {
 								country = ROOT
 								share = 85
 							}
 						}
-						1320 = {
+						4637 = {
 							trade_share = {
 								country = ROOT
 								share = 50
 							}
 						}
-						137 = {
+						2499 = {
 							trade_share = {
 								country = ROOT
 								share = 50
 							}
 						}
-						1322 = {
+						1692 = {
 							trade_share = {
 								country = ROOT
 								share = 25
 							}
 						}
-						4346 = {
+						4358 = {
 							trade_share = {
 								country = ROOT
 								share = 25
 							}
 						}
 					}
-					1298 = {
+					1516 = {
 						add_trade_node_income = 30
 					}
 				}
 				else = {
-					1308 = {
+					1551 = {
 						add_trade_node_income = 30
 					}
 				}
@@ -2113,7 +2062,7 @@ canarie_4 = {
 			}
 			custom_tooltip = zim_amongst_the_great_powers_tt
 			country_event = {
-				id = flavor_ven.48
+				id = flavor_cnr.8
 			}
 			custom_tooltip = event_insight_flavor_ven.48
 		}
@@ -2126,7 +2075,7 @@ canarie_4 = {
 		position = 14
 		provinces_to_highlight = {
 			OR = {
-				province_id = 217
+				province_id = 852
 				AND = {
 					owned_by = ROOT
 					is_capital = yes
@@ -2136,8 +2085,7 @@ canarie_4 = {
 		trigger = {
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = spa_recent_change_tt
-					217 = {
+					852 = {
 						has_province_modifier = solo_madrid_es_corte
 					}
 				}
@@ -2172,15 +2120,15 @@ canarie_4 = {
 			}
 			if = {
 				limit = {
-					217 = {
+					852 = {
 						is_capital_of = ROOT
 					}
 					has_dlc = "Leviathan"
 					ai = no
 				}
-				217 = {
+				852 = {
 					has_great_project = {
-						type = el_escorial
+						type = tenochtitlan
 						tier = 1
 					}
 				}
@@ -2192,12 +2140,12 @@ canarie_4 = {
 			}
 			if = {
 				limit = {
-					217 = {
+					490 = {
 						is_capital_of = ROOT
 					}
 				}
 				country_event = {
-					id = flavor_spa.23
+					id = flavor_cnr.9
 				}
 			}
 			else = {
@@ -2214,9 +2162,11 @@ canarie_4 = {
 		required_missions = {
 			canarie_new_capital
 		}
-		provinces_to_highlight = { }
+		provinces_to_highlight = {
+			is_capital_of = root
+		}
 		trigger = {
-			131 = {
+			capital_scope = {
 				owned_by = ROOT
 				NOT = {
 					num_free_building_slots = 1
@@ -2224,7 +2174,7 @@ canarie_4 = {
 			}
 		}
 		effect = {
-			131 = {
+			capital_scope = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
@@ -2244,7 +2194,7 @@ canarie_4 = {
 		}
 		position = 17
 		trigger = {
-			num_of_tercio = 60
+			num_of_tercio = 42
 			OR = {
 				army_professionalism = 0.75
 				army_tradition = 90
@@ -2278,10 +2228,9 @@ canarie_4 = {
 canarie_5 = {
 	slot = 5
 	generic = no
-	potential = { 
-		tag = Z06
+	potential = {
+		tag = CNR
 	}
-	has_country_shield = yes
 	canarie_cartagena = {
 		icon = mission_iberian_conquistador
 		required_missions = {
@@ -2289,7 +2238,7 @@ canarie_5 = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			colonial_region = colonial_la_plata
+			area = coquivacoa_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2298,13 +2247,13 @@ canarie_5 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_la_plata
+				area = coquivacoa_area
 				is_city = yes
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "spa_rb_overseas_trade"
+				name = cnr_terra_firme
 				duration = 5475
 			}
 			add_mercantilism = 2
@@ -2318,12 +2267,12 @@ canarie_5 = {
 		position = 6
 		provinces_to_highlight = {
 			OR = {
-				area = upper_peru
-				area = potosi_area
-				area = antisuyu_area
-				area = kuntisuyu_area
-				province_id = 794
-				province_id = 2837
+				area = panama_area
+				area = maracaibo_area
+				area = bogota_area
+				area = popayan_area
+				province_id = 2813
+				province_id = 2808
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2331,26 +2280,24 @@ canarie_5 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			upper_peru = {
+			panama_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			potosi_area = {
+			maracaibo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			antisuyu_area = {
-				type = all
+			bogota_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			kuntisuyu_area = {
-				type = all
+			popayan_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			794 = {
+			2813 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			2837 = {
+			2808 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -2359,7 +2306,7 @@ canarie_5 = {
 				name = spa_overseas_wealth_modifier
 				duration = 9125
 			}
-			peru_region = {
+			colombia_region = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -2438,28 +2385,9 @@ canarie_5 = {
 			else = {
 				add_dip_power = 100
 			}
-			if = {
-				limit = {
-					any_country = {
-						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = colony
-							is_subject_of_type = crown_colony
-							is_subject_of_type = private_enterprise
-							is_subject_of_type = self_governing_colony
-						}
-					}
-				}
-				every_country = {
-					limit = {
-						is_subject_of = ROOT
-						is_subject_of_type = colony
-					}
-					add_country_modifier = {
-						name = "spa_native_reductions"
-						duration = 7300
-					}
-				}
+			add_country_modifier = {
+				name = "spa_native_reductions"
+				duration = 7300
 			}
 		}
 	}
@@ -2471,19 +2399,19 @@ canarie_5 = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = delta_area
-				area = aleppo_area
+				area = north_florida_area
+				area = florida_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			delta_area = {
+			north_florida_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			aleppo_area = {
+			florida_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2491,11 +2419,11 @@ canarie_5 = {
 		effect = {
 			capital_scope = {
 				add_province_modifier = {
-					name = ven_office_of_foreign_commercial_affairs
+					name = cnr_office_of_foreign_commercial_affairs
 					duration = -1
 				}
 			}
-			358 = {
+			1500 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
@@ -2503,7 +2431,7 @@ canarie_5 = {
 					key = PROTECTED_VENETIAN_MERCHANTS
 				}
 			}
-			377 = {
+			1507 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
@@ -2575,7 +2503,6 @@ canarie_5 = {
 		required_missions = {
 			canarie_florida_forts
 		}
-		position = 12
 		trigger = {
 			home_trade_node = {
 				trade_share = {
@@ -2765,7 +2692,7 @@ canarie_5 = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_spa.22
+				id = flavor_cnr.10
 			}
 		}
 	}
@@ -2777,8 +2704,8 @@ canarie_5 = {
 		position = 15
 		provinces_to_highlight = {
 			OR = {
-				province_id = 215
-				province_id = 223
+				province_id = 852
+				province_id = 490
 			}
 			OR = {
 				num_of_times_expanded_infrastructure = 1
@@ -2791,7 +2718,7 @@ canarie_5 = {
 				limit = {
 					ai = no
 				}
-				215 = {
+				852 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					OR = {
 						num_of_times_expanded_infrastructure = 1
@@ -2799,7 +2726,7 @@ canarie_5 = {
 						has_courthouse_building_trigger = yes
 					}
 				}
-				223 = {
+				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					OR = {
 						num_of_times_expanded_infrastructure = 1
@@ -2810,11 +2737,11 @@ canarie_5 = {
 				stability = 1
 			}
 			else = {
-				215 = {
+				852 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					has_courthouse_building_trigger = yes
 				}
-				223 = {
+				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					has_courthouse_building_trigger = yes
 				}
@@ -2822,21 +2749,21 @@ canarie_5 = {
 			}
 		}
 		effect = {
-			215 = {
+			852 = {
 				upgrade_building = {
 					government = yes
 				}
 				add_province_modifier = {
-					name = spa_valladolid_court_modifier
+					name = cnr_messico_court_modifier
 					duration = -1
 				}
 			}
-			223 = {
+			490 = {
 				upgrade_building = {
 					government = yes
 				}
 				add_province_modifier = {
-					name = spa_granada_court_modifier
+					name = cnr_san_domenico_court_modifier
 					duration = -1
 				}
 			}
@@ -2870,52 +2797,40 @@ canarie_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 112
-					NOT = {
-						is_capital_of = ROOT
-					}
+					province_id = 852
+					NOT = { is_capital_of = ROOT }
 				}
 				AND = {
-					superregion = europe_superregion
-					NOT = {
-						province_id = 112
-					}
-					higher_development_than = 112
+					continent = north_america
+					NOT = { province_id = 852 }
+					higher_development_than = 852
 				}
 				AND = {
-					province_id = 112
+					province_id = 852
 					OR = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							num_of_buildings_in_province = 6
-						}
-						NOT = {
-							development = 30
-						}
+						NOT = { owned_by = ROOT }
+						NOT = { num_of_buildings_in_province = 6 }
+						NOT = { development = 30 }
 						has_trade_building_trigger = no
 					}
 				}
 			}
 		}
 		trigger = {
-			112 = {
+			852 = {
 				owned_by = ROOT
 				has_trade_building_trigger = yes
 				num_of_buildings_in_province = 6
 				development = 30
 			}
 			capital_scope = {
-				province_id = 112
+				province_id = 852
 				custom_trigger_tooltip = {
 					tooltip = ven_highest_dev_capital_tt
 					NOT = {
-						europe_superregion = {
-							NOT = {
-								province_id = 112
-							}
-							higher_development_than = 112
+						north_america = {
+							NOT = { province_id = 852 }
+							higher_development_than = 852
 						}
 					}
 				}
@@ -2924,20 +2839,16 @@ canarie_5 = {
 		effect = {
 			if = {
 				limit = {
-					112 = {
-						has_trade_building_trigger = no
-					}
+					852 = { has_trade_building_trigger = no }
 				}
 				custom_tooltip = 112_gets_trade_upgrade_tt
 			}
 			else = {
-				112 = {
-					upgrade_building = {
-						trade = yes
-					}
+				852 = { 
+					upgrade_building = { trade = yes }
 				}
 			}
-			112 = {
+			852 = {
 				add_scaled_local_adm_power = 11
 				add_scaled_local_dip_power = 12
 				add_scaled_local_mil_power = 9

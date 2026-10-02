@@ -4,3 +4,144 @@
 
  the_great_migration: "Brave New World"
  the_great_migration_desc: "The survivors of the perilous and lethal Atlantic crossing have been forged by loss and storm. Those who landed on the new shores of Bani possess a relentless determination and will defend their new home with unmatched ferocity."
+
+ # Consolato del Mar
+ consolato_del_mar_title: "Consolato del Mar"
+ consolato_del_mar_desc: "Applying the ancient maritime codes of the Adriatic to the vast Atlantic lanes, the Consolato del Mar asserts the Crown's undisputed authority over transoceanic shipping. Colonial bullion, navigational charters, and mercantile disputes are all strictly governed by this supreme nautical tribunal, channeling the wealth of the New World directly into royal coffers."
+ flavor_cnr.title: "The Consulate of the Western Seas"
+ flavor_cnr.desc: "With our armadas anchoring across the Caribbean and unprecedented wealth flowing from overseas settlements, decentralized commercial practices can no longer govern our burgeoning empire. Drawing upon our Mediterranean roots—from the maritime codices of Ragusa to the venerable customs of the Consolato del Mare—merchants and captains demand a unified authority. By royal decree, we shall establish the Consulate of the Western Seas. This supreme maritime council will license every voyage to the New World, secure the crown's customs, adjudicate naval law, and guard the secret charts that ensure our enduring dominion over the ocean."
+ cnr_event_insight_1_tt: "Let the ocean yield its wealth to our crown."
+
+ # Tizziano
+ flavor_cnr.2.t: "A Master of the Atlantic Renaissance"
+ flavor_cnr.2.d: "With the arrival of Renaissance ideals and the immense fortunes flowing from our oceanic trade, our court has transformed into a radiant sanctuary for the arts and humanist thought. Drawn by the generous patronage of the Crown and the miraculous rebirth of our people in the West, a painter of singular brilliance has established his workshop in our capital. Mastering vivid pigments, chiaroscuro, and classical perspective beyond any living peer, his masterpieces do not merely chronicle our voyages and conquests—they proclaim our cultural ascendance, rivaling the grandest courts of Italy."
+ flavor_cnr.2.a: "His brush shall immortalize our glorious reign."
+
+ # Teatros
+ flavor_cnr.3.t: "The Grand Theatrical Companies"
+ flavor_cnr.3.d: "With our cities flourishing and the Crown generously patronizing the dramatic arts, the theaters of our capital have transformed into the vibrant heart of civic life. Playwrights and theatrical troupes have multiplied across the realm, drawing equal inspiration from classical antiquity and our people's own harrowing saga. Stages now echo with grand retellings of the flight from Ragusa, the legendary exploits of Marinus the Wolf-Slayer, and our crossing into the Atlantic. Under the leadership of celebrated dramatists, our theaters unite highborn and commoner alike, forging an enduring national pride through the power of verse and performance."
+ flavor_cnr.3.a: "All the world is our stage."
+
+ # Carnival
+ flavor_cnr.4.t: "Feast of the Fortunate"
+ flavor_cnr.4.d: "In the lively weeks leading up to Lent, the sun-drenched quays and stone squares of our capital are engulfed in an explosion of color, music, and grand spectacle. Reviving the beloved masquerade traditions that once animated the shores of the Adriatic—where noble and commoner shed their social burdens beneath the egalitarian anonymity of polished masks—our people have turned this festive season into a celebration of our very survival. Monumental floats depicting crowned wolves, ocean caravels, and mythical sea beasts parade through the avenues amidst roaring cheers. All lingering ghosts of our ancestral exile vanish beneath the rhythm of music and dance. Supported by the Crown, our Carnival has become the crowning showcase of the realm's civic pride, resilience, and imperial splendor."
+ flavor_cnr.4.a: "Let song and splendor echo across the waves!"
+
+ # University
+ flavor_cnr.5.t: "The Vesperini Academy"
+ flavor_cnr.5.d: "A dedication to learning and statecraft has long coursed through our royal line, tracing back from the scholarly ambitions of Marinus II to Queen Margarait's famed studies at the University of Cluni. What once began as scattered codices brought across the seas has now coalesced into one of the most distinguished intellectual institutions in Christendom. Housed beneath monumental colonnades, our Academy draws together preeminent minds: master cartographers charting ocean currents, jurists standardizing colonial law, and natural philosophers unlocking the mysteries of the New World. Under the direct patronage of the Crown, our halls foster not merely philosophers, but sharp-witted administrators who ensure our realm is governed with unmatched wisdom."
+ flavor_cnr.5.a: "Knowledge is the greatest instrument of rule."
+
+ # Arsenal
+ flavor_cnr.6.t: "The Atlantic Arsenal"
+ flavor_cnr.6.d: "Mastery over the boundless ocean demands far more than seafaring courage; it requires an industrial machine capable of outfitting battle fleets at unprecedented scale. Drawing inspiration from the legendary assembly traditions of the Adriatic and adapting them to the resilient hardwoods of our Atlantic holdings, our master shipwrights have turned our primary harbor into an unmatched marvel of naval engineering.\n\nWithin fortified drydocks and bustling ropewalks, war galleons and swift escorts are laid down in standardized succession, their ordnance cast and fitted by dedicated crown foundries. Furthermore, the Arsenal now trains specialized marine regiments drilled relentlessly in naval boarding and amphibious assaults, ready to project our authority onto any distant shore."
+ flavor_cnr.6.a: "Our fleets shall cast long shadows across the oceans."
+
+ cnr_arsenal_marines: "Atlantic Arsenal Marines"
+ cnr_arsenal_marines_desc: "Standardized dockyard logistics and specialized coastal drill grounds maintain an elite standing marine corps, ready to strike hostile beaches and fortress harbors at a moment's notice."
+
+ # Cartagena Port
+ flavor_cnr.7.t: "The Key to Tierra Firme"
+ flavor_cnr.7.d: "The sheltered, deepwater harbor of Cartagena has proven to be the crowning strategic position along the South American coast. With our maritime routes firmly established and the wealth of New Granada's highlands flowing toward the sea, the settlement has grown far beyond a mere coastal outpost, rising as the primary mercantile axis of our continental holdings.\n\nMassive customs houses, stone quays, and a permanent naval chancellery have been raised to organize and protect our treasure galleons before their transatlantic journey back to our island heartland. Merchants across the realm now flock to its thriving markets, cementing Cartagena as the unshakeable commercial stronghold of our empire."
+ flavor_cnr.7.a: "Let the southern wealth flow under our fleets' watchful eye."
+
+ cnr_port_to_the_new_world: "Gateway to the New World"
+ desc_cnr_port_to_the_new_world: "Boasting heavily fortified anchorages and state-chartered trading facilities, this deepwater port serves as the vital staging ground for overseas convoys, securing immense local trade influence and customs revenue."
+
+ # Nova Dalmacia
+ flavor_cnr.8.t: "The Dawn of Nova Dalmacia"
+ flavor_cnr.8.d: "What began as a desperate band of exiles fleeing the fall of Ragusa for the windswept crags of the Atlantic has now ascended to the undisputed pinnacle of world power. Our home waters anchor the richest market on Earth, our armadas dictate oceanic commerce, and our veteran armies have forged an empire across two hemispheres. The humble titles of an island sanctuary or a mere expeditionary kingdom can no longer encompass the magnitude of our realm.\n\nGathered within the high vaulted halls of the court, chancellors, prelates, and admirals urge the Crown to cast aside the lingering memory of our exile. Drawing upon our ancient Roman and Byzantine heritage, they implore us to formally proclaim the birth of Nova Dalmacia—raising the imperial banners of deep crimson and decreeing ambitious state doctrines worthy of a global hegemon."
+ flavor_cnr.8.a: "Proclaim Nova Dalmacia in glorious imperial colors!"
+ flavor_cnr.8.b: "Adopt the imperial colors and doctrines, but our historic name remains."
+ flavor_cnr.8.c: "Proclaim Nova Dalmacia, but march beneath our ancestral colors."
+ flavor_cnr.8.e: "Enact the new state doctrines, but alter neither name nor banner."
+ flavor_cnr.8.f: "Our enduring realm requires no grand pretensions."
+
+ # Nomes
+ NDA: "Nova Dalmacia"
+ NDA_DEF: "Nova Dalmacia"
+ NDA_ADJ: "Neo-Dalmatian"
+ NDA_ideas: "Neo Dalmatian Ideas"
+
+ # New Capital
+ flavor_cnr.9.t: "The Atlantic Metropolis"
+ flavor_cnr.9.d: "As the frontiers of our realm expand across two hemispheres, the modest castle halls of our initial exile can no longer contain the vast administrative machinery of a transoceanic empire. The center of gravity of our dominion has decisively shifted across the sea, demanding a monumental capital worthy of the Vesperini dynasty.\n\nGrand radial avenues, chanceries of dressed stone and marble, imperial archives, and a magnificent royal palace now rise along the sheltered shore. Designed as the vital nexus where continental treasure fleets rendezvous and royal decrees are dispatched, this new court marks our final evolution from an island realm of refugees into the undisputed cultural and administrative metropolis of the New World."
+ flavor_cnr.9.a: "May this city stand eternal as the heart of our empire."
+
+ cnr_new_capital: "The Atlantic Metropolis"
+ desc_cnr_new_capital: "The foundation of a purpose-built imperial capital centralizes bureaucratic authority across our ocean holdings, greatly streamlining state governance and projecting unrivaled prestige across the globe."
+ 
+ # New World Dollar
+ flavor_cnr.10.t: "The New World Thaler"
+ flavor_cnr.10.d: "The immense torrents of silver extracted from our colonial mines have flooded the royal mints. Hitherto, inconsistent colonial coinages, foreign specie, and remnants of old Adriatic bullion circulated in disarray, creating friction in exchange markets and leaving room for clip-shilling and debasement. Under the direct supervision of our sovereign treasury, a sweeping monetary overhaul has been enacted.\n\nStruck with uncompromising silver purity and stamped with the crowned wolf and the royal arms, our new standard silver coin has become the undisputed currency of world trade. From the emporiums of the Mediterranean to distant Pacific ports, foreign merchants accept our coin without hesitation. By establishing this universal trade dollar, we secure boundless financial prestige and complete fiscal stability across our realms."
+ flavor_cnr.10.a: "Our silver shall govern the commerce of the earth."
+
+ cnr_new_world_dollar_modifier: "Transatlantic Silver Standard"
+ desc_cnr_new_world_dollar_modifier: "Standardized minting and guaranteed silver purity establish our crown currency as the de facto reserve coin across global markets, enhancing trade efficiency and securing supreme fiscal health."
+
+ # Modifiers
+ cnr_political_monopolist: "Imperial Primacy in the West"
+ desc_cnr_political_monopolist: "With the collapse of native empires and the submission of foreign challengers, our crown dictates continental borders and treaties with undisputed diplomatic authority."
+
+ cnr_conquest_of_california_modifier: "Dominion of the Golden Coast"
+ desc_cnr_conquest_of_california_modifier: "Securing fortified roadsteads and trading outposts along the Californian coastline opens the Pacific to our merchants, eliminating trade friction and knitting distant waters to our realm."
+
+ cnr_trade_with_asia_modifier: "The Transpacific Trade Highway"
+ desc_cnr_trade_with_asia_modifier: "Armed galleons maintain an uninterrupted maritime corridor between our American possessions and Asian markets, lowering trade company administrative burdens while steering oriental treasures into our ports."
+
+ cnr_wolf_vanguard_morale: "Ferocity of the Wolf"
+ desc_cnr_wolf_vanguard_morale: "Emboldened by the legacy of Marinus the Wolf-Slayer, our vanguard regiments and naval crews take to battle with fierce determination and unshakeable courage."
+
+ cnr_aztecs_conquest_modifier: "Spoil of Tenochtitlan"
+ desc_cnr_aztecs_conquest_modifier: "Reorganizing the ancient tribute networks of the Mesoamerican interior stabilizes our gold extraction while funding the rapid expansion of vital urban trade hubs."
+
+ cnr_universal_monarchy_modifier: "The Universal Crown"
+ desc_cnr_universal_monarchy_modifier: "Governing continental viceroyalties and oceanic archipelagos across two hemispheres, the Dalmatian crown commands the full administrative prestige and diplomatic weight of a universal monarchy."
+
+ cnr_powerful_trade_ships_modifier: "Sovereign Escort Fleets"
+ desc_cnr_powerful_trade_ships_modifier: "Heavy naval warships continuously escort our transatlantic merchantmen, ensuring treasure convoys arrive unmolested while sweeping foreign flags from our waters."
+
+ cnr_employ_galleon_modifier: "Master Shipbuilders of the Atlantic"
+ desc_cnr_employ_galleon_modifier: "Marrying ancient Adriatic maritime craftsmanship with the resilient hardwoods of our Atlantic domains enables our shipyards to commission state-of-the-art caravels and war galleons in abundant numbers."
+
+ cnr_nova_dalmacia: "Viceroyalty of Dalmatia Nova"
+ desc_cnr_nova_dalmacia: "A centralized colonial bureaucracy binds overseas holdings closely to the throne, ensuring substantial tariff yields while keeping colonial unrest and liberty desire firmly in check."
+
+ cnr_northern_frontier_modifier: "Marches of the Rio Grande"
+ desc_cnr_northern_frontier_modifier: "Fortified settlements and frontier garrisons along the Rio Grande serve as a crucible for state centralisation and progressive governance reforms."
+
+ cnr_iron_wall_of_the_americas_modifier: "Iron Wall of the New World"
+ desc_cnr_iron_wall_of_the_americas_modifier: "Drilled in relentless forced marches and disciplined volley fire, our colonial tercios stand firm under the heaviest bombardment without ceding an inch of ground."
+
+ refugee_nation: "Sanctuary of the Displaced"
+ desc_refugee_nation: "Providing an open haven for exiles and persecuted communities across Europe fuels rapid construction and urban flourishing throughout our territories."
+
+ completing_the_conquista: "Crusade of Tierra Firme"
+ desc_completing_the_conquista: "Pacifying the rugged interior and spreading the Catholic faith across South American river valleys fills our armies with crusading vigor and secures the enduring favor of Rome."
+
+ cnr_global_presence_modifier: "Masters of Oceanic Sea Lanes"
+ desc_cnr_global_presence_modifier: "Protecting global shipping networks trains seasoned naval officers in the art of open-sea maneuvering while driving down the overall construction costs of our battle fleets."
+
+ cnr_terra_firme: "Riches of Tierra Firme"
+ desc_cnr_terra_firme: "Unchallenged naval supremacy over the harbors and river mouths of the northern South American coast ensures immense tariff extraction and unshakeable commercial power."
+
+ cnr_new_world_silver_and_gold_modifier: "Royal Bullion Extraction"
+ desc_cnr_new_world_silver_and_gold_modifier: "Advanced hydraulic milling, improved mercury processing, and rigorous royal oversight ensure colonial silver and gold deposits yield unprecedented output for the crown mints."
+
+ cnr_first_printshops_of_america_modifier: "Pioneer Printshops of the West"
+ desc_cnr_first_printshops_of_america_modifier: "The introduction of movable type presses to the New World allows rapid dissemination of legal codices, nautical atlases, and scientific treatises, keeping our scholars at the forefront of technological innovation."
+
+ cnr_defensive_stance_modifier: "Bastion of the Realm"
+ desc_cnr_defensive_stance_modifier: "Upgraded stone citadels, permanent garrisons, and organized civilian muster roles make this province an unyielding redoubt against invasion, fostering local growth and orderly recruitment."
+
+ cnr_office_of_foreign_commercial_affairs: "Office of Foreign Commercial Affairs"
+ desc_cnr_office_of_foreign_commercial_affairs: "A centralized state magistracy oversees chartered maritime ventures and port concessions, driving down infrastructure investment costs while efficiently steering trade flows from distant waters."
+
+ cnr_messico_court_modifier: "High Court of Messico"
+ desc_cnr_messico_court_modifier: "The establishment of a supreme appellate court in the heart of Dalmatia Nova standardizes imperial law across the continent, curbing factional disputes and accelerating administrative reforms."
+
+ cnr_san_domenico_court_modifier: "Chancellery of San Domenico"
+ desc_cnr_san_domenico_court_modifier: "Serving as the premier judicial and administrative seat for our island domains, this chancellery cuts administrative waste and maintains efficient state governance across the Caribbean."
+
+ cnr_colonial_outpost_modifier: "Oceanic Trade Outpost"
+ desc_cnr_colonial_outpost_modifier: "Acting as a fortified victualing haven and deepwater roadstead, this maritime outpost secures trade routes and channels substantial trade value into our global commercial network."

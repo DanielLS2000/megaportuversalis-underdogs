@@ -1,0 +1,327 @@
+namespace = flavor_cnr
+normal_or_historical_nations = yes
+
+# Consolato del Mar
+country_event = {
+	id = flavor_cnr.1
+	title = "flavor_cnr.title"
+	desc = "flavor_cnr.desc"
+	picture = COLONIZATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				OR = {
+					AND = {
+						tag = CNR
+						NOT = { exists = MEX }
+					}
+					tag = CNR
+				}
+				num_of_colonists = 2
+			}
+			has_country_flag = cnr_house_of_trade_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+
+	option = {		# We should establish it
+		name = flavor_cnr.1
+		ai_chance = { factor = 90 }
+		add_country_modifier = {
+			name = consolato_del_mar
+			duration = -1
+		}
+		clr_country_flag = cnr_house_of_trade_flag
+	}
+}
+
+country_event = { #Tiziano - Venice's Renaissance Champion
+	id = flavor_cnr.2
+	title = flavor_cnr.2.t
+	desc = flavor_cnr.2.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_cnr.2.a
+
+		define_advisor = {
+			name = "Tiziano"
+			type = artist 
+			cost_multiplier = 0.25
+			skill = 3
+		}
+		if = {
+			limit = { has_dlc = "Rule Britannia" }
+			change_innovativeness = 2
+		}
+		else = { add_adm_power = 25 add_dip_power = 25 add_mil_power = 25 }
+	}
+}
+
+country_event = {
+	id = flavor_cnr.3
+	title = flavor_cnr.3.t
+	desc = flavor_cnr.3.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_cnr.3.a
+
+		define_advisor = {
+			type = artist
+			cost_multiplier = 0.1
+			skill = 3
+		}
+		custom_tooltip = empty_line_tt
+		add_adm_power = 100
+	}
+}
+
+country_event = {
+	id = flavor_cnr.4 
+	title = flavor_cnr.4.t
+	desc = flavor_cnr.4.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ven_splendor_flag
+		}
+	}
+
+	option = {
+		name = flavor_cnr.4.a
+
+		add_republican_tradition = 5
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			custom_tooltip = adm_advisors_will_generate_1_splendor_per_level
+		}
+		else = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+		}
+	}
+}
+
+country_event = { #The Loredanian Academy
+	id = flavor_cnr.5
+	title = flavor_cnr.5.t
+	desc = flavor_cnr.5.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_cnr.5.a
+
+		if = {
+			limit = { has_dlc = "Rule Britannia" }
+			custom_tooltip = ven_academy_of_the_unknowns_reward_dlc_tt
+		}
+		else = {
+			custom_tooltip = ven_academy_of_the_unknowns_reward_tt
+		}
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_cnr.6
+	title = flavor_cnr.6.t
+	desc = flavor_cnr.6.d
+	picture = ARTWORK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_cnr.6.a
+
+		490 = {
+			if = {
+				limit = { has_building = shipyard }
+				remove_building = shipyard
+				add_building_construction = {
+					building = grand_shipyard
+				}
+			}
+			else_if = {
+				limit = { has_building = grand_shipyard }
+				add_base_production = 3
+			}
+			else = { add_building = shipyard }
+		}
+		add_country_modifier = {
+			name = "cnr_arsenal_marines"
+			duration = -1
+		}
+	}
+}
+
+# The Trade Center of Cartagena
+country_event = {
+	id = flavor_cnr.7
+	title = flavor_cnr.7.t
+	desc = flavor_cnr.7.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = CNR
+
+				owns = 828	# Cartagena
+				colony = 3
+			}
+			has_country_flag = sevilla_trade_center_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+
+	option = {		# We now have control of our Oversea Trade
+		name = flavor_cnr.7.a
+		828 = {
+			add_province_modifier = {
+				name = cnr_port_to_the_new_world
+				duration = -1
+			}
+		}
+	}
+}
+
+# Nova Dalmacia
+country_event = {
+	id = flavor_cnr.8
+	title = flavor_cnr.8.t
+	desc = flavor_cnr.8.d
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_cnr.8.a
+		change_country_color = { 
+			color = { 128 0 32 }
+		}
+		set_country_flag = has_overriden_color_flag
+		override_country_name = NDA
+		set_country_flag = is_NDA_flag
+		set_country_flag = has_overriden_name_flag
+		set_country_flag = NDA_ideas_flag
+		clr_country_flag = ven_upgrade_state_inuisition_idea_flag
+		country_event = { id = ideagroups.1 }
+	}
+
+	option = {
+		name = flavor_cnr.8.b
+		
+		change_country_color = { 
+			color = { 128 0 32 }
+		}
+		set_country_flag = has_overriden_color_flag
+		set_country_flag = NDA_ideas_flag
+		clr_country_flag = ven_upgrade_state_inuisition_idea_flag
+		country_event = { id = ideagroups.1 }
+	}
+
+	option = {
+		name = flavor_cnr.8.c
+		
+		override_country_name = NDA
+		set_country_flag = is_NDA_flag
+		set_country_flag = has_overriden_name_flag
+		set_country_flag = NDA_ideas_flag
+		clr_country_flag = ven_upgrade_state_inuisition_idea_flag
+		country_event = { id = ideagroups.1 }
+	}
+
+	option = {
+		name = flavor_cnr.8.e
+		
+		set_country_flag = NDA_ideas_flag
+		clr_country_flag = ven_upgrade_state_inuisition_idea_flag
+		country_event = { id = ideagroups.1 }
+	}
+
+	option = {
+		name = flavor_cnr.8.f
+		
+		add_prestige_or_monarch_power = { amount = 25 }
+	}
+}
+
+country_event = {
+	id = flavor_cnr.9
+	title = flavor_cnr.9.t
+	desc = flavor_cnr.9.d
+	picture = GREAT_BUILDING_eventPicture
+	fire_only_once = yes 
+	is_triggered_only = yes 
+	goto = 490
+	option = { 
+		name = flavor_cnr.9.a 
+		
+        add_country_modifier = {
+            name = cnr_new_capital
+            duration = 9125
+        }
+        490 = {
+            add_base_production = 2 
+            add_base_manpower = 1
+        }
+	}
+}
+
+country_event = { #The New World Dollar
+	id = flavor_cnr.10
+	title = flavor_cnr.10.t
+	desc = flavor_cnr.10.d
+	picture = MERCHANTS_TALKING_eventPicture
+	fire_only_once = yes 
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_cnr.10.a 
+		
+		add_country_modifier = {
+			name = cnr_new_world_dollar_modifier
+			duration = 7300
+		}
+		
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+		
+	}
+}
