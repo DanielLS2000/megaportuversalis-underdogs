@@ -2177,6 +2177,7 @@ dynamic-al_misr_arabic-pruthenian-culture-num1_ideas = {
 	}
 	trigger = {
 		culture = dynamic-al_misr_arabic-pruthenian-culture-num1
+		NOT = { tag = KOJ }
 	}
 	free = yes
 

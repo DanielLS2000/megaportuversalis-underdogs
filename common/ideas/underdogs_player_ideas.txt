@@ -377,7 +377,7 @@ ARM1_ideas = {
 	}
 }
 
-# Kabhulistan
+# Kabolistan
 AFG_ideas = {
 	start = {
 		land_morale = 0.1
@@ -544,4 +544,92 @@ AFR_ideas = {
 	modernizing_the_farms = {
 		global_trade_goods_size_modifier = 0.1
 	}
+}
+
+# France
+FRA_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		navy_tradition = 1
+	}	
+
+	trigger = {
+		tag = FRA
+		is_revolutionary = no 
+		is_revolution_target = no 
+	}
+	free = yes		#will be added at load.
+	
+	arnorican_arsenals = {
+		production_efficiency = 0.15
+	}
+	teulu_traditions = {
+		army_tradition = 0.5
+		land_morale = 0.15
+	}
+	reign_of_the_des_rennes = {
+		development_cost = -0.1
+	}
+	reforms_of_tristan_the_good = {
+		reform_progress_growth = 0.15
+		global_unrest = -1
+	}
+	conquest_of_the_rhine = {
+		core_creation = -0.1
+		max_absolutism = 5
+	}
+	aristocratic_leadership = {
+		discipline = 0.05
+	}
+	sons_of_dexterous_fishermen = {
+		trade_steering = 0.1
+	}
+}
+
+# Luticia
+LUT_ideas = {
+	start = {
+        discipline = 0.05
+        build_cost = -0.15
+	}
+	
+	bonus = {
+		global_institution_spread = 0.1
+	}	
+
+	trigger = {
+		tag = LUT
+	}
+	free = yes
+	
+    idea1 = {
+        production_efficiency = 0.1
+    }
+    idea2 = {
+        stability_cost_modifier = -0.1
+        war_exhaustion = -0.05
+    }
+    idea3 = {
+        global_manpower_modifier = 0.25
+        infantry_power = 0.1
+    }
+    idea4 = {
+        cavalry_power = 0.3
+        can_recruit_hussars = yes
+    }
+    idea5 = {
+        land_morale = 0.1
+    }
+    idea6 = {
+        global_unrest = -2
+    }
+    idea7 = {
+        papal_influence = 1
+        church_power_modifier = 0.1
+        global_missionary_strength = 0.01
+    }
 }
