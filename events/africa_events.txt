@@ -1,0 +1,367 @@
+namespace = flavor_afr
+normal_or_historical_nations = yes
+
+# Renaissance Centre
+country_event = {
+	id = flavor_afr.1
+	title = flavor_afr.1.t
+	desc = flavor_afr.1.d
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = naples_renaissance_flag
+			AND = {
+				NOT = { has_mission = emp_nap_renaissance_city }
+				OR = {
+					tag = AFR
+					tag = ITA
+				}
+				is_year = 1460
+				NOT = { is_year = 1530 }
+				stability = 3
+				is_at_war = no
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}	
+	
+	option = {
+		name = flavor_afr.1.a
+		add_prestige = 10
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_country_modifier = {
+			name = "afr_renaissance_culture"
+			duration = 18250
+		}
+	}
+	option = {
+		name = flavor_afr.1.b
+		add_legitimacy = 10
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_country_modifier = {
+			name = "afr_renaissance_glory"
+			duration = 18250
+		}
+	}
+}
+
+country_event = {
+	id = flavor_afr.2
+	title = flavor_afr.2.t
+	desc = flavor_afr.2.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_afr.2.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		hire_advisor = {
+			type = statesman
+			religion = root
+			culture = root
+			min_age = 25
+			max_age = 25
+			skill = 3
+			name = "Camillo Benso di Cavour"
+			cost_multiplier = 1
+		}
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = ITA_while_cavour_is_active
+		set_country_flag = ITA_cavour_alive
+	}
+	
+	option = {
+		name = flavor_afr.2.b
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_country_modifier = {
+			name = afr_protectionism
+			duration = 10950
+		}
+		
+		add_mercantilism = 5
+	}
+}
+
+# Consulate of the Sea
+country_event = {
+	id = flavor_afr.3
+	title = flavor_afr.3.t
+	desc = flavor_afr.3.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = AFR
+				NOT = { is_year = 1500 }
+				NOT = {
+					has_country_modifier = afr_consulate_sea
+				}
+			}
+			has_country_flag = afr_consulate_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_afr.3.a
+		if = {
+			limit = { has_dlc = "Domination" }
+			add_government_reform = consulate_of_the_sea
+		}
+		else = {
+			add_country_modifier = {
+				name = afr_consulate_sea
+				duration = 18250
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_afr.4
+	title = flavor_afr.4.t
+	desc = flavor_afr.4.d
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes 
+	major = yes
+	
+	option = {
+		name = flavor_afr.4.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		custom_tooltip = ITA_double_certain_trade_goods_trading_in_bonus
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = ITA_every_colonial_nation_will_get_goods_produced
+	}
+}
+
+# The Trade Center of Sevilla
+country_event = {
+	id = flavor_afr.5
+	title = flavor_afr.5.t
+	desc = flavor_afr.5.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+            NOT = { has_dlc = "Golden Century" }
+            tag = AFR
+
+            owns = 321	# Andalucia
+            colony = 3
+        }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+
+	option = {		# We now have control of our Oversea Trade
+		name = flavor_afr.5.a
+		321 = {
+			add_province_modifier = {
+				name = port_to_asia
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_afr.6
+	title = flavor_afr.6.t
+	desc = flavor_afr.6.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_afr.6.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = ITA_adapt_the_condotierri
+			duration = -1 
+		}
+		
+		custom_tooltip = ITA_cruelty_of_mercenaries_event_will_no_longer_happen
+		set_country_flag = disable_cruelty_of_mercs
+	}
+	
+	option = {
+		name = flavor_afr.6.b
+		
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = ITA_modern_military
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_afr.7
+	title = flavor_afr.7.t
+	desc = flavor_afr.7.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_afr.7.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = ITA_galleass_transport
+			duration = -1
+		}
+		
+		add_dip_power = 50
+	}
+	
+	option = {
+		name = flavor_afr.7.b
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = ITA_galleass_amount
+			duration = -1
+		}
+		
+		add_years_of_income = 0.1
+	}
+	
+	option = {
+		name = flavor_afr.7.c
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = ITA_galleass_durability
+			duration = -1
+		}
+		
+		add_navy_tradition = 20
+	}
+}
+
+country_event = {
+	id = flavor_afr.8
+	title = flavor_afr.8.t
+	desc = flavor_afr.8.d
+	picture = FEAST_eventPicture
+	
+	is_triggered_only = yes 
+	major = yes
+	
+	option = {
+		name = flavor_afr.8.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		change_price = {
+			trade_goods = wine
+			key = ITA_wine_upgrade
+			value = 0.4
+			duration = 10950
+		}
+	}
+}
+
+# Casa de Contratación
+country_event = {
+	id = flavor_afr.9
+	title = flavor_afr.9.t
+	desc = flavor_afr.9.d
+	picture = COLONIZATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				OR = {
+					AND = {
+						tag = AFR
+						NOT = { exists = ITA }
+					}
+					tag = ITA
+				}
+				num_of_colonists = 2
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+
+	option = {		# We should establish it
+		name = flavor_afr.9.a
+		ai_chance = { factor = 90 }
+		add_country_modifier = {
+			name = casa_de_contratacion
+			duration = -1
+		}
+	}
+}

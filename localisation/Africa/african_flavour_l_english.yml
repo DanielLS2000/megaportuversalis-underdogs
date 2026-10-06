@@ -1,0 +1,98 @@
+﻿l_english:
+ flavor_afr.1.t:0 "A New Era of Rebirth"
+ flavor_afr.1.d:0 "The winds of change are blowing across the Mediterranean, and our capital has become a sanctuary for the brightest minds of our age. Artists, philosophers, and architects from far and wide are flocking to our court, eager to study our monuments and share their knowledge. This intellectual and artistic revival marks the beginning of our own Renaissance. We must now decide how best to direct this newfound energy: shall we focus on the cultivation of high culture and the arts, or channel it into the glory and legitimacy of the crown?"
+ flavor_afr.1.a:0 "Let our cities become beacons of culture!"
+ flavor_afr.1.b:0 "The glory of the Renaissance reflects the glory of the State."
+
+ flavor_afr.2.t:0 "The Theories of Camillo Benso"
+ flavor_afr.2.d:0 "A young and brilliant statesman, Camillo Benso di Cavour, has risen to prominence in our court. He brings with him radical new theories on trade, agriculture, and industry. Cavour argues that our economy is being stifled by outdated tariffs and rigid guild monopolies. He proposes a series of sweeping liberal reforms to open our markets, encourage foreign investment, and modernize our infrastructure. While his ideas promise massive long-term growth, conservative elements in the court warn that abandoning our protectionist policies could expose our domestic merchants to ruinous foreign competition."
+ flavor_afr.2.a:0 "Appoint Cavour and embrace the free market."
+ flavor_afr.2.b:0 "Our markets must remain protected. Reject his theories."
+
+ flavor_afr.3.t:0 "The Consulate of the Sea"
+ flavor_afr.3.d:0 "As our maritime trade expands across the Mediterranean and beyond, disputes between merchants, sailors, and foreign powers have grown increasingly complex. Relying on ancient, disparate laws is no longer sufficient. Our advisors propose the establishment of the 'Consulat de Mar'—a unified, state-backed maritime tribunal. This institution would standardize maritime law, resolve commercial disputes swiftly, and aggressively protect our trading monopolies abroad. Establishing the Consulate will cement our status as the premier naval trading power."
+ flavor_afr.3.a:0 "The sea is our domain. Establish the Consulate!"
+
+ flavor_afr.4.t:0 "The Endless Horizon"
+ flavor_afr.4.d:0 "Our explorers have charted the vast oceans, our conquistadors have secured untamed lands, and our merchant fleets return groaning with the weight of foreign riches. The disparate colonial ventures of our past have coalesced into a true global imperium. From the ports of Africa to the shores of the New World, our language is spoken and our laws are obeyed. This unprecedented flow of goods—exotic spices, immense shipments of sugar, and rivers of gold—has fundamentally transformed the world economy, with our capital sitting at its very center."
+ flavor_afr.4.a:0 "The sun never sets on our ambition!"
+
+ flavor_afr.5.t:0 "The Gateway to Asia"
+ flavor_afr.5.d:0 "With our firm control over Andalucia and our growing colonial network, the port of Sevilla has evolved into more than just a regional hub; it is the beating heart of our global empire. Ships laden with the riches of the Indies—spices from Asia, ivory from Africa, and silver from the Americas—now converge in our waters. By granting special charters and upgrading the port facilities in Andalucia, we can officially designate it as the sole Gateway to Asia, ensuring that all overseas wealth flows through our tax collectors before reaching the rest of Europe."
+ flavor_afr.5.a:0 "Let the wealth of the world flow through our ports!"
+
+ flavor_afr.6.t:0 "Reforming the Military"
+ flavor_afr.6.d:0 "For decades, the wars of the Mediterranean have been fought largely by Condottieri—mercenary captains who fight for coin rather than country. While effective, they are notoriously disloyal, prone to pillaging our own lands, and hesitant to bleed when the battle turns fierce. As our state centralizes and our ambitions grow, we face a crossroads. We can either heavily regulate and adapt the Condottieri system into a semi-permanent state institution, or we can discard them entirely in favor of a modern, professional standing army drawn from our own populace."
+ flavor_afr.6.a:0 "Regulate the Condottieri. Coin buys loyalty."
+ flavor_afr.6.b:0 "We need a professional army of our own citizens!"
+
+ flavor_afr.7.t:0 "The Great Galleass Debate"
+ flavor_afr.7.d:0 "Our shipwrights have presented the Crown with a revolutionary design: the Galleass. Larger and more heavily armed than a traditional galley, yet retaining oars for unmatched maneuverability in the calm Mediterranean waters, it is a floating fortress. However, building these behemoths is a massive undertaking, and our admiralty is divided on how best to utilize the design. Some argue we should focus on their transport capabilities for amphibious assaults; others suggest we build a vast, cheaper swarm of them; while the most seasoned captains demand we focus on sheer durability and firepower."
+ flavor_afr.7.a:0 "Focus on their capacity as heavy troop transports."
+ flavor_afr.7.b:0 "Optimize the design for mass production."
+ flavor_afr.7.c:0 "Make them unsinkable floating fortresses."
+
+ flavor_afr.8.t:0 "The Grand Vintages of Africa"
+ flavor_afr.8.d:0 "Through careful cultivation and state-sponsored investment, the vineyards across our lands are producing wines of unparalleled quality. The rich, full-bodied vintages of our Mediterranean coast have become the envy of courts across Europe. To capitalize on this, our trade ministers have established a royal monopoly. We are now dictating the prices, severely restricting foreign imports, and flooding the markets of our rivals with our superior product. The taste of our empire is now the toast of the civilized world."
+ flavor_afr.8.a:0 "A toast to our prosperity!"
+
+ flavor_afr.9.t:0 "The House of Trade"
+ flavor_afr.9.d:0 "As our colonial empire expands, the sheer volume of ships crossing the Atlantic has become nearly impossible to track. Smuggling is rampant, and the Crown is losing a fortune in untaxed colonial goods. To assert royal control over the New World trade, it has been proposed that we establish a 'Casa de Contratación' (House of Trade). This centralized agency would collect a Royal Fifth on all precious metals, license all colonial expeditions, and ensure that every ounce of colonial wealth is properly cataloged and taxed."
+ flavor_afr.9.a:0 "Establish the House of Trade immediately."
+
+ afr_renaissance_culture:0 "Renaissance Culture"
+ desc_afr_renaissance_culture:0 "By patronizing the arts and embracing the Renaissance, our court has become a beacon of culture, attracting skilled advisors and elevating our standing among the nations of the world."
+
+ afr_protectionism:0 "Economic Protectionism"
+ desc_afr_protectionism:0 "Protecting our domestic markets from foreign competition has strengthened our diplomatic leverage and greatly empowered our local merchants."
+
+ afr_consulate_sea:0 "Consulate of the Sea"
+ desc_afr_consulate_sea:0 "The Consulat de Mar provides a unified legal framework for our merchants, drastically enhancing our efficiency and projecting our power in global trade."
+
+ port_to_asia:0 "Gateway to Asia"
+ desc_port_to_asia:0 "This port has been designated as the primary hub for all trade flowing to and from the lucrative markets of the East."
+
+ afr_struggle_modifier:0 "Mediterranean Struggle"
+ desc_afr_struggle_modifier:0 "Our relentless campaigns across the Mediterranean have hardened our resolve. Our troops strike with terrifying conviction, and our populace is highly resistant to the weariness of war."
+
+ afr_med_claim_modifier:0 "Mediterranean Claims"
+ desc_afr_med_claim_modifier:0 "Asserting our rightful claims across the sea has streamlined our naval logistics, allowing for rapid amphibious deployments and hardier fleets."
+
+ afr_victory_over_naples_modifier:0 "Victory over Naples"
+ desc_afr_victory_over_naples_modifier:0 "Our glorious triumph over the Kingdom of Naples has filled our armies with unmatched zeal and united our people firmly behind the crown."
+
+ afr_napoli_dockyard:0 "Neapolitan Dockyards"
+ desc_afr_napoli_dockyard:0 "The expanded shipyards in Napoli provide excellent, cost-effective facilities for constructing and repairing our Mediterranean fleet."
+
+ afr_barbary_control:0 "Barbary Control"
+ desc_afr_barbary_control:0 "By securing the Maghreb and pacifying the Barbary Coast, our merchant ships can project immense commercial power without the constant fear of piracy."
+
+ africa_dotf_modifier:0 "African Defender of the Faith"
+ desc_africa_dotf_modifier:0 "As the steadfast guardian of our religion, our people are deeply united and fiercely tolerant of our righteous path."
+
+ afr_a_new_power_modifier:0 "A New Power Rises"
+ desc_afr_a_new_power_modifier:0 "We have firmly established ourselves as a dominant power on the world stage, bringing immense prestige and the capability to command grand flagships."
+
+ afr_conquest_of_italy:0 "Conquest of Italy"
+ desc_afr_conquest_of_italy:0 "Integrating the wealthy, populous, and heavily urbanized lands of Italy requires a vast expansion of our administrative capabilities."
+
+ afr_naval_efforts:0 "Naval Efforts"
+ desc_afr_naval_efforts:0 "A concentrated effort on naval expansion has refined our maritime traditions and made maintaining our grand fleet much more affordable."
+
+ afr_integration_with_southern_iberia:0 "Iberian Integration"
+ desc_afr_integration_with_southern_iberia:0 "The smooth integration of Southern Iberia into our realm has centralized our administration and eased the diplomatic concerns of our neighbors."
+
+ tripoli_guilds:0 "Guilds of Tripoli"
+ desc_tripoli_guilds:0 "The highly organized craftsmen guilds of Tripoli have drastically improved the efficiency of local production and commerce."
+
+ afr_new_world_discovered:0 "New World Awaits"
+ desc_afr_new_world_discovered:0 "The revelation of vast new lands across the ocean has ignited a fervor for colonization and exploration among our people."
+
+ afr_sugar_rush:0 "Sugar Rush"
+ desc_afr_sugar_rush:0 "The booming demand for sugar in Europe has led to a massive expansion of our colonial plantations, vastly increasing the sheer volume of goods produced."
+
+ viceroyalty_of_new_africa:0 "Viceroyalty of New Carthage"
+ desc_viceroyalty_of_new_africa:0 "Establishing a formal viceroyalty over our colonial domains ensures loyalty, increases tariff revenues, and gives us the bureaucratic flexibility to manage complex diplomatic relations."
+
+ afr_african_silver_and_gold_modifier:0 "Colonial Gold Trade"
+ desc_afr_african_silver_and_gold_modifier:0 "A highly efficient extraction and shipping network for New World precious metals has dramatically increased the wealth flowing from our mines."
