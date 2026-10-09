@@ -1,0 +1,63 @@
+﻿l_english:
+ flavor_koj.1.t:0 "The Conquest of the Horn of Africa"
+ flavor_koj.1.d:0 "Our relentless campaigns have taken us far beyond the Red Sea, securing control over the Somali region. This land, known to the ancients as Punt, is famous for its valuable trade routes and immense reserves of incense. Our court now debates how to administer these new conquests: should we monopolize the extraction and trade of these sacred resins for the direct benefit of the Crown, or should we attempt to peacefully integrate the Somali clans into our vast Kingdom?"
+ flavor_koj.1.a:0 "The incense will bring untold riches to the Crown."
+ flavor_koj.1.b:0 "We shall welcome the Somali people as our brethren."
+
+ flavor_koj.2.t:0 "The Renovation of the Great Libraries"
+ flavor_koj.2.d:0 "With the integration of the wealthy cities of the Levant and Egypt, we have inherited vast repositories of knowledge, filled with classical texts and scientific treatises accumulated over centuries. Instead of discarding these works, our clerical leaders propose the foundation of grand ecclesiastical schools. By translating and studying these texts in our own institutions, we can unite theological fervor with classical philosophy, creating an intellectual renaissance in our empire."
+ flavor_koj.2.a:0 "Wisdom shall illuminate our unwavering faith!"
+ flavor_koj.2.b:0 "We must use this to reform the state schools."
+
+ flavor_koj.3.t:0 "The Pride of the Crusader Fleet"
+ flavor_koj.3.d:0 "To protect the sacred shores and project our power far beyond the Mediterranean, our shipyards have been working relentlessly. The Kingdom of Jerusalem now possesses one of the largest and most formidable navies in the known world. With such a vast fleet, our admirals demand that His Majesty approve a unified naval doctrine. How should the crusader armada fight upon the seas?"
+ flavor_koj.3.a:0 "Galleys shall rule the inland seas."
+ flavor_koj.3.b:0 "Swift light ships will control the holy trade."
+ flavor_koj.3.c:0 "Mighty warships shall crush our enemies!"
+ flavor_koj.3.e:0 "We need vast transport fleets for our hosts."
+ flavor_koj.3.f:0 "Our maritime traditions forge legendary admirals."
+
+ flavor_koj.4.t:0 "The Realm of Prester John"
+ flavor_koj.4.d:0 "For centuries, legends have circulated through Europe of Prester John, a powerful Christian king surrounded by infidels in the East. Our relentless march down the Nile and towards the Horn of Africa has finally brought our borders close to the ancient Empire of Ethiopia. Recognizing each other as brothers in faith, we have a unique opportunity to forge an eternal alliance or learn from their unique military methods."
+ flavor_koj.4.a:0 "We share the same faith. We shall be unbreakable allies."
+ flavor_koj.4.b:0 "Their auxiliary hosts will be useful to us."
+
+ flavor_koj.5.t:0 "Global Control of Coffee"
+ flavor_koj.5.d:0 "Through our intense military campaigns and diplomatic machinations, the ports of the Arabian Sea are now under our purview. With absolute control over Yemeni exports, the coveted coffee bean is now a commodity exclusively managed by our Kingdom. We can now dictate the price of coffee to all the courts and kingdoms of Europe and the East that have become dependent on its invigorating effect."
+ flavor_koj.5.a:0 "The world will pay our fair prices!"
+
+ flavor_koj.6.t:0 "Coffea Arabica"
+ flavor_koj.6.d:0 "The fertile slopes of our possessions in Yemen have proven to be the perfect environment for the cultivation of coffee. With global demand skyrocketing, our burghers and merchants are pressuring the Crown. They demand an exclusive monopoly on coffee exports, arguing that the crusader guilds would be the most efficient in its distribution. Alternatively, we can ignore them and invest Crown funds directly into expanding the terraces."
+ flavor_koj.6.a:0 "Grant the mercantile monopoly to the burghers."
+ flavor_koj.6.b:0 "We shall invest in the plantation infrastructure ourselves."
+
+ flavor_koj.7.t:0 "The Grain Trade in Egypt"
+ flavor_koj.7.d:0 "Since the time of the Pharaohs, Egypt has been synonymous with bountiful harvests. With the Nile Delta under the firm protection of Jerusalem, we are tasked with revitalizing the agricultural administration of this ancestral territory. We can order the dredging of the Nile estuaries to facilitate an unprecedented flow of trade routes, or focus our energies on permanently transforming the region into the greatest producer of grain the world has ever seen."
+ flavor_koj.7.a:0 "Expand the great commercial estuaries of the Nile."
+ flavor_koj.7.b:0 "Egypt shall be the eternal granary of our Empire!"
+
+ flavor_koj.8.t:0 "The Administration of the Crusader Domain"
+ flavor_koj.8.d:0 "What once started as a small coastal kingdom in the Levant has expanded into a pan-regional superpower, encompassing Arabia, Syria, and populous Egypt. The old laws and titles of the first kings of Jerusalem are now woefully inadequate to govern millions of people and regulate global trade routes. We can modernize our power structure, declaring a true Middle Eastern Empire centered on our new decentralized methods, or we can fully embrace the heritage of Egypt and adopt its venerable, centralized state machinery."
+ flavor_koj.8.a:0 "We shall revamp our laws and decentralize the administration."
+ flavor_koj.8.b:0 "We shall embrace the rich Egyptian administrative heritage."
+
+ flavor_koj.9.t:0 "Masters of the Arabian Sea"
+ flavor_koj.9.d:0 "With our rivals annihilated and their navy in ruins, the merchant princes who once dominated trade in the Gulf have been subjugated. The ancient commercial strongholds can no longer challenge us. As a direct result of our military assertiveness and naval excellence, the port of Aden has assumed total control of the flow of wealth and spices coming from the East, establishing our hegemonic monopoly over the Arabian waves."
+ flavor_koj.9.a:0 "No sail moves in these seas without our authorization."
+
+ flavor_koj.10.t:0 "The Public Works of Cairo"
+ flavor_koj.10.d:0 "As the historical capital of the region, Cairo's constant expansion and population density had left many of its original infrastructures on the brink of collapse. Through substantial Crown investment, we have begun constructing sewers, bridges, and paved streets. Cairo rises again not as the cluttered ancient metropolis of past empires, but as the well-structured and dazzling jewel of our dynasty."
+ flavor_koj.10.a:0 "A true marvel of the architectural world!"
+
+ flavor_koj.11.t:0 "The Patronage of [Root.Monarch.GetName]"
+ flavor_koj.11.d:0 "As monarch by the grace of God, [Root.Monarch.GetName] recognizes the civic and religious duty to provide charity to the subjects of the realm. Drawing inspiration from ancient traditions of public charity, the Crown has decided to allocate enormous endowments of wealth to support education and religion. The advisors have debated how this royal fund should be employed: some favor the patronage of new state universities, others suggest building grand cathedrals, or perhaps even expanding the renowned academic network of Al-Azhar in our service."
+ flavor_koj.11.a:0 "Let our gold build great libraries and universities."
+ flavor_koj.11.b:0 "The money will build the grandest and most sublime cathedrals."
+ flavor_koj.11.c:0 "Patronize the famous halls of learning of Al-Azhar."
+ flavor_koj.11.e:0 "Such proposals are a waste. The treasury stays where it is."
+
+ koj_ven_cooperation_modifier:0 "Venetian Naval Cooperation"
+ desc_koj_ven_cooperation_modifier:0 "Our close diplomatic and mercantile ties with the Most Serene Republic of Venice have given our shipwrights access to their most guarded naval secrets, allowing us to field their fearsome galleasses."
+
+ koj_arabian_caravans:0 "Arabian Caravan Network"
+ desc_koj_arabian_caravans:0 "By securing the major oasis routes and assuring the safety of the desert paths, our merchants project far greater influence over the flow of inland trade across the Arabian Peninsula."

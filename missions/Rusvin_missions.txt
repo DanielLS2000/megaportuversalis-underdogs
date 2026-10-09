@@ -1,4 +1,4 @@
-﻿custom_missions = {
+﻿rusvin_1 = {
 	slot = 1
 	generic = no
 	has_country_shield = yes
@@ -571,7 +571,7 @@ NOT = { country_or_non_sovereign_subject_holds = ROOT }
 	}
 }
 
-series_2_77b91718 = {
+rusvin_2 = {
 	slot = 2
 	generic = no
 	has_country_shield = yes
@@ -1237,7 +1237,7 @@ OR = {
 	}
 }
 
-series_3_9bc4d6da = {
+rusvin_3 = {
 	slot = 3
 	generic = no
 	has_country_shield = yes
@@ -2156,7 +2156,7 @@ mos_rus_conquer_persia = {
 	}
 }
 
-series_4_5d923a41 = {
+rusvin_4 = {
 	slot = 4
 	generic = no
 	has_country_shield = yes
@@ -3387,7 +3387,7 @@ province_id = 295
 	}
 }
 
-mdv_rusvin_column_5 = {
+rusvin_5 = {
 	slot = 5
 	generic = no
 	has_country_shield = yes

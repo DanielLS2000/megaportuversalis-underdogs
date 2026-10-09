@@ -1,0 +1,592 @@
+namespace = flavor_koj
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_koj.1
+	title = flavor_koj.1.t
+	desc = flavor_koj.1.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_koj.1.a
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_years_of_owned_provinces_production_income = {
+			years = 20
+			trigger = {
+				trade_goods = incense
+			}
+			custom_tooltip = YEM_prod_from_incense
+		}
+	}
+	
+	option = {
+		name = flavor_koj.1.b
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_accepted_culture_or_dip_power = { culture = somali dip_reward = yes }
+	}
+}
+
+#Renovating the Zahiriyya Library
+country_event = { 
+	id = flavor_koj.2
+	title = flavor_koj.2.t
+	desc = flavor_koj.2.d
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.2.a
+
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 3
+		}
+		else = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+
+	option = {
+		name = flavor_koj.2.b
+
+		add_years_of_income = -2
+		unlock_government_reform = {
+			government_reform = state_madrasas_reform
+		}
+	}
+}
+
+country_event = {
+	id = flavor_koj.3
+	title = flavor_koj.3.t
+	desc = flavor_koj.3.d
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.3.a
+
+		trigger = { 
+			has_dlc = "Rule Britannia"
+		}
+
+		custom_tooltip = mam_unlock_galley_doctrine_tt
+
+		clr_country_flag = mam_unlock_galley_doctrine_flag
+		clr_country_flag = mam_unlock_light_doctrine_flag
+		clr_country_flag = mam_unlock_warships_doctrine_flag
+		clr_country_flag = mam_unlock_transports_doctrine_flag
+
+		set_country_flag = mam_unlock_galley_doctrine_flag
+	}
+
+	option = {
+		name = flavor_koj.3.b
+
+		trigger = { 
+			has_dlc = "Rule Britannia"
+		}
+
+		custom_tooltip = mam_unlock_light_doctrine_tt
+
+		clr_country_flag = mam_unlock_galley_doctrine_flag
+		clr_country_flag = mam_unlock_light_doctrine_flag
+		clr_country_flag = mam_unlock_warships_doctrine_flag
+		clr_country_flag = mam_unlock_transports_doctrine_flag
+
+		set_country_flag = mam_unlock_light_doctrine_flag
+	}
+
+	option = {
+		name = flavor_koj.3.c
+
+		trigger = { 
+			has_dlc = "Rule Britannia"
+		}
+
+		custom_tooltip = mam_unlock_warships_doctrine_tt
+
+		clr_country_flag = mam_unlock_galley_doctrine_flag
+		clr_country_flag = mam_unlock_light_doctrine_flag
+		clr_country_flag = mam_unlock_warships_doctrine_flag
+		clr_country_flag = mam_unlock_transports_doctrine_flag
+
+		set_country_flag = mam_unlock_warships_doctrine_flag
+	}
+
+	option = {
+		name = flavor_koj.3.e
+
+		trigger = { has_dlc = "Rule Britannia" }
+
+		custom_tooltip = mam_unlock_transports_doctrine_tt
+		
+		clr_country_flag = mam_unlock_galley_doctrine_flag
+		clr_country_flag = mam_unlock_light_doctrine_flag
+		clr_country_flag = mam_unlock_warships_doctrine_flag
+		clr_country_flag = mam_unlock_transports_doctrine_flag
+
+		set_country_flag = mam_unlock_transports_doctrine_flag
+	}
+
+	option = {
+		name = flavor_koj.3.f
+
+		trigger = { 
+			NOT = { has_dlc = "Rule Britannia" }
+		}
+
+		create_admiral = { tradition = 80 }
+		add_navy_tradition = 10
+		
+	}
+}
+
+country_event = { #The Beacons of Gonder
+	id = flavor_koj.4
+	title = flavor_koj.4.t
+	desc = flavor_koj.4.d
+	picture = muslimgfx_PILGRIMAGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.4.a 
+
+		custom_tooltip =  mam_eth_flavor_tt
+		set_country_flag = mam_eth_flavor_flag
+
+		if = {
+			limit = {
+				ETH = {
+					has_opinion = {
+						who = ROOT 
+						value = 100
+					}
+					OR = {
+						is_subject_of = ROOT
+						alliance_with = ROOT 
+					}
+				}
+			}
+			add_historical_friend = ETH
+			ETH = { add_historical_friend = ROOT }
+			add_trust = {
+				who = ETH
+				value = 25
+				mutual = yes
+			}
+		}
+		else = {
+			add_dip_power = 100
+			if = {
+				limit = { 
+					has_dlc = "Cradle of Civilization" 
+					religion_group = muslim 
+				}
+				if = {
+					limit = { piety = 0 }
+					add_piety = 0.25
+				}
+				else = { add_piety = -0.25 }
+			}
+			else = {
+				add_prestige_or_monarch_power = { amount = 10 }
+			}
+		}
+	}
+
+	option = {
+		name = flavor_koj.4.b 
+
+		if = {
+			limit = { has_dlc = "Origins" }
+			set_country_flag = allow_cawa_auxiliary_forces_flag
+			custom_tooltip = enable_cawa_auxiliary_forces_tt
+			tooltip = {
+				add_government_reform = cawa_auxiliary_forces
+			}
+		}
+		else_if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.1
+		}
+		else = {
+			add_army_tradition = 20
+		}
+	}
+}
+
+country_event = {
+	id = flavor_koj.5
+	title = flavor_koj.5.t
+	desc = flavor_koj.5.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_koj.5.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		change_price = {
+			trade_goods = coffee
+			key = YEM_coffee_price_boost
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+#Coffea Arabica
+country_event = { 
+	id = flavor_koj.6
+	title = flavor_koj.6.t
+	desc = flavor_koj.6.d
+	picture = muslimgfx_MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.6.a 
+
+		custom_tooltip = mam_enable_coffee_monopoly_tt
+		set_country_flag = mam_enable_coffee_monopoly_flag
+
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 20
+		}
+	}
+
+	option = {
+		name = flavor_koj.6.b 
+
+		add_mercantilism = 5
+
+		custom_tooltip = mam_1_prod_in_coffee_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = { trade_goods = coffee }
+				add_base_production = 1
+			}
+		}
+	}
+}
+
+#The Grain Trade in Egypt
+country_event = { 
+	id = flavor_koj.7
+	title = flavor_koj.7.t
+	desc = flavor_koj.7.d
+	picture = muslimgfx_DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.7.a 
+
+		custom_tooltip = mam_expand_nile_estuaries_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = nile_estuary_modifier
+				}
+				remove_province_modifier = nile_estuary_modifier
+				add_province_modifier = {
+					name = expanded_nile_estuary_modifier
+					duration = -1 
+				}
+				add_base_production = 1
+			}
+		}
+	}
+
+	option = {
+		name = flavor_koj.7.b
+
+		add_mercantilism = 2
+		custom_tooltip = mam_expand_grain_production_tt
+		custom_tooltip = mam_more_exports_2_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = granary_of_the_mediterranean
+				}
+				remove_province_modifier = granary_of_the_mediterranean
+				add_province_modifier = {
+					name = expanded_granary_of_the_mediterranean_modifier
+					duration = -1 
+				}
+			}
+			set_country_flag = increase_exports_to_6_flag
+		}
+	}
+}
+
+#The Administration of the Mamluk Empire
+country_event = { 
+	id = flavor_koj.8
+	title = flavor_koj.8.t
+	desc = flavor_koj.8.d
+	picture = muslimgfx_LIBERUM_VETO_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.8.a 
+
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		else = {
+			add_power_projection = {
+				type = mam_new_caliphate_pp 
+				amount = 10
+			}
+			custom_tooltip = sca_scandinavian_european_empire_tt
+		}
+
+		capital_scope = {
+			set_province_flag = chose_mam_mission_flag
+		}
+
+		if = {
+			limit = { has_dlc = "Golden Century" }
+			custom_tooltip = mam_enable_kashifs_local_organizations_tt
+			set_country_flag = mam_enable_kashifs_local_organizations_flag
+		}
+		else = {
+			add_adm_power = 200
+			add_corruption = -2
+			change_government_reform_progress = 150
+		}
+	}
+
+	option = {
+		name = flavor_koj.8.b 
+
+		capital_scope = {
+			set_province_flag = chose_egy_mission_flag
+		}
+		if = {
+			limit = { stability = 0 }
+			add_stability = -5
+		}
+		else = {
+			add_adm_power = -200
+			add_dip_power = -100
+		}
+		if = {
+			limit = { 
+				EGY = { exists = no }
+			}
+			change_tag = EGY
+			swap_free_idea_group = yes
+		}
+		else = { add_prestige_or_monarch_power = { amount = 25 } }
+		
+		set_country_flag = egyptian_government_reform_flag
+		add_government_reform = egyptian_government_reform
+	}
+}
+
+country_event = {
+	id = flavor_koj.9
+	title = flavor_koj.9.t
+	desc = flavor_koj.9.d
+	picture = TRADE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_koj.9.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		goto = 4346
+		
+		add_power_projection_mission = { amount = 30 }
+		
+		custom_tooltip = " "
+		
+		4346 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = -1
+				power = 100
+				key = YEM_competition_less
+			}
+		}
+		
+		custom_tooltip = " "
+		
+		create_admiral = { tradition = 60 }
+	}
+}
+
+#The Public works of Cairo
+country_event = {
+	id = flavor_koj.10
+	title = flavor_koj.10.t
+	desc = flavor_koj.10.d
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = KOJ
+				is_year = 1457
+				owns = 361			#we have to own cairo
+				NOT = { is_year = 1459 }
+				has_regency = no
+				is_female = no
+			}
+			mission_completed = koj_cairo_expansion
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.01
+			mission_completed = koj_cairo_expansion
+		}
+	}
+	option = {
+		name = flavor_koj.10.a
+		add_piety = 0.10
+		361 = { 
+			add_province_modifier = {
+				name = "public_works_of_cairo"
+				duration = -1
+			}
+		}
+		
+	}
+}
+
+#The Waqf of [Root.Monarch.GetName]
+country_event = { 
+	id = flavor_koj.11
+	title = flavor_koj.11.t
+	desc = flavor_koj.11.d
+	picture = muslimgfx_ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_koj.11.a 
+
+		add_years_of_income = -2
+		capital_scope = {
+			if = {
+				limit = { has_building = university }
+				add_base_production = 2
+			}
+			else = { add_building = university }
+		}
+		custom_tooltip = mam_adm_advisors_generate_idea_cost_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = mam_adm_advisors_generate_idea_cost_modifier
+				duration = 7300
+				hidden = yes
+			}
+		}
+	}
+
+	option = {
+		name = flavor_koj.11.b
+
+		add_years_of_income = -2
+
+		capital_scope = {
+			if = {
+				limit = { has_building = cathedral }
+				add_base_tax = 3
+			}
+			else = {
+				add_building = cathedral
+				if = {
+					limit = { has_building = temple }
+					hidden_effect = {
+						remove_building = temple
+					}
+				}
+			}
+		}
+
+		custom_tooltip = mam_mosque_great_mosque_generates_crown_land_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = mam_mosque_great_mosque_generates_crown_land_modifier
+				duration = 7300
+				hidden = yes
+			}
+		}
+		custom_tooltip = add_5_crown_land_share
+		hidden_effect = {
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+		}
+	}
+
+	option = {
+		name = flavor_koj.11.c
+
+		trigger = {
+			has_dlc = "Leviathan"
+			361 = {
+				owned_by = ROOT
+				NOT = {
+					has_great_project = {
+						type = al_azhar_university
+						tier = 3
+					}
+				}
+			}
+		}
+		add_years_of_income = -2
+		361 = {
+			add_great_project_tier = {
+				type = al_azhar_university
+				tier = 1
+			}
+		}
+		change_innovativeness = 3
+	}
+
+	option = {
+		name = flavor_koj.11.e
+
+		add_prestige_or_monarch_power = { amount = 10 }
+	}
+}

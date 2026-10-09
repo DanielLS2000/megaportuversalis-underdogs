@@ -1,0 +1,8 @@
+koj_ven_cooperation_modifier = {
+	has_galleass = yes
+	allowed_galleass_fraction = 0.05
+}
+
+koj_arabian_caravans = {
+	global_prov_trade_power_modifier = 0.1
+}

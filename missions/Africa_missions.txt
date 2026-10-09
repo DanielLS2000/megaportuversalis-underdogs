@@ -1,7 +1,9 @@
-custom_missions = {
+africa_1 = {
 	slot = 1
 	generic = no
-	potential = { }
+	potential = { 
+		tag = AFR
+	}
 	afr_navy = {
 		icon = mission_aragonese_navy
 		required_missions = { }
@@ -703,10 +705,12 @@ custom_missions = {
 		}
 	}
 }
-series_3_6e1e70f0 = {
+africa_3 = {
 	slot = 3
 	generic = no
-	potential = { }
+	potential = { 
+		tag = AFR
+	}
 	afr_consulate_of_sea = {
 		icon = mission_consulate_of_the_sea
 		required_missions = { }
@@ -1532,12 +1536,8 @@ series_3_6e1e70f0 = {
 				custom_tooltip = BYZ_add_2_years_of_trade_income
 			}
 			custom_tooltip = " "
-			enable_branching_mission_review = {
-				key = ITA_TRADE
-				ai_event_id = flavor_ita.8
-			}
-			custom_tooltip = " "
 			custom_tooltip = ITA_unlock_new_estate_privileges_that_will_be_decided
+			set_country_flag = ITA_genoa_missions
 		}
 	}
 	afr_genoa_node = {
@@ -1773,10 +1773,12 @@ series_3_6e1e70f0 = {
 		}
 	}
 }
-series_5_781e9514 = {
+africa_5 = {
 	slot = 5
 	generic = no
-	potential = { }
+	potential = { 
+		tag = AFR
+	}
 	afr_balearics = {
 		icon = mission_unite_home_region
 		required_missions = { }
@@ -2247,10 +2249,12 @@ series_5_781e9514 = {
 		}
 	}
 }
-series_2_54305ecf = {
+africa_2 = {
 	slot = 2
 	generic = no
-	potential = { }
+	potential = { 
+		tag = AFR
+	}
 	afr_pillars_of_hercules = {
 		icon = italia_transalpina
 		position = 4
@@ -2962,10 +2966,12 @@ series_2_54305ecf = {
 		}
 	}
 }
-series_4_7eff6293 = {
+africa_4 = {
 	slot = 4
 	generic = no
-	potential = { }
+	potential = { 
+		tag = AFR
+	}
 	afr_greek_lands = {
 		icon = mission_city_of_the_world's_desire
 		required_missions = {
