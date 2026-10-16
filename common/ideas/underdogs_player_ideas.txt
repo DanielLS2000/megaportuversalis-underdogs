@@ -108,7 +108,7 @@ MDV_ideas = {
 		infantry_power = 0.15
 	}
 	broken_crown = {
-		land_morale = 0.1
+		army_tradition = 0.5
 	}
 	moscow_reforged = {
 		production_efficiency = 0.1
@@ -118,7 +118,7 @@ MDV_ideas = {
 		development_cost = -0.1
 	}
 	persian_generation = {
-	army_tradition = 0.5
+		land_morale = 0.1
 	}
 	making_rusvin = {
 		technology_cost = -0.05
@@ -212,6 +212,45 @@ BSB_ideas = {
 }
 
 # Illyria
+ILY_ideas = {
+	start = {
+		cavalry_power = 0.2
+		manpower_recovery_speed = 0.15
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+
+	trigger = {
+		tag = ILY
+		was_tag = BSB
+	}
+
+	free = yes
+
+	mesapian_naval_legacy = {
+		naval_forcelimit_modifier = 0.15
+	}
+	salt_trade_route = {
+		trade_steering = 0.1
+	}
+	priscipina_vittoria = {
+		discipline = 0.05
+	}
+	health_insurance_tax = {
+		global_tax_modifier = 0.1
+	}
+	study_hungarian_cavalry = {
+		cavalry_flanking = 0.5
+	}
+	blackarmy_integrated = {
+		merc_maintenance_modifier = -0.15
+	}
+	crusader_spirit = {
+		land_morale = 0.1
+	}
+}
 
 # England
 ENG_ideas = {
@@ -231,7 +270,7 @@ ENG_ideas = {
 	free = yes
 
 	britanic_naval_superiority = {
-		navy_tradition = 0.5
+		navy_tradition = 0.25
 		heavy_ship_power = 0.1
 	}
 	east_indies_company = {
@@ -270,6 +309,7 @@ GBR_ideas = {
 
 	free = yes
 
+	# TODO
 	britain_rules_the_waves = {
 		navy_tradition = 1
 		heavy_ship_power = 0.15
@@ -312,8 +352,7 @@ ARM_ideas = {
 	free = yes
 
 	christianization_of_the_east = {
-		global_missionary_strength = 0.01
-		prestige_per_development_from_conversion = 0.5
+		global_missionary_strength = 0.02
 	}
 	recovery_of_armenian_lands = {
 		development_cost = -0.1
@@ -352,70 +391,33 @@ ARM1_ideas = {
 
 	free = yes
 
-	christianization_of_the_east = {
+	christianization_of_the_east_1 = {
 		global_missionary_strength = 0.02
 		prestige_per_development_from_conversion = 0.5
 	}
 	recovery_of_armenian_lands = {
-		development_cost = -0.1
+		# Same
 	}
 	armenian_courage = {
-		land_morale = 0.1
+		# Same
 	}
 	fired_bricks = {
-		build_cost = -0.1
+		# Same
 	}
 	simplifying_integration_costs = {
-		core_creation = -0.15
+		# Same
 	}
-	the_armenian_military_tradition = {
+	the_armenian_military_tradition_1 = {
 		army_tradition = 1
 	}
-	production_and_extended_conscription = {
-		production_efficiency = 0.2
-		manpower_in_own_culture_provinces = 0.1
+	production_and_extended_conscription_1 = {
+		production_efficiency = 0.1
+		manpower_in_own_culture_provinces = 0.2
 	}
 }
 
 # Kabolistan
-AFG_ideas = {
-	start = {
-		land_morale = 0.1
-		cavalry_power = 0.15
-	}
-
-	bonus = {
-		technology_cost = -0.05
-	}
-	
-	trigger = {
-		tag = AFG
-	}
-
-	free = yes
-
-	tureh = {
-		global_manpower_modifier = 0.15
-	}
-	imperial_training = {
-		army_tradition = 0.5
-	}
-	recovery_the_prestige = {
-		core_creation = -0.1
-	}
-	industrial_focus = {
-		production_efficiency = 0.1
-	}
-	provincial_administrative_center = {
-		governing_capacity_modifier = 0.1
-	}
-	i_love_money = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	new_jews_on_india = {
-		trade_efficiency = 0.1
-	}
-}
+# REDO Timurids Loads wrongly
 
 # Byzantium-Armenia
 BYZARM_ideas = {
@@ -438,14 +440,14 @@ BYZARM_ideas = {
 	free = yes
 
 	christianization_of_the_east = {
-		global_missionary_strength = 0.03
+		global_missionary_strength = 0.02
 		prestige_per_development_from_conversion = 0.5
 	}
 	recovery_of_armenian_lands = {
-		development_cost = -0.1
+		# Same
 	}
 	armenian_courage = {
-		land_morale = 0.1
+		# Same
 	}
 	roman_engineering = {
 		defensiveness = 0.25
@@ -453,24 +455,23 @@ BYZARM_ideas = {
 	simplifying_integration_costs = {
 		core_creation = -0.25
 	}
-	the_armenian_military_tradition = {
-		army_tradition = 1
+	the_armenian_military_tradition_1 = {
+		# Same
 	}
-	production_and_extended_conscription = {
-		production_efficiency = 0.2
-		manpower_in_own_culture_provinces = 0.1
+	production_and_extended_conscription_1 = {
+		# Same
 	}
 }
 
 # Jerusalem
 jerusalem_ideas = {
 	start = {
-		trade_steering = 0.15
-		land_morale = 0.2
+		trade_steering = 0.25
+		land_morale = 0.15
 	}
 
 	bonus = {
-		global_manpower_modifier = 0.3
+		global_manpower_modifier = 0.25
 	}
 
 	trigger = {
@@ -480,27 +481,27 @@ jerusalem_ideas = {
 	free = yes
 
 	roads_to_fortune = {
-		global_trade_power = 0.1
-		trade_range_modifier = 0.2
+		global_trade_power = 0.05
+		trade_range_modifier = 0.1
 	}
 	the_golden_exchange = {
-		trade_efficiency = 0.2
+		trade_efficiency = 0.1
 	}
 	bastions_of_the_realm = {
-		defensiveness = 0.15
+		defensiveness = 0.25
 	}
 	the_sacred_accord = {
 		papal_influence = 2
-		curia_powers_cost = -0.15
+		curia_powers_cost = -0.1
 	}
 	professional_army = {
-		discipline = 0.1
+		discipline = 0.05
 	}
 	wealth_through_industry = {
-		production_efficiency = 0.15
+		production_efficiency = 0.1
 	}
 	harmony_of_the_realm = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 }
 
@@ -539,7 +540,7 @@ AFR_ideas = {
 	}
 	african_monopoly = {
 		global_own_trade_power = 0.2
-		trade_efficiency = 0.1
+		trade_efficiency = 0.05
 	}
 	modernizing_the_farms = {
 		global_trade_goods_size_modifier = 0.1
@@ -575,7 +576,7 @@ FRA_ideas = {
 		development_cost = -0.1
 	}
 	reforms_of_tristan_the_good = {
-		reform_progress_growth = 0.15
+		reform_progress_growth = 0.1
 		global_unrest = -1
 	}
 	conquest_of_the_rhine = {
@@ -593,55 +594,92 @@ FRA_ideas = {
 # Luticia
 LUT_ideas = {
 	start = {
-        discipline = 0.05
-        build_cost = -0.15
+		discipline = 0.05
+		land_morale = 0.1
 	}
-	
+
 	bonus = {
-		global_institution_spread = 0.1
-	}	
+		global_trade_power = 0.1
+	}
 
 	trigger = {
 		tag = LUT
 	}
+
 	free = yes
-	
-    idea1 = {
-        production_efficiency = 0.1
-    }
-    idea2 = {
-        stability_cost_modifier = -0.1
-        war_exhaustion = -0.05
-    }
-    idea3 = {
-        global_manpower_modifier = 0.25
-        infantry_power = 0.1
-    }
-    idea4 = {
-        cavalry_power = 0.3
-        can_recruit_hussars = yes
-    }
-    idea5 = {
-        land_morale = 0.1
-    }
-    idea6 = {
-        global_unrest = -2
-    }
-    idea7 = {
-        papal_influence = 1
-        church_power_modifier = 0.1
-        global_missionary_strength = 0.01
-    }
+
+	building_a_home = {
+		build_cost = -0.15
+	}
+	trade_deals = {
+		merchants = 1
+	}
+	the_new_silk_road = {
+		trade_steering = 0.25
+	}
+	every_man_must_serve = {
+		manpower_recovery_speed = 0.15
+	}
+	stard_army = {
+		infantry_power = 0.1
+	}
+	investing_in_new_ports = {
+		trade_efficiency = 0.1
+	}
+	importing_military_equipament = {
+		cavalry_cost = -0.1
+		infantry_cost = -0.1
+	}
+}
+
+PRU_ideas = {
+	start = {
+		discipline = 0.05
+		army_tradition = 0.5
+	}
+
+	bonus = {
+		trade_efficiency = 0.1
+	}
+
+	trigger = {
+		tag = PRU
+	}
+
+	free = yes
+
+	impeccable_diplomacy = {
+		ae_impact = -0.1
+	}
+	trade_deals = {
+		# Same
+	}
+	professional_army = {
+		land_morale = 0.2
+	}
+	every_man_must_serve = {
+		# Same
+	}
+	the_goose_step = {
+		infantry_power = 0.2
+	}
+	the_great_military_acadamy = {
+		army_tradition_decay = -0.01
+	}
+	an_army_with_a_nation = {
+		global_manpower_modifier = 0.25
+		global_regiment_recruit_speed = -0.1
+	}
 }
 
 bosphorus_ideas = {
 	start = {
-		global_trade_power = 0.05
-		army_tradition_decay = -0.005
+		global_trade_power = 0.1
+		army_tradition_decay = -0.01
 	}
 
 	bonus = {
-		discipline = 0.1
+		discipline = 0.05
 	}
 
 	trigger = {
@@ -651,10 +689,10 @@ bosphorus_ideas = {
 	free = yes
 
 	bsp_mercenary_contracts = {
-		merc_maintenance_modifier = -0.4
+		merc_maintenance_modifier = -0.15
 	}
 	bsp_masters_of_the_strait = {
-		global_own_trade_power = 0.2
+		global_own_trade_power = 0.15
 	}
 	bsp_gothic_cavalry = {
 		cavalry_power = 0.2
@@ -663,13 +701,13 @@ bosphorus_ideas = {
 		trade_efficiency = 0.1
 	}
 	bsp_pontic_agriculture = {
-		production_efficiency = 0.15
+		production_efficiency = 0.1
 	}
 	bsp_fortify_the_frontier = {
 		build_cost = -0.1
-		manpower_recovery_speed = 0.2
+		manpower_recovery_speed = 0.1
 	}
 	bsp_defenders_of_orthodoxy = {
-		global_manpower_modifier = 0.3
+		global_manpower_modifier = 0.25
 	}
 }
