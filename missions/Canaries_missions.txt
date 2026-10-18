@@ -396,7 +396,6 @@ canarie_1 = {
 			country_event = {
 				id = flavor_cnr.2
 			}
-			custom_tooltip = event_insight_flavor_cnr.2
 		}
 	}
 	canarie_new_pillings = {

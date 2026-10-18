@@ -1,0 +1,129 @@
+namespace = flavor_FRABRI
+normal_or_historical_nations = yes
+
+# The Inheritance of Rennes
+country_event = {
+	id = flavor_FRABRI.1
+	title = flavor_FRABRI.1.t
+	desc = flavor_FRABRI.1.d
+	picture = {	
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		picture = ITALIAN_wars_eventPicture
+	}
+	picture = {	
+		trigger = {
+			NOT = { has_dlc = "Emperor" }
+		}
+		picture = COURT_eventPicture
+	} 
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		NOT = { is_year = 1550 }
+		NOT = { senior_union_with = ARA }
+		NOT = { exists = PRO }
+		OR = {
+			dynasty = "de Rennes"
+			dynasty = "d'Anjou"
+		}
+		any_country = {
+			OR = {
+				tag = NAP
+				tag = ARA
+				tag = CAS
+				tag = SPA
+			}
+			any_owned_province = {
+				OR = {
+					area = catalonia_area
+					province_id = 4695
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	
+	option = {		# Let us claim what is rightfully Ours!
+		name = flavor_FRABRI.1.a
+		if = {
+			limit = {
+				exists = ARA
+				ARA = { is_subject = no }
+			}
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 600
+				target = ARA
+			}
+		}
+		else = {
+			every_province = {
+				limit = {
+					OR = {
+						area = catalonia_area
+					    province_id = 4695
+					}
+					OR = {
+						owned_by = NAP 
+						owned_by = ARA
+						owned_by = CAS
+						owned_by = SPA
+					}
+				}
+				add_claim = FRA
+			}
+		}
+		every_known_country = {
+			limit = {
+				OR = {
+					tag = NAP
+					tag = ARA
+					tag = CAS
+					tag = SPA
+				}
+				any_owned_province = {
+					OR = {
+						area = catalonia_area
+					    province_id = 4695
+					}
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fra_claimed_naples
+			}
+		}
+		set_country_flag = claimed_naples
+	}
+	option = {		# Let us drop our claims for good!
+		name = flavor_FRABRI.1.b
+		every_known_country = {
+			limit = {
+				OR = {
+					tag = NAP
+					tag = ARA
+					tag = CAS
+					tag = SPA
+				}
+				any_owned_province = {
+					OR = {
+						area = catalonia_area
+					    province_id = 4695
+					}
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fra_did_not_claim_naples
+			}
+		}
+	}
+}

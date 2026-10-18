@@ -1,0 +1,26 @@
+FRABRI_Constable = {
+	country_military_power = 1
+}
+
+FRABRI_accumulating_military_experience = {
+	army_tradition = 1
+}
+
+FRABRI_Master_Bordeaux = {
+	global_own_trade_power = 0.15
+	global_ship_trade_power = 0.1
+}
+
+FRABRI_Theological_Universities = {
+	church_loyalty_modifier = 0.05
+	church_influence_modifier = -0.05
+}
+
+FRABRI_Colonial_Port = {
+	colonists = 1
+}
+
+FRABRI_entrepot_nantes = {
+	province_trade_power_modifier = 0.2
+}
+

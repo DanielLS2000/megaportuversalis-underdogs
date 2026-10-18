@@ -567,6 +567,7 @@ SON_ideas = {
 BRI_ideas = {
 	trigger = {
 		primary_culture = breton
+		NOT = { tag = FRA }
 	}
 }
 

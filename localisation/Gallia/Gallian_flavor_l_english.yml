@@ -1,0 +1,34 @@
+﻿l_english:
+ OUT: "Tramor"
+ # Custom Tooltips
+ FRABRI_Constable_trigger_tt: "At least one allied country has the §YHonored Alliance§! opinion of us and does NOT have the §YSeparate Peace§! opinion."
+ FRABRI_extra_reward_tt: "If any country has the §YFought to the End§! opinion of us:"
+ FRABRI_add_base_tax_tt: "Our §Y3§! most developed provinces that have a tax building gain §G2§! Base Tax."
+ FRABRI_Improved_religious_culture_tt: "Greatly improves our religious culture and administrative ties with the clergy."
+ FRABRI_extra_curia_if_catholic_tt: "If our religion is §YCatholic§!:"
+ FRABRI_extra_reward_when_colonialism_tt: "Grants a special bonus during the §YAge of Reformation§!:"
+
+ # Events (flavor_FRABRI)
+ flavor_FRABRI.1.t: "The Inheritance of Rennes"
+ flavor_FRABRI.1.d: "The dynastic ties between the noble houses of Galia and the Iberian crowns run deep. With the shifting balance of power in the Mediterranean, ancient documents and genealogies have been brought to the court, proving our rightful claim to the lands of Aragon and Catalonia. Our ancestors forged these alliances, and now it is time to press these claims to bring the Iberian realms into our fold."
+ flavor_FRABRI.1.a: "Let us claim what is rightfully Ours!"
+ flavor_FRABRI.1.b: "Let us drop our claims for good."
+
+ # Modifiers
+ FRABRI_Constable: "Office of the Constable"
+ desc_FRABRI_Constable: "The Constable oversees our military organization, ensuring that our armies are disciplined and led with superior tactical brilliance."
+
+ FRABRI_accumulating_military_experience: "Accumulating Military Experience"
+ desc_FRABRI_accumulating_military_experience: "Our loyal allies fighting alongside us to the bitter end has provided our commanding officers with invaluable battlefield experience, strengthening our martial traditions."
+
+ FRABRI_Master_Bordeaux: "Masters of the Gironde"
+ desc_FRABRI_Master_Bordeaux: "By dominating the trade hubs of Bordeaux and securing the local markets, our merchants maintain a powerful and lucrative grip on the regional commerce."
+
+ FRABRI_Theological_Universities: "Theological Universities"
+ desc_FRABRI_Theological_Universities: "The establishment of dedicated theological centers has fostered a deeper connection with the Church, improving clerical loyalty while curbing their undue political influence."
+
+ FRABRI_Colonial_Port: "Brest Colonial Hub"
+ desc_FRABRI_Colonial_Port: "Our expanded dockyards in Brest serve as the perfect staging ground for colonial ventures across the perilous Atlantic."
+
+ FRABRI_entrepot_nantes: "Entrepôt of Nantes"
+ desc_FRABRI_entrepot_nantes: "The thriving port of Nantes acts as a massive commercial hub, drawing in wealth and magnifying our control over Atlantic trade routes."
