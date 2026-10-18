@@ -1,0 +1,96 @@
+namespace = flavor_bsb
+normal_or_historical_nations = yes
+
+#New Trade Goods in Sarajevo
+country_event = {
+	id = flavor_bsb.1
+	title = flavor_bsb.1.t
+	desc = flavor_bsb.1.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_bsb.1.a"
+		1828 = {
+			change_trade_goods = cloth
+		}
+		1828 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_bsb.1.b"
+		1828 = {
+			change_trade_goods = copper
+		}
+		1828 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_bsb.1.c"
+		1828 = {
+			change_trade_goods = iron
+		}
+		1828 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_bsb.1.de"
+		1828 = {
+			change_trade_goods = glass
+		}
+		1828 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_bsb.1.e"
+		1828 = {
+			add_base_production = 3
+		}
+	}	
+}
+
+#Addressing the Ethnic Situation
+country_event = {
+	id = flavor_bsb.2
+	title = flavor_bsb.2.t
+	desc = flavor_bsb.2.d
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #Promote the Messapian culture
+		name = flavor_bsb.2.a
+		add_country_modifier = {
+			name = "bsb_promote_messapian_culture"
+			duration = -1
+		}
+	}
+	option = { #Guarantee the minority rights
+		name = flavor_bsb.2.b
+		add_country_modifier = {
+			name = "bsb_guarantee_minority_rights"
+			duration = -1
+		}
+	}
+}

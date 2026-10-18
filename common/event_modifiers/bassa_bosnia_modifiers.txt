@@ -1,0 +1,133 @@
+bosnian_industry = {
+	global_trade_goods_size_modifier = 0.15
+}
+
+bosnian_fleet = {
+	galley_power = 0.1
+}
+
+bosnian_triumph = {
+	global_autonomy = -0.05
+}
+
+bosnian_support_church = {
+	yearly_patriarch_authority = 0.001
+	institution_spread_from_true_faith = 0.1
+}
+
+bsb_trading_cities = {
+	global_trade_power = 0.2
+	trade_efficiency = 0.1
+}
+
+bsb_royal_navy = {
+	naval_maintenance_modifier = -0.2
+}
+
+bsb_naval_capacity = {
+	naval_forcelimit_modifier = 0.1
+}
+
+bsb_admiralty = {
+	free_navy_leader_pool = 1
+	admiral_cost = -0.2
+}
+
+bsb_revised_legal_code = {
+	global_autonomy = -0.1
+	country_admin_power = 1
+}
+
+bsb_economic_prosperity = {
+	global_tax_income = 12
+}
+
+bsb_industrialization = {
+	global_trade_goods_size_modifier = 0.2
+}
+
+bsb_uniting_south_slavs = {
+	manpower_in_culture_group_provinces = 0.1
+}
+
+bsb_bulwark_of_christianity = {
+	manpower_in_true_faith_provinces = 0.1
+	same_religion_advisor_cost = -0.1
+}
+
+bsb_expanding_trade_networks = {
+	merchants = 1
+	trade_efficiency = 0.1
+}
+
+bsb_fleet = {
+	ship_power_propagation = 0.33
+	galley_power = 0.2
+}
+
+bsb_patrons_of_art = {
+	institution_spread_from_true_faith = 0.25
+}
+
+bsb_expanding_the_order = {
+	nobles_loyalty_modifier = 0.2
+	land_maintenance_modifier = -0.10
+}
+
+bsb_securing_the_balkans = {
+	ae_impact = -0.1
+}
+
+bsb_novo_brdo_code = {
+	development_cost = -0.1
+	production_efficiency = 0.1
+}
+
+bsb_caesaropapism = {
+	global_missionary_strength = 0.02
+	tolerance_own = 1
+}
+
+hun_bsb_brotherhood = {
+	num_accepted_cultures = 1
+	cavalry_cost = -0.1
+}
+
+bsb_legacy_of_angevins = {
+	administrative_efficiency = 0.05
+	years_of_nationalism = -10
+}
+
+bsb_guests = {
+    development_cost = -0.05
+}
+
+bsb_corviana_library = {
+	technology_cost = -0.05
+	idea_cost = -0.1
+}
+
+bsb_supreme_black_army = {
+	mercenary_discipline = 0.05
+	core_creation = -0.1
+}
+
+bsb_black_legion = {
+	merc_leader_army_tradition = 0.25
+}
+
+port_ragusa = {
+	local_ship_cost = -0.25
+	local_ship_repair = 0.25
+	local_sailors_modifier = 0.25
+}
+
+bsb_promote_messapian_culture = {
+	same_culture_advisor_cost = -0.1
+	manpower_in_own_culture_provinces = 0.3
+}
+
+bsb_guarantee_minority_rights = {
+	num_accepted_cultures = 3
+	manpower_in_accepted_culture_provinces = 0.1
+}

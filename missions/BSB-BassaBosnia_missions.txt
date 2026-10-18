@@ -72,7 +72,7 @@ custom_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "ser_expanding_trade_networks"
+				name = bsb_expanding_trade_networks
 				duration = 5475
 			}
 		}
@@ -118,7 +118,7 @@ custom_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = bulgaria_industry
+				name = bosnian_industry
 				duration = 18250
 			}
 			define_advisor = {
@@ -127,6 +127,48 @@ custom_missions = {
 				religion = ROOT
 				culture = ROOT
 				cost_multiplier = 0.35
+			}
+		}
+	}
+	bsb_universitas_Sicipolitana = {
+		icon = mission_early_modern_university
+		required_missions = {
+			bsb_trading_cities
+		}
+		position = 7
+		provinces_to_highlight = {
+			province_id = 131
+			NOT = {
+				AND = {
+					owned_by = root
+					is_state_core = root
+					development = 25
+					has_building = university
+				}
+			}
+		}
+		trigger = {
+			owns_core_province = 131
+			131 = {
+				OR = {
+					development = 25
+					has_building = university
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = hun_unlocking_nis_tt
+			set_country_flag = hun_national_idea_bonus
+			define_advisor = {
+				type = diplomat
+				name = "János Vitéz"
+				skill = 3
+				culture = dynamic-croatian-sicilian-culture-num1
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			hidden_effect = {
+				change_government_reform_progress = 150
 			}
 		}
 	}
@@ -141,7 +183,7 @@ custom_missions = {
 		}
 		effect = {
 			set_country_flag = cro_private_trade_fleet
-			custom_tooltip = CRO_PRIVILEGE
+			custom_tooltip = BSB_PRIVILEGE
 		}
 	}
 	bsb_galley = {
@@ -155,7 +197,7 @@ custom_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = bulgarian_fleet
+				name = bosnian_fleet
 				duration = 7300
 			}
 			crimea_area = {
@@ -185,7 +227,7 @@ custom_missions = {
 		effect = {
 			add_navy_tradition = 20
 			add_country_modifier = {
-				name = "croatian_fleet"
+				name = bsb_fleet
 				duration = 7300
 			}
 		}
@@ -322,10 +364,10 @@ series_2_8c70fcb4 = {
 						}
 					}
 				}
-				custom_tooltip = CRO_ZAGREB_DEV
+				custom_tooltip = BSB_ZAGREB_DEV
 			}
 			else = {
-				custom_tooltip = CRO_ZAGREB_DEV_NO
+				custom_tooltip = BSB_ZAGREB_DEV_NO
 			}
 			hidden_effect = {
 				if = {
@@ -380,10 +422,10 @@ series_2_8c70fcb4 = {
 		effect = {
 			add_years_of_trade_income = {
 				years = 4
-				custom_tooltip = CRO_TRADE_INCOME
+				custom_tooltip = BSB_TRADE_INCOME
 			}
 			add_country_modifier = {
-				name = cro_trading_cities
+				name = bsb_trading_cities
 				duration = 9125
 			}
 			define_advisor = {
@@ -421,51 +463,8 @@ series_2_8c70fcb4 = {
 			set_country_flag = hun_refund_mana_on_tech
 			custom_tooltip = hun_refund_mana_on_tech_tt
 			add_country_modifier = {
-				name = hun_patrons_of_art
+				name = bsb_patrons_of_art
 				duration = -1
-			}
-		}
-	}
-	bsb_universitas_Sicipolitana = {
-		icon = mission_early_modern_university
-		required_missions = {
-			bsb_trading_cities
-		}
-		position = 8
-		provinces_to_highlight = {
-			province_id = 1772
-			NOT = {
-				AND = {
-					owned_by = root
-					is_state_core = root
-					development = 25
-					has_building = university
-				}
-			}
-		}
-		trigger = {
-			owns_core_province = 1772
-			1772 = {
-				OR = {
-					development = 25
-					has_building = university
-				}
-			}
-			#TODO mudar província
-		}
-		effect = {
-			custom_tooltip = hun_unlocking_nis_tt
-			set_country_flag = hun_national_idea_bonus
-			define_advisor = {
-				type = diplomat
-				name = "János Vitéz"
-				skill = 3
-				culture = dynamic-croatian-sicilian-culture-num1
-				religion = ROOT
-				cost_multiplier = 0.25
-			}
-			hidden_effect = {
-				change_government_reform_progress = 150
 			}
 		}
 	}
@@ -480,7 +479,7 @@ series_2_8c70fcb4 = {
 		effect = {
 			add_sailors = 1000
 			add_country_modifier = {
-				name = cro_royal_navy
+				name = bsb_royal_navy
 				duration = 7300
 			}
 		}
@@ -513,14 +512,14 @@ series_2_8c70fcb4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = cro_naval_capacity
+				name = bsb_naval_capacity
 				duration = -1
 			}
 			if = {
 				limit = {
 					navy_tradition = 50
 				}
-				custom_tooltip = CRO_TRADITION_YES
+				custom_tooltip = BSB_TRADITION_YES
 				tooltip = {
 					create_admiral = {
 						tradition = 75
@@ -528,7 +527,7 @@ series_2_8c70fcb4 = {
 				}
 			}
 			else = {
-				custom_tooltip = CRO_TRADITION_NO
+				custom_tooltip = BSB_TRADITION_NO
 				tooltip = {
 					create_admiral = {
 						tradition = 75
@@ -588,13 +587,12 @@ series_2_8c70fcb4 = {
 					navy_size = root
 				}
 			}
-			#TODO mudar províncias necessarias para outras dos balkans
 		}
 		effect = {
-			custom_tooltip = CRO_ADMIRALS
+			custom_tooltip = BSB_ADMIRALS
 			set_country_flag = ab_admiral_gives_naval_tradition
 			add_country_modifier = {
-				name = cro_admiralty
+				name = bsb_admiralty
 				duration = 9125
 			}
 			define_advisor = {
@@ -616,7 +614,7 @@ series_2_8c70fcb4 = {
 			OR = {
 				AND = {
 					province_id = 134
-					153 = {
+					1828 = {
 						NOT = {
 							higher_development_than = 266
 						}
@@ -624,7 +622,7 @@ series_2_8c70fcb4 = {
 				}
 				AND = {
 					province_id = 266
-					153 = {
+					1828 = {
 						NOT = {
 							higher_development_than = 266
 						}
@@ -633,24 +631,22 @@ series_2_8c70fcb4 = {
 			}
 		}
 		trigger = {
-			153 = {
+			1828 = {
 				higher_development_than = 134
 				higher_development_than = 266
 			}
-			#TODO mudar a província para outra
 		}
 		effect = {
-			153 = {
+			1828 = {
 				add_province_modifier = {
 					name = hun_great_city_buda
 					duration = 7300
 				}
 			}
 			country_event = {
-				id = flavor_hun.53
+				id = flavor_bsb.1
 			}
 			custom_tooltip = hun_pest_production_insight_tt
-			#TODO mudar provícia para outra
 		}
 	}
 }
@@ -700,7 +696,7 @@ series_4_66f5dfaa = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "hun_expanding_the_order"
+				name = bsb_expanding_the_order
 				duration = 7300
 			}
 			if = {
@@ -753,7 +749,7 @@ series_4_66f5dfaa = {
 		effect = {
 			add_dip_power = 100
 			add_country_modifier = {
-				name = "hun_securing_the_balkans"
+				name = bsb_securing_the_balkans
 				duration = 7300
 			}
 			if = {
@@ -802,7 +798,6 @@ series_4_66f5dfaa = {
 			OR = {
 				province_id = 4702
 				province_id = 148
-				# province_id = 4961
 				province_id = 1853
 			}
 		}
@@ -819,26 +814,19 @@ series_4_66f5dfaa = {
 					local_autonomy = 25
 				}
 			}
-			# 4961 = {
-			# 	is_core = ROOT
-			# 	NOT = {
-			# 		local_autonomy = 25
-			# 	}
-			# }
 			1853 = {
 				is_core = ROOT
 				NOT = {
 					local_autonomy = 25
 				}
 			}
-			#TODO mudar províncias
 		}
 		effect = {
 			macedonia_area = {
 				add_base_manpower = 1
 			}
 			add_country_modifier = {
-				name = "bulgaria_triumph"
+				name = bosnian_triumph
 				duration = 5475
 			}
 			thrace_area = {
@@ -1035,7 +1023,7 @@ series_4_66f5dfaa = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "ser_novo_brdo_code"
+				name = bsb_novo_brdo_code
 				duration = 7300
 			}
 		}
@@ -1068,7 +1056,7 @@ series_4_66f5dfaa = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "ser_caesaropapism"
+				name = bsb_caesaropapism
 				duration = 7300
 			}
 		}
@@ -1090,7 +1078,7 @@ series_4_66f5dfaa = {
 		effect = {
 			change_innovativeness = 3
 			add_country_modifier = {
-				name = cro_revised_legal_code
+				name = bsb_revised_legal_code
 				duration = 7300
 			}
 		}
@@ -1103,10 +1091,10 @@ series_4_66f5dfaa = {
 		position = 15
 		provinces_to_highlight = {
 			OR = {
-				area = mazovia_area
-				area = central_poland_area
-				area = wielkopolska_area
-				area = kuyavia_area
+				area = transdanubia_area
+				area = alfold_area
+				area = slovakia_area
+				area = transylvania_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1117,10 +1105,10 @@ series_4_66f5dfaa = {
 						value = 12
 						#out of 15
 						OR = {
-							area = mazovia_area
-							area = central_poland_area
-							area = wielkopolska_area
-							area = kuyavia_area
+							area = transdanubia_area
+							area = alfold_area
+							area = slovakia_area
+							area = transylvania_area
 						}
 					}
 				}
@@ -1131,27 +1119,26 @@ series_4_66f5dfaa = {
 				value = 12
 				#out of 15
 				OR = {
-					area = mazovia_area
-					area = central_poland_area
-					area = wielkopolska_area
-					area = kuyavia_area
+					area = transdanubia_area
+					area = alfold_area
+					area = slovakia_area
+					area = transylvania_area
 				}
 			}
-			#TODO mudar alvo de polonia para hungria
 		}
 		effect = {
 			add_accepted_culture_or_dip_power = {
-				culture = polish
+				culture = hungarian
 				dip_reward = yes
 				free = yes
 			}
 			set_country_flag = hun_polish_culture_bonus
 			add_country_modifier = {
-				name = hun_polish_brotherhood
+				name = hun_bsb_brotherhood
 				duration = -1
 				desc = hun_as_long_as_polish_accepted
 			}
-			west_prussia_area = {
+			inner_austria_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1162,7 +1149,7 @@ series_4_66f5dfaa = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_prussia_area = {
+			moravia_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1173,7 +1160,7 @@ series_4_66f5dfaa = {
 				}
 				add_permanent_claim = ROOT
 			}
-			yedisan_area = {
+			bohemia_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -1184,7 +1171,7 @@ series_4_66f5dfaa = {
 				}
 				add_permanent_claim = ROOT
 			}
-			zaporizhia_area = {
+			austria_proper_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -1195,7 +1182,7 @@ series_4_66f5dfaa = {
 				}
 				add_permanent_claim = ROOT
 			}
-			ruthenia_region = {
+			balkan_region = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT
@@ -1206,38 +1193,36 @@ series_4_66f5dfaa = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#TODO mudar alvo de polonia para hungria
 		}
 		ai_weight = {
 			factor = 500
 		}
 	}
 	bsb_mosia_borderlands = {
-		icon = king_of_naples
+		icon = mission_unite_home_region
 		required_missions = {
 			bsb_magyar_union
 		}
 		position = 16
 		trigger = {
-			apulia_area = {
+			serbia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			calabria_area = {
+			rascia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			naples_area = {
+			albania_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			#TODO mudar alvo para mosia
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = apulia_area
-				area = calabria_area
-				area = naples_area
+				area = serbia_area
+				area = rascia_area
+				area = albania_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1245,12 +1230,12 @@ series_4_66f5dfaa = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "hun_legacy_of_angevins"
+				name = bsb_legacy_of_angevins
 				duration = 9125
 			}
 			if = {
 				limit = {
-					senior_union_with = NAP
+					senior_union_with = HUN
 				}
 				if = {
 					limit = {
@@ -1276,7 +1261,7 @@ series_4_66f5dfaa = {
 			hidden_effect = {
 				if = {
 					limit = {
-						senior_union_with = NAP
+						senior_union_with = HUN
 					}
 					set_country_flag = no_integrate_penalty
 					set_country_flag = hun_integrate_pu_bonus
@@ -1299,13 +1284,12 @@ series_4_66f5dfaa = {
 			num_accepted_cultures = 3
 			development_in_provinces = {
 				value = 250
-				culture_group = carpathian
+				culture_group = south_slavic
 			}
-			#TODO mudar para culture group south slavic
 		}
 		effect = {
 			country_event = {
-				id = flavor_hun.38
+				id = flavor_bsb.2
 			}
 			custom_tooltip = hun_ethnic_situation_insight_tt
 		}
@@ -1405,7 +1389,7 @@ series_3_8d2fc647 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = cro_economic_prosperity
+				name = bsb_economic_prosperity
 				duration = 7300
 			}
 			define_advisor = {
@@ -1424,11 +1408,11 @@ series_3_8d2fc647 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				province_id = 159
+				province_id = 137
 			}
 		}
 		trigger = {
-			159 = {
+			137 = {
 				owned_by = ROOT
 				OR = {
 					has_building = dock
@@ -1439,16 +1423,14 @@ series_3_8d2fc647 = {
 					has_building = grand_shipyard
 				}
 			}
-			#TODO Mudar próvincia para ragusa
 		}
 		effect = {
-			159 = {
+			137 = {
 				add_province_modifier = {
-					name = port_silistra
+					name = port_ragusa
 					duration = -1
 				}
 			}
-			#TODO mudar próvincia para ragusa
 		}
 	}
 	bsb_industrialize_bassa = {
@@ -1486,9 +1468,9 @@ series_3_8d2fc647 = {
 				}
 				custom_tooltip = INCOME_FROM_WORKSHOPS_DESC
 			}
-			custom_tooltip = CRO_WORKSHOPS
+			custom_tooltip = BSB_WORKSHOPS
 			add_country_modifier = {
-				name = "cro_industrialization"
+				name = bsb_industrialization
 				duration = 9125
 			}
 			hidden_effect = {
@@ -1906,7 +1888,7 @@ series_3_8d2fc647 = {
 		effect = {
 			add_yearly_manpower = 1.5
 			add_country_modifier = {
-				name = cro_uniting_south_slavs
+				name = bsb_uniting_south_slavs
 				duration = 5475
 			}
 			if = {
@@ -1915,7 +1897,7 @@ series_3_8d2fc647 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
-				custom_tooltip = CRO_OWN_TRIESTE_YES
+				custom_tooltip = BSB_OWN_GRAZ_YES
 				tooltip = {
 					1863 = {
 						change_culture = slovene
@@ -1923,7 +1905,7 @@ series_3_8d2fc647 = {
 				}
 			}
 			else = {
-				custom_tooltip = CRO_OWN_TRIESTE_NO
+				custom_tooltip = BSB_OWN_GRAZ_NO
 				tooltip = {
 					1863 = {
 						change_culture = slovene
@@ -2046,10 +2028,10 @@ series_3_8d2fc647 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "gosti_guests"
+				name = bsb_guests
 				duration = -1
 			}
-			custom_tooltip = CRO_5_PROVINCES_TAX
+			custom_tooltip = BSB_5_PROVINCES_TAX
 			hidden_effect = {
 				for = {
 					amount = 5
@@ -2086,7 +2068,6 @@ series_3_8d2fc647 = {
 				advisor = artist
 			}
 			owns_core_province = 153
-			#TODO mudar próvincia
 		}
 		effect = {
 			country_event = {
@@ -2099,7 +2080,7 @@ series_3_8d2fc647 = {
 				custom_tooltip = hun_corviniana_insight_leviathan_tt
 				tooltip = {
 					add_country_modifier = {
-						name = hun_corviana_library
+						name = bsb_corviana_library
 						duration = 7300
 					}
 				}
@@ -2108,7 +2089,7 @@ series_3_8d2fc647 = {
 				custom_tooltip = hun_corviniana_insight_no_leviathan_tt
 				tooltip = {
 					add_country_modifier = {
-						name = hun_corviana_library
+						name = bsb_corviana_library
 						duration = 7300
 					}
 				}
@@ -2147,7 +2128,7 @@ series_3_8d2fc647 = {
 			add_prestige_or_monarch_power = {
 				amount = 20
 			}
-			moravia_area = {
+			alfold_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -2158,7 +2139,7 @@ series_3_8d2fc647 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			silesia_area = {
+			southern_transylvania_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -2169,7 +2150,7 @@ series_3_8d2fc647 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			lusatia_area = {
+			transdanubia_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -2183,7 +2164,7 @@ series_3_8d2fc647 = {
 		}
 	}
 	bsb_weaken_hungary = {
-		icon = mission_partition_poland
+		icon = mission_destroy_the_hungarians
 		required_missions = {
 			bsb_illyrian_sucession
 			bsb_royal_navy
@@ -2191,9 +2172,9 @@ series_3_8d2fc647 = {
 		position = 14
 		provinces_to_highlight = {
 			OR = {
-				area = malopolska_area
-				area = red_ruthenia_area
-				area = sandomierz_area
+				area = alfold_area
+				area = southern_transylvania_area
+				area = transdanubia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2204,38 +2185,30 @@ series_3_8d2fc647 = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 9
 					OR = {
-						area = malopolska_area
-						area = red_ruthenia_area
-						area = sandomierz_area
+						area = alfold_area
+						area = southern_transylvania_area
+						area = transdanubia_area
 					}
 				}
 				if = {
 					limit = {
-						exists = PLC
+						exists = HUN
 					}
-					total_own_and_non_tributary_subject_development = PLC
-					army_size = PLC
-				}
-				else_if = {
-					limit = {
-						exists = POL
-					}
-					total_own_and_non_tributary_subject_development = POL
-					army_size = POL
+					total_own_and_non_tributary_subject_development = HUN
+					army_size = HUN
 				}
 			}
-			#TODO mudar alvo da missão de polonia para hungria
 		}
 		effect = {
 			if = {
 				limit = {
-					exists = POL
+					exists = HUN
 				}
 				if = {
 					limit = {
 						valid_for_personal_unions_trigger = yes
-						exists = POL
-						POL = {
+						exists = HUN
+						HUN = {
 							valid_for_personal_unions_trigger = yes
 						}
 					}
@@ -2244,7 +2217,7 @@ series_3_8d2fc647 = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
 							months = 300
-							target = POL
+							target = HUN
 						}
 					}
 				}
@@ -2254,39 +2227,7 @@ series_3_8d2fc647 = {
 						add_casus_belli = {
 							type = cb_restore_personal_union
 							months = 300
-							target = POL
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					exists = PLC
-				}
-				if = {
-					limit = {
-						valid_for_personal_unions_trigger = yes
-						exists = PLC
-						PLC = {
-							valid_for_personal_unions_trigger = yes
-						}
-					}
-					custom_tooltip = hun_cb_plc_tt_yes
-					tooltip = {
-						add_casus_belli = {
-							type = cb_restore_personal_union
-							months = 300
-							target = PLC
-						}
-					}
-				}
-				else = {
-					custom_tooltip = hun_cb_plc_tt_no
-					tooltip = {
-						add_casus_belli = {
-							type = cb_restore_personal_union
-							months = 300
-							target = PLC
+							target = HUN
 						}
 					}
 				}
@@ -2295,14 +2236,13 @@ series_3_8d2fc647 = {
 				limit = {
 					NOT = {
 						OR = {
-							exists = POL
-							exists = PLC
+							exists = HUN
 						}
 					}
 				}
 				custom_tooltip = hun_neither_pol_nor_plc_tt_yes
 				tooltip = {
-					mazovia_area = {
+					slovakia_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2313,29 +2253,7 @@ series_3_8d2fc647 = {
 						}
 						add_permanent_claim = ROOT
 					}
-					central_poland_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					wielkopolska_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					kuyavia_area = {
+					transylvania_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2351,7 +2269,7 @@ series_3_8d2fc647 = {
 			else = {
 				custom_tooltip = hun_neither_pol_nor_plc_tt_no
 				tooltip = {
-					mazovia_area = {
+					slovakia_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2362,29 +2280,7 @@ series_3_8d2fc647 = {
 						}
 						add_permanent_claim = ROOT
 					}
-					central_poland_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					wielkopolska_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					kuyavia_area = {
+					transylvania_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2401,33 +2297,19 @@ series_3_8d2fc647 = {
 				if = {
 					limit = {
 						valid_for_personal_unions_trigger = yes
-						exists = PLC
-						PLC = {
+						exists = HUN
+						HUN = {
 							valid_for_personal_unions_trigger = yes
 						}
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						months = 300
-						target = PLC
-					}
-				}
-				else_if = {
-					limit = {
-						valid_for_personal_unions_trigger = yes
-						exists = POL
-						POL = {
-							valid_for_personal_unions_trigger = yes
-						}
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = POL
+						target = HUN
 					}
 				}
 				else = {
-					mazovia_area = {
+					slovakia_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2438,29 +2320,7 @@ series_3_8d2fc647 = {
 						}
 						add_permanent_claim = ROOT
 					}
-					central_poland_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					wielkopolska_area = {
-						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-							NOT = {
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					kuyavia_area = {
+					transylvania_area = {
 						limit = {
 							NOT = {
 								is_permanent_claim = ROOT
@@ -2473,7 +2333,6 @@ series_3_8d2fc647 = {
 					}
 				}
 			}
-			#TODO mudar alvo de polonia para hungria
 		}
 		ai_weight = {
 			factor = 500
@@ -2489,16 +2348,15 @@ series_3_8d2fc647 = {
 			calc_true_if = {
 				all_owned_province = {
 					province_has_center_of_trade_of_level = 1
-					region = carpathia_region
+					region = balkan_region
 					development = 20
 				}
 				amount = 3
 			}
-			#TODO mudar para região dos balkans
 		}
 		provinces_to_highlight = {
 			owned_by = ROOT
-			region = carpathia_region
+			region = balkan_region
 			province_has_center_of_trade_of_level = 1
 			NOT = {
 				development = 20
@@ -2518,9 +2376,9 @@ series_3_8d2fc647 = {
 		position = 16
 		provinces_to_highlight = {
 			OR = {
-				area = moravia_area
-				area = silesia_area
-				area = lusatia_area
+				area = macedonia_area
+				area = bulgaria_area
+				area = silistria_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2530,9 +2388,9 @@ series_3_8d2fc647 = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						OR = {
-							area = moravia_area
-							area = silesia_area
-							area = lusatia_area
+							area = macedonia_area
+							area = bulgaria_area
+							area = silistria_area
 						}
 					}
 				}
@@ -2542,31 +2400,30 @@ series_3_8d2fc647 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				OR = {
-					area = moravia_area
-					area = silesia_area
-					area = lusatia_area
+					area = macedonia_area
+					area = bulgaria_area
+					area = silistria_area
 				}
 			}
 			if = {
 				limit = {
-					BOH = {
+					WAL = {
 						is_subject_of = ROOT
 					}
 				}
-				BOH = {
+				WAL = {
 					NOT = {
 						liberty_desire = 50
 					}
 				}
 			}
-			#TODO mudar alvo para bohemia sem lusatia ou silesia so a bohemia mais forte e central
 		}
 		effect = {
 			if = {
 				limit = {
-					exists = BOH
+					exists = WAL
 					valid_for_personal_unions_trigger = yes
-					BOH = {
+					WAL = {
 						valid_for_personal_unions_trigger = yes
 					}
 				}
@@ -2575,7 +2432,7 @@ series_3_8d2fc647 = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						months = 300
-						target = BOH
+						target = WAL
 					}
 				}
 			}
@@ -2585,7 +2442,7 @@ series_3_8d2fc647 = {
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						months = 300
-						target = BOH
+						target = WAL
 					}
 				}
 			}
@@ -2593,9 +2450,9 @@ series_3_8d2fc647 = {
 				limit = {
 					OR = {
 						NOT = {
-							exists = BOH
+							exists = WAL
 						}
-						BOH = {
+						WAL = {
 							NOT = {
 								valid_for_personal_unions_trigger = yes
 							}
@@ -2607,18 +2464,7 @@ series_3_8d2fc647 = {
 				}
 				custom_tooltip = hun_bohemia_doesnt_exist_tt_yes
 				tooltip = {
-					bohemia_area = {
-						limit = {
-							NOT = {
-								is_core = ROOT
-							}
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					erzgebirge_area = {
+					wallachia_area = {
 						limit = {
 							NOT = {
 								is_core = ROOT
@@ -2634,18 +2480,7 @@ series_3_8d2fc647 = {
 			else = {
 				custom_tooltip = hun_bohemia_doesnt_exist_tt_no
 				tooltip = {
-					bohemia_area = {
-						limit = {
-							NOT = {
-								is_core = ROOT
-							}
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					erzgebirge_area = {
+					wallachia_area = {
 						limit = {
 							NOT = {
 								is_core = ROOT
@@ -2661,31 +2496,20 @@ series_3_8d2fc647 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						exists = BOH
+						exists = WAL
 						valid_for_personal_unions_trigger = yes
-						BOH = {
+						WAL = {
 							valid_for_personal_unions_trigger = yes
 						}
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						months = 300
-						target = BOH
+						target = WAL
 					}
 				}
 				else = {
-					bohemia_area = {
-						limit = {
-							NOT = {
-								is_core = ROOT
-							}
-							NOT = {
-								is_permanent_claim = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					erzgebirge_area = {
+					wallachia_area = {
 						limit = {
 							NOT = {
 								is_core = ROOT
@@ -2698,7 +2522,6 @@ series_3_8d2fc647 = {
 					}
 				}
 			}
-			#TODO fazer ajustes pois a bohemia principal provavelmente não é a maior
 		}
 	}
 	bsb_expel_friulians = {
@@ -2731,14 +2554,13 @@ series_3_8d2fc647 = {
 					}
 				}
 			}
-			#TODO mudar alvo para friuli
 		}
 		effect = {
 			add_country_modifier = {
 				name = "balkan_liberator"
 				duration = -1
 			}
-			balkan_region = {
+			south_german_region = {
 				limit = {
 					NOT = {
 						is_core = ROOT
@@ -2749,7 +2571,6 @@ series_3_8d2fc647 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#TODO mudar alvo para friuli
 		}
 		ai_weight = {
 			factor = 500
@@ -2771,10 +2592,10 @@ series_5_56629c2a = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			province_id = 4239
+			province_id = 3002
 		}
 		trigger = {
-			4239 = {
+			3002 = {
 				owned_by = ROOT
 				if = {
 					limit = {
@@ -2830,17 +2651,15 @@ series_5_56629c2a = {
 					has_building = fort_18th
 				}
 			}
-			#TODO mudar província para uma que tenho
 		}
 		effect = {
-			4239 = {
+			3002 = {
 				add_province_modifier = {
 					name = ser_citadel_of_belgrade
 					duration = -1
 				}
 			}
 			add_mil_power = 100
-			#TODO mudar província que ganha o buff pra uma que tenho
 		}
 	}
 	bsb_fekete_sereg = {
@@ -2888,14 +2707,13 @@ series_5_56629c2a = {
 					is_subject_of = root
 				}
 			}
-			#TODO de uma olhada se não vai causar bugs que nem a última vez que a government reform não ia
 		}
 		effect = {
 			add_army_tradition_or_mil_power = {
 				amount = 20
 			}
 			add_country_modifier = {
-				name = hun_supreme_black_army
+				name = bsb_supreme_black_army
 				duration = 7300
 			}
 		}
@@ -2946,7 +2764,7 @@ series_5_56629c2a = {
 				add_mil_power = 100
 			}
 			add_country_modifier = {
-				name = hun_black_legion
+				name = bsb_black_legion
 				duration = -1
 			}
 		}
@@ -3026,7 +2844,7 @@ series_5_56629c2a = {
 				amount = 30
 			}
 			add_country_modifier = {
-				name = cro_bulwark_of_christianity
+				name = bsb_bulwark_of_christianity
 				duration = -1
 			}
 			if = {
@@ -3038,10 +2856,10 @@ series_5_56629c2a = {
 						}
 					}
 				}
-				custom_tooltip = CRO_ZAGREB_CARDINAL_YES
+				custom_tooltip = BSB_ZAGREB_CARDINAL_YES
 			}
 			else = {
-				custom_tooltip = CRO_ZAGREB_CARDINAL_NO
+				custom_tooltip = BSB_ZAGREB_CARDINAL_NO
 			}
 			hidden_effect = {
 				if = {
@@ -3092,7 +2910,7 @@ series_5_56629c2a = {
 				loyalty = 10
 			}
 			add_country_modifier = {
-				name = "bulgaria_support_church"
+				name = bosnian_support_church
 				duration = -1
 			}
 		}
@@ -3134,7 +2952,6 @@ series_5_56629c2a = {
 					}
 				}
 			}
-			#TODO mudar alvo de austria para Ostmark e mudar outras coisas necessárias
 		}
 		effect = {
 			if = {
@@ -3270,7 +3087,6 @@ series_5_56629c2a = {
 					}
 				}
 			}
-			#TODO mudar alvo de austria para ostmark
 		}
 	}
 	bsb_found_Sarajevo = {
@@ -3281,31 +3097,30 @@ series_5_56629c2a = {
 		}
 		position = 18
 		trigger = {
-			owns = 153
-			153 = {
+			owns = 1828
+			1828 = {
 				development = 40
 			}
-			153 = {
+			1828 = {
 				has_tax_building_trigger = yes
 			}
-			153 = {
+			1828 = {
 				has_trade_building_trigger = yes
 			}
-			153 = {
+			1828 = {
 				has_production_building_trigger = yes
 			}
-			#TODO mudar para minha capital ou em lugar pra ser a nova capital do meu país qualquer província defensiva serve
 		}
 		provinces_to_highlight = {
-			province_id = 153
+			province_id = 1828
 		}
 		effect = {
 			set_country_flag = hun_bonus_dev_budapest
-			153 = {
-				change_province_name = "Budapest"
-				rename_capital = "Budapest"
+			1828 = {
+				change_province_name = "Sarajevo"
+				rename_capital = "Sarajevo"
 			}
-			153 = {
+			1828 = {
 				add_province_modifier = {
 					name = hun_pearl_on_the_danube
 					duration = -1

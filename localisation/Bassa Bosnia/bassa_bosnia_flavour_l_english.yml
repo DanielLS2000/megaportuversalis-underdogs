@@ -1,0 +1,113 @@
+﻿l_english:
+ BSB_WORKSHOPS:0 "Upgrades §Y3§! random §YWorkshops§! to §YCounting Houses§!."
+ BSB_OWN_GRAZ_YES:0 "Because we own §YGraz§!, its culture changes to §YSlovene§!."
+ BSB_OWN_GRAZ_NO:0 "If we owned §YGraz§!, its culture would change to §YSlovene§!."
+ BSB_5_PROVINCES_TAX:0 "§Y5§! random owned provinces gain §G+1§! Base Tax."
+ BSB_ZAGREB_CARDINAL_YES:0 "Because our religion is §YCatholic§! and §YZagreb§! does not have a Cardinal, it gains a §YCardinal§!."
+ BSB_ZAGREB_CARDINAL_NO:0 "If our religion were §YCatholic§! and §YZagreb§! did not have a Cardinal, it would gain a §YCardinal§!."
+ BSB_PRIVILEGE:0 "Grants the §YPrivate Trade Fleet§! estate privilege."
+ BSB_ZAGREB_DEV:0 "Because §YZagreb§! is the most developed province in the §YBalkans§!, the §YCroatia§! area gains §G100§! Prosperity."
+ BSB_ZAGREB_DEV_NO:0 "If §YZagreb§! were the most developed province in the §YBalkans§!, the §YCroatia§! area would gain §G100§! Prosperity."
+ BSB_TRADITION_YES:0 "Because our §YNavy Tradition§! is at least §Y50§!, we gain a new Admiral with §G75§! Tradition."
+ BSB_TRADITION_NO:0 "If our §YNavy Tradition§! were at least §Y50§!, we would gain a new Admiral with §G75§! Tradition."
+ BSB_ADMIRALS:0 "Recruiting an Admiral will now grant §YNaval Tradition§!."
+
+ flavor_bsb.1.t:0 "New Trade Goods in Sarajevo"
+ flavor_bsb.1.d:0 "The rapid expansion and development of Sarajevo has brought artisans and merchants from all corners of the realm. The city is bustling with new enterprises, and the local guilds are petitioning the crown for support in specializing the city's industry. We must decide which trade good will become the pride of Sarajevo's markets."
+ flavor_bsb.1.a:0 "Invest in the Cloth industry."
+ flavor_bsb.1.b:0 "Establish Copper foundries."
+ flavor_bsb.1.c:0 "Focus on Iron forging."
+ flavor_bsb.1.de:0 "Support the Glassblowers."
+ flavor_bsb.1.e:0 "Let the current industries flourish naturally."
+
+ flavor_bsb.2.t:0 "Addressing the Ethnic Situation"
+ flavor_bsb.2.d:0 "As our borders expand, our nation increasingly encompasses a wide variety of cultures, languages, and traditions. The integration of these new populations has sparked fierce debate in the court. Some advisors argue that we should focus our efforts on promoting and elevating the Messapian culture, fully integrating them into our administration. Others believe that we should issue a sweeping guarantee of minority rights to ensure stability and harmony among all the diverse peoples of our realm."
+ flavor_bsb.2.a:0 "Promote the Messapian culture."
+ flavor_bsb.2.b:0 "Guarantee the minority rights."
+
+ bosnian_industry:0 "Bosnian Industry"
+ desc_bosnian_industry:0 "Our investments in local workshops have greatly expanded our industrial output."
+
+ bosnian_fleet:0 "Bosnian Fleet"
+ desc_bosnian_fleet:0 "Our specialized galleys are undisputed masters of the Adriatic coasts."
+
+ bosnian_triumph:0 "Bosnian Triumph"
+ desc_bosnian_triumph:0 "Our recent victories have centralized authority and minimized local autonomy."
+
+ bosnian_support_church:0 "Support for the Church"
+ desc_bosnian_support_church:0 "By funding religious institutions, we have secured the blessing and cooperation of the Orthodox clergy."
+
+ bsb_trading_cities:0 "Trading Cities"
+ desc_bsb_trading_cities:0 "Our coastal and inland trade hubs are flourishing with merchant activity."
+
+ bsb_royal_navy:0 "Royal Navy"
+ desc_bsb_royal_navy:0 "State subsidies have significantly reduced the cost of maintaining our grand fleets."
+
+ bsb_naval_capacity:0 "Naval Capacity"
+ desc_bsb_naval_capacity:0 "Expanding our dockyards has allowed us to field a much larger armada."
+
+ bsb_admiralty:0 "The Admiralty"
+ desc_bsb_admiralty:0 "A centralized naval command structure ensures a steady supply of capable and affordable fleet commanders."
+
+ bsb_revised_legal_code:0 "Revised Legal Code"
+ desc_bsb_revised_legal_code:0 "Modernizing our laws has brought rebellious provinces to heel and centralized the state's administrative power."
+
+ bsb_economic_prosperity:0 "Economic Prosperity"
+ desc_bsb_economic_prosperity:0 "Years of peace and investment have led to a booming economy and a full treasury."
+
+ bsb_industrialization:0 "Industrialization"
+ desc_bsb_industrialization:0 "The introduction of modern manufacturing techniques has massively increased our national production."
+
+ bsb_uniting_south_slavs:0 "Uniting the South Slavs"
+ desc_bsb_uniting_south_slavs:0 "Bringing all South Slavic peoples under one banner has created a massive, unified recruitment pool."
+
+ bsb_bulwark_of_christianity:0 "Bulwark of Christianity"
+ desc_bsb_bulwark_of_christianity:0 "Standing as the shield of the true faith has inspired the faithful to flock to our armies and administration."
+
+ bsb_expanding_trade_networks:0 "Expanding Trade Networks"
+ desc_bsb_expanding_trade_networks:0 "Opening new trade routes has brought experienced merchants and immense wealth to our borders."
+
+ bsb_fleet:0 "Grand Fleet"
+ desc_bsb_fleet:0 "Our vast armada projects power across the seas, securing our trade interests and dominating naval combat."
+
+ bsb_patrons_of_art:0 "Patrons of Art"
+ desc_bsb_patrons_of_art:0 "Our sponsorship of artists and thinkers accelerates the spread of new ideas within our faithful provinces."
+
+ bsb_expanding_the_order:0 "Expanding the Order"
+ desc_bsb_expanding_the_order:0 "Granting new lands and privileges to the knightly orders ensures their undying loyalty and reduces our military expenses."
+
+ bsb_securing_the_balkans:0 "Securing the Balkans"
+ desc_bsb_securing_the_balkans:0 "Our measured and justified expansion into the Balkans has assuaged the fears of our neighbors."
+
+ bsb_novo_brdo_code:0 "Novo Brdo Code"
+ desc_bsb_novo_brdo_code:0 "The famed mining code of Novo Brdo has standardized our resource extraction, making development and production highly efficient."
+
+ bsb_caesaropapism:0 "Caesaropapism"
+ desc_bsb_caesaropapism:0 "Combining secular and religious authority under the crown ensures strict religious conformity and tolerance of the state faith."
+
+ hun_bsb_brotherhood:0 "Hungarian-Bosnian Brotherhood"
+ desc_hun_bsb_brotherhood:0 "The deep ties and shared military traditions between our peoples provide us with excellent and affordable cavalry forces."
+
+ bsb_legacy_of_angevins:0 "Legacy of the Angevins"
+ desc_bsb_legacy_of_angevins:0 "Claiming the administrative legacy of the House of Anjou has streamlined our bureaucracy and pacified newly conquered lands."
+
+ bsb_guests:0 "Invited Guests"
+ desc_bsb_guests:0 "Welcoming skilled foreign artisans and settlers has accelerated the development of our provinces."
+
+ bsb_corviana_library:0 "Bibliotheca Corviniana"
+ desc_bsb_corviana_library:0 "Housing one of the greatest collections of books in the world greatly reduces the cost of adopting new technologies and ideas."
+
+ bsb_supreme_black_army:0 "Supreme Black Army"
+ desc_bsb_supreme_black_army:0 "Our legendary standing mercenary force strikes terror into our enemies and facilitates rapid integration of conquered territories."
+
+ bsb_black_legion:0 "The Black Legion"
+ desc_bsb_black_legion:0 "The elite commanders of the Black Legion bring unparalleled tactical expertise to our mercenary companies."
+
+ port_ragusa:0 "Port of Ragusa"
+ desc_port_ragusa:0 "The magnificent port of Ragusa serves as a premier naval hub, offering rapid repairs and abundant sailors."
+
+ bsb_promote_messapian_culture:0 "Promoted Messapian Culture"
+ desc_bsb_promote_messapian_culture:0 "Elevating the Messapian culture has secured their loyalty, filling our ranks and our court with capable individuals."
+
+ bsb_guarantee_minority_rights:0 "Guaranteed Minority Rights"
+ desc_bsb_guarantee_minority_rights:0 "Ensuring the rights and privileges of all ethnic minorities has created a highly diverse, tolerant, and loyal empire."
