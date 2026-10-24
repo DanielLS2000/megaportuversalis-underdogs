@@ -6,37 +6,6 @@ religion = catholic
 primary_culture = lombard
 capital = 103
 add_accepted_culture = piedmontese
-elector = yes
-1444.11.11= {
-	monarch = {
-		name = "Päula"
-		dynasty = "de Savoie"
-		adm = 4
-		dip = 4
-		mil = 4
-		birth_date = 1375.7.8
-		female = yes
-		religion = catholic
-		culture = lombard
-	}
-	add_ruler_personality = fertile_personality
-	add_ruler_personality = scholar_personality
-	heir = {
-		name = "Doardo"
-		monarch_name = "Doardo"
-		dynasty = "de Savoie"
-		adm = 5
-		dip = 5
-		mil = 5
-		birth_date = 1399.9.23
-		death_date = 1464.9.23
-		claim = 89
-		religion = catholic
-		culture = italian
-	}
-	add_heir_personality = drunkard_personality
-	add_heir_personality = silver_tongue_personality
-}
 1444.11.11= {
 	add_prestige = 103
 	add_treasury = 68

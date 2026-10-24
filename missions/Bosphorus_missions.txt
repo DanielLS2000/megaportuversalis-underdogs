@@ -1,0 +1,2009 @@
+custom_missions = {
+	slot = 1
+	generic = no
+	potential = {
+		tag = BSP
+	}
+	bsp_black_sea_fleet = {
+		icon = mission_galleys_in_port
+		position = 1
+		trigger = {
+			OR = {
+				navy_size = 10
+				navy_size_percentage = 1
+			}
+		}
+		effect = {
+			2410 = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+					}
+					add_center_of_trade_level = 1
+				}
+				else = {
+					center_of_trade = 1
+				}
+			}
+			add_navy_tradition = 10
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				set_country_flag = feo_black_seas_fleet_modifier_flag
+				custom_tooltip = FEO_SELECTING_DOCTRINE_GIVES_BLACK_SEAS_FLEET_MODIFIER
+			}
+			else = {
+				add_country_modifier = {
+					name = feo_black_seas_fleet
+					duration = 7300
+				}
+			}
+		}
+	}
+	bsp_black_sea_domination = {
+		icon = mission_control_the_black_sea
+		position = 2
+		required_missions = {
+			bsp_black_sea_fleet
+			bsp_italian_relations
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owned_by = ROOT
+			NOT = {
+				province_trade_power = 20
+			}
+		}
+		trigger = {
+			OR = {
+				capital_scope = {
+					province_has_center_of_trade_of_level = 2
+				}
+				AND = {
+					alliance_with = GEN
+					monthly_income = 10
+				}
+			}
+			OR = {
+				capital_scope = {
+					province_trade_power = 20
+				}
+				capital_scope = {
+					trade_share = {
+						country = ROOT
+						share = 40
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = FEO_UNLOCK_LIVESTOCK_REGULATIONS_RIVILEGE_TT
+			custom_tooltip = " "
+			define_advisor = {
+				type = trader
+				skill = 3
+				cost_multiplier = 0.25
+			}
+		}
+	}
+	bsp_bolster_the_defences = {
+		icon = mission_pf_map_table
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 2410
+		}
+		trigger = {
+			OR = {
+				2410 = {
+					base_manpower = 7
+				}
+				2410 = {
+					fort_level = 4
+				}
+				advisor = fortification_expert
+			}
+		}
+		effect = {
+			2410 = {
+				add_province_modifier = {
+					name = "tre_bolstered_the_defences"
+					duration = 3650
+				}
+			}
+			add_yearly_manpower = 1.5
+		}
+	}
+	bsp_carpathia = {
+		icon = mission_hagia_sophia
+		position = 4
+		required_missions = {
+			bsp_gothia
+			bsp_bolster_the_defences
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = carpathia_region
+				province_id = 4531
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4531 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				region = carpathia_region
+			}
+		}
+		effect = {
+			give_claims = {
+				region = anatolia_region
+			}
+			4531 = {
+				change_culture = ROOT
+			}
+			add_country_modifier = {
+				name = feo_one_goth_to_rule_them_all
+				duration = -1
+			}
+			country_event_with_option_insight = {
+				id = flavor_feo.2
+				option_1 = "
+					custom_tooltip = FEO_FORMING_BYZANTIUM_GIVES_US_RULER_STATS
+				"
+				option_2 = "
+					custom_tooltip = FEO_MOVE_GOTHIC_TO_GERMAN
+					custom_tooltip = \" \"
+					add_government_reform = gothic_monarchy_reform
+				"
+			}
+		}
+	}
+	bsp_religious_question = {
+		icon = mission_hands_praying
+		position = 7
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					NOT = {
+						religion = ROOT
+					}
+					value = 25
+				}
+				num_of_converted_provinces = {
+					amount = 10
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = theologian
+				skill = 2
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	bsp_ecclesiastical_architecture = {
+		icon = mission_cathedral_cities
+		required_missions = {
+			bsp_religious_question
+		}
+		position = 9
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				NOT = {
+					religion = ROOT
+				}
+				NOT = {
+					has_tax_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			capital_scope = {
+				has_tax_building_trigger = yes
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				has_tax_building_trigger = yes
+				religion = ROOT
+			}
+			development_in_provinces = {
+				value = 50
+				has_tax_building_trigger = yes
+				religion = ROOT
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_or_upgrade_tax_building = yes
+			}
+			custom_tooltip = tre_empty
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.5
+			}
+		}
+	}
+}
+series_3_3a4f3e3c = {
+	slot = 3
+	generic = no
+	potential = {
+		tag = BSP
+	}
+	bsp_goths_and_romans = {
+		icon = mission_goths_and_romans
+		required_missions = {
+			bsp_raise_army
+			bsp_italian_relations
+		}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				owned_by = Z76
+				AND = {
+					province_id = 2410
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = Z76
+					marriage_with = Z76
+					Z76 = {
+						is_subject = no
+					}
+					if = {
+						limit = {
+							has_dlc = "The Cossacks"
+						}
+						Z76 = {
+							trust = {
+								who = ROOT
+								value = 70
+							}
+						}
+					}
+					else = {
+						Z76 = {
+							has_opinion = {
+								who = ROOT
+								value = 175
+							}
+						}
+					}
+				}
+				Z76 = {
+					vassal_of = ROOT
+				}
+				159 = {
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = tre_black_sea_claim_tt
+			if = {
+				limit = {
+					alliance_with = Z76
+					marriage_with = Z76
+					Z76 = {
+						is_subject = no
+					}
+				}
+				custom_tooltip = tre_alliance_theodoro_tt_yes
+				tooltip = {
+					custom_tooltip = tre_theodoro_vassalization_tt
+				}
+			}
+			else = {
+				custom_tooltip = tre_alliance_theodoro_tt_no
+				tooltip = {
+					custom_tooltip = tre_theodoro_vassalization_tt
+				}
+			}
+			if = {
+				limit = {
+					Z76 = {
+						vassal_of = ROOT
+					}
+				}
+				custom_tooltip = tre_vassal_theodoro_tt_yes
+				tooltip = {
+					Z76 = {
+						add_liberty_desire = -20
+						change_dip = 1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = tre_vassal_theodoro_tt_no
+				tooltip = {
+					Z76 = {
+						add_liberty_desire = -20
+						change_dip = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					156 = {
+						owned_by = ROOT
+					}
+				}
+				custom_tooltip = tre_conquest_theodoro_tt_yes
+				tooltip = {
+					156 = {
+						add_or_upgrade_fort_building = yes
+					}
+					156 = {
+						add_province_modifier = {
+							name = "tre_kalamita_fortress"
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = tre_conquest_theodoro_tt_no
+				tooltip = {
+					156 = {
+						add_or_upgrade_fort_building = yes
+					}
+					156 = {
+						add_province_modifier = {
+							name = "tre_kalamita_fortress"
+							duration = -1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						Z76 = {
+							vassal_of = ROOT
+						}
+					}
+					Z76 = {
+						add_liberty_desire = -20
+						change_dip = 1
+					}
+				}
+				else_if = {
+					limit = {
+						alliance_with = Z76
+						marriage_with = Z76
+						Z76 = {
+							is_subject = no
+						}
+					}
+					Z76 = {
+						country_event = {
+							id = flavor_bsp.1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						156 = {
+							owned_by = ROOT
+						}
+					}
+					156 = {
+						add_or_upgrade_fort_building = yes
+					}
+					156 = {
+						add_province_modifier = {
+							name = "tre_kalamita_fortress"
+							duration = -1
+						}
+					}
+				}
+				every_province = {
+					limit = {
+						has_port = yes
+						sea_zone = {
+							area = black_sea_area
+						}
+					}
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	bsb_ruthenia = {
+		icon = mission_rule_ruthenia
+		position = 4
+		required_missions = {
+			bsp_gothia
+			bsp_beyond_crimea
+		}
+		provinces_to_highlight = {
+			region = ruthenia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = ruthenia_region
+				value = 15
+			}
+			280 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = FEO_UPGRADE_KIEV_MONUMENT_BONUSES
+				set_country_flag = enable_monument_bonus_1_flag
+			}
+			else = {
+				280 = {
+					add_or_upgrade_tax_building = yes
+					add_base_tax = 3
+				}
+			}
+			country_event_with_option_insight = {
+				id = flavor_feo.7
+				option_1 = "
+					feo_conflicts_in_lithuania_event_opt_1 = yes
+				"
+				option_2 = "
+					feo_conflicts_in_lithuania_event_opt_2 = yes
+				"
+			}
+		}
+	}
+	bsp_rising_power = {
+		icon = mission_monarch_in_throne_room
+		position = 7
+		required_missions = {
+			bsp_steppe_development
+			bsp_restore_kiev
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					exists = BYZ
+				}
+				BYZ = {
+					is_subject_of = ROOT
+				}
+			}
+			OR = {
+				NOT = {
+					exists = TRE
+				}
+				TRE = {
+					is_subject_of = ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				NOT = {
+					great_power_rank = 6
+				}
+			}
+			else = {
+				total_development = 300
+			}
+		}
+		effect = {
+			custom_tooltip = FEO_RECRUIT_FOREIGN_GENERAL_GRANTS_DISCIPLINE_ADVISOR
+			custom_tooltip = " "
+			complex_dynamic_effect = {
+				first_custom_tooltip = FEO_IF_COMPLETED_WITH_MERCHANT_ARISTOCRACY
+				first_limit = "
+					has_reform = merchant_aristocracy_reform
+				"
+				first_effect = "
+					set_country_flag = feo_merchant_basileus_flag
+					if = {
+						limit = { has_dlc = \"Rights of Man\" }
+						custom_tooltip = FEO_UNLOCK_MERCHANT_BASILEUS_RULER_TRAIT
+						custom_tooltip = \" \"
+					}
+					add_dip_power = 100
+					custom_tooltip = \" \"
+					set_country_flag = feo_merchant_loyalty_per_trader_level
+					custom_tooltip = FEO_TRADER_GRANTS_MERCHANTS_LOYALTY_PER_LEVEL
+				"
+				second_custom_tooltip = FEO_IF_COMPLETED_WITH_GOTHIC_MONARCHY
+				second_limit = "
+					has_reform = gothic_monarchy_reform
+				"
+				second_effect = "
+					set_country_flag = fifty_percent_merc_army_professionalism_cost
+					custom_tooltip = FEO_FIFTY_PERCENT_CHEAPER_MERCENARIES
+					unlock_merc_company = {
+						merc_company = gavras_house_guards
+						free_merc = yes
+					}
+				"
+			}
+		}
+	}
+	bsp_principality = {
+		icon = mission_sovereign_principality
+		required_missions = { }
+		position = 8
+		provinces_to_highlight = {
+			area_for_scope_province = {
+				is_capital_of = ROOT
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			is_subject = no
+			capital_scope = {
+				fort_level = 3
+				area_for_scope_province = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			add_legitimacy = 20
+			moldavia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			red_ruthenia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bsp_economic_revitalization = {
+		icon = purely_for_commerce
+		required_missions = {
+			bsp_principality
+		}
+		position = 9
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				NOT = {
+					num_of_times_improved = 2
+				}
+				NOT = {
+					num_of_buildings_in_province = 1
+				}
+			}
+		}
+		trigger = {
+			share_of_starting_income = 2
+			num_of_owned_provinces_with = {
+				OR = {
+					num_of_times_improved = 2
+					num_of_buildings_in_province = 1
+				}
+				value = 8
+			}
+			NOT = {
+				average_autonomy_above_min = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tre_revitalization
+				duration = 9125
+			}
+			custom_tooltip = tre_economic_revitalization_tt
+		}
+	}
+	bsp_gold_deposits = {
+		icon = mission_iron_and_copper
+		required_missions = {
+			bsp_economic_revitalization
+		}
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				province_id = 285
+				province_id = 2410
+			}
+		}
+		trigger = {
+			OR = {
+				advisor = natural_scientist
+				production_income_percentage = 0.25
+			}
+			owns_core_province = 285
+			285 = {
+				base_production = 8
+			}
+			owns_core_province = 331
+			2410 = {
+				base_production = 8
+			}
+		}
+		effect = {
+			add_years_of_income = 0.25
+			285 = {
+				change_trade_goods = gold
+				add_base_production = 2
+			}
+			2410 = {
+				change_trade_goods = copper
+				add_base_production = 2
+			}
+		}
+	}
+}
+series_2_53913ca1 = {
+	slot = 2
+	generic = no
+	potential = {
+		tag = BSP
+	}
+	bsp_italian_relations = {
+		icon = mission_dominate_genoa
+		position = 1
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				culture_group = latin
+			}
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					any_country = {
+						culture_group = latin
+					}
+				}
+				AND = {
+					army_size = 5
+					any_country = {
+						culture_group = latin
+						OR = {
+							ROOT = {
+								is_rival = PREV
+							}
+							has_been_insulted_by_root = yes
+						}
+					}
+				}
+				any_country = {
+					culture_group = latin
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					type = galley
+					amount = 2
+					speed = 0.3
+					cost = 0
+				}
+			}
+			complex_dynamic_effect = {
+				first_custom_tooltip = FEO_IF_COMPLETED_THROUGH_ITALIAN_ALLIANCES
+				first_limit = "
+					any_country = {
+						culture_group = latin
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				"
+				first_effect = "
+					feo_rival_genoa_effect_1 = yes
+				"
+				second_custom_tooltip = FEO_IF_COMPLETED_THROUGH_COMBATING_ITALIANS
+				second_limit = "
+					OR = {
+						NOT = {
+							any_country = {
+								culture_group = latin
+							}
+						}
+						any_country = {
+							culture_group = latin
+							OR = {
+								ROOT = {
+									is_rival = PREV
+								}
+								has_been_insulted_by_root = yes
+							}
+						}
+					}
+				"
+				second_effect = "
+					give_claims = { id = 1756 }
+					give_claims = { id = 4706 }
+					give_claims = { id = 159 }
+					set_country_flag = feo_hostile_italian_approach
+				"
+			}
+		}
+	}
+	bsp_dealing_with_italians = {
+		icon = mission_alliances
+		position = 2
+		required_missions = {
+			bsp_italian_relations
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					OR = {
+						ROOT = {
+							NOT = {
+								has_country_flag = feo_peaceful_italian_approach
+							}
+						}
+						NOT = {
+							any_country = {
+								culture_group = latin
+								is_subject = no
+							}
+						}
+					}
+				}
+				province_id = 2410
+				OR = {
+					NOT = {
+						owned_by = ROOT
+					}
+					NOT = {
+						development = 15
+					}
+					NOT = {
+						num_of_buildings_in_province = 2
+					}
+				}
+			}
+			else = {
+				is_capital = yes
+				owner = {
+					culture_group = latin
+					is_subject = no
+				}
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = feo_peaceful_italian_approach
+					any_country = {
+						culture_group = latin
+						is_subject = no
+					}
+				}
+				any_country = {
+					culture_group = latin
+					is_subject = no
+					alliance_with = ROOT
+					if = {
+						limit = {
+							has_dlc = "The Cossacks"
+						}
+						owes_favors = {
+							who = ROOT
+							value = 20
+						}
+					}
+					else = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = feo_hostile_italian_approach
+				}
+				2410 = {
+					owned_by = ROOT
+					OR = {
+						development = 15
+						num_of_buildings_in_province = 2
+					}
+				}
+				trader = 1
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = feo_no_italian_branch_locked_in
+					always = no
+				}
+				2410 = {
+					#Only there so the player knows of the one where you need to plan more ahead of time
+					owned_by = ROOT
+					OR = {
+						development = 15
+						num_of_buildings_in_province = 2
+					}
+				}
+				trader = 1
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = feo_peaceful_italian_approach
+				}
+				capital_scope = {
+					add_institution_embracement = {
+						which = renaissance
+						value = 100
+					}
+				}
+				set_country_flag = feo_buffed_italian_coastal_influence
+				custom_tooltip = FEO_ITALIAN_COASTAL_INFLUENCE_IS_MODIFIED
+			}
+			else = {
+				remove_estate_privilege = estate_burghers_italian_coastal_influence
+				add_mercantilism = 5
+				2410 = {
+					if = {
+						limit = {
+							province_has_center_of_trade_of_level = 1
+						}
+						add_center_of_trade_level = 1
+					}
+					else = {
+						add_base_production = 2
+					}
+				}
+			}
+		}
+	}
+	bsp_gothia = {
+		icon = imperial_ascendancy
+		position = 3
+		required_missions = {
+			bsp_dealing_with_italians
+			bsp_black_sea_domination
+			bsp_goths_and_romans
+		}
+		trigger = {
+			OR = {
+				grown_by_development = 110
+				num_of_cities = 15
+			}
+		}
+		effect = {
+			give_claims = {
+				id = 316
+			}
+			give_claims = {
+				region = balkan_region
+			}
+			give_claims = {
+				region = carpathia_region
+			}
+			custom_tooltip = " "
+			override_country_name = GOTHIA
+			set_country_flag = is_GOTHIA_flag
+			define_advisor = {
+				type = commandant
+				skill = 2
+				cost_multiplier = 0.5
+			}
+			crimea_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_base_manpower = 1
+			}
+			add_power_projection = {
+				type = feo_gothia_ascendant_pp
+				amount = 10
+			}
+		}
+	}
+	bsp_ruthenian_conquest = {
+		icon = mission_balkan_conquest
+		position = 5
+		required_missions = {
+			bsb_ruthenia
+		}
+		provinces_to_highlight = {
+			region = ruthenia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 14
+				region = ruthenia_region
+			}
+			280 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = FEO_GAIN_MANA_PER_GREAT_PROJECT
+			}
+			280 = {
+				add_province_modifier = {
+					name = feo_gavras_family_gold_deposits
+					duration = -1
+				}
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					custom_tooltip = FEO_EXPANDING_INFRASTRACTURE_GIVES_GOLD_INCOME
+					set_province_flag = feo_expand_infrastructure_gold_income
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = ruthenia_region
+						has_great_project = {
+							type = any
+							tier = 1
+						}
+					}
+					owner = {
+						add_adm_power = 25
+						add_dip_power = 25
+						add_mil_power = 25
+					}
+				}
+				every_owned_province = {
+					limit = {
+						region = ruthenia_region
+					}
+					add_local_autonomy = -35
+					add_nationalism = -15
+				}
+			}
+		}
+	}
+	bsp_restore_kiev = {
+		icon = mission_restore_kiev
+		required_missions = {
+			bsp_ruthenian_conquest
+		}
+		position = 6
+		provinces_to_highlight = {
+			area = west_dniepr_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			west_dniepr_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			country_event = {
+				id = flavor_rus.2002
+			}
+			southern_transylvania_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			transylvania_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			moldavia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			wallachia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			red_ruthenia_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	bsp_crimean_church = {
+		icon = mission_pf_cross
+		required_missions = {
+			bsp_religious_question
+		}
+		position = 8
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			papal_influence = 50
+			development_in_provinces = {
+				value = 200
+				religion = catholic
+			}
+			OR = {
+				inquisitor = 3
+				theologian = 3
+			}
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 80
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+					religion = orthodox
+				}
+				set_country_flag = metropolitan_double_buff
+				custom_tooltip = tre_metropolitan_double_bonus_negate_tt
+			}
+			else = {
+				add_dip_power = 200
+			}
+			add_country_modifier = {
+				name = "tre_metropolitan_of_trebizond"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					is_defender_of_faith = yes
+				}
+				custom_tooltip = tre_metropolitan_permanent_yes
+			}
+			else = {
+				custom_tooltip = tre_metropolitan_permanent_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_defender_of_faith = yes
+					}
+					remove_country_modifier = tre_metropolitan_of_trebizond
+					add_country_modifier = {
+						name = "tre_metropolitan_of_trebizond"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	bsp_legacy_of_crusade = {
+		icon = mission_mosque
+		position = 10
+		required_missions = {
+			bsp_crimean_church
+			bsp_ecclesiastical_architecture
+			bsp_economic_revitalization
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			not_in_mission_preview_mode = {
+				key = HORDES
+			}
+			religious_unity = 1
+			theologian = 3
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				OR = {
+					ruler_has_personality = tolerant_personality
+					full_idea_group = humanist_ideas
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						NOT = {
+							religion = ROOT
+						}
+						has_tax_building_trigger = yes
+						value = 25
+					}
+				}
+			}
+			else = {
+				OR = {
+					full_idea_group = humanist_ideas
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						NOT = {
+							religion = ROOT
+						}
+						has_tax_building_trigger = yes
+						value = 25
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = HORDES_UNLOCK_RELIGIOUS_TOLERANCE_TRIBAL_PRIVILEGE
+			set_country_flag = hordes_religious_tolerance_tribal_privilege_flag
+			custom_tooltip = SEPERATOR_TOOLTIP
+			distribute_development = {
+				type = production
+				amount = 5
+			}
+			distribute_development = {
+				type = tax
+				amount = 5
+			}
+		}
+	}
+}
+series_4_eb087663 = {
+	slot = 4
+	generic = no
+	potential = {
+		tag = BSP
+	}
+	bsp_raise_army = {
+		icon = mission_steppe_warriors
+		position = 1
+		trigger = {
+			OR = {
+				army_size_percentage = 0.9
+				army_size = 14
+			}
+		}
+		effect = {
+			give_claims = {
+				region = ruthenia_region
+			}
+			give_claims = {
+				region = crimea_region
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			create_general_with_pips = {
+				tradition = 40
+				add_shock = 1
+			}
+		}
+	}
+	bsp_russian_aristocracy = {
+		icon = mission_noble_council
+		position = 2
+		provinces_to_highlight = {
+			is_capital = yes
+			region = russia_region
+			owner = {
+				total_development = 100
+				NOT = {
+					alliance_with = ROOT
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				any_ally = {
+					capital_scope = {
+						region = russia_region
+					}
+					total_development = 100
+				}
+				army_size = 14
+			}
+		}
+		effect = {
+			complex_dynamic_effect = {
+				first_custom_tooltip = FEO_IF_COMPLETED_WITH_ALLIANCE
+				first_limit = "
+					any_ally = {
+						capital_scope = {
+							region = russia_region
+						}
+						total_development = 100
+					}
+				"
+				first_effect = "
+					set_country_flag = feo_russian_alliance_branch
+					random_known_country = {
+						limit = { capital_scope = { region = russia_region } total_development = 100 alliance_with = ROOT }
+						hidden_effect = { save_global_event_target_as = russian_ally } set_country_flag = feo_russian_ally add_papal_influence = 25
+					}
+					add_papal_influence = 25 custom_tooltip = FEO_LOCK_TO_ALLIANCE_BRANCH
+				"
+				second_custom_tooltip = FEO_IF_COMPLETED_WITH_ARMY_SIZE
+				second_limit = "
+					army_size = 14
+					NOT = {
+						any_ally = {
+							capital_scope = {
+								region = russia_region
+							}
+							total_development = 100
+						}
+					}
+				"
+				second_effect = "
+					custom_tooltip = FEO_GRANT_UNION_CB_WITH_MOST_DEVELOPED_RUSSIAN_NATION
+					set_country_flag = feo_russian_conquest_branch
+					custom_tooltip = \" \"
+					custom_tooltip = FEO_LOCK_TO_CONQUEST_BRANCH
+				"
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						army_size = 20
+						NOT = {
+							any_ally = {
+								capital_scope = {
+									region = russia_region
+								}
+								total_development = 100
+							}
+						}
+					}
+					feo_russian_aristocracy_army_size_effect = yes
+				}
+			}
+		}
+		required_missions = {
+			bsp_raise_army
+		}
+	}
+	bsp_beyond_crimea = {
+		icon = mission_lit_harness_steppes
+		position = 3
+		required_missions = {
+			bsp_goths_and_romans
+			bsp_russian_aristocracy
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = circassia_area
+				area = astrakhan_area
+				area = azov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			466 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = circassia_area
+					area = astrakhan_area
+					area = azov_area
+				}
+				value = 7
+			}
+		}
+		effect = {
+			give_claims = {
+				region = caucasia_region
+			}
+			give_claims = {
+				region = ural_region
+			}
+			give_claims = {
+				region = central_asia_region
+			}
+			if = {
+				limit = {
+					has_estate = estate_cossacks
+				}
+				custom_tooltip = " "
+				custom_tooltip = FEO_MODIFY_FREEDOM_OF_STEPPES_PRIVILEGE
+			}
+			set_country_flag = feo_buffed_freedom_of_steppes_flag
+			custom_tooltip = " "
+			466 = {
+				add_province_triggered_modifier = feo_heart_of_steppes
+			}
+			custom_tooltip = " "
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+	bsp_integrate_cossacks = {
+		icon = mission_recruit_the_cossacks
+		position = 5
+		required_missions = {
+			bsb_ruthenia
+		}
+		provinces_to_highlight = {
+			has_terrain = steppe
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 150
+				has_terrain = steppe
+			}
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				estate_loyalty = {
+					estate = estate_cossacks
+					loyalty = 70
+				}
+				num_of_cossacks = 21
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					has_terrain = steppe
+					development = 20
+					num_of_buildings_in_province = 3
+					value = 10
+				}
+			}
+		}
+		effect = {
+			country_event_with_option_insight = {
+				id = flavor_feo.6
+				option_1 = "
+					feo_integrate_cossacks_event_opt_1 = yes
+				"
+				option_2 = "
+					feo_integrate_cossacks_event_opt_2 = yes
+				"
+			}
+		}
+	}
+	bsp_steppe_development = {
+		icon = mission_pol_develop_countryside
+		position = 6
+		required_missions = {
+			bsp_integrate_cossacks
+		}
+		provinces_to_highlight = {
+			has_terrain = steppe
+			NOT = {
+				development = 20
+			}
+			NOT = {
+				num_of_buildings_in_province = 3
+			}
+			NOT = {
+				is_core = ROOT
+			}
+			owned_by = ROOT
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_terrain = steppe
+				num_of_buildings_in_province = 3
+				is_core = ROOT
+				value = 10
+			}
+			num_of_owned_provinces_with = {
+				development = 20
+				has_terrain = steppe
+				is_core = ROOT
+				value = 5
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					has_terrain = steppe
+					OR = {
+						num_of_buildings_in_province = 3
+						development = 20
+					}
+				}
+				add_base_production = 3
+			}
+			distribute_development = {
+				type = manpower
+				amount = 10
+				limit = "
+					development = 20
+					has_terrain = steppe
+				"
+				tooltip = FEO_DISTRIBUTE_IN_DEV_STEPPES_TT
+			}
+			custom_tooltip = " "
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				set_country_flag = feo_upgrade_prime_herding_rights_flag
+				custom_tooltip = FEO_PRIME_HERDING_RIGHTS_GRANTS_MANPOWER
+			}
+			else = {
+				add_years_of_income = 1
+				add_yearly_manpower = 1
+			}
+		}
+	}
+	bsp_intercontinental_trade = {
+		icon = mission_horde_caravans
+		position = 8
+		required_missions = {
+			bsp_new_trade_routes
+		}
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+			OR = {
+				NOT = {
+					is_strongest_trade_power = ROOT
+				}
+				NOT = {
+					trade_node_value = 35
+				}
+			}
+		}
+		trigger = {
+			capital_scope = {
+				is_strongest_trade_power = ROOT
+				trade_node_value = 35
+			}
+			OR = {
+				trader = 3
+				monthly_dip = 10
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_nomadic_tribes
+				}
+				custom_tooltip = HORDES_UNLOCK_NOMADIC_CARAVANS_PRIVILEGE
+				set_country_flag = hordes_nomadic_caravans_flag
+			}
+			else = {
+				add_mercantilism_or_monarch_power = {
+					amount = 5
+				}
+				add_years_of_income = 1.5
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_dip_power = 100
+		}
+	}
+	bsp_monopolize_black_sea = {
+		icon = mission_control_the_black_sea
+		required_missions = {
+			bsp_connection_to_silk_road
+			bsp_intercontinental_trade
+			bsp_economic_revitalization
+		}
+		position = 10
+		provinces_to_highlight = {
+			province_id = 1322
+		}
+		trigger = {
+			1322 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_trade_node_income = 24
+			}
+			custom_tooltip = tre_empty
+			1322 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = tre_black_sea_domination
+				}
+			}
+		}
+	}
+}
+series_5_0884d192 = {
+	slot = 5
+	generic = no
+	potential = {
+		tag = BSP
+	}
+	bsp_kingdoms_of_the_caucasus = {
+		icon = mission_the_caucasus_rus
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				owner = {
+					capital_scope = {
+						region = caucasia_region
+					}
+					NOT = {
+						alliance_with = ROOT
+					}
+				}
+				AND = {
+					region = caucasia_region
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					NOT = {
+						owned_by = ARM
+					}
+				}
+				AND = {
+					owned_by = ARM
+					owner = {
+						OR = {
+							NOT = {
+								has_opinion = {
+									who = ROOT
+									value = 190
+								}
+							}
+							NOT = {
+								marriage_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = ARM
+						value = 190
+					}
+					ARM = {
+						marriage_with = ROOT
+					}
+				}
+				calc_true_if = {
+					all_ally = {
+						capital_scope = {
+							region = caucasia_region
+						}
+					}
+					amount = 2
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					region = caucasia_region
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = tre_claim_caucasus
+			hidden_effect = {
+				every_province = {
+					limit = {
+						region = caucasia_region
+						owner = {
+							NOT = {
+								alliance_with = ROOT
+							}
+						}
+					}
+					add_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							reverse_has_opinion = {
+								who = ARM
+								value = 190
+							}
+							ARM = {
+								marriage_with = ROOT
+							}
+						}
+						calc_true_if = {
+							desc = tre_kingdoms_of_the_caucasus_tt
+							all_ally = {
+								capital_scope = {
+									region = caucasia_region
+								}
+							}
+							amount = 2
+						}
+					}
+				}
+				custom_tooltip = tre_caucasus_diplomatic_tt_yes
+				tooltip = {
+					define_advisor = {
+						type = diplomat
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+			else = {
+				custom_tooltip = tre_caucasus_diplomatic_tt_no
+				tooltip = {
+					define_advisor = {
+						type = diplomat
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+			if = {
+				limit = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						region = caucasia_region
+					}
+				}
+				custom_tooltip = tre_caucasus_conquest_tt_yes
+				tooltip = {
+					define_advisor = {
+						type = army_reformer
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+			else = {
+				custom_tooltip = tre_caucasus_conquest_tt_no
+				tooltip = {
+					define_advisor = {
+						type = army_reformer
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+			custom_tooltip = tre_can_earn_both_advisors
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								reverse_has_opinion = {
+									who = ARM
+									value = 190
+								}
+								ARM = {
+									marriage_with = ROOT
+								}
+							}
+							calc_true_if = {
+								all_ally = {
+									capital_scope = {
+										region = caucasia_region
+									}
+								}
+								amount = 2
+							}
+						}
+					}
+					define_advisor = {
+						type = diplomat
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+				if = {
+					limit = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 5
+							region = caucasia_region
+						}
+					}
+					define_advisor = {
+						type = army_reformer
+						skill = 2
+						religion = ROOT
+						culture = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+		}
+	}
+	bsp_foreign_aid = {
+		icon = mission_early_russian_army
+		position = 2
+		required_missions = {
+			bsp_kingdoms_of_the_caucasus
+			bsp_raise_army
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			event_target:russian_ally = {
+				if = {
+					limit = {
+						has_dlc = "The Cossacks"
+					}
+					trust = {
+						who = ROOT
+						value = 65
+					}
+				}
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
+		}
+		effect = {
+			set_country_flag = feo_buff_nobility_officer_corp_flag
+			custom_tooltip = FEO_GRANT_NOBILITY_OFFICER_CORP_BUFF
+			custom_tooltip = " "
+			add_army_tradition = 10
+		}
+	}
+	bsp_foreign_guard = {
+		icon = mission_recruit_streltsy
+		position = 3
+		required_missions = {
+			bsp_foreign_aid
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			army_size = 56
+			total_development = 300
+			event_target:russian_ally = {
+				alliance_with = ROOT
+				if = {
+					limit = {
+						has_dlc = "The Cossacks"
+					}
+					trust = {
+						who = ROOT
+						value = 80
+					}
+				}
+				else = {
+					has_opinion = {
+						who = ROOT
+						value = 200
+					}
+				}
+			}
+		}
+		effect = {
+			add_mil_power = 50
+			set_country_flag = feo_unlock_russian_mercenary_guard_reform_flag
+			custom_tooltip = FEO_UNLOCK_RUSSIAN_MERCENARY_GUARD
+		}
+	}
+	bsp_wargames = {
+		icon = mission_tribal_wargames
+		position = 4
+		required_missions = {
+			bsp_foreign_guard
+		}
+		trigger = {
+			num_of_battles = {
+				amount = 50
+			}
+			army_size = 35
+			is_at_war = no
+			has_regency = no
+		}
+		effect = {
+			add_mil_power = 100
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			create_general_with_pips = {
+				tradition = 40
+				add_siege = 1
+				add_shock = 1
+			}
+		}
+	}
+	bsp_new_trade_routes = {
+		icon = mission_horde_trade
+		position = 7
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				province_has_center_of_trade_of_level = 2
+				value = 5
+			}
+		}
+		effect = {
+			add_mercantilism_or_monarch_power = {
+				amount = 2
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_country_modifier = {
+				name = hordes_steppe_trade
+				duration = 7300
+			}
+		}
+	}
+	bsp_connection_to_silk_road = {
+		icon = mission_silk_road
+		position = 9
+		required_missions = {
+			bsp_new_trade_routes
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+				region = khorasan_region
+			}
+			OR = {
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				NOT = {
+					base_production = 5
+				}
+				NOT = {
+					has_production_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					region = central_asia_region
+					region = caucasia_region
+				}
+				base_production = 5
+				has_production_building_trigger = yes
+				value = 5
+			}
+			custom_trigger_tooltip = {
+				tooltip = HORDES_HAS_50_TRADE_POWER_IN_PERSIA
+				464 = {
+					trade_share = {
+						country = ROOT
+						share = 50
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = HORDES_HAS_50_TRADE_POWER_IN_SAMARKAND
+				454 = {
+					trade_share = {
+						country = ROOT
+						share = 50
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				enable_trading_policy = {
+					policy = hostile_trading_upgraded
+				}
+				enable_trading_policy = {
+					policy = improve_inland_routes_upgraded
+				}
+				enable_trading_policy = {
+					policy = establish_communities_upgraded
+				}
+				hidden_effect = {
+					disable_trading_policy = {
+						policy = hostile_trading
+					}
+					disable_trading_policy = {
+						policy = improve_inland_routes
+					}
+					disable_trading_policy = {
+						policy = establish_communities
+					}
+				}
+			}
+			else = {
+				change_ruler_stat = {
+					type = dip
+					amount = 2
+				}
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			define_advisor = {
+				type = trader
+				skill = 2
+				cost_multiplier = 0.5
+			}
+		}
+	}
+}

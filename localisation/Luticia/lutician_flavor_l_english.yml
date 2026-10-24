@@ -1,0 +1,42 @@
+﻿l_english:
+ flavor_lut.1.t:0 "Sought Imperial Protection"
+ flavor_lut.1.desc:0 "The looming threats surrounding our borders have led the council to reconsider our isolationist stance. The Holy Roman Empire offers a mantle of security that could deter foreign aggression. However, yielding our sovereignty to the Emperor is not a decision to be made lightly, and our proud traditions demand we stand alone if we must. Do we seek out the protection of the Empire, or trust in our own strength to face whatever comes?"
+ flavor_lut.1.a:0 "We must seek out the protection of the HRE."
+ flavor_lut.1.a.tt:0 "We will formally petition the Emperor for membership within the Holy Roman Empire."
+ flavor_lut.1.b:0 "We can hold the ground on our own."
+
+ flavor_lut.2.t:0 "Luticia Requests to Join the Empire"
+ flavor_lut.2.desc:0 "The leadership of Luticia has formally petitioned our court, requesting admittance into the Holy Roman Empire. They promise loyalty and the security of their lands under our imperial banner. Accepting them would expand the borders of the Empire, but it could also draw us into their regional conflicts and disturb the current balance of power. How shall the Emperor respond?"
+ flavor_lut.2.a:0 "Accept them as part of the HRE."
+ flavor_lut.2.a.tt:0 "Luticia will become a recognized prince of the Holy Roman Empire."
+ flavor_lut.2.b:0 "Luticia has no business in the HRE."
+ flavor_lut.2.b.tt:0 "We will reject their petition, forcing them to stand alone."
+
+ flavor_lut.3.t:0 "Accepted into the Empire"
+ flavor_lut.3.desc:0 "News has arrived from the Imperial Court: the Emperor has graciously accepted our petition! Luticia is now formally recognized as a member state of the Holy Roman Empire. We shall enjoy the protection of the imperial armies and take our rightful place among the princes of the realm."
+ flavor_lut.3.a:0 "Excellent news."
+ flavor_lut.3.a.tt:0 "We are officially a member of the Holy Roman Empire."
+
+ flavor_lut.4.t:0 "Rejected by the Emperor"
+ flavor_lut.4.desc:0 "The Emperor's herald has delivered a stinging rebuke. Our request to join the Holy Roman Empire has been unequivocally denied. The Imperial Court claims our ambitions do not align with the peace of the realm, and we are left to fend for ourselves in an increasingly hostile world."
+ flavor_lut.4.a:0 "We never needed them anyway."
+ flavor_lut.4.a.tt:0 "We will not join the Holy Roman Empire and must rely on our own strength."
+
+ flavor_lut.5.t:0 "Relations with Volhynia"
+ flavor_lut.5.desc:0 "Our ongoing relations with the state of Volhynia present an opportunity. Given our overwhelming influence and their precarious position, some advisors suggest we should formally demand their submission as a vassal state, consolidating our power in the region. Others, however, believe that maintaining our current alliance is the safer diplomatic route, avoiding unnecessary hostility."
+ flavor_lut.5.a:0 "Ask Volhynia to become our vassal."
+ flavor_lut.5.a.tt:0 "We will send an envoy demanding their submission."
+ flavor_lut.5.b:0 "Keep the Alliance."
+
+ flavor_lut.6.t:0 "Luticia Demands Subjugation"
+ flavor_lut.6.desc:0 "An envoy from Luticia has arrived at our court with a stark ultimatum. Citing their superior power and our mutual interests, they demand that we bend the knee and become their vassal. Refusing this demand will almost certainly lead to war, but accepting it means the end of our sovereign independence."
+ flavor_lut.6.a:0 "Accept to become vassals of Luticia."
+ flavor_lut.6.b:0 "Refuse their arrogant demands!"
+
+ flavor_lut.7.t:0 "Volhynia Submits"
+ flavor_lut.7.desc:0 "Our envoys have returned from Volhynia with a signed treaty. Faced with our might and the logical inevitability of our dominance, the Volhynian leadership has agreed to become our vassal. Their armies and resources are now at our disposal."
+ flavor_lut.7.a:0 "A wise decision on their part."
+
+ flavor_lut.8.t:0 "Volhynia Defies Us"
+ flavor_lut.8.desc:0 "The insolent rulers of Volhynia have rejected our generous offer of protection! They refuse to become our vassal and have sent our envoys back with nothing but insults. If they will not bow to our diplomacy, they shall bow to our armies."
+ flavor_lut.8.a:0 "This will mean war."

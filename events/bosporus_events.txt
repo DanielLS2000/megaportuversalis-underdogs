@@ -1,0 +1,121 @@
+
+namespace = flavor_bsp
+
+
+#Vassalization of Moisia - Moisia Event
+country_event = {
+	id = flavor_bsp.1
+	title = flavor_bsp.1.t
+	desc = flavor_bsp.1.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_bsp.1.a"
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 0.8
+				num_of_cities = 6
+			}
+			modifier = {
+				factor = 0.8
+				num_of_cities = 12
+			}
+			modifier = {
+				factor = 1.5
+				ROOT = {
+					has_opinion = {
+						who = BSP
+						value = 190
+					}
+				}
+			}
+		}
+		tooltip = {
+			BSP = {
+				vassalize = ROOT
+			}
+		}
+		BSP = {
+			country_event = { id = flavor_bsp.2 }
+		}
+	}
+	
+	option = {	
+		name = "flavor_bsp.1.b"
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 1.5
+				BSP = {
+					NOT = { num_of_cities = 5 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				BSP = {
+					NOT = { num_of_cities = 10 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				BSP = { is_at_war = yes }
+			}
+			modifier = {
+				factor = 1.5
+				BSP = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 1.5
+				BSP = { is_enemy = ROOT }
+			}
+		}
+		tooltip = {
+			capital_scope = {
+				add_core = FROM
+			}
+		}
+		BSP = {
+			country_event = { id = flavor_bsp.3 }
+		}
+	}
+}
+
+#Vassalization of Moisia - Moisia Agrees
+country_event = {
+	id = flavor_bsp.2
+	title = flavor_bsp.2.t
+	desc = flavor_bsp.2.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_bsp.2.a"
+		ROOT = {
+			vassalize = Z76 
+		}
+	}
+}
+
+#Vassalization of Moisia - Moisia Rejects
+country_event = {
+	id = flavor_bsp.3
+	title = flavor_bsp.3.t
+	desc = flavor_bsp.3.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_bsp.3.a"
+		Z76 =  {
+			capital_scope = {
+				add_core = ROOT
+			}
+		}
+	}
+}
+

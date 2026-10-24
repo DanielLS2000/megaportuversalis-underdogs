@@ -7,6 +7,12 @@ primary_culture = goths
 capital = 2410
 add_accepted_culture = ruthenian
 set_country_flag = ZZZ_generated_converter_nation
+if = {
+	limit = {
+		has_dlc = "Winds of Change"
+	}
+	set_estate_privilege = estate_burghers_italian_coastal_influence
+}
 1444.11.11= {
 	monarch = {
 		name = "Boldizsár III"

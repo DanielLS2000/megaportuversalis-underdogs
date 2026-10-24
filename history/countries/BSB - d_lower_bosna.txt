@@ -1,11 +1,12 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = apostolic_kingdom
 government_rank = 1
 technology_group = eastern
 religion = catholic
 primary_culture = dynamic-croatian-sicilian-culture-num1
 capital = 4755
 add_accepted_culture = lombard
+elector = yes
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

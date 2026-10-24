@@ -127,3 +127,228 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #The Holy Lands of Yemen
+	id = flavor_FRABRI.2
+	title = flavor_FRABRI.2.t 
+	desc = flavor_FRABRI.2.d 
+	picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_FRABRI.2.a 
+		
+		trigger = {
+			ADE = { exists = no } 
+		}
+		
+		yemen_area = {
+			remove_core = ROOT
+			add_core = ADE
+		}
+		release = ADE
+
+		hidden_effect = {
+			ADE = { 
+				change_government = theocracy 
+				add_adm_power = 300
+				add_dip_power = 300
+				add_mil_power = 300
+				add_manpower = 10
+				set_country_flag = formed_jerusalem
+			}
+			every_province = {
+				limit = {
+					OR = {
+						area = upper_yemen_area
+						area = yemen_area
+						province_id = 387
+						province_id = 4279
+						province_id = 2346
+					}
+				}
+				add_core = ADE
+			}
+		}
+		vassalize = ADE 
+		ADE = { change_primary_culture = ROOT }
+		
+		add_country_modifier = {
+			name = fra_jerusalem_modifier
+			duration = 9125
+		}
+	}
+	
+	option = {
+		name = flavor_FRABRI.2.b 
+		
+		add_papal_influence = 50 
+		change_ruler_stat = {
+			type = mil
+			amount = 2
+		}
+	}
+}
+
+country_event = { #The Habsburg Ring 
+	id = flavor_FRABRI.3 
+	title = flavor_FRABRI.3.t 
+	desc = flavor_FRABRI.3.d 
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 0 }
+		name = flavor_FRABRI.3.a 
+		trigger = { hre_size = 1  }
+		add_country_modifier = {
+			name = fra_charlemagne_legacy_modifier
+			duration = 7300
+		}
+		every_elector = {
+			limit = { 
+				has_opinion = { 
+					who = ROOT 
+					value = 0 
+				}
+			}
+			add_opinion = { 
+				who = ROOT 
+				modifier = fra_charlemagne_legacy_opinion_modifier
+			}
+		}
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+		clr_country_flag = fra_fufujoni_flag
+		set_country_flag = fra_shed_the_blood_of_the_saxon_man_flag
+		custom_tooltip = fra_charlemagne_legacy_tt
+	}
+	
+	option = { 
+		name = flavor_FRABRI.3.b 
+		ai_chance = { factor = 100 }
+		trigger = { is_emperor = no }
+		add_country_modifier = { 
+			name = fra_war_east_modifier 
+			duration = 5475
+		}
+		clr_country_flag = fra_shed_the_blood_of_the_saxon_man_flag
+		set_country_flag = fra_fufujoni_flag
+		custom_tooltip = fra_destroy_empire_tt
+	}
+	
+	option = { 
+		name = flavor_FRABRI.3.c 
+		
+		trigger = { 
+			NOT = { hre_size = 1 } 
+		}
+		add_country_modifier = { 
+			name = fra_triumph_over_austria_modifier
+			duration = -1 
+		}
+		add_dip_power = 200 
+		
+		set_country_flag = fra_fufujoni_flag
+	}
+	
+	option = {
+		name = flavor_FRABRI.3.e
+		trigger = {
+			hre_size = 1
+			ai = no
+		}
+		enable_branching_mission_review_without_ai = { key = FRA_HRE }
+	}
+}
+
+# Colbert
+country_event = {
+	id = flavor_FRABRI.4
+	title = "flavor_fra.EVTNAME3124"
+	desc = "flavor_fra.EVTDESC3124"
+	picture = REFORM_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = { 
+			AND = { 
+				tag = FRA
+				is_year = 1649
+				NOT = { is_year = 1683 }
+			}
+			mission_completed = FRABRI_develop_trade
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = { 
+		set_country_flag = had_colbert
+	}
+	
+
+	option = {		# An Excellent Minister!
+		name = "EXCELLENTMINISTER"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		define_advisor = {
+			type = treasurer
+			name = "Jean-Baptiste Colbert"
+			culture = cosmopolitan_french
+			cost_multiplier = 0.25
+			skill = 3
+		}
+		set_country_flag = fra_colbert_excellent_minister_flag 
+	}
+	option = {		# Concentrate on Economic Reforms
+		name = "flavor_fra.EVTOPTA3124"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_country_modifier = {
+			name = colbert_economic_reforms
+			duration = 3650
+		}
+		set_country_flag = fra_colbert_economic_reform_flag 
+	}
+	option = {		# Concentrate on Trade Reforms
+		name = "flavor_fra.EVTOPTB3124"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_country_modifier = {
+			name = colbert_trade_reforms
+			duration = 3650
+		}
+		set_country_flag = fra_colbert_trade_reforms_flag
+	}
+	option = {		# Concentrate on Naval Supremacy
+		name = "flavor_fra.EVTOPTC3124"
+		add_country_modifier = {
+			name = colbert_naval_reforms
+			duration = 3650
+		}
+		set_country_flag = fra_colbert_naval_reforms_flag 
+	}
+}

@@ -223,8 +223,10 @@ ILY_ideas = {
 	}
 
 	trigger = {
-		tag = ILY
-		was_tag = BSB
+		AND = {
+			tag = ILY
+			was_tag = BSB
+		}
 	}
 
 	free = yes
@@ -309,10 +311,9 @@ GBR_ideas = {
 
 	free = yes
 
-	# TODO
 	britain_rules_the_waves = {
-		navy_tradition = 1
-		heavy_ship_power = 0.15
+		navy_tradition = 0.25
+		heavy_ship_power = 0.1
 	}
 	east_indies_company = {
 		# Same
@@ -417,7 +418,84 @@ ARM1_ideas = {
 }
 
 # Kabolistan
-# REDO Timurids Loads wrongly
+AFG_ideas = {
+	start = {
+		land_morale = 0.1
+		cavalry_power = 0.15
+	}
+
+	bonus = {
+		technology_cost = -0.05
+	}
+
+	trigger = {
+		tag = AFG
+	}
+
+	free = yes
+
+	tureh = {
+		global_manpower_modifier = 0.15
+	}
+	imperial_training = {
+		army_tradition = 0.5
+	}
+	recovery_the_prestige = {
+		core_creation = -0.1
+	}
+	industrial_focus = {
+		production_efficiency = 0.1
+	}
+	provincial_administrative_center = {
+		governing_capacity_modifier = 0.1
+	}
+	i_love_money = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	new_jews_on_india = {
+		trade_efficiency = 0.1
+	}
+}
+
+# Mughals
+MUG_ideas = {
+	start = {
+		land_morale = 0.1
+		cavalry_power = 0.2
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = MUG
+	}
+
+	free = yes
+
+	tureh = {
+		# Same
+	}
+	imperial_training = {
+		# Same
+	}
+	recovery_the_prestige_1 = {
+		core_creation = -0.25
+	}
+	industrial_focus = {
+		# Same
+	}
+	provincial_administrative_center = {
+		# Same
+	}
+	i_love_money = {
+		# Same
+	}
+	new_jews_on_india = {
+		# Same
+	}
+}
 
 # Byzantium-Armenia
 BYZARM_ideas = {

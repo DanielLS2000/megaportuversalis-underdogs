@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = arpitan
 capital = 2968
 add_accepted_culture = czech
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Rogier"

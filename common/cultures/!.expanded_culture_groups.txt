@@ -891,6 +891,7 @@ maghrebi = {
 	kabylian = { primary = KBA }
 }
 iranian = {
+	turko_iranian = { primary = TRS }
 	sogdian = {
 		primary = KOK
 	}
@@ -960,7 +961,6 @@ altaic = {
 		dynasty_names = { Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav }
 	}
 	turko_afghan = { primary = AFG }
-	turko_iranian = { primary = TRS }
 }
 central_american = {
 }

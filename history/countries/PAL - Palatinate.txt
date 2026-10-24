@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = franconian
 capital = 4718
 add_accepted_culture = hessian
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Amalie"

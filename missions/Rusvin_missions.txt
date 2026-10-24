@@ -1801,7 +1801,7 @@ mos_rus_conquer_persia = {
 				is_defender_of_faith = yes
 			}
 			religious_unity = 1
-			army_size = 100
+			army_size = 70
 			stability = 3
 			capital_scope = {
 				development = 40
@@ -2141,7 +2141,7 @@ mos_rus_conquer_persia = {
 		trigger = {
 			num_of_admirals = 2
 			navy_size_percentage = 0.8
-			naval_forcelimit = 100
+			naval_forcelimit = 70
 			navy_tradition = 50
 		}
 		effect = {
@@ -2174,8 +2174,8 @@ rusvin_4 = {
 		}
 		position = 2
 		provinces_to_highlight = {
-province_id = 2418
-NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_id = 2418
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			OR = {

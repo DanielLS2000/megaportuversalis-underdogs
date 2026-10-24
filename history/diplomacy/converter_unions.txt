@@ -88,16 +88,16 @@ union=
 
 union=
 {
-	first="Z01"
-	second="ADU"
+	first="ADU"
+	second="Z01"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 union=
 {
-	first="SPI"
-	second="MLO"
+	first="MLO"
+	second="SPI"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

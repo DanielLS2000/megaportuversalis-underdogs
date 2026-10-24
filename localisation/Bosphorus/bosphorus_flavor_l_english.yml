@@ -1,0 +1,13 @@
+﻿l_english:
+ flavor_bsp.1.t:0 "Bosporan Demands of Subjugation"
+ flavor_bsp.1.d:0 "The rising power of the Bosporan Kingdom casts a long shadow over our lands. Envoys from their court have arrived with a stark ultimatum: submit to their suzerainty and become a loyal vassal state, or face the full might of their armies. While bowing to them would guarantee our protection, it means sacrificing our hard-won independence. How shall we answer?"
+ flavor_bsp.1.a:0 "We have no choice. We must submit to Bosporus."
+ flavor_bsp.1.b:0 "We shall never bow! Prepare the defenses!"
+
+ flavor_bsp.2.t:0 "Moisia Submits"
+ flavor_bsp.2.d:0 "Excellent news! Faced with the undeniable superiority of our realm, the rulers of Moisia have wisely decided to accept our generous offer of protection. They have formally sworn fealty to our crown and now stand as a loyal vassal of the Bosporan Kingdom."
+ flavor_bsp.2.a:0 "A wise decision on their part."
+
+ flavor_bsp.3.t:0 "Moisia Defies Us"
+ flavor_bsp.3.d:0 "The insolent lords of Moisia have rejected our diplomatic overtures. They refuse to recognize our hegemony and have sent our envoys back with nothing but insults. If they will not yield to our diplomacy, they shall yield to our swords. Their capital is rightfully ours!"
+ flavor_bsp.3.a:0 "This means war!"

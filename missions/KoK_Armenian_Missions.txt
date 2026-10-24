@@ -1,0 +1,3582 @@
+series_1_b9b01c46 = {
+	slot = 1
+	generic = no
+	potential = {
+		OR = {
+			tag = ARM
+			was_tag = ARM
+		}
+	}
+	a_conquista_romana = {
+		icon = anatolian_frontier
+		required_missions = {
+			abimcao_de_tigranes
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = dulkadir_area
+				area = cukurova_area
+				area = rum_area
+				area = karaman_area
+				area = kastamonu_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = dulkadir_area
+					area = cukurova_area
+					area = rum_area
+					area = karaman_area
+					area = kastamonu_area
+				}
+				value = 10
+			}
+		}
+		effect = {
+			add_war_exhaustion = -3
+			add_country_modifier = {
+				name = "geo_avenging_manzikert"
+				duration = 5475
+			}
+			anatolia_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	quebrando_os_romanos = {
+		icon = end_the_schism
+		position = 4
+		required_missions = {
+			a_conquista_romana
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = kastamonu_area
+					area = hudavendigar_area
+					area = ankara_area
+					area = germiyan_area
+					area = aydin_area
+				}
+				value = 12
+			}
+		}
+		effect = {
+			add_permanent_power_projection = {
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+			add_country_modifier = {
+				name = geo_turning_the_tide
+				duration = 7300
+			}
+			thrace_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					TUR = {
+						NOT = {
+							total_development = ROOT
+						}
+					}
+				}
+				custom_tooltip = geo_tur_development_tt_yes
+				tooltip = {
+					add_prestige_or_monarch_power = {
+						amount = 25
+					}
+				}
+			}
+			else = {
+				custom_tooltip = geo_tur_development_tt_no
+				tooltip = {
+					add_prestige_or_monarch_power = {
+						amount = 25
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						TUR = {
+							NOT = {
+								total_development = ROOT
+							}
+						}
+					}
+					add_prestige_or_monarch_power = {
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+	conquista_da_grecia = {
+		icon = mission_the_roman_sultan
+		required_missions = { }
+		position = 8
+		provinces_to_highlight = { }
+		trigger = {
+			OR = {
+				num_of_allies = 2
+				army_size_percentage = 0.9
+				army_size = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BYZ_dreams_of_restoration
+				duration = 5475
+			}
+			give_claims = {
+				area = morea_area
+			}
+			give_claims = {
+				area = northern_greece
+			}
+			give_claims = {
+				area = bulgaria_area
+			}
+			give_claims = {
+				area = silistria_area
+			}
+			give_claims = {
+				area = macedonia_area
+			}
+			custom_tooltip = " "
+			complex_dynamic_effect = {
+				first_custom_tooltip = BYZ_if_we_are_allied_with_PAP
+				first_limit = "
+					alliance_with = PAP
+				"
+				first_effect = "
+					custom_tooltip = BYZ_extra_mercenary_cost_for_union_tt
+					hidden_effect = {
+						add_country_modifier = {
+							name = BYZ_extra_mercenary_cost_for_union
+							duration = 5475
+							hidden = yes
+						}
+					}
+				"
+			}
+		}
+	}
+	reconstrucao_de_constantinopla = {
+		icon = despot_stefans_legacy
+		required_missions = {
+			conquista_da_grecia
+			o_problema_recente
+		}
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = bulgaria_area
+				area = silistria_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bulgaria_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			silistria_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = BYZ_no_slot_bulgarian
+					duration = -1
+				}
+			}
+			add_accepted_culture = bulgarian
+			custom_tooltip = BYZ_bulgarian_no_slot_taken
+			custom_tooltip = " "
+			create_general_with_pips = {
+				tradition = 50
+				add_shock = 1
+			}
+			custom_tooltip = " "
+			give_claims = {
+				area = wallachia_area
+			}
+			give_claims = {
+				area = moldavia_area
+			}
+			custom_tooltip = " "
+			4704 = {
+				add_permanent_province_modifier = {
+					name = BYZ_new_constantinople
+					duration = -1
+				}
+			}
+		}
+	}
+	reconstruindo_tbilisi = {
+		icon = despot_stefans_legacy
+		position = 12
+		required_missions = { }
+		trigger = {
+			423 = {
+				owned_by = ROOT
+			}
+			OR = {
+				423 = {
+					num_of_times_improved = 4
+				}
+				423 = {
+					NOT = {
+						num_free_building_slots = 1
+					}
+				}
+			}
+			423 = {
+				NOT = {
+					devastation = 1
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				423 = {
+					add_prosperity = 100
+				}
+			}
+			else = {
+				423 = {
+					add_base_production = 2
+				}
+			}
+			423 = {
+				add_province_modifier = {
+					name = geo_tbilisi
+					duration = 18250
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_institution = renaissance
+					}
+				}
+				custom_tooltip = geo_renaissance_tt_yes
+				tooltip = {
+					423 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 25
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = geo_renaissance_tt_no
+				tooltip = {
+					423 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 25
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_institution = renaissance
+						}
+					}
+					423 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 25
+						}
+					}
+				}
+			}
+		}
+	}
+	vinhedos_caucasianos = {
+		icon = mission_wine_monopolies
+		position = 13
+		required_missions = {
+			reconstruindo_tbilisi
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					trade_goods = wine
+					base_production = 4
+					has_manufactory_trigger = yes
+				}
+				amount = 5
+			}
+		}
+		effect = {
+			custom_tooltip = geo_wine_tt
+			tooltip = {
+				add_province_modifier = {
+					name = geo_wineyards
+					duration = -1
+				}
+			}
+			custom_tooltip = geo_wine_manufactory_tt
+			set_country_flag = geo_wine_manufactory_flag
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = wine
+						base_production = 4
+						has_manufactory_trigger = yes
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = geo_wineyards
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	reasentando_as_terras_antigas = {
+		icon = mission_expel_the_moriscos
+		position = 14
+		required_missions = {
+			vinhedos_caucasianos
+			modernizando_o_nosso_alfabeto
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					culture = ROOT
+				}
+				amount = 15
+			}
+		}
+		effect = {
+			custom_tooltip = arm_converting_culture_tt
+			add_country_modifier = {
+				name = "arm_resettle_ancestral"
+				duration = -1
+			}
+			set_country_flag = arm_coversion_bonus
+		}
+	}
+	legado_do_construtor = {
+		icon = eastern_catholicization
+		position = 15
+		required_missions = {
+			fortifique_o_caucaso
+			reasentando_as_terras_antigas
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					NOT = {
+						num_free_building_slots = 1
+					}
+				}
+				amount = 10
+			}
+		}
+		effect = {
+			custom_tooltip = geo_visionary_tt
+			set_country_flag = geo_visionary_flag
+			custom_tooltip = geo_georgia_legacy
+			tooltip = {
+				add_province_modifier = {
+					name = geo_legacy_builder
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				kartli_kakheti_area = {
+					add_province_modifier = {
+						name = geo_legacy_builder
+						duration = -1
+					}
+				}
+				tabriz_area = {
+					add_province_modifier = {
+						name = geo_legacy_builder
+						duration = -1
+					}
+				}
+				armenia_area = {
+					add_province_modifier = {
+						name = geo_legacy_builder
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	a_crescente_fertil = {
+		icon = mission_coromandel_trade
+		position = 16
+		required_missions = {
+			legado_do_construtor
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				base_production = 4
+				OR = {
+					area = basra_area
+					area = iraq_arabi_area
+				}
+				value = 5
+			}
+		}
+		effect = {
+			iraq_arabi_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					add_province_modifier = {
+						name = "hsn_fertile_crescent"
+						duration = 9125
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = "hsn_fertile_crescent_no_moh"
+						duration = 9125
+					}
+				}
+			}
+			basra_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					add_province_modifier = {
+						name = "hsn_fertile_crescent"
+						duration = 9125
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = "hsn_fertile_crescent_no_moh"
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+	reestaurar_nikopolis = {
+		icon = mission_conquer_alexandria
+		position = 17
+		required_missions = {
+			a_crescente_fertil
+		}
+		trigger = {
+			owns = 317
+			317 = {
+				development = 30
+			}
+			317 = {
+				has_trade_building_trigger = yes
+			}
+			317 = {
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			317 = {
+				add_province_modifier = {
+					name = hsn_center_of_commerce
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					any_ally = {
+						culture_group = latin
+						government = republic
+					}
+				}
+				custom_tooltip = hsn_western_alliance_tt_yes
+				tooltip = {
+					317 = {
+						add_province_modifier = {
+							name = hsn_latin_quarters
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hsn_western_alliance_tt_no
+				tooltip = {
+					317 = {
+						add_province_modifier = {
+							name = hsn_latin_quarters
+							duration = -1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_ally = {
+							culture_group = latin
+							government = republic
+						}
+					}
+					317 = {
+						add_province_modifier = {
+							name = hsn_latin_quarters
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	reasentando_as_terras_da_cilicia = {
+		icon = arm_restore_armenian_cilicia
+		position = 18
+		required_missions = {
+			reestaurar_nikopolis
+		}
+		trigger = {
+			327 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+				NOT = {
+					nationalism = 1
+				}
+			}
+			332 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+				NOT = {
+					nationalism = 1
+				}
+			}
+			4298 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+				NOT = {
+					nationalism = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = arm_cilicia_tt
+			hidden_effect = {
+				327 = {
+					change_culture = ROOT
+					if = {
+						limit = {
+							owner = {
+								has_country_flag = arm_coversion_bonus
+							}
+							NOT = {
+								has_province_flag = arm_converted_bonus
+							}
+						}
+						add_base_tax = 1
+						add_base_manpower = 1
+						add_base_production = 1
+						set_province_flag = arm_converted_bonus
+					}
+				}
+				332 = {
+					change_culture = ROOT
+					if = {
+						limit = {
+							owner = {
+								has_country_flag = arm_coversion_bonus
+							}
+							NOT = {
+								has_province_flag = arm_converted_bonus
+							}
+						}
+						add_base_tax = 1
+						add_base_manpower = 1
+						add_base_production = 1
+						set_province_flag = arm_converted_bonus
+					}
+				}
+				4298 = {
+					change_culture = ROOT
+					if = {
+						limit = {
+							owner = {
+								has_country_flag = arm_coversion_bonus
+							}
+							NOT = {
+								has_province_flag = arm_converted_bonus
+							}
+						}
+						add_base_tax = 1
+						add_base_manpower = 1
+						add_base_production = 1
+						set_province_flag = arm_converted_bonus
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "arm_reunite_diaspora"
+				duration = -1
+			}
+		}
+	}
+	tecnologias_gregas_de_cultivo = {
+		icon = mission_consume_the_baghels
+		position = 19
+		required_missions = {
+			reasentando_as_terras_da_cilicia
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					region = antolian_region
+					OR = {
+						trade_goods = wine
+						trade_goods = cotton
+						trade_goods = wool
+					}
+					has_production_building_trigger = yes
+					base_production = 8
+				}
+				amount = 6
+			}
+		}
+		effect = {
+			custom_tooltip = hsn_granary_mediterranean
+			tooltip = {
+				add_province_modifier = {
+					name = hsn_granary
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					trading_bonus = {
+						trade_goods = wool
+						value = yes
+					}
+				}
+				custom_tooltip = hsn_grain_bonus_tt_yes
+				tooltip = {
+					change_price = {
+						trade_goods = wool
+						key = granary_of_the_mediterranean_key
+						value = 0.1
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hsn_grain_bonus_tt_no
+				tooltip = {
+					change_price = {
+						trade_goods = wool
+						key = granary_of_the_mediterranean_key
+						value = 0.1
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = anatolian_region
+						OR = {
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = wine
+						}
+						has_production_building_trigger = yes
+						base_production = 8
+					}
+					add_base_production = 1
+					add_base_manpower = 1
+					add_province_modifier = {
+						name = hsn_granary
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						trading_bonus = {
+							trade_goods = wool
+							value = yes
+						}
+					}
+					change_price = {
+						trade_goods = wool
+						key = granary_of_the_mediterranean_key
+						value = 0.1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+series_2_b9b01c46 = {
+	slot = 2
+	generic = no
+	potential = {
+		OR = {
+			tag = ARM
+			was_tag = ARM
+		}
+	}
+	aproveitando_as_brechas = {
+		icon = mission_early_russian_army
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { }
+		trigger = {
+			OR = {
+				num_of_allies = 2
+				manpower_percentage = 0.9
+				army_size_percentage = 0.9
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = geo_resurgent_georgia
+				duration = 5475
+			}
+			ankara_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kastamonu_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			tabriz_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	abimcao_de_tigranes = {
+		icon = legacy_of_the_sclavinias
+		position = 2
+		required_missions = {
+			aproveitando_as_brechas
+		}
+		trigger = {
+			karaman_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_accepted_culture = anatolian
+			add_country_modifier = {
+				name = "geo_armenian_union"
+				duration = -1
+				desc = geo_armenian_union_tt
+			}
+			define_advisor = {
+				type = commandant
+				skill = 2
+				culture = anatolian
+				religion = coptic
+				cost_multiplier = 0.25
+			}
+			custom_tooltip = geo_empty
+			shahrizor_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	conquista_da_mesopotamia = {
+		icon = mission_into_persia_2
+		position = 3
+		required_missions = {
+			abimcao_de_tigranes
+		}
+		trigger = {
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_kurdistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						army_tradition = 50
+					}
+				}
+				create_general = {
+					tradition = 50
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						army_tradition = 75
+					}
+				}
+				create_general = {
+					tradition = 75
+				}
+			}
+			else = {
+				create_general = {
+					tradition = 100
+				}
+			}
+			add_country_modifier = {
+				name = "geo_counter_turkomans"
+				duration = 7300
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			shahrizor_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			iraq_arabi_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			dulkadir_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			cukurova_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			rum_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kastamonu_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	berco_da_civilizacao = {
+		icon = geo_crade_of_civilization
+		position = 4
+		required_missions = {
+			conquista_da_mesopotamia
+		}
+		trigger = {
+			iraq_arabi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			iraq_arabi_area = {
+				add_base_production = 1
+			}
+			iraq_arabi_area = {
+				add_province_modifier = {
+					name = "geo_fertile_crescent"
+					duration = -1
+				}
+			}
+			basra_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	cristianizando_o_leste = {
+		icon = mission_cradle_of_civilization
+		position = 5
+		required_missions = {
+			berco_da_civilizacao
+		}
+		trigger = {
+			tabriz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tabriz_area = {
+				type = all
+				religion = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = coptic
+						religion = orthodox
+					}
+				}
+				country_event = {
+					id = flavor_arm.2
+				}
+				custom_tooltip = arm_church_east_insight_tt
+			}
+			else = {
+				add_country_modifier = {
+					name = "arm_church_east"
+					duration = 10950
+				}
+			}
+		}
+	}
+	o_problema_recente = {
+		icon = jerusalem
+		required_missions = {
+			a_grande_livraria
+		}
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = aleppo_area
+				area = syria_area
+				area = syrian_desert_area
+				area = palestine_area
+				area = trans_jordan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = aleppo_area
+					area = syria_area
+					area = syrian_desert_area
+					area = palestine_area
+					area = trans_jordan_area
+				}
+				value = 13
+			}
+		}
+		effect = {
+			custom_tooltip = BYZ_eastern_flank_1_2
+			hidden_effect = {
+				remove_country_modifier = BYZ_eastern_flank_1
+				add_country_modifier = {
+					name = BYZ_eastern_flank_2
+					duration = -1
+				}
+			}
+			custom_tooltip = " "
+			give_claims = {
+				region = egypt_region
+			}
+			custom_tooltip = " "
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				custom_tooltip = " "
+				set_country_flag = BYZ_extra_patriarch_authority
+				custom_tooltip = BYZ_consecrating_metropolitan
+			}
+		}
+	}
+	indo_ate_o_final = {
+		icon = control_the_means_of_transaction
+		required_missions = {
+			o_problema_recente
+		}
+		position = 9
+		provinces_to_highlight = {
+			region = egypt_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				area = lower_nubia_area
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = egypt_region
+				NOT = {
+					area = lower_nubia_area
+				}
+				value = 22
+			}
+		}
+		effect = {
+			custom_tooltip = BYZ_eastern_flank_2_3
+			hidden_effect = {
+				remove_country_modifier = BYZ_eastern_flank_2
+				add_country_modifier = {
+					name = BYZ_eastern_flank_3
+					duration = -1
+				}
+			}
+			custom_tooltip = " "
+			give_claims = {
+				area = tabuk_area
+			}
+			give_claims = {
+				area = medina_area
+			}
+			give_claims = {
+				area = mecca_area
+			}
+			give_claims = {
+				area = corsica_sardinia_area
+			}
+			give_claims = {
+				area = barbary_coast_area
+			}
+			give_claims = {
+				area = kabylia_area
+			}
+			give_claims = {
+				area = tunisia_area
+			}
+			give_claims = {
+				area = djerba_area
+			}
+			give_claims = {
+				area = tripolitania_area
+			}
+		}
+	}
+	o_celeiro_do_mediterraneo = {
+		icon = prosperity_for_all
+		required_missions = {
+			indo_ate_o_final
+		}
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2316
+				#al gharbia
+				province_id = 362
+				#rashid
+				province_id = 363
+				#dumyat
+				province_id = 4316
+				#sharqiya
+			}
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					has_production_building_trigger = yes
+				}
+				NOT = {
+					development = 20
+				}
+				NOT = {
+					has_manufactory_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			2316 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+				has_manpower_building_trigger = yes
+			}
+			362 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+				has_manpower_building_trigger = yes
+			}
+			363 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+				has_manpower_building_trigger = yes
+			}
+			4316 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+				has_manpower_building_trigger = yes
+			}
+		}
+		effect = {
+			358 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 100
+					key = BYZ_annona_shipments
+				}
+			}
+			custom_tooltip = " "
+			capital_scope = {
+				add_permanent_province_modifier = {
+					name = BYZ_grain_shipments
+					duration = -1
+				}
+			}
+			# custom_tooltip = " "
+			custom_tooltip = BYZ_distribute_10_10_0_dev_in_anatolia_and_balkans
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								OR = {
+									region = balkan_region
+									region = anatolia_region
+								}
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								OR = {
+									region = balkan_region
+									region = anatolia_region
+								}
+							}
+							add_base_production = 1
+						}
+					"
+				}
+			}
+		}
+	}
+	reconstruindo_tigranakert = {
+		icon = mission_renovate_kannauj
+		position = 12
+		required_missions = { }
+		trigger = {
+			owns = 418
+			418 = {
+				religion = ROOT
+			}
+			418 = {
+				culture = ROOT
+			}
+			418 = {
+				development = 15
+			}
+			418 = {
+				has_tax_building_trigger = yes
+			}
+			418 = {
+				has_trade_building_trigger = yes
+			}
+			418 = {
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			set_country_flag = arm_capital_tigranakert
+			418 = {
+				change_province_name = "Tigranakert"
+				rename_capital = "Tigranakert"
+			}
+			418 = {
+				change_trade_goods = cloth
+			}
+			418 = {
+				add_province_modifier = {
+					name = "arm_great_city_tigranes"
+					duration = -1
+				}
+			}
+			custom_tooltip = arm_tigranakert_capital_tt
+		}
+	}
+	modernizando_o_nosso_alfabeto = {
+		icon = law_of_the_pious
+		position = 13
+		required_missions = {
+			reconstruindo_tigranakert
+		}
+		trigger = {
+			has_institution = renaissance
+			OR = {
+				prestige = 50
+				AND = {
+					has_adm_advisor_2 = yes
+					has_dip_advisor_2 = yes
+					has_mil_advisor_2 = yes
+				}
+			}
+		}
+		effect = {
+			add_splendor = 100
+			add_country_modifier = {
+				name = "geo_second_golden_age"
+				duration = 7300
+			}
+		}
+	}
+	fortifique_o_caucaso = {
+		icon = alpine_fortifications
+		position = 14
+		required_missions = {
+			modernizando_o_nosso_alfabeto
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					num_of_times_improved = 3
+					fort_level = 4
+					region = caucasia_region
+				}
+				amount = 4
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				unlock_estate_privilege = {
+					estate_privilege = estate_nobles_highland_fortifications
+				}
+			}
+			else = {
+				add_mil_power = 100
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				423 = {
+					add_province_modifier = {
+						name = "geo_narikala_leviathan"
+						duration = 10950
+					}
+				}
+			}
+			else = {
+				423 = {
+					add_province_modifier = {
+						name = "geo_narikala_no_leviathan"
+						duration = 10950
+					}
+				}
+			}
+		}
+	}
+	domine_o_mar_nego = {
+		icon = mission_control_the_black_sea
+		position = 15
+		required_missions = {
+			reasentando_as_terras_antigas
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				284 = {
+					calc_true_if = {
+						all_trade_node_member_province = {
+							province_has_center_of_trade_of_level = 2
+							owned_by = ROOT
+						}
+						amount = 4
+					}
+				}
+			}
+			else = {
+				284 = {
+					calc_true_if = {
+						all_trade_node_member_province = {
+							province_has_center_of_trade_of_level = 1
+							owned_by = ROOT
+						}
+						amount = 4
+					}
+				}
+			}
+			284 = {
+				#Crimea
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			num_of_light_ship = 7
+		}
+		effect = {
+			add_years_of_trade_income = {
+				years = 1
+				custom_tooltip = geo_trade_income
+			}
+			add_country_modifier = {
+				name = geo_trade_hegemony
+				duration = -1
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+		}
+	}
+}
+series_4_e9c5d518 = {
+	slot = 4
+	generic = no
+	potential = {
+		OR = {
+			tag = ARM
+			was_tag = ARM
+		}
+	}
+	proclamacao_da_grande_armenia = {
+		icon = arm_proclaim_great_armenia
+		position = 4
+		required_missions = {
+			acabando_com_os_persas
+		}
+		trigger = {
+			tag = ARM
+			owns_all_provinces = {
+				culture = armenian
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_arm.1
+			}
+			custom_tooltip = arm_great_armenia_insight
+			tooltip = {
+				add_country_modifier = {
+					name = "arm_resurgent_armenia"
+					duration = 7300
+				}
+			}
+			dulkadir_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			erzurum_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			rum_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			kastamonu_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Emperor"
+						has_dlc = "Rights of Man"
+					}
+				}
+				if = {
+					limit = {
+						is_great_power = yes
+					}
+					custom_tooltip = arm_great_power_tt_yes
+					tooltip = {
+						add_splendor = 200
+					}
+				}
+				else = {
+					custom_tooltip = arm_great_power_tt_no
+					tooltip = {
+						add_splendor = 200
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							is_great_power = yes
+						}
+						add_splendor = 200
+					}
+				}
+			}
+		}
+	}
+	envie_uma_carta_para_o_tsar = {
+		icon = mission_the_russian_tsardom
+		required_missions = {
+			conquista_de_isfaham
+		}
+		position = 6
+		provinces_to_highlight = {
+			if = {
+				limit = {
+					exists = MOS
+				}
+				owned_by = MOS
+			}
+			else_if = {
+				limit = {
+					exists = RUS
+				}
+				owned_by = RUS
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					exists = MDV
+				}
+				OR = {
+					alliance_with = MDV
+					AND = {
+						is_rival = MDV
+						MDV = {
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = RUS
+				}
+				OR = {
+					alliance_with = RUS
+					AND = {
+						is_rival = RUS
+						RUS = {
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					culture_group = east_slavic
+					value = 10
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = MDV
+				}
+				if = {
+					limit = {
+						alliance_with = MDV
+					}
+					custom_tooltip = geo_alliance_muscovy_tt_yes
+					tooltip = {
+						custom_tooltip = geo_streltsy_capital
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_muscovy
+						}
+					}
+				}
+				else = {
+					custom_tooltip = geo_alliance_muscovy_tt_no
+					tooltip = {
+						custom_tooltip = geo_streltsy_capital
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_muscovy
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_rival = MOS
+						MOS = {
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+					custom_tooltip = geo_rival_muscovy_tt_yes
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = MOS
+						}
+					}
+				}
+				else = {
+					custom_tooltip = geo_rival_muscovy_tt_no
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = MDV
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					exists = RUS
+				}
+				if = {
+					limit = {
+						alliance_with = RUS
+					}
+					custom_tooltip = geo_alliance_russia_tt_yes
+					tooltip = {
+						custom_tooltip = geo_streltsy_capital
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_russia
+						}
+					}
+				}
+				else = {
+					custom_tooltip = geo_alliance_russia_tt_no
+					tooltip = {
+						custom_tooltip = geo_streltsy_capital
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_russia
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_rival = RUS
+						RUS = {
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+					custom_tooltip = geo_rival_russia_tt_yes
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = RUS
+						}
+					}
+				}
+				else = {
+					custom_tooltip = geo_rival_russia_tt_no
+					tooltip = {
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = RUS
+						}
+					}
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "geo_embassies"
+					duration = 9125
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = MOS
+					}
+					if = {
+						limit = {
+							alliance_with = MOS
+						}
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_muscovy
+						}
+						capital_scope = {
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+						}
+					}
+					if = {
+						limit = {
+							is_rival = MOS
+							MOS = {
+								NOT = {
+									army_size = ROOT
+								}
+							}
+						}
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = MOS
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						exists = RUS
+					}
+					if = {
+						limit = {
+							alliance_with = RUS
+						}
+						add_country_modifier = {
+							name = "geo_rus_alliance"
+							duration = -1
+							desc = geo_alliance_russia
+						}
+						capital_scope = {
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+							streltsy_infantry = ROOT
+						}
+					}
+					if = {
+						limit = {
+							is_rival = RUS
+							RUS = {
+								NOT = {
+									army_size = ROOT
+								}
+							}
+						}
+						add_casus_belli = {
+							type = cb_restore_personal_union
+							months = 300
+							target = RUS
+						}
+					}
+				}
+			}
+		}
+	}
+	desenvolvendo_a_persia = {
+		icon = per_tab_ziyarids_successor
+		required_missions = {
+			capital_persa
+		}
+		position = 7
+		provinces_to_highlight = {
+			region = egypt_region
+			OR = {
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				NOT = {
+					religion = ROOT
+				}
+				nationalism = 1
+				local_autonomy = 10
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = persia_region
+				religion = ROOT
+				value = 12
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = persia_region
+				NOT = {
+					nationalism = 1
+				}
+				value = 12
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = persia_region
+				NOT = {
+					local_autonomy = 10
+				}
+				value = 12
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = coptic
+						religion = orthodox
+					}
+					has_dlc = "Origins"
+				}
+				country_event = {
+					id = flavor_arm.4
+				}
+				custom_tooltip = arm_coptic_restoration_insight_tt
+				tooltip = {
+					persia_region = {
+						add_province_modifier = {
+							name = arm_coptic_restoration
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				egypt_region = {
+					add_province_modifier = {
+						name = arm_coptic_restoration
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	o_sistema_de_ayrudzi = {
+		icon = mission_early_russian_army
+		position = 12
+		required_missions = { }
+		trigger = {
+			army_size = 18
+			OR = {
+				manpower = 20
+				manpower_percentage = 0.8
+			}
+			has_mil_advisor_2 = yes
+			grown_by_states = 10
+		}
+		effect = {
+			add_mil_power = 150
+			custom_tooltip = " "
+			enable_branching_mission_review = {
+				key = BYZ
+				ai_event_id = MEE_Byzantine_Events.28
+			}
+			custom_tooltip = " "
+			country_event_with_insight = {
+				id = MEE_Byzantine_Events.27
+				insight_tooltip = BYZ_unlock_theme_system_reform
+			}
+		}
+	}
+	refine_os_sooseramartik = {
+		icon = mission_the_varangians
+		position = 13
+		required_missions = {
+			o_sistema_de_ayrudzi
+		}
+		trigger = {
+			not_in_mission_preview_mode = {
+				key = BYZ
+			}
+			army_tradition = 60
+			has_mil_advisor_3 = yes
+			capital_scope = {
+				has_manpower_building_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = BYZ_enable_the_varangian_guard_mercenary_company
+			#handled by mission_completed
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = BYZ_elite_forces
+				duration = 7300
+			}
+		}
+	}
+	Subsidio_Mercantil_Armeno = {
+		icon = mission_conquer_riga
+		required_missions = { }
+		position = 16
+		provinces_to_highlight = {
+			province_id = 151
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					has_trade_building_trigger = yes
+				}
+				NOT = {
+					development = 25
+				}
+				NOT = {
+					trade_share = {
+						country = ROOT
+						share = 40
+					}
+				}
+			}
+		}
+		trigger = {
+			151 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				development = 25
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+		}
+		effect = {
+			151 = {
+				add_or_upgrade_trade_building = yes
+				custom_tooltip = " "
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = BYZ_megalopolitan_trade
+				}
+				custom_tooltip = " "
+				add_province_modifier = {
+					name = BYZ_primary_trade_capital
+					duration = -1
+				}
+				set_center_level_2_center_of_trade = yes
+			}
+		}
+	}
+	mordenizacao_dos_mercadores_armenos = {
+		icon = aldine_press
+		required_missions = {
+			Subsidio_Mercantil_Armeno
+		}
+		position = 17
+		provinces_to_highlight = {
+			province_id = 145
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					num_of_times_improved = 7
+				}
+				NOT = {
+					has_trade_building_trigger = yes
+				}
+				AND = {
+					NOT = {
+						has_dock_building_trigger = yes
+					}
+					NOT = {
+						has_shipyard_building_trigger = yes
+					}
+				}
+			}
+		}
+		trigger = {
+			145 = {
+				owned_by = ROOT
+				num_of_times_improved = 7
+				has_trade_building_trigger = yes
+				OR = {
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			145 = {
+				center_of_trade = 1
+				custom_tooltip = " "
+				add_province_modifier = {
+					name = BYZ_powerful_merchant_families
+					duration = -1
+				}
+			}
+			country_event_with_option_insight = {
+				id = MEE_Byzantine_Events.19
+				option_1 = "
+					define_admiral = {
+						shock = 2
+						fire = 3
+						manuever = 2
+						siege = 0
+						name = \"Loukas Notaras\"
+					}
+					custom_tooltip = \" \"
+					add_navy_tradition = 20
+				"
+				option_2 = "
+					add_years_of_trade_income = {
+						years = 2
+						custom_tooltip = BYZ_add_2_years_of_trade_income
+					}
+					custom_tooltip = \" \"
+					define_advisor = {
+						type = trader
+						name = \"Notaras\"
+						skill = 3
+						culture = ROOT
+						religion = ROOT
+						cost_multiplier = 0.4 #so its slightly better than events
+					}
+				"
+			}
+		}
+	}
+	a_megalopole = {
+		icon = a_strong_government
+		required_missions = {
+			mordenizacao_dos_mercadores_armenos
+		}
+		position = 18
+		provinces_to_highlight = {
+			province_id = 151
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					development = 65
+				}
+				NOT = {
+					num_of_buildings_in_province = 10
+				}
+				NOT = {
+					AND = {
+						has_dlc = "Leviathan"
+						NOT = {
+							has_great_project = {
+								type = hagia_sophia
+								tier = 3
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			151 = {
+				owned_by = ROOT
+				development = 65
+				num_of_buildings_in_province = 10
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					has_great_project = {
+						type = hagia_sophia
+						tier = 3
+					}
+				}
+			}
+		}
+		effect = {
+			151 = {
+				add_province_modifier = {
+					name = BYZ_megalopolis_modifier_1
+					duration = -1
+				}
+				hidden_effect = {
+					add_province_triggered_modifier = BYZ_megalopolis_updater
+					#hidden Ptm that updates the modifier
+				}
+			}
+			custom_tooltip = BYZ_modifier_will_double
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = BYZ_monarch_reigns_in_byzantium
+				duration = -1
+			}
+		}
+	}
+	o_vermelho_real = {
+		icon = mission_pf_cross
+		required_missions = {
+			a_megalopole
+		}
+		position = 19
+		provinces_to_highlight = {
+			province_id = 146
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					development = 25
+				}
+				NOT = {
+					has_production_building_trigger = yes
+				}
+				NOT = {
+					has_trade_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			prestige = 50
+			2302 = {
+				owned_by = ROOT
+				development = 25
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				add_country_modifier = {
+					name = BYZ_born_in_the_purple
+					duration = 10950
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = BYZ_born_in_the_purple_no_dlc
+					duration = 10950
+				}
+			}
+			2302 = {
+				set_province_flag = BYZ_may_convert_to_dyes
+				province_event = {
+					id = MEE_Byzantine_Events.23
+				}
+			}
+			custom_tooltip = " "
+			country_event_with_insight = {
+				id = MEE_Byzantine_Events.22
+				insight_tooltip = BYZ_we_will_be_able_to_change_our_map_color
+			}
+		}
+	}
+	Repovoamento_armeno_na_anatolia = {
+		icon = byz_avenge_1071
+		required_missions = {
+			o_vermelho_real
+		}
+		position = 20
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = anatolia_region
+				value = 35
+				#out of 45
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BYZ_eastern_flank_1
+				duration = -1
+			}
+			give_claims = {
+				region = mashriq_region
+			}
+			custom_tooltip = " "
+			if = {
+				limit = {
+					culture_group = byzantine
+				}
+				custom_tooltip = BYZ_culture_conversion_will_extend
+				custom_tooltip = " "
+			}
+			country_event_with_option_insight = {
+				id = MEE_Byzantine_Events.8
+				option_1 = "
+					add_accepted_culture_or_dip_power = { culture = turkish value = 100 }
+			
+					custom_tooltip = \" \"
+					
+					custom_tooltip = BYZ_every_turkish_province
+					tooltip = {
+						add_nationalism = -10
+					}
+				"
+				option_2 = "
+					custom_tooltip = BYZ_culture_conversion_will_be_faster
+				"
+				option_3 = "
+					custom_tooltip = BYZ_every_turkish_province
+					tooltip = {
+						add_province_modifier = {
+							name = BYZ_janissary_recruitment
+							duration = 9125
+						}
+					}
+					
+					custom_tooltip = BYZ_unlock_janissary_mercenary_company
+				"
+			}
+		}
+	}
+}
+series_3_3a0a3676 = {
+	slot = 3
+	generic = no
+	potential = {
+		OR = {
+			tag = ARM
+			was_tag = ARM
+		}
+	}
+	acabando_com_os_persas = {
+		icon = arm_artaxiad_legacy
+		position = 3
+		required_missions = {
+			abimcao_de_tigranes
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = persia_region
+				value = 10
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+			add_country_modifier = {
+				name = "arm_artaxiad_legacy"
+				duration = 7300
+			}
+			persia_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	reconstruindo_a_persia = {
+		icon = mission_conquer_gujarat_bah
+		position = 4
+		required_missions = {
+			acabando_com_os_persas
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hsn_ayyubid_architecture"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						has_tax_building_trigger = yes
+						NOT = {
+							religion_group = christian
+						}
+						value = 3
+					}
+				}
+				custom_tooltip = hsn_jizya_tt_yes
+				tooltip = {
+					add_country_modifier = {
+						name = "hsn_jizya"
+						duration = 3650
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hsn_jizya_tt_no
+				tooltip = {
+					add_country_modifier = {
+						name = "hsn_jizya"
+						duration = 3650
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							has_tax_building_trigger = yes
+							NOT = {
+								religion_group = christian
+							}
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = "hsn_jizya"
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+	conquista_de_isfaham = {
+		icon = mission_conquer_alexandria
+		position = 5
+		required_missions = {
+			reconstruindo_a_persia
+		}
+		trigger = {
+			owns = 428
+			428 = {
+				religion = ROOT
+			}
+			428 = {
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+					religion = orthodox
+				}
+				428 = {
+					has_state_patriach = yes
+				}
+			}
+			owns = 429
+			429 = {
+				religion = ROOT
+			}
+			429 = {
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+					religion = orthodox
+				}
+				429 = {
+					has_state_patriach = yes
+				}
+			}
+			owns = 2313
+			2313 = {
+				religion = ROOT
+			}
+			2313 = {
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+					religion = orthodox
+					religion = coptic
+				}
+				2313 = {
+					has_state_patriach = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					428 = {
+						has_building = cathedral
+					}
+				}
+				428 = {
+					add_base_tax = 2
+				}
+			}
+			else_if = {
+				limit = {
+					428 = {
+						has_building = temple
+						NOT = {
+							has_building = cathedral
+						}
+					}
+				}
+				428 = {
+					hidden_effect = {
+						remove_building = temple
+					}
+					add_building = cathedral
+				}
+			}
+			else = {
+				428 = {
+					add_building = temple
+				}
+			}
+			if = {
+				limit = {
+					429 = {
+						has_building = cathedral
+					}
+				}
+				429 = {
+					add_base_tax = 2
+				}
+			}
+			else_if = {
+				limit = {
+					429 = {
+						has_building = temple
+						NOT = {
+							has_building = cathedral
+						}
+					}
+				}
+				429 = {
+					hidden_effect = {
+						remove_building = temple
+					}
+					add_building = cathedral
+				}
+			}
+			else = {
+				429 = {
+					add_building = temple
+				}
+			}
+			if = {
+				limit = {
+					2313 = {
+						has_building = cathedral
+					}
+				}
+				2313 = {
+					add_base_tax = 2
+				}
+			}
+			else_if = {
+				limit = {
+					2313 = {
+						has_building = temple
+						NOT = {
+							has_building = cathedral
+						}
+					}
+				}
+				2313 = {
+					hidden_effect = {
+						remove_building = temple
+					}
+					add_building = cathedral
+				}
+			}
+			else = {
+				2313 = {
+					add_building = temple
+				}
+			}
+			add_country_modifier = {
+				name = "geo_light_of_the_east"
+				duration = -1
+			}
+			custom_tooltip = geo_developing_orthodox_tt
+			set_country_flag = geo_orthodox_dev
+			khorasan_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	capital_persa = {
+		icon = mission_mustansiriya_madrasah
+		position = 6
+		required_missions = {
+			cristianizando_o_leste
+			conquista_de_isfaham
+		}
+		trigger = {
+			owns = 428
+			428 = {
+				development = 25
+			}
+			428 = {
+				has_tax_building_trigger = yes
+			}
+			428 = {
+				has_trade_building_trigger = yes
+			}
+			428 = {
+				has_production_building_trigger = yes
+			}
+			428 = {
+				is_state = yes
+			}
+		}
+		effect = {
+			428 = {
+				upgrade_tax_building = yes
+			}
+			428 = {
+				add_province_modifier = {
+					name = "hsn_city_of_peace"
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					has_institution = renaissance
+				}
+				custom_tooltip = hsn_renaissance_yes
+				tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Mandate of Heaven"
+						}
+						428 = {
+							add_prosperity = 100
+						}
+					}
+					else = {
+						428 = {
+							add_base_tax = 1
+							add_base_production = 1
+							add_base_manpower = 1
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hsn_renaissance_no
+				tooltip = {
+					if = {
+						limit = {
+							has_dlc = "Mandate of Heaven"
+						}
+						428 = {
+							add_prosperity = 100
+						}
+					}
+					else = {
+						428 = {
+							add_base_tax = 1
+							add_base_production = 1
+							add_base_manpower = 1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_institution = renaissance
+					}
+					if = {
+						limit = {
+							has_dlc = "Mandate of Heaven"
+						}
+						428 = {
+							add_prosperity = 100
+						}
+					}
+					else = {
+						428 = {
+							add_base_tax = 1
+							add_base_production = 1
+							add_base_manpower = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	a_grande_livraria = {
+		icon = mission_quran
+		position = 7
+		required_missions = {
+			capital_persa
+		}
+		trigger = {
+			410 = {
+				development = 40
+			}
+			OR = {
+				DIP = 5
+				monthly_dip = 10
+				innovativeness = 20
+			}
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				add_splendor = 100
+			}
+			else = {
+				add_dip_power = 100
+			}
+			add_ruler_modifier = {
+				name = hsn_patron_science
+				duration = -1
+			}
+			if = {
+				limit = {
+					410 = {
+						NOT = {
+							any_province = {
+								religion_group = christian
+								higher_development_than = PREV
+							}
+						}
+					}
+				}
+				custom_tooltip = hsn_paradise_garden_tt_yes
+				tooltip = {
+					410 = {
+						add_province_modifier = {
+							name = hsn_paradise_gardens
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = hsn_paradise_garden_tt_no
+				tooltip = {
+					410 = {
+						add_province_modifier = {
+							name = hsn_paradise_gardens
+							duration = -1
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						410 = {
+							NOT = {
+								any_province = {
+									religion_group = christian
+									higher_development_than = PREV
+								}
+							}
+						}
+					}
+					410 = {
+						add_province_modifier = {
+							name = hsn_paradise_gardens
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	conquista_da_tunisia = {
+		icon = mission_conquer_tunis
+		position = 8
+		required_missions = {
+			a_grande_livraria
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = corsica_sardinia_area
+					area = barbary_coast_area
+					area = kabylia_area
+					area = tunisia_area
+					area = djerba_area
+					area = tripolitania_area
+				}
+				value = 14
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BYZ_southern_provinces_1
+				duration = -1
+			}
+			give_claims = {
+				region = iberia_region
+			}
+			give_claims = {
+				region = maghreb_region
+			}
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = BYZ_africa_proconsularis
+				duration = 10950
+			}
+		}
+	}
+	criar_a_marinha_armena = {
+		icon = expand_the_arsenal
+		position = 13
+		required_missions = {
+			o_sistema_de_ayrudzi
+		}
+		trigger = {
+			NOT = {
+				has_estate_privilege = estate_burghers_reliance_on_republics
+			}
+			navy_size = 40
+		}
+		effect = {
+			create_admiral = {
+				tradition = 60
+			}
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = BYZ_indepenence_from_the_west
+				duration = 7300
+			}
+		}
+	}
+	dominando_o_fogo_grego = {
+		icon = byz_greek_fire
+		position = 14
+		required_missions = {
+			criar_a_marinha_armena
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				OR = {
+					navy_tradition = 60
+					innovativeness = 40
+				}
+			}
+			else = {
+				navy_tradition = 60
+			}
+			OR = {
+				has_dip_advisor_3 = yes
+				naval_reformer = 1
+			}
+			num_of_galley = 35
+		}
+		effect = {
+			add_country_modifier = {
+				name = BYZ_liquid_fire
+				duration = -1
+			}
+			complex_dynamic_effect = {
+				first_custom_tooltip = BYZ_if_we_have_the_largest_navy_in_the_world
+				first_limit = "
+					NOT = {
+						any_country = {
+							navy_size = ROOT
+						}
+					}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = BYZ_dominance_of_the_dromon
+						duration = 7300 
+					}
+				"
+			}
+		}
+	}
+	reconstruindo_a_macedonia = {
+		icon = renaissance_city
+		required_missions = {
+			Subsidio_Mercantil_Armeno
+		}
+		position = 17
+		provinces_to_highlight = {
+			province_id = 148
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					has_trade_building_trigger = yes
+				}
+				NOT = {
+					development = 25
+				}
+				NOT = {
+					trade_share = {
+						country = ROOT
+						share = 40
+					}
+				}
+			}
+		}
+		trigger = {
+			148 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				development = 25
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+		}
+		effect = {
+			148 = {
+				add_or_upgrade_trade_building = yes
+				custom_tooltip = " "
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = BYZ_trade_in_thessaloniki
+				}
+				custom_tooltip = " "
+				add_province_modifier = {
+					name = BYZ_secondary_trade_capital
+					duration = -1
+				}
+			}
+			complex_dynamic_effect = {
+				first_custom_tooltip = BYZ_if_constantinople_is_world_port
+				first_limit = "
+					151 = {
+						owned_by = ROOT
+						province_has_center_of_trade_of_level = 3
+					}
+				"
+				first_effect = "
+					148 = {
+						add_center_of_trade_level = 3 # max
+					}
+				"
+			}
+		}
+	}
+	cidade_do_desejo_do_mundo = {
+		icon = take_constantinople
+		required_missions = {
+			a_megalopole
+		}
+		position = 19
+		provinces_to_highlight = {
+			OR = {
+				higher_development_than = 151
+				AND = {
+					province_id = 151
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							development = 40
+						}
+						NOT = {
+							has_tax_building_trigger = yes
+						}
+						NOT = {
+							has_production_building_trigger = yes
+						}
+						NOT = {
+							has_manpower_building_trigger = yes
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			151 = {
+				owned_by = ROOT
+				development = 28
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				has_manpower_building_trigger = yes
+				custom_trigger_tooltip = {
+					tooltip = BYZ_most_developed_city_in_the_world
+					NOT = {
+						any_province = {
+							higher_development_than = PREV
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			151 = {
+				add_or_upgrade_tax_building = yes
+				add_or_upgrade_production_building = yes
+				add_or_upgrade_manpower_building = yes
+				custom_tooltip = " "
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					add_province_modifier = {
+						name = BYZ_queen_of_cities
+						duration = -1
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = BYZ_queen_of_cities_no_dlc
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				add_country_modifier = {
+					name = BYZ_centralize_all_wealth
+					duration = -1
+				}
+			}
+			custom_tooltip = BYZ_unlock_bosphorus_toll_decision
+			set_country_flag = BYZ_unlocked_bosphorus_toll
+		}
+	}
+	independencia_economica = {
+		icon = medici_bank_ledgers
+		required_missions = {
+			cidade_do_desejo_do_mundo
+		}
+		position = 20
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						owned_by = GEN
+						owned_by = VEN
+					}
+					NOT = {
+						owner = {
+							ROOT = {
+								has_won_war_against = {
+									who = PREV
+									max_years_since = 50
+								}
+							}
+						}
+					}
+				}
+				province_id = 151
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = BYZ_has_integrated_galata
+				NOT = {
+					151 = {
+						has_province_modifier = BYZ_galata
+					}
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_burghers_reliance_on_republics
+			}
+			NOT = {
+				has_estate_privilege = estate_burghers_exkousseiai_for_latins
+			}
+			OR = {
+				151 = {
+					trade_share = {
+						country = ROOT
+						share = 80
+					}
+				}
+				AND = {
+					if = {
+						limit = {
+							exists = GEN
+						}
+						has_won_war_against = {
+							who = GEN
+							max_years_since = 50
+						}
+					}
+					else = {
+						GEN = {
+							any_core_province = {
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+						}
+					}
+					if = {
+						limit = {
+							exists = VEN
+						}
+						has_won_war_against = {
+							who = VEN
+							max_years_since = 50
+						}
+					}
+					else = {
+						VEN = {
+							any_core_province = {
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = BYZ_buff_burgher_loans_no_mercantilism_loss
+			#done via mission_completed
+			custom_tooltip = " "
+			complex_dynamic_effect = {
+				first_custom_tooltip = BYZ_if_done_via_war
+				first_limit = "
+					if = {
+						limit = { exists = GEN }
+						has_won_war_against = { who = GEN max_years_since = 50 }
+					}
+					else = {
+						GEN = {
+							any_core_province = { country_or_non_sovereign_subject_holds = ROOT }
+						}
+					}
+					if = {
+						limit = { exists = VEN }
+						has_won_war_against = { who = VEN max_years_since = 50 }
+					}
+					else = {
+						VEN = {
+							any_core_province = { country_or_non_sovereign_subject_holds = ROOT }
+						}
+					}
+				"
+				first_effect = "
+					add_country_modifier = {
+						name = BYZ_dominance
+						duration = 7300
+					}
+				"
+				second_custom_tooltip = BYZ_if_done_via_trade_share
+				second_limit = "
+					151 = {
+						trade_share = {
+							country = ROOT
+							share = 80
+						}
+					}
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = BYZ_maintaining_relations
+						duration = 5475
+					}
+				"
+			}
+		}
+	}
+}
+series_5_2183a13b = {
+	slot = 5
+	generic = no
+	potential = {
+		OR = {
+			tag = ARM
+			was_tag = ARM
+		}
+	}
+	controle_os_vassalos = {
+		icon = geneva_conventions
+		position = 13
+		required_missions = {
+			o_sistema_de_ayrudzi
+		}
+		trigger = {
+			not_in_mission_preview_mode = {
+				key = BYZ
+			}
+			calc_true_if = {
+				all_subject_country = {
+					OR = {
+						is_subject_of_type = hereditary_pronoia_subject_type
+						is_subject_of_type = pronoia_subject_type
+						is_subject_of_type = march
+					}
+					NOT = {
+						liberty_desire = 5
+					}
+				}
+				amount = 2
+			}
+			OR = {
+				num_of_generals = 6
+				crown_land_share = 50
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BYZ_reliance_on_the_pronoiar
+				duration = -1
+			}
+			country_event_with_option_insight = {
+				id = MEE_Byzantine_Events.29
+				option_1 = "
+					custom_tooltip = BYZ_upgrade_the_reliance_on_the_pronoiar
+				"
+				option_2 = "
+					custom_tooltip = BYZ_pronoia_subject_no_longer_reduces_forcelimit
+				"
+				option_3 = "
+					custom_tooltip = BYZ_pronoia_extra_forcelimit
+				"
+			}
+		}
+	}
+	reformando_o_sistema_militar = {
+		icon = fight_bosnian_heresies
+		position = 14
+		required_missions = {
+			controle_os_vassalos
+			refine_os_sooseramartik
+		}
+		trigger = {
+			not_in_mission_preview_mode = {
+				key = BYZ
+			}
+			army_size = 140
+			num_of_states = 35
+			manpower = 100
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			num_of_owned_provinces_with = {
+				has_manpower_building_trigger = yes
+				value = 20
+			}
+		}
+		effect = {
+			custom_tooltip = BYZ_for_every_province_with_courthouse
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							has_courthouse_building_trigger = yes
+							value = 25
+						}
+					}
+					change_government_reform_progress = 100
+				}
+				else = {
+					every_owned_province = {
+						limit = {
+							has_courthouse_building_trigger = yes
+						}
+						ROOT = {
+							change_government_reform_progress = 4
+						}
+					}
+				}
+			}
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = BYZ_professional_themata_soldiers
+				duration = -1
+			}
+		}
+	}
+	coletando_os_nossos_lucros = {
+		icon = mission_african_gold
+		required_missions = {
+			Subsidio_Mercantil_Armeno
+		}
+		position = 17
+		provinces_to_highlight = { }
+		trigger = {
+			monthly_income = 50
+			NOT = {
+				inflation = 0.2
+			}
+			NOT = {
+				num_of_loans = 1
+			}
+			home_trade_node = {
+				trade_node_value = 25
+			}
+		}
+		effect = {
+			country_event_with_option_insight = {
+				id = MEE_Byzantine_Events.21
+				option_1 = "
+					custom_tooltip = BYZ_buff_private_trade_fleet
+				"
+				option_2 = "
+					custom_tooltip = BYZ_buff_burgher_loans
+				"
+				option_3 = "
+					custom_tooltip = BYZ_buff_free_enterprise
+				"
+			}
+		}
+	}
+	BYZ_support_weavers = {
+		icon = purely_for_commerce
+		required_missions = {
+			a_megalopole
+		}
+		position = 19
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4701
+				province_id = 1773
+				province_id = 317
+			}
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					has_production_building_trigger = yes
+				}
+				NOT = {
+					development = 20
+				}
+			}
+		}
+		trigger = {
+			4701 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+			}
+			1773 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+			}
+			317 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+			}
+		}
+		effect = {
+			317 = {
+				add_or_upgrade_production_building = yes
+			}
+			328 = {
+				add_or_upgrade_production_building = yes
+				set_province_flag = BYZ_may_convert_to_silk
+				province_event = {
+					id = MEE_Byzantine_Events.23
+				}
+			}
+			2300 = {
+				add_or_upgrade_production_building = yes
+				set_province_flag = BYZ_may_convert_to_silk
+				province_event = {
+					id = MEE_Byzantine_Events.23
+					days = 180
+				}
+				#the events cannot be fired at the same time
+			}
+			custom_tooltip = " "
+			country_event_with_effect_insight = {
+				id = MEE_Byzantine_Events.26
+				effect = "
+					change_price = {
+						trade_goods = silk
+						key = BYZ_growing_demand
+						value = 0.2
+						duration = -1
+					}
+				"
+			}
+		}
+	}
+	crescimento_das_vidracarias = {
+		icon = bohemian_crystal
+		required_missions = {
+			BYZ_support_weavers
+		}
+		position = 20
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 164
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							has_production_building_trigger = yes
+						}
+						NOT = {
+							has_shipyard_building_trigger = yes
+						}
+					}
+				}
+				AND = {
+					province_id = 151
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							has_production_building_trigger = yes
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			164 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				has_shipyard_building_trigger = yes
+			}
+			151 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			164 = {
+				set_province_flag = BYZ_may_convert_to_glass
+				province_event = {
+					id = MEE_Byzantine_Events.23
+				}
+			}
+			custom_tooltip = " "
+			custom_tooltip = BYZ_export_mosaicists
+			tooltip = {
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					add_country_modifier = {
+						name = BYZ_mosaicists_Leviathan
+						duration = 3650
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = BYZ_mosaicists
+						duration = 3650
+					}
+				}
+			}
+			custom_tooltip = " "
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				custom_tooltip = BYZ_buff_glass_privilege
+			}
+			else = {
+				custom_tooltip = BYZ_buff_patronage_of_the_arts
+			}
+		}
+	}
+}

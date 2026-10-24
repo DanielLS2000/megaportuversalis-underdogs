@@ -3,7 +3,7 @@ add_government_reform = feudal_theocracy
 government_rank = 2
 technology_group = nomad_group
 religion = sunni
-primary_culture = oghuz
+primary_culture = turko_iranian
 capital = 417
 religious_school = hanafi_school
 1444.11.11= {
@@ -15,7 +15,7 @@ religious_school = hanafi_school
 		mil = 5
 		birth_date = 1408.4.8
 		religion = sunni
-		culture = oghuz
+		culture = turko_iranian
 	}
 	add_ruler_personality = industrious_personality
 	add_ruler_personality = lawgiver_personality
@@ -45,7 +45,7 @@ religious_school = hanafi_school
 		death_date = 1490.8.18
 		claim = 89
 		religion = sunni
-		culture = oghuz
+		culture = turko_iranian
 	}
 	add_heir_personality = lawgiver_personality
 	add_heir_personality = tactical_genius_personality

@@ -1338,7 +1338,7 @@ africa_3 = {
 			OR = {
 				AND = {
 					OR = {
-						province_id = 213
+						province_id = 2986
 						province_id = 341
 						province_id = 121
 					}
@@ -1376,8 +1376,8 @@ africa_3 = {
 				has_production_building_trigger = yes
 				num_of_buildings_in_province = 8
 			}
-			213 = {
-				#barcelona
+			2986 = {
+				#cagliari
 				owned_by = ROOT
 				development = 35
 				has_production_building_trigger = yes
@@ -1390,7 +1390,7 @@ africa_3 = {
 				has_production_building_trigger = yes
 				num_of_buildings_in_province = 8
 			}
-			catalonia_area = {
+			corsica_sardinia_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -1404,7 +1404,7 @@ africa_3 = {
 			}
 		}
 		effect = {
-			catalonia_area = {
+			corsica_sardinia_area = {
 				add_permanent_province_modifier = {
 					name = ITA_industrial_triangle_modifier
 					duration = -1

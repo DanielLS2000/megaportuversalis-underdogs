@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = romanian
 capital = 1872
 add_accepted_culture = swabian
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Marin"

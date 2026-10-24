@@ -1,9 +1,9 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
-technology_group = muslim
+technology_group = western
 religion = catholic
-primary_culture = andalucian
+primary_culture = leonese
 capital = 208
 add_accepted_culture = castillian
 1444.11.11= {
@@ -16,7 +16,7 @@ add_accepted_culture = castillian
 		birth_date = 1396.12.18
 		female = yes
 		religion = catholic
-		culture = andalucian
+		culture = leonese
 	}
 	add_ruler_personality = strict_personality
 	add_ruler_personality = tactical_genius_personality

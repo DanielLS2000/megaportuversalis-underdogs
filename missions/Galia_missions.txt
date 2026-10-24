@@ -187,7 +187,7 @@ custom_missions = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_fra.102
+				id = flavor_FRABRI.3
 			}
 			custom_tooltip = fra_event_insight_102_tt
 		}
@@ -3245,7 +3245,7 @@ series_5_e86cacc4 = {
 						name = fra_resurgence_of_crusader_fervor_modifier
 						duration = 9125
 					}
-					palestine_area = {
+					yemen_area = {
 						limit = {
 							NOT = {
 								owned_by = ROOT
@@ -3295,7 +3295,7 @@ series_5_e86cacc4 = {
 		}
 		effect = {
 			country_event = {
-				id = flavor_fra.205
+				id = flavor_FRABRI.2
 			}
 			custom_tooltip = fra_event_insight_205_tt
 			if = {
@@ -3551,10 +3551,9 @@ series_5_e86cacc4 = {
 			}
 			custom_tooltip = FRABRI_extra_reward_when_colonialism_tt
 			tooltip = {
-				add_age_modifier = {
+				add_country_modifier = {
 					name = FRABRI_Colonial_Port
-					duration = -1
-					age = age_of_reformation
+					duration = 18250
 				}
 			}
 			set_country_flag = EE_BRI_colonialism

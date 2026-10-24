@@ -14,6 +14,24 @@
  flavor_FRABRI.1.a: "Let us claim what is rightfully Ours!"
  flavor_FRABRI.1.b: "Let us drop our claims for good."
 
+ # ==============================================
+ # The Holy Lands of Yemen (flavor_FRABRI.2)
+ # ==============================================
+ flavor_FRABRI.2.t: "The Holy Lands of Yemen"
+ flavor_FRABRI.2.d: "Our relentless expansion and crusading fervor have brought the strategic lands of Yemen under our direct control. As the undisputed shield of Christendom, we now face the challenge of administering these distant, hostile territories. The clergy and the pious nobility have proposed a grand vision: the establishment of a new Crusader State centered in Aden. By relinquishing direct control and installing a holy order to govern these lands, we could secure the Red Sea, protect Christian pilgrims, and project our righteous fury deep into the Arabian Peninsula. Alternatively, our sovereign could maintain direct military rule over the region."
+ flavor_FRABRI.2.a: "Establish the Crusader State of Aden."
+ flavor_FRABRI.2.b: "We shall rule these lands directly by the sword!"
+
+ # ==============================================
+ # The Habsburg Ring / The Imperial Question (flavor_FRABRI.3)
+ # ==============================================
+ flavor_FRABRI.3.t: "The Imperial Question"
+ flavor_FRABRI.3.d: "For centuries, the Holy Roman Empire has stood as a sprawling, convoluted bulwark on our eastern borders. Claiming the ancient mantle of Rome, its emperors have constantly sought to encircle, isolate, and undermine our great nation. However, with our recent triumphs, the balance of power in Europe has shifted irrevocably in our favor. The time has come to definitively settle the 'Imperial Question'. Shall we claim the legendary legacy of Charlemagne and bend the German electors to our sovereign will, or shall we march east with fire and sword to shatter their archaic institution once and for all?"
+ flavor_FRABRI.3.a: "We are the true heirs of Charlemagne. The Empire is ours!"
+ flavor_FRABRI.3.b: "The Empire is an archaic abomination. We shall dismantle it!"
+ flavor_FRABRI.3.c: "The Habsburg ring is broken. Their Empire is no more."
+ flavor_FRABRI.3.e: "Let us reconsider our approach to the Empire."
+
  # Modifiers
  FRABRI_Constable: "Office of the Constable"
  desc_FRABRI_Constable: "The Constable oversees our military organization, ensuring that our armies are disciplined and led with superior tactical brilliance."

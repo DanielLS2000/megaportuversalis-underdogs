@@ -1,0 +1,343 @@
+namespace = flavor_lut
+
+# Join the HRE?
+country_event = {
+	id = flavor_lut.1
+	title = flavor_lut.1.t
+	desc = flavor_lut.1.desc
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# We must seek out the protection of the HRE
+		name = flavor_lut.1.a
+		trigger = {
+			hre_size = 1
+		}
+		custom_tooltip = flavor_lut.1.a.tt
+        hidden_effect = {
+            emperor = {
+                country_event = {
+                    id = flavor_lut.2
+                }
+            }
+        }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	# We can hold the ground by our own
+		name = flavor_lut.1.b
+		add_mil_power = 100
+		add_country_modifier = {
+			name = teu_rejects_imperial_protection
+			duration = 9125
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = teu_rejects_the_hre
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Order is requesting to join the HRE
+country_event = {
+	id = flavor_lut.2
+	title = flavor_lut.2.t
+	desc = flavor_lut.2.desc
+	picture = KNIGHTS_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	# Accept the order as part of the HRE
+		name = flavor_lut.2.a
+		custom_tooltip = flavor_lut.2.a.tt
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = teu_allowed_us_to_join
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_lut.3
+				}
+				every_neighbor_country = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = teu_allowed_the_teutons_into_the_hre
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				LUT = { has_country_flag = teu_crusader_path }
+			}
+		}
+	}
+	
+	option = {	# Luticia has no business in the HRE.
+		name = flavor_lut.2.b
+		custom_tooltip = flavor_lut.2.b.tt
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_lut.4
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = teu_rejected_us_from_joining
+		}
+		add_opinion = {
+			who = FROM
+			modifier = teu_does_not_want_the_order_in_the_hre
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					ai_attitude = { who = FROM attitude = attitude_allied }
+					ai_attitude = { who = FROM attitude = attitude_defensive }
+					ai_attitude = { who = FROM attitude = attitude_friendly }
+					ai_attitude = { who = FROM attitude = attitude_neutral }
+					ai_attitude = { who = FROM attitude = attitude_protective }
+				}
+			}
+		}
+	}
+}
+
+# Luticia is allowed to stay in the HRE indefinitely
+country_event = {
+	id = flavor_lut.3
+	title = flavor_lut.3.t
+	desc = flavor_lut.3.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Nice
+		name = flavor_lut.3.a
+		custom_tooltip = flavor_lut.3.a.tt
+		set_in_empire = yes
+		set_country_flag = teu_is_allowed_to_stay_in_the_hre
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Luticia has to go.
+country_event = {
+	id = flavor_lut.4
+	title = flavor_lut.4.t
+	desc = flavor_lut.4.desc
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Okay.
+		name = flavor_lut.4.a
+		custom_tooltip = flavor_lut.4.a.tt
+		tooltip = {
+			reverse_add_opinion = {
+				who = FROM
+				modifier = teu_rejected_us_from_joining
+			}
+			add_opinion = {
+				who = FROM
+				modifier = teu_does_not_want_the_order_in_the_hre
+			}
+		}
+		if = {
+			limit = { is_part_of_hre = yes }
+			set_in_empire = no
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Luticia and Volhynia
+country_event = {
+	id = flavor_lut.5
+	title = flavor_lut.5.t
+	desc = flavor_lut.5.desc
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Ask Volhynia to become our vassal
+		name = flavor_lut.5.a
+		custom_tooltip = flavor_lut.5.a.tt
+		hidden_effect = {
+			VOL = {
+				country_event = {
+					id = flavor_lut.6
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	# Keep the Alliance
+		name = flavor_lut.5.b
+		add_trust = {
+			who = LIV
+			value = 10
+			mutual = yes
+		}
+		define_advisor = {
+			type = statesman
+			skill = 1
+			cost_multiplier = 0.25
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Luticia ask for our vassalizing
+country_event = {
+	id = flavor_lut.6
+	title = flavor_lut.6.t
+	desc = flavor_lut.6.desc
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Accept to become vassals of the Luticians
+		name = flavor_lut.6.a
+		tooltip = {
+			FROM = {
+				vassalize = ROOT
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_lut.7
+				}
+			}
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				OR = {
+					ai = no
+					was_player = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_enemy = FROM
+					is_rival = FROM
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { 
+					diplomatic_reputation = 1
+					NOT = { diplomatic_reputation = 2 }
+				}
+			}
+			modifier = {
+				factor = 3
+				FROM = { diplomatic_reputation = 2 }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { NOT = { diplomatic_reputation = 0 }}
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = flavor_lut.6.b
+		tooltip = {
+			reverse_add_casus_belli = {
+				type = cb_vassalize_mission
+				target = FROM
+				months = 360
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_lut.8
+				}
+			}
+		}
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.57
+				FROM = { 
+					diplomatic_reputation = 1
+					NOT = { diplomatic_reputation = 2 }
+				}
+			}
+			modifier = {
+				factor = 0.29
+				FROM = { diplomatic_reputation = 2 }
+			}
+			modifier = {
+				factor = 1.21
+				FROM = { NOT = { diplomatic_reputation = 0 } }
+			}
+		}
+	}
+}
+
+# Accept vassalizing
+country_event = {
+	id = flavor_lut.7
+	title = flavor_lut.7.t
+	desc = flavor_lut.7.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Livonian Order accepts to be our vassal
+		name = flavor_lut.7.a
+		vassalize = FROM
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Decline vassalizing
+country_event = {
+	id = flavor_lut.8
+	title = flavor_lut.8.t
+	desc = flavor_lut.8.desc
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# This will mean war
+		name = flavor_lut.8.a
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = FROM
+			months = 360
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
