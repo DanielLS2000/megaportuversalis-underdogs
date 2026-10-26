@@ -4,8 +4,8 @@ normal_or_historical_nations = yes
 # Consolato del Mar
 country_event = {
 	id = flavor_cnr.1
-	title = "flavor_cnr.title"
-	desc = "flavor_cnr.desc"
+	title = flavor_cnr.1.t
+	desc = flavor_cnr.1.d
 	picture = COLONIZATION_eventPicture
 	
 	fire_only_once = yes
@@ -33,7 +33,7 @@ country_event = {
 
 
 	option = {		# We should establish it
-		name = flavor_cnr.1
+		name = flavor_cnr.1.a
 		ai_chance = { factor = 90 }
 		add_country_modifier = {
 			name = consolato_del_mar
@@ -323,5 +323,562 @@ country_event = { #The New World Dollar
 			amount = 1
 		}
 		
+	}
+}
+
+# Ignacio de Loyola
+country_event = {
+	id = flavor_cnr.11
+	title = flavor_cnr.11.t
+	desc = flavor_cnr.11.d
+	picture = ADVISOR_eventPicture
+
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = CNR
+				NOT = { exists = NDA }
+			}
+			tag = NDA
+		}
+		religion = catholic
+		is_year = 1521
+		NOT = { is_year = 1556 }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+
+	option = {		# An Excellent Minister!
+		name = flavor_cnr.11.a
+		add_adm_power = 50
+		add_papal_influence = 25
+		define_advisor = {
+			type = theologian 
+			culture = basque
+			religion = catholic
+			name = "Ignacio de Loyola"
+			discount = yes
+			skill = 2
+		}
+	}
+}
+
+# Baltasar de Zuniga
+country_event = {
+	id = flavor_cnr.12
+	title = flavor_cnr.12.t
+	desc = flavor_cnr.12.d
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = CNR
+				NOT = { exists = NDA }
+			}
+			tag = NDA
+		}
+		is_year = 1591
+		NOT = { is_year = 1622 }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+
+
+
+	option = {			# An Excellent Minister!
+		name = flavor_cnr.12.a
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_adm_power = 40
+		add_dip_power = 40
+		add_mil_power = 40
+		define_advisor = {
+			type = statesman
+			name = "Baltasar de Zuniga"
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+# Olivares
+country_event = {
+	id = flavor_cnr.13
+	title = flavor_cnr.13.t
+	desc = flavor_cnr.13.d
+	picture = ADVISOR_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NDA
+		is_year = 1617
+		NOT = { is_year = 1645 }
+	}
+
+	mean_time_to_happen = {
+		months = 64
+	}
+
+	immediate = {
+		set_country_flag = NDA_had_event_13
+	}
+
+	option = {			# An Excellent Minister!
+		name = flavor_cnr.13.a
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		define_advisor = {
+			type = statesman
+			name = "Conde-Duque Olivares"
+			culture = umbrian
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+# Giulio Alberoni
+country_event = {
+	id = flavor_cnr.14
+	title = flavor_cnr.14.t
+	desc = flavor_cnr.14.d
+	picture = ADVISOR_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NDA
+		is_year = 1694
+		NOT = { is_year = 1752 }
+	}
+
+	mean_time_to_happen = {
+		months = 150
+	}
+
+	
+	option = {			# An Excellent Minister!
+		name = flavor_cnr.14.a
+		add_dip_power = 100
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		define_advisor = {
+			type = statesman
+			culture = romagnan
+			religion = catholic
+			name = "Giulio Alberoni"
+			discount = yes
+			skill = 2
+		}
+	}
+}
+
+# José Monino
+country_event = {
+	id = flavor_cnr.15
+	title = flavor_cnr.15.t
+	desc = flavor_cnr.15.d
+	picture = ADVISOR_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NDA
+		is_year = 1758
+		NOT = { is_year = 1808 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {			# An Excellent Minister!
+		name = flavor_cnr.15.a
+		add_adm_power = 100
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		define_advisor = {
+			type = statesman
+			name = "José Monino"
+			culture = andalucian
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+# The Constitution of 1812
+country_event = {
+	id = flavor_cnr.16
+	title = flavor_cnr.16.t
+	desc = flavor_cnr.16.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NDA
+		is_year = 1800
+		NOT = { has_reform = parliamentary_reform }
+		NOT = { has_reform = celestial_empire }
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {		# Follow the Cortes
+		name = flavor_cnr.16.a
+		ai_chance = { factor = 75 }
+		add_government_reform = parliamentary_reform
+		#set_legacy_government = constitutional_monarchy
+	}
+	option = {		# Resist these liberals!
+		name = flavor_cnr.16.b
+		ai_chance = { factor = 25 }
+		add_stability = -1
+	}
+}
+
+# La Malinche (c. 1500-unknown)
+country_event = {
+	id = flavor_cnr.17
+	title = flavor_cnr.17.t
+	desc = flavor_cnr.17.d
+	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
+
+	trigger = {
+		is_year = 1500
+		NOT = {
+			is_year = 1600
+		}
+		OR = {
+			AND = {
+				tag = NDA
+				OR = {
+					central_america_region = {
+						has_discovered = ROOT
+					}
+					mexico_region = {
+						has_discovered = ROOT
+					}
+				}
+				capital_scope = {
+					continent = europe
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = central_america_region
+					region = mexico_region
+				}
+				ROOT = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+		}
+		NOT = {
+			has_global_flag = wih_lamalince_flag
+		}
+		NOT = {
+			advisor_exists = 1629
+			is_advisor_employed = 1629
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = wih_lamalince_flag
+		}
+	}
+	
+	option = {
+		name = flavor_cnr.17.a
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			discount = yes
+			type = diplomat
+			skill = 2
+			culture = aztek
+			name = "La Malinche"
+		}
+	}
+	option = {
+		name = flavor_cnr.17.b
+		define_conquistador = {
+			name = "La Malinche"
+			female = yes
+			fire = 1
+			shock = 2
+			manuever = 2
+			siege = 1
+		}
+	}
+	option = {
+		name = flavor_cnr.17.c
+		add_prestige = 10
+	}
+}
+
+# Juana Ines de la Cruz
+country_event = {
+	id = flavor_cnr.18
+	title = flavor_cnr.18.t
+	desc = flavor_cnr.18.d
+	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
+
+	trigger = {
+		is_year = 1650
+		NOT = {
+			is_year = 1700
+		}
+		OR = {
+			AND = {
+				capital_scope = {
+					region = mexico_region
+				}
+				any_owned_province = {
+					province_id = 852
+				}
+			}
+			AND = {
+				tag = NDA
+				owns_or_vassal_of = 852
+			}
+		}
+		NOT = {
+			has_global_flag = wih_juanainesdelacruz_flag
+		}
+		NOT = {
+			advisor_exists = 1631
+			is_advisor_employed = 1631
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = wih_juanainesdelacruz_flag
+		}
+	}
+	
+	option = {
+		name = flavor_cnr.18.a
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			type = statesman
+			discount = yes
+			culture = dalmatian
+			skill = 2
+			name = "Juana Ines de la Cruz"
+		}
+	}
+	option = {
+		name = flavor_cnr.18.b
+		add_country_modifier = {
+			name = wih_juanainesdelacruz
+			duration = 7300
+		}
+	}
+}
+
+# Inés de Suárez
+country_event = {
+	id = flavor_cnr.19
+	title = flavor_cnr.19.t
+	desc = flavor_cnr.19.d
+	picture = wihgfx_FEMALES_eventPicture
+
+	trigger = {
+		tag = NDA
+		is_year = 1507
+		south_america = {
+			has_discovered = ROOT
+		}
+		any_owned_province = {
+			continent = south_america
+		}
+		NOT = {
+			is_year = 1580
+		}
+		NOT = {
+			has_global_flag = wih_inesdesuarez_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = wih_inesdesuarez_flag
+		}
+	}
+	
+	option = {
+		name = flavor_cnr.19.a
+		define_advisor = {
+			female = yes
+			type = colonial_governor
+			culture = dalmatian
+			discount = yes
+			skill = 2
+			name = "Ines de Suarez"
+		}
+	}
+	option = {
+		name = flavor_cnr.19.b
+		define_conquistador = {
+			name = "Ines de Suarez"
+			female = yes
+			fire = 2
+			shock = 3
+			manuever = 3
+			siege = 2
+		}
+	}
+	option = {
+		name = flavor_cnr.19.c
+		define_general = {
+			name = "Ines de Suarez"
+			female = yes
+			fire = 4
+			shock = 3
+			manuever = 4
+			siege = 2
+		}
+	}
+}
+
+# Isabella of Castile (1451-1504)
+country_event = {
+	id = flavor_cnr.20
+	title = flavor_cnr.20.t
+	desc = flavor_cnr.20.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = { 
+			AND = {
+				OR = {
+					tag = NDA
+					AND = {
+						NOT = {
+							exists = NDA
+						}
+						tag = CNR
+					}
+				}
+				is_year = 1450
+				NOT = {
+					is_year = 1504
+				}
+				has_regency = no
+				has_government_attribute = heir
+				is_lesser_in_union = no
+				government = monarchy
+				NOT = {
+					has_disaster = castilian_civil_war
+				}
+			}
+			AND = {
+				has_disaster = castilian_civil_war
+				has_country_flag = cas_aragon_candidate
+				has_country_flag = civil_war_in_castile
+			}
+		}
+		NOT = { has_country_flag = no_isabella_event_flag } 
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_cnr.20.a
+		add_meritocracy_effect = yes
+		define_heir = {
+			name = "Isabel"
+			dynasty = "Vesperini"
+			culture = dalmatian
+			claim = 95
+			adm = 5
+			dip = 6
+			mil = 3
+			age = 5
+			female = yes
+		}
+		set_country_flag = cas_isabel_heir_accepted_flag
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_heir_personality_ancestor = { key = expansionist } }	
+		}
+	}
+	option = {
+		name = flavor_cnr.20.b
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			type = statesman
+			discount = yes
+			skill = 2
+			culture = dalmatian
+			name = "Isabel de Trastámara"
+		}
 	}
 }

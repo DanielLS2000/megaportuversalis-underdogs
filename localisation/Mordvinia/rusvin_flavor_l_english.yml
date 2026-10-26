@@ -1,0 +1,68 @@
+﻿l_english:
+ flavor_mdv.1.t:0 "A New, Imperial Name"
+ flavor_mdv.1.desc:0 "Through relentless struggle and the blood of our warriors, we have risen from a fractured principality to a true regional power. Our borders stretch far and our people multiply. Some in the court suggest that 'Mordoviya' no longer encompasses the sheer scale and ambition of our state. Should we adopt a new, imperial title to reflect our newfound dominance, or remain true to our ancient roots?"
+ flavor_mdv.1.a:0 "We shall be known as the Mordvinian Baltic Empire."
+ flavor_mdv.1.b:0 "Proclaim the Mordvinian Empire."
+ flavor_mdv.1.c:0 "Greater Mordvinia sounds imposing."
+ flavor_mdv.1.d:0 "We are Erzya-Moksha. That is who we are."
+ flavor_mdv.1.e:0 "Mordoviya is a proud name. We keep it."
+
+ flavor_mdv.2.t:0 "The Tatar Yoke"
+ flavor_mdv.2.desc:0 "For generations, the rulers of Mordoviya have been forced to bow to the khans of the steppes. The Tatar Yoke lies heavy upon our people, draining our wealth and our pride. We are forced to pay a crippling annual tribute, but this subservience keeps the horde from razing our cities to the ground. For now, we must endure."
+ flavor_mdv.2.a:0 "We must bide our time..."
+ flavor_mdv.2.a.tt:0 "We will pay an annual tribute to the Horde."
+ the_tatar_yoke_desc:0 "We are forced to pay a heavy tribute to our nomadic overlords."
+
+ flavor_mdv.3.t:0 "The End of the Tatar Yoke"
+ flavor_mdv.3.desc_horde:0 "With our armies shattered and our capital taken, our former subjects in Mordoviya have boldly refused to pay us tribute any longer. The Yoke is broken."
+ flavor_mdv.3.desc_mdv_too_strong:0 "The sheer might of Mordoviya has eclipsed the declining power of the Horde. We no longer fear their horsemen, and they know they can no longer enforce their demands. The Yoke has been broken by our own strength."
+ flavor_mdv.3.desc_mdv:0 "We have done it! The heart of the Great Horde has fallen to our troops, and their khan has been brought low. Never again shall the people of Mordoviya pay tribute to the steppes."
+ flavor_mdv.3.desc:0 "The ancient power dynamic of the steppes has shifted forever. The oppressive Tatar Yoke has finally been shattered."
+ flavor_mdv.3.a:0 "We are finally free!"
+ flavor_mdv.3.b:0 "We could not enforce the tribute."
+ flavor_mdv.3.c:0 "Their strength grew too quickly."
+
+ flavor_mdv.4.t:0 "The Annual Tribute"
+ flavor_mdv.4.desc:0 "The time of the year has come once again. Envoys from the Horde have arrived at our court, demanding the annual tribute of gold and silver. Our treasury bleeds to satiate their greed, but refusing them would mean a devastating invasion by their nomadic cavalry."
+ flavor_mdv.4.a:0 "Pay the tribute. We are not ready for war."
+ flavor_mdv.4.a.tt:0 "We send our hard-earned wealth to the Khan."
+ flavor_mdv.4.b:0 "Not a single coin more! We refuse!"
+ flavor_mdv.4.b.tt:0 "The Khan will surely retaliate."
+
+ flavor_mdv.5.t:0 "Mordoviya Pays Tribute"
+ flavor_mdv.5.desc:0 "Our envoys have returned from Mordoviya laden with gold and silver. The tributaries know their place and continue to fund our great Horde."
+ flavor_mdv.5.a:0 "Excellent."
+ flavor_mdv.5.a.tt:0 "We gain wealth from our subjects."
+
+ flavor_mdv.6.t:0 "Mordoviya Refuses the Tribute!"
+ flavor_mdv.6.desc:0 "Insolence! The rulers of Mordoviya have sent our envoys back empty-handed, claiming they will no longer bow to the Horde. We must ride out and remind them of the price of defiance!"
+ flavor_mdv.6.a:0 "Burn their fields and pillage their towns!"
+ flavor_mdv.6.a.tt:0 "Our horsemen will raid their lands."
+ flavor_mdv.6.b:0 "We lack the strength to punish them right now."
+
+ flavor_mdv.7.t:0 "The Horde Retaliates!"
+ flavor_mdv.7.desc:0 "Because of our refusal to pay the tribute, the Horde has sent raiding parties across our borders. They have burned our villages, stolen our livestock, and terrorized our peasantry. We must grow stronger to prevent this from happening again."
+ flavor_mdv.7.a:0 "We will make them pay for this one day."
+ flavor_mdv.7.a.tt:0 "Our lands suffer from the raids."
+
+ flavor_mdv.8.t:0 "The Mordvinian Civil War"
+ flavor_mdv.8.desc:0 "A bitter dynastic struggle has engulfed our lands. The rightful ruler, Purgaz II, has been captured and blinded by his ruthless rival, Puresh. With the old king in exile and his supporters scattered, Puresh has seized the throne of Mordoviya. The realm is divided, and civil war is upon us."
+ flavor_mdv.8.a:0 "A dark day for Mordoviya."
+ vasily_ii_in_exile_desc:0 "Our rightful ruler is in exile, blinded by his enemies, plotting his return to the throne."
+
+ flavor_mdv.9.t:0 "The Rule of Puresh"
+ flavor_mdv.9.desc:0 "Puresh has held the throne for some time, ruling with an iron fist. However, the loyalists of the exiled Purgaz II have secretly gathered strength. They are now marching on the capital, determined to restore the rightful heir and end Puresh's reign of terror."
+ flavor_mdv.9.a:0 "To arms! Restore the rightful king!"
+ flavor_mdv.9.b:0 "Puresh is the true ruler now. Let him be."
+
+ flavor_mdv.10.t:0 "Puresh Defeated"
+ flavor_mdv.10.desc:0 "The brutal civil war has finally come to an end. Puresh's forces have been decisively defeated, and the pretender is no more. Order has been restored to Mordoviya, and the rightful line once again sits securely upon the throne."
+ flavor_mdv.10.a:0 "Long live the King!"
+
+ flavor_mdv.11.t:0 "The End of the Tatar Yoke"
+ flavor_mdv.11.desc:0 "Through immense effort, rapid expansion, and military buildup, Mordoviya has grown far too powerful for the Horde to contain. Recognizing our overwhelming might, the Khan has quietly ceased demanding tribute. The Yoke is broken, not by a single battle, but by our undeniable ascendancy."
+ flavor_mdv.11.a:0 "We are the masters of our own fate."
+
+ flavor_mdv.12.t:0 "The End of the Tatar Yoke"
+ flavor_mdv.12.desc:0 "Through immense effort, rapid expansion, and military buildup, Mordoviya has grown far too powerful for the Horde to contain. Recognizing our overwhelming might, the Khan has quietly ceased demanding tribute. The Yoke is broken, not by a single battle, but by our undeniable ascendancy."
+ flavor_mdv.12.a:0 "We are the masters of our own fate."

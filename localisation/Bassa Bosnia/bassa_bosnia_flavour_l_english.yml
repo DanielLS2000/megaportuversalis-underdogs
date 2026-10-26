@@ -111,3 +111,140 @@
 
  bsb_guarantee_minority_rights:0 "Guaranteed Minority Rights"
  desc_bsb_guarantee_minority_rights:0 "Ensuring the rights and privileges of all ethnic minorities has created a highly diverse, tolerant, and loyal empire."
+
+ flavor_bsb.3.t:0 "Administrative and Social Reforms"
+ flavor_bsb.3.d:0 "In a bid to modernize the state, our monarch has proposed sweeping reforms. By restructuring the administration and empowering the lower nobility, we can significantly increase state efficiency, either by bolstering tax collection or by increasing our military manpower reserves."
+ flavor_bsb.3.a:0 "Focus on administrative efficiency and tax collection."
+ flavor_bsb.3.b:0 "Focus on military administration and manpower."
+
+ flavor_bsb.4.t:0 "Academia Istropolitana"
+ flavor_bsb.4.d:0 "The founding of a new university, the Academia Istropolitana, marks a turning point in our cultural and intellectual history. Scholars from across Europe will flock to our halls, increasing our prestige and standing with the Holy Father."
+ flavor_bsb.4.a:0 "A beacon of learning in the east."
+
+ flavor_bsb.5.t:0 "Printing Press in Buda"
+ flavor_bsb.5.d:0 "The revolutionary technology of the printing press has reached our capital. The establishment of a dedicated printing house will allow ideas, edicts, and literature to spread rapidly, greatly aiding our administration."
+ flavor_bsb.5.a:0 "Knowledge is power."
+
+ flavor_bsb.6.t:0 "Elizabeth Bathory"
+ flavor_bsb.6.d:0 "Dark rumors surround the noblewoman Elizabeth Bathory. Tales of gruesome murders and occult practices at her estates have reached the court, causing a scandal that threatens the legitimacy and prestige of our entire nobility."
+ flavor_bsb.6.a:0 "This scandal stains our reputation."
+ flavor_bsb.6.b:0 "Such matters breed instability."
+
+ flavor_bsb.7.t:0 "Peasant Revolt"
+ flavor_bsb.7.d:0 "The burden placed upon the peasantry by the magnates has become unbearable. Led by fiery demagogues, the common folk have taken up arms against their lords in a massive uprising that threatens to plunge the countryside into chaos."
+ flavor_bsb.7.a:0 "We must crush this rebellion."
+
+ flavor_bsb.8.t:0 "Banditry in Slovakia"
+ flavor_bsb.8.d:0 "Following periods of unrest, the rugged terrain of upper Hungary has become a haven for mercenaries turned bandits. They exact a heavy toll on local trade and terrorize the populace. We must decide whether to send the army to root them out or let the local lords deal with the problem."
+ flavor_bsb.8.a:0 "We must crush these bandits!"
+ flavor_bsb.8.b:0 "Leave it to the local lords to handle."
+
+ flavor_bsb.9.t:0 "The Black Army"
+ flavor_bsb.9.d:0 "To counter foreign threats and rely less on the fickle nobility, our monarch has proposed the creation of a standing mercenary force, the Black Army. While incredibly effective and loyal to the crown, maintaining such a force will be a massive drain on our treasury."
+ flavor_bsb.9.a:0 "Form the Black Army."
+ flavor_bsb.9.a.tt:0 "We establish a standing mercenary army."
+ flavor_bsb.9.a.cossacks.tt:0 "This will upset the traditional nobility."
+ flavor_bsb.9.b:0 "We cannot afford such a lavish expense."
+
+ flavor_bsb.10.t:0 "Maintain the Black Army?"
+ flavor_bsb.10.d:0 "The Black Army has proven its worth on the battlefield, but its exorbitant costs continue to drain our coffers. The nobility constantly complains about being sidelined. Should we disband this legendary force to appease them and save our treasury?"
+ flavor_bsb.10.a:0 "It is time to disband them."
+ flavor_bsb.10.b:0 "Their might is worth the coin."
+
+ flavor_bsb.11.t:0 "End of the Black Army"
+ flavor_bsb.11.d:0 "The era of relying solely on expensive mercenary bands is drawing to a close. We must transition the remnants of the Black Army into a modern, professional standing army, cementing absolute royal control over the military."
+ flavor_bsb.11.a:0 "Transition to a modern military."
+ flavor_bsb.11.b:0 "Institutionalize the Black Army instead."
+
+ flavor_bsb.12.t:0 "Mutiny in the Black Army"
+ flavor_bsb.12.d:0 "Unpaid and restless, elements of the Black Army have mutinied! They are pillaging the countryside and demanding their back pay. We must deal with this insurrection immediately."
+ flavor_bsb.12.a:0 "Crush the mutineers without mercy."
+ flavor_bsb.12.b:0 "Grant them concessions to placate them."
+
+ flavor_bsb.13.t:0 "Tamás Nádasdy"
+ flavor_bsb.13.d:0 "Tamás Nádasdy, a brilliantly educated and capable nobleman, has offered his services to the crown. His expertise could be applied to our finances, our diplomacy, or our fortifications."
+ flavor_bsb.13.a:0 "Appoint him as Master of Mint."
+ flavor_bsb.13.b:0 "Appoint him as a Diplomat."
+ flavor_bsb.13.c:0 "Appoint him as a Fortification Expert."
+
+ flavor_bsb.14.t:0 "Tamás Erdődy"
+ flavor_bsb.14.d:0 "The fierce warrior Tamás Erdődy has proven himself a capable leader on the frontier. His experience in repelling border raids makes him an excellent candidate for military leadership."
+ flavor_bsb.14.a:0 "He shall organize our armies."
+ flavor_bsb.14.b:0 "He shall lead our troops in battle."
+
+ flavor_bsb.15.t:0 "Matthias Dévay"
+ flavor_bsb.15.d:0 "Matthias Dévay, known as the 'Hungarian Luther', has begun preaching Protestant doctrines in our lands, gaining a significant following. We must decide how to address this religious upheaval."
+ flavor_bsb.15.a:0 "Embrace his teachings."
+ flavor_bsb.15.b:0 "Silence him and support the Catholic orthodoxy."
+
+ flavor_bsb.16.t:0 "Janus Pannonius"
+ flavor_bsb.16.d:0 "The renowned humanist poet and scholar Janus Pannonius has brought the brilliance of the Italian Renaissance to our court. His presence elevates our prestige and helps the new ideas take root in our capital."
+ flavor_bsb.16.a:0 "A true Renaissance man."
+
+ flavor_bsb.17.t:0 "City Leagues of Upper Hungary"
+ flavor_bsb.17.d:0 "The wealthy mining towns of Upper Hungary have formed a league to protect their privileges and coordinate their economies. We can either force them to contribute more heavily to the state or respect their autonomy to foster long-term growth."
+ flavor_bsb.17.a:0 "Extract greater obligations from them."
+ flavor_bsb.17.b:0 "Protect their leagues and privileges."
+
+ flavor_bsb.18.t:0 "Kurucs and Hajduks"
+ flavor_bsb.18.d:0 "The devastation of recent conflicts has displaced many peasants and soldiers, leading to the rise of armed bands known as Kurucs and Hajduks. While they cause chaos, they also form a fierce, irregular fighting force."
+ flavor_bsb.18.a:0 "They are a menace, but a useful one."
+ flavor_bsb.18.b:0 "Restore order to the countryside."
+
+ flavor_bsb.19.t:0 "Francis II Rákóczi"
+ flavor_bsb.19.d:0 "The charismatic nobleman Francis II Rákóczi has stepped forward to lead the nation. With the crown currently in a regency, he has the support of the estates to take the throne and lead us to greatness."
+ flavor_bsb.19.a:0 "Long live King Ferenc!"
+ flavor_bsb.19.b:0 "He is an ambitious pretender. Crush him."
+
+ flavor_bsb.20.t:0 "Francis II Rákóczi's Uprising"
+ flavor_bsb.20.d:0 "Discontent with our foreign overlords has reached a boiling point. The noble Francis II Rákóczi has rallied the estates and the common folk, preparing to declare a war of independence to free our nation from subjugation!"
+ flavor_bsb.20.a:0 "Lead us to freedom, Ferenc!"
+ flavor_bsb.20.b:0 "This rebellion is doomed to fail."
+
+ flavor_bsb.21.t:0 "Rákóczi's War of Independence"
+ flavor_bsb.21.d:0 "Our vassal has risen in open rebellion! Led by Francis II Rákóczi, they have declared their independence and mobilized their armies against us. We must crush this insurrection to maintain our hegemony."
+ flavor_bsb.21.a:0 "To arms! Put down the rebellion!"
+
+ flavor_bsb.22.t:0 "Balázs Magyar"
+ flavor_bsb.22.d:0 "The veteran commander Balázs Magyar has distinguished himself in the Black Army. His unmatched tactical mind and discipline make him an invaluable asset to the crown."
+ flavor_bsb.22.a:0 "Appoint him as a military advisor."
+ flavor_bsb.22.b:0 "Give him command of our forces."
+ flavor_bsb.22.c:0 "His expertise benefits our administration."
+
+ flavor_bsb.23.t:0 "Gubec's Peasant Uprising"
+ flavor_bsb.23.d:0 "The brutal treatment of the peasantry in Croatia has sparked a massive uprising led by Matija Gubec. The peasants demand an end to their feudal obligations and are marching on the local manors."
+ flavor_bsb.23.a:0 "Make concessions to appease them."
+ flavor_bsb.23.b:0 "Send the army to crush Gubec!"
+
+ flavor_bsb.24.t:0 "Pál Kinizsi"
+ flavor_bsb.24.d:0 "Pál Kinizsi, a legendary commander of the Black Army known for his immense physical strength and tactical brilliance, has become a hero of the realm. How shall we utilize his talents?"
+ flavor_bsb.24.a:0 "His victories inspire the troops."
+ flavor_bsb.24.b:0 "He shall reform our army."
+ flavor_bsb.24.c:0 "His leadership strengthens the state."
+
+ flavor_bsb.25.t:0 "Beatrice of Aragon"
+ flavor_bsb.25.d:0 "Our monarch has married Beatrice of Aragon, a brilliant and cultured woman who brings the splendor of the Italian Renaissance to our court. Her influence will undoubtedly shape the future of our realm."
+ flavor_bsb.25.a:0 "Her wisdom guides the court."
+ flavor_bsb.25.b:0 "Her diplomatic ties are useful."
+
+ flavor_bsb.26.t:0 "Saxons Convert to Protestantism"
+ flavor_bsb.26.d:0 "The Saxon settlers in our realm have embraced the teachings of the Reformation. This religious shift threatens the unity of the state, but trying to force them back to the old faith may provoke a revolt."
+ flavor_bsb.26.a:0 "Let them practice their new faith in peace."
+ flavor_bsb.26.b:0 "We will not tolerate heresy in our lands!"
+
+ flavor_bsb.27.t:0 "Bibliotheca Corviniana"
+ flavor_bsb.27.d:0 "We have established the Bibliotheca Corviniana, one of the greatest collections of books and manuscripts in the Renaissance world. It will serve as a beacon of knowledge and culture for generations to come."
+ flavor_bsb.27.a:0 "A monument to our enlightenment."
+
+ flavor_bsb.28.t:0 "Juraj Jánošík"
+ flavor_bsb.28.d:0 "A legendary highwayman named Juraj Jánošík has begun robbing the rich nobles in Slovakia and supposedly giving the spoils to the poor. While the peasantry loves him, the nobility demands his head."
+ flavor_bsb.28.a:0 "Hunt him down. He is a criminal."
+ flavor_bsb.28.b:0 "Turn a blind eye. He keeps the nobles in check."
+
+ flavor_bsb.29.t:0 "Jánošík Strikes Again"
+ flavor_bsb.29.d:0 "Emboldened by our inaction, Jánošík has struck again, this time hitting a major estate. The nobility is furious and the local economy is suffering. We must take action!"
+ flavor_bsb.29.a:0 "Enough is enough. Catch him!"
+
+ flavor_bsb.30.t:0 "The End of Jánošík"
+ flavor_bsb.30.d:0 "After a long and arduous hunt, our forces have finally captured Juraj Jánošík. His execution will restore order to the countryside and appease the outraged nobility."
+ flavor_bsb.30.a:0 "Justice has been served."

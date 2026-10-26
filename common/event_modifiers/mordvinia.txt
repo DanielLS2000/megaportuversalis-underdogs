@@ -1,0 +1,7 @@
+mdv_west_slavic_union = {
+    num_accepted_cultures = 9
+}
+
+mdv_super_slavic_union = {
+    num_accepted_cultures = 32
+}

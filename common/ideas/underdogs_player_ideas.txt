@@ -17,7 +17,7 @@ CNR_ideas = {
 	free = yes
 
 	dalmatian_expeditions = {
-		naval_forcelimit_modifier = 0.225
+		naval_forcelimit_modifier = 0.25
 		ship_durability = 0.05
 	}
 	transatlantic_renaissance = {
@@ -72,7 +72,7 @@ NDA_ideas = {
 	}
 	imperial_tercios_of_the_west = {
 		fire_damage = 0.15
-		land_forcelimit_modifier = 0.225
+		land_forcelimit_modifier = 0.2
 	}
 	mesoamerican_campaigns = {
 		# Same

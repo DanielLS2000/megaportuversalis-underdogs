@@ -200,7 +200,7 @@ custom_missions = {
 				name = bosnian_fleet
 				duration = 7300
 			}
-			crimea_area = {
+			venetia_area = {
 				limit = {
 					NOT = {
 						is_permanent_claim = ROOT

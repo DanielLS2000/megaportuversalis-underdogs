@@ -3008,7 +3008,7 @@ luticia_sorbian_prussian_column_5 = {
 					tag = LUT
 				}
 				country_event = {
-					id = flavor_lut.5
+					id = flavor_lut.1
 				}
 			}
 			else = {
@@ -3272,7 +3272,7 @@ luticia_sorbian_prussian_column_5 = {
 						}
 					}
 					country_event = {
-						id = flavor_teu.13
+						id = flavor_lut.5
 					}
 				}
 				else_if = {

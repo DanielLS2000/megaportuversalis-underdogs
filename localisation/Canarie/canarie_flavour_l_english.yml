@@ -6,10 +6,11 @@
  the_great_migration_desc: "The survivors of the perilous and lethal Atlantic crossing have been forged by loss and storm. Those who landed on the new shores of Bani possess a relentless determination and will defend their new home with unmatched ferocity."
 
  # Consolato del Mar
- consolato_del_mar_title: "Consolato del Mar"
- consolato_del_mar_desc: "Applying the ancient maritime codes of the Adriatic to the vast Atlantic lanes, the Consolato del Mar asserts the Crown's undisputed authority over transoceanic shipping. Colonial bullion, navigational charters, and mercantile disputes are all strictly governed by this supreme nautical tribunal, channeling the wealth of the New World directly into royal coffers."
- flavor_cnr.title: "The Consulate of the Western Seas"
- flavor_cnr.desc: "With our armadas anchoring across the Caribbean and unprecedented wealth flowing from overseas settlements, decentralized commercial practices can no longer govern our burgeoning empire. Drawing upon our Mediterranean roots—from the maritime codices of Ragusa to the venerable customs of the Consolato del Mare—merchants and captains demand a unified authority. By royal decree, we shall establish the Consulate of the Western Seas. This supreme maritime council will license every voyage to the New World, secure the crown's customs, adjudicate naval law, and guard the secret charts that ensure our enduring dominion over the ocean."
+ consolato_del_mar: "Consolato del Mar"
+ desc_consolato_del_mar: "Applying the ancient maritime codes of the Adriatic to the vast Atlantic lanes, the Consolato del Mar asserts the Crown's undisputed authority over transoceanic shipping. Colonial bullion, navigational charters, and mercantile disputes are all strictly governed by this supreme nautical tribunal, channeling the wealth of the New World directly into royal coffers."
+ flavor_cnr.1.title: "The Consulate of the Western Seas"
+ flavor_cnr.1.desc: "With our armadas anchoring across the Caribbean and unprecedented wealth flowing from overseas settlements, decentralized commercial practices can no longer govern our burgeoning empire. Drawing upon our Mediterranean roots—from the maritime codices of Ragusa to the venerable customs of the Consolato del Mare—merchants and captains demand a unified authority. By royal decree, we shall establish the Consulate of the Western Seas. This supreme maritime council will license every voyage to the New World, secure the crown's customs, adjudicate naval law, and guard the secret charts that ensure our enduring dominion over the ocean."
+ flavor_cnr.1.a: "We must rule the waves"
  cnr_event_insight_1_tt: "Let the ocean yield its wealth to our crown."
 
  # Tizziano
@@ -145,3 +146,52 @@
 
  cnr_colonial_outpost_modifier: "Oceanic Trade Outpost"
  desc_cnr_colonial_outpost_modifier: "Acting as a fortified victualing haven and deepwater roadstead, this maritime outpost secures trade routes and channels substantial trade value into our global commercial network."
+ # ==========================
+ # Historical Advisors & Figures Events 11-20
+ # ==========================
+ flavor_cnr.11.t:  "Ignacio de Loyola"
+ flavor_cnr.11.d:  "A former soldier turned deeply spiritual theologian, Ignacio de Loyola, has presented himself to our court. His fervor and dedication to the Catholic faith are unmatched, and his theological insights could prove invaluable in these turbulent times."
+ flavor_cnr.11.a:  "An Excellent Minister!"
+
+ flavor_cnr.12.t:  "Baltasar de Zúñiga"
+ flavor_cnr.12.d:  "Baltasar de Zúñiga has built a reputation as a shrewd and pragmatic diplomat. His understanding of European politics is unparalleled, and his appointment to our council would greatly enhance our statecraft."
+ flavor_cnr.12.a:  "An Excellent Minister!"
+
+ flavor_cnr.13.t:  "Conde-Duque Olivares"
+ flavor_cnr.13.d:  "The ambitious and capable Conde-Duque Olivares offers his services to the Crown. He proposes sweeping administrative and military reforms that, while demanding, could forge our nation into an unstoppable empire."
+ flavor_cnr.13.a:  "An Excellent Minister!"
+
+ flavor_cnr.14.t:  "Giulio Alberoni"
+ flavor_cnr.14.d:  "Giulio Alberoni, a cunning statesman with a keen mind for diplomacy and foreign intrigue, has risen to prominence. His machinations could secure our interests abroad and strengthen our position on the continent."
+ flavor_cnr.14.a:  "An Excellent Minister!"
+
+ flavor_cnr.15.t:  "José Moñino"
+ flavor_cnr.15.d:  "The enlightened reformer José Moñino envisions a modern, efficient state. His administrative prowess and dedication to progress make him an ideal candidate to lead our government into a new age."
+ flavor_cnr.15.a:  "An Excellent Minister!"
+
+ flavor_cnr.16.t:  "The Constitution of 1812"
+ flavor_cnr.16.d:  "The winds of liberalism and revolution sweeping across the world have reached our shores. The Cortes has drafted a new constitution, proposing a parliamentary system that would limit absolute royal authority in favor of representative governance. We must decide whether to embrace this modern framework or resist it to preserve the old order."
+ flavor_cnr.16.a:  "Follow the Cortes."
+ flavor_cnr.16.b:  "Resist these liberals!"
+
+ flavor_cnr.17.t:  "La Malinche"
+ flavor_cnr.17.d:  "A remarkable native woman known as La Malinche has proven instrumental in our expeditions across the New World. Her unparalleled skills in translation, diplomacy, and negotiation with the indigenous peoples are an invaluable asset to our colonial efforts."
+ flavor_cnr.17.a:  "She will serve as a diplomat."
+ flavor_cnr.17.b:  "She will guide our expeditions."
+ flavor_cnr.17.c:  "Her contributions bring us prestige."
+
+ flavor_cnr.18.t:  "Juana Inés de la Cruz"
+ flavor_cnr.18.d:  "Juana Inés de la Cruz is a self-taught scholar, philosopher, and poet of extraordinary intellect. Her writings challenge the conventions of her time, and her brilliance has earned her renown both in the colonies and at home."
+ flavor_cnr.18.a:  "Invite her to advise the state."
+ flavor_cnr.18.b:  "Patronize her academic pursuits."
+
+ flavor_cnr.19.t:  "Inés de Suárez"
+ flavor_cnr.19.d:  "Inés de Suárez has demonstrated immense courage and leadership in the harsh frontiers of South America. Her resilience in the face of adversity makes her a natural leader, whether governing a colony or leading men into battle."
+ flavor_cnr.19.a:  "Appoint her as a colonial governor."
+ flavor_cnr.19.b:  "She shall lead our explorers."
+ flavor_cnr.19.c:  "Give her command of an army."
+
+ flavor_cnr.20.t:  "Isabella of Nova Dalmacia"
+ flavor_cnr.20.d:  "A young princess named Isabel has shown incredible promise. Possessing a fierce intellect, unwavering piety, and a natural talent for rulership, she is poised to become one of the greatest monarchs our nation has ever seen. The court eagerly anticipates her ascension."
+ flavor_cnr.20.a:  "She shall be our heir."
+ flavor_cnr.20.b:  "She will serve as an advisor for now."

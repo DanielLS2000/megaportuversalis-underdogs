@@ -94,3 +94,1462 @@ country_event = {
 		}
 	}
 }
+
+# Administrative and Social Reforms of Mathias Corvinus -> flavor_bsb.3
+country_event = {
+	id = flavor_bsb.3
+	title = flavor_bsb.3.t
+	desc = flavor_bsb.3.d
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1466
+		NOT = { is_year = 1470 }
+		has_regency = no
+		dynasty = "Mussart"
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		ai_chance = { factor = 50 }
+		name = flavor_bsb.3.a
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_adm_power = 100
+		random_owned_province = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = flavor_bsb.3.b
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_dip_power = 100
+		random_owned_province = {
+			add_base_manpower = 1
+			add_base_production = 1
+		}
+	}
+}
+
+# Academia Istropolitana -> flavor_bsb.4
+country_event = {
+	id = flavor_bsb.4
+	title = flavor_bsb.4.t
+	desc = flavor_bsb.4.d
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1465
+		has_regency = no
+		owns = 1772 #Pressburg
+		dynasty = "Mussart"
+		religion = catholic
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.4.a
+		add_prestige = 10
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_papal_influence = 10
+		1772 = {
+			add_base_production = 1
+		}
+	}
+}
+
+# Printing Press in Buda -> flavor_bsb.5
+country_event = {
+	id = flavor_bsb.5
+	title = flavor_bsb.5.t
+	desc = flavor_bsb.5.d
+	picture = INVENTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1473
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.5.a
+		add_adm_power = 50
+	}
+}
+
+# Elizabeth Bathory -> flavor_bsb.6
+country_event = {
+	id = flavor_bsb.6
+	title = flavor_bsb.6.t
+	desc = flavor_bsb.6.d
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1614
+		NOT = { is_year = 1620 }
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.6.a
+		if = {
+			limit = { is_lesser_in_union = yes }
+			add_prestige = -10
+		}
+		if = {
+			limit = { is_lesser_in_union = no }
+			add_legitimacy = -10
+		}
+	}
+	option = {
+		name = flavor_bsb.6.b
+		add_stability = -1
+	}
+}
+
+# magyar Peasant Revolt -> flavor_bsb.7
+country_event = {
+	id = flavor_bsb.7
+	title = flavor_bsb.7.t
+	desc = flavor_bsb.7.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		NOT = { stability = 3 }
+		has_ruler_modifier = hun_power_to_magnates
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					culture = hungarian
+				}
+				set_province_flag = hun_peasant_revolt
+				random_neighbor_province = {
+					limit = {
+						is_capital = no
+					}
+					set_province_flag = hun_peasant_revolt2
+				}
+				random_neighbor_province = {
+					limit = {
+						is_capital = no
+						not = { has_province_flag = hun_peasant_revolt }
+					}
+					set_province_flag = hun_peasant_revolt2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_bsb.7.a #Ok.
+		random_owned_province = {
+			limit = { has_province_flag = hun_peasant_revolt }
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+				leader = "György Dózsa"
+			}
+			clr_province_flag = hun_peasant_revolt
+		}
+		every_owned_province = {
+			limit = { has_province_flag = hun_peasant_revolt2 }
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 1
+			}
+			clr_province_flag = hun_peasant_revolt2
+		}
+	}
+}
+
+# Banditry in Slovakia -> flavor_bsb.8
+country_event = {
+	id = flavor_bsb.8
+	title = flavor_bsb.8.t
+	desc = flavor_bsb.8.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_at_war = no
+		has_truce = no
+		slovakia_area = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 39
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = hun_had_mercenaries_in_slovakia
+		}
+	}
+
+	option = {
+		name = flavor_bsb.8.a #We must crush these bandits!
+		slovakia_area = {
+			limit = { owned_by = ROOT }
+			add_province_modifier = {
+				name = "hun_curtailing_banditry_in_upper_hungary"
+				duration = 3650
+			}
+			add_devastation = 25
+		}
+		random_owned_province = {
+			limit = {
+				area = slovakia_area
+				NOT = { fort_level = 1 }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				leader = "Jan Jiskra z Brandýsa"
+			}
+		}
+	}
+	option = {
+		name = flavor_bsb.8.b #Leave it to the local lords to handle.
+		slovakia_area = {
+			limit = { owned_by = ROOT }
+			add_province_modifier = {
+				name = "hun_banditry_in_upper_hungary"
+				duration = 3650
+			}
+			add_devastation = 50
+		}
+	}
+}
+
+# Black Army -> flavor_bsb.9
+country_event = {
+	id = flavor_bsb.9
+	title = flavor_bsb.9.t
+	desc = flavor_bsb.9.d
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		has_regency = no
+		OR = {
+			has_country_flag = hun_had_mercenaries_in_slovakia
+			is_year = 1455
+		}
+		NOT = { is_year = 1470 }
+	}
+
+	mean_time_to_happen = {
+		months = 45
+
+		modifier = {
+			factor = 0.5
+			has_country_flag = hun_had_mercenaries_in_slovakia
+		}
+	}
+
+	option = {
+		name = flavor_bsb.9.a
+		add_years_of_income = -0.75
+		add_country_modifier = {
+			name = hun_black_army
+			duration = -1
+		}
+		custom_tooltip = flavor_bsb.9.a.tt
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			custom_tooltip = flavor_bsb.9.a.cossacks.tt
+		}
+	}
+	option = {
+		name = flavor_bsb.9.b
+		add_mil_power = 50
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 15
+			}
+		}
+	}
+}
+
+# Maintain the Black Army? -> flavor_bsb.10
+country_event = {
+	id = flavor_bsb.10
+	title = flavor_bsb.10.t
+	desc = flavor_bsb.10.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		has_regency = no
+		has_country_modifier = hun_black_army
+		NOT = { has_reform = black_army_reform }
+	}
+
+	option = {
+		name = flavor_bsb.10.a
+		remove_country_modifier = hun_black_army
+		add_prestige = -10
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			custom_tooltip = abolishing_black_army_tooltip
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			hidden_effect = {
+				add_estate_influence_modifier = {
+						estate = estate_nobles
+						desc = EST_VAL_ABOLISHED_BLACK_ARMY
+						influence = 5
+						duration = 3650
+				}
+			}
+		}
+	}
+	option = {
+		name = flavor_bsb.10.b
+		add_prestige = 10
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -5
+			}
+		}
+	}
+}
+
+# End of the Black Army -> flavor_bsb.11
+country_event = {
+	id = flavor_bsb.11
+	title = flavor_bsb.11.t
+	desc = flavor_bsb.11.d
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		has_country_modifier = hun_black_army
+		NOT = { has_reform = black_army_reform }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.11.a
+		remove_country_modifier = hun_black_army
+		add_army_tradition = 20
+		add_absolutism = 10
+		add_mil_power = 75
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			custom_tooltip = end_of_black_army_tooltip
+		}
+	}
+	option = { # new option, keep the black army
+		name = flavor_bsb.11.b
+		trigger = {
+			is_subject = no
+			OR = {
+				has_dlc = "Emperor"
+				has_dlc = "Domination"
+			}
+		}
+		set_country_flag = black_army_reform_flag
+		add_government_reform = black_army_reform
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+		}
+	}
+}
+
+# Mutiny in the Black Army -> flavor_bsb.12
+country_event = {
+	id = flavor_bsb.12
+	title = flavor_bsb.12.t
+	desc = flavor_bsb.12.d
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		has_country_modifier = hun_black_army
+		OR = {
+			NOT = { has_country_flag = had_black_army_mutiny }
+			had_country_flag = { flag = had_black_army_mutiny days = 7300 }
+		}
+		is_at_war = yes
+		num_of_cities = 5
+		any_owned_province = {
+			is_capital = no
+			is_in_capital_area = yes
+			NOT = { has_province_modifier = mercenary_concessions }
+		}
+		num_of_mercenaries = 1
+		NOT = { has_reform = black_army_reform }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_black_army_mutiny
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					NOT = { has_province_modifier = mercenary_concessions }
+				}
+				save_event_target_as = mercenary_mutiny_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					development = 6
+					NOT = { has_province_modifier = mercenary_concessions }
+				}
+				save_event_target_as = mercenary_mutiny_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					development = 10
+					NOT = { has_province_modifier = mercenary_concessions }
+				}
+				save_event_target_as = mercenary_mutiny_province
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+	}
+
+	option = {
+		name = flavor_bsb.12.a
+		event_target:mercenary_mutiny_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+			add_devastation = 35
+		}
+	}
+	option = {
+		name = flavor_bsb.12.b
+		event_target:mercenary_mutiny_province = {
+			add_province_modifier = {
+				name = "mercenary_concessions"
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Tamás Nádasdy -> flavor_bsb.13
+country_event = {
+	id = flavor_bsb.13
+	title = flavor_bsb.13.t
+	desc = flavor_bsb.13.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1530
+		NOT = { is_year = 1555 }
+	}
+
+
+	mean_time_to_happen = {
+		months = 75
+	}
+
+	option = {
+		name = flavor_bsb.13.a
+		add_adm_power = 50
+		define_advisor = {
+			name = "Tamás Nádasdy"
+			culture = hungarian
+			type = master_of_mint
+			skill = 3
+			discount = yes
+		}
+	}
+	option = {
+		name = flavor_bsb.13.b
+		add_dip_power = 50
+		define_advisor = {
+			name = "Tamás Nádasdy"
+			culture = hungarian
+			type = diplomat
+			skill = 3
+			discount = yes
+		}
+	}
+	option = {
+		name = flavor_bsb.13.c
+		add_mil_power = 50
+		define_advisor = {
+			name = "Tamás Nádasdy"
+			type = fortification_expert
+			culture = hungarian
+			skill = 3
+			discount = yes
+		}
+	}
+}
+
+# Tamás Erdődy -> flavor_bsb.14
+country_event = {
+	id = flavor_bsb.14
+	title = flavor_bsb.14.t
+	desc = flavor_bsb.14.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1583
+		NOT = { is_year = 1610 }
+		owns = 131
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.14.a
+		define_advisor = {
+			name = "Tamás Erdödy"
+			culture = hungarian
+			skill = 3
+			discount = yes
+			type = grand_captain
+		}
+	}
+
+	option = {
+		name = flavor_bsb.14.b
+		define_general = {
+			name = "Tamás Erdödy"
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 2
+			trait = hardy_warrior_personality
+		}
+	}
+}
+
+# Matthias Dévay -> flavor_bsb.15
+country_event = {
+	id = flavor_bsb.15
+	title = flavor_bsb.15.t
+	desc = flavor_bsb.15.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1530
+		NOT = { is_year = 1540 }
+		owns = 131
+		is_religion_enabled = protestant
+		any_owned_province = {
+			religion = catholic
+			culture = hungarian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					culture = hungarian
+				}
+				set_province_flag = magyar_reform
+			}
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					OR = {
+						culture = hungarian
+						culture = slovak
+					}
+					NOT = { has_province_flag = magyar_reform }
+				}
+				set_province_flag = magyar_reform
+			}
+		}
+	}
+
+	#AI picks randomly here
+
+	option = {
+		name = flavor_bsb.15.a
+		define_advisor = {
+			name = "Matthias Dévay"
+			skill = 3
+			discount = yes
+			religion = protestant
+			culture = hungarian
+			type = inquisitor
+		}
+		every_owned_province = {
+			limit = { has_province_flag = magyar_reform }
+			change_religion = protestant
+			clr_province_flag = magyar_reform
+		}
+	}
+
+	option = {
+		name = flavor_bsb.15.b
+		trigger = { religion = catholic }
+		every_owned_province = {
+			limit = { has_province_flag = magyar_reform }
+			clr_province_flag = magyar_reform
+		}
+		define_advisor = {
+			name = "Tamás Szalaházy"
+			culture = hungarian
+			religion = catholic
+			skill = 3
+			discount = yes
+			type = theologian
+		}
+	}
+}
+
+# Janus Pannonius -> flavor_bsb.16
+country_event = {
+	id = flavor_bsb.16
+	title = flavor_bsb.16.t
+	desc = flavor_bsb.16.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_institution_enabled = renaissance
+		is_year = 1450
+		NOT = { is_year = 1470 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+
+	option = {
+		name = flavor_bsb.16.a
+		add_prestige = 25
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = { renaissance = 50 }
+				}
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = { NOT = { renaissance = 50 } }
+					add_institution_embracement = {
+						which = renaissance
+						value = 50
+					}
+				}
+			}
+		}
+		define_advisor = {
+			name = "Janus Pannonius"
+			type = philosopher
+			culture = croatian
+			skill = 2
+			discount = yes
+		}
+	}
+
+}
+
+# City leagues of Upper Hungary -> flavor_bsb.17
+country_event = {
+	id = flavor_bsb.17
+	title = flavor_bsb.17.t
+	desc = flavor_bsb.17.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1580
+		NOT = { is_year = 1640 }
+		owns = 154
+		owns = 1318
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+
+	option = {
+		name = flavor_bsb.17.a
+		every_owned_province = {
+			limit = {
+				area = slovakia_area
+				OR = {
+					trade_goods = gold
+					trade_goods = iron
+					trade_goods = copper
+				}
+			}
+			add_province_modifier = {
+				name = "hun_city_league_obligation"
+				duration = 18250
+			}
+		}
+	}
+	option = {
+		name = flavor_bsb.17.b
+		every_owned_province = {
+			limit = {
+				area = slovakia_area
+				OR = {
+					trade_goods = gold
+					trade_goods = iron
+					trade_goods = copper
+				}
+			}
+			add_province_modifier = {
+				name = "hun_city_leagues_protected"
+				duration = 18250
+			}
+		}
+	}
+}
+
+# Kurucs and Hajduks -> flavor_bsb.18
+country_event = {
+	id = flavor_bsb.18
+	title = flavor_bsb.18.t
+	desc = flavor_bsb.18.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1600
+		NOT = { is_year = 1700 }
+		any_owned_province = {
+			devastation = 25
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+
+	option = {
+		name = flavor_bsb.18.a
+		add_prestige = -5
+		random_owned_area = {
+			limit = {
+				has_owner_culture = yes
+				is_state = yes
+				is_capital = no
+			}
+			add_devastation = 50
+		}
+		add_country_modifier = {
+			name = "hun_kurucs"
+			duration = 9125
+		}
+	}
+	option = {
+		name = flavor_bsb.18.b
+		add_adm_power = 50
+		random_owned_area = {
+			limit = {
+				devastation = 25
+			}
+			add_devastation = -25
+		}
+	}
+}
+
+# Balázs Magyar -> flavor_bsb.22
+country_event = {
+	id = flavor_bsb.22
+	title = flavor_bsb.22.t
+	desc = flavor_bsb.22.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_subject = no
+		is_year = 1470
+		OR = {
+			has_country_modifier = hun_black_army
+			has_reform = black_army_reform
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = flavor_bsb.22.a
+		ai_chance = { factor = 10 }
+		define_advisor = {
+			name = "Balázs Magyar"
+			culture = hungarian
+			type = commandant
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = flavor_bsb.22.b
+		ai_chance = { factor = 80 }
+		define_general = {
+			shock = 4
+			fire = 4
+			manuever = 4
+			siege = 2
+			name = "Balázs Magyar"
+		}
+	}
+	
+	option = {
+		name = flavor_bsb.22.c
+		ai_chance = { factor = 10 }
+		add_mil_power = 50
+	}
+}
+
+# Gubec's Peasant Uprising -> flavor_bsb.23
+country_event = {
+    id = flavor_bsb.23
+	title = flavor_bsb.23.t
+	desc = flavor_bsb.23.d
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1573
+		croatia_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 3
+	}
+	
+	option = {
+	    name = flavor_bsb.23.a
+		ai_chance = { factor = 20 }
+		add_years_of_income = -0.3
+		croatia_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_province_modifier = {
+				name = "hun_peasants_compensated"
+				duration = 3650
+			}
+		}
+		slavonia_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_province_modifier = {
+				name = "hun_peasants_compensated"
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 80 }
+	    name = flavor_bsb.23.b
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 3
+				leader = "Matija Gubec"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+# Pal Kinizsi -> flavor_bsb.24
+country_event = {
+	id = flavor_bsb.24
+	title = flavor_bsb.24.t
+	desc =  flavor_bsb.24.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1490
+		NOT = { is_year = 1494 }
+		OR = {
+			has_country_modifier = hun_black_army
+			has_reform = black_army_reform
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_bsb.24.a
+		add_army_tradition_or_mil_power = { amount = 15 }
+	}
+	
+	option = {
+		name = flavor_bsb.24.b
+		define_advisor = {
+			name = "Pál Kinizsi"
+			culture = hungarian
+			type = army_reformer
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = flavor_bsb.24.c
+		add_mil_power = 50
+	}
+}
+
+# Beatrice of Aragon -> flavor_bsb.25
+country_event = {
+	id = flavor_bsb.25
+	title = flavor_bsb.25.t
+	desc =  flavor_bsb.25.d
+	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+	    dynasty = "Mussart"
+		is_year = 1480
+		NOT = { is_year = 1508 }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+    option = {
+	    name = flavor_bsb.25.a
+		ai_chance = { factor = 90 }
+		add_ruler_modifier = {
+			name = "hun_beatrice_aragon"
+			duration = 7300
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+	    name = flavor_bsb.25.b
+		add_dip_power = 50
+	}
+}
+
+# Saxons convert to Protestantism -> flavor_bsb.26
+country_event = {
+    id = flavor_bsb.26
+	title = flavor_bsb.26.t
+	desc = flavor_bsb.26.d
+	picture = {	
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+	}
+	picture = {	
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = PRAYING_eventPicture
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		is_year = 1533
+		NOT = { is_year = 1549 }
+		religion = catholic
+		is_religion_enabled = protestant
+		owns = 4128
+		owns = 4127
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+	    name = flavor_bsb.26.a
+		4128 = {
+		    change_religion = protestant 
+		}
+		4128 = {
+			add_province_modifier = {
+				name = hun_religious_tolerance
+				duration = 3650
+			}
+		}
+		4127 = {
+		    change_religion = protestant 
+		}
+		4127 = {
+			add_province_modifier = {
+				name = hun_religious_tolerance
+				duration = 3650
+			}
+		}
+	}
+	
+	option = {
+	    name = flavor_bsb.26.b
+		4128 = {
+		    change_religion = protestant 
+		}
+		4128 = {
+			add_unrest = 5
+		}
+		4128 = {
+			add_province_modifier = {
+				name = hun_convert_the_saxons
+				duration = 3650
+			}
+		}
+		4127 = {
+		    change_religion = protestant 
+		}
+		4127 = {
+			add_unrest = 5
+		}
+		4127 = {
+			add_province_modifier = {
+				name = hun_convert_the_saxons
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Bibliotheca Corviniana -> flavor_bsb.27
+country_event = { 
+    id = flavor_bsb.27
+	title = flavor_bsb.27.t
+	desc = flavor_bsb.27.d
+	picture = BIG_BOOK_eventPicture 
+
+	is_triggered_only = yes
+	
+	option = { 
+	    name = flavor_bsb.27.a
+		goto = 153
+		add_country_modifier = {
+			name = hun_corviana_library
+			duration = 7300
+		}
+		153 = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					has_great_project = {
+						type = buda_castle
+						tier = 0
+					}
+				}
+				set_great_project_tier_1 = {
+					type = buda_castle
+				}
+			}
+			else = {
+				add_base_tax = 3
+			}
+		}
+	}
+}
+
+# Juraj Jánošík -> flavor_bsb.28
+country_event = {
+    id = flavor_bsb.28
+	title = flavor_bsb.28.t
+	desc = flavor_bsb.28.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	goto = 4236
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1710
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		slovakia_area = {
+			owned_by = ROOT
+		}
+		4236 = {
+			culture = slovak
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+	    name = flavor_bsb.28.a
+		ai_chance = { factor = 100 }
+		custom_tooltip = hun_janosik_raid
+		hidden_effect = {
+			4236 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		4236 = {
+			add_base_production = -1
+		}
+		custom_tooltip = hun_empty
+		add_years_of_income = -0.5
+		set_country_flag = hun_hunt_of_janosik
+		custom_tooltip = hun_janosik_group_tt
+	}
+
+	option = {
+		ai_chance = { factor = 75 }
+	    name = flavor_bsb.28.b
+		custom_tooltip = hun_janosik_raid
+		hidden_effect = {
+			4236 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		4236 = {
+			add_base_production = -1
+		}
+		custom_tooltip = hun_empty
+		set_country_flag = hun_janosik_ignored
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+}
+
+# Jánošík Strikes Again -> flavor_bsb.29
+country_event = {
+    id = flavor_bsb.29
+	title = flavor_bsb.29.t
+	desc = flavor_bsb.29.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	goto = 154
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		has_country_flag = hun_janosik_ignored
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+		154 = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+	    name = flavor_bsb.29.a
+		ai_chance = { factor = 100 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+		custom_tooltip = hun_janosik_raid_nitra
+		hidden_effect = {
+			154 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		154 = {
+			add_base_production = -2
+		}
+		custom_tooltip = hun_empty
+		add_years_of_income = -0.5
+		set_country_flag = hun_hunt_of_janosik
+		custom_tooltip = hun_janosik_group_tt
+	}
+}
+
+# The End of Jánošík -> flavor_bsb.30
+country_event = {
+    id = flavor_bsb.30
+	title = flavor_bsb.30.t
+	desc = flavor_bsb.30.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		has_country_flag = hun_hunt_of_janosik
+		OR = {
+			tag = BSB
+			was_tag = BSB
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+	    name = flavor_bsb.30.a
+		ai_chance = { factor = 100 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 20
+		}
+		slovakia_area = {
+			add_province_modifier = {
+				name = "hun_end_of_banditry"
+				duration = 7300
+			}
+		}
+	}
+}
