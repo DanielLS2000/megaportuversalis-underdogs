@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 extra_cost = 10
-add_core = BRI
+
 add_core = FRA
 discovered_by = eastern
 discovered_by = muslim

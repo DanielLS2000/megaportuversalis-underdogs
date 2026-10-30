@@ -10,7 +10,7 @@ base_production = 8
 base_manpower = 1
 extra_cost = 16
 center_of_trade = 2
-add_core = BRI
+
 add_core = FRA
 discovered_by = eastern
 discovered_by = muslim
