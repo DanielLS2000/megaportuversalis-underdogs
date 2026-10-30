@@ -365,3 +365,360 @@ country_event = {
 		}
 	}
 }
+
+# Book of the Consulate of the Sea
+country_event = {
+	id = flavor_afr.10
+	title = flavor_afr.10.t
+	desc = flavor_afr.10.d
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFR
+		has_country_modifier = afr_consulate_sea
+		NOT = { has_country_modifier = afr_book_consulate_sea }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_afr.10.a
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		remove_country_modifier = afr_consulate_sea
+		add_country_modifier = {
+			name = afr_book_consulate_sea
+			duration = -1
+		}
+	}
+	option = {
+		name = flavor_afr.10.b
+		add_prestige = -1
+	}
+}
+
+# Antonio Beccadelli (poet)
+country_event = {
+	id = flavor_afr.11
+	title = flavor_afr.11.t
+	desc = flavor_afr.11.d
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFR
+		NOT = { is_year = 1471 }
+		OR = {
+			dip = 3
+			adm = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_afr.11.a
+		add_adm_power = 10
+		add_prestige = 10
+		define_advisor = {
+			type = artist
+			name = "Antonio Beccadelli"
+			culture = sicilian
+			skill = 2
+			discount = yes
+		}
+		add_innovativeness_small_effect = yes
+	}
+}
+
+# Iovianus Pontanus
+country_event = {
+	id = flavor_afr.12
+	title = flavor_afr.12.t
+	desc = flavor_afr.12.d
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFR
+		NOT = { is_year = 1503 }
+		OR = {
+			dip = 3
+			adm = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_afr.12.a
+		add_prestige = 10
+		add_innovativeness_small_effect = yes
+	}
+	option = {
+		name = flavor_afr.12.b
+		add_stability_or_adm_power = yes
+		add_innovativeness_small_effect = yes
+	}
+}
+
+# Monastery of Santa María de Sigena
+country_event = {
+	id = flavor_afr.13
+	title = flavor_afr.13.t
+	desc = flavor_afr.13.d
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFR
+		NOT = { is_year = 1520 }
+		NOT = { has_country_modifier = afr_monastery_maria }
+		religion = catholic
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_afr.13.a
+		add_years_of_income = -0.5
+		add_country_modifier = { 
+			name = ara_monastery_maria 
+			duration = 18250
+		}
+	}
+	option = {
+		name = flavor_afr.13.b
+		add_years_of_income = -0.5
+		add_country_modifier = { 
+			name = ara_monastery_painter
+			duration = 18250
+		}
+	}
+	option = {
+		name = flavor_afr.13.c
+		add_prestige = -1
+	}
+}
+
+# Sindicat Remença
+country_event = {
+	id = flavor_afr.14
+	title = flavor_afr.14.t
+	desc = flavor_afr.14.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFR
+		catalonia_area = {
+			type = all 
+			country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = afr_remensa_flag
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+				}
+				set_province_flag = afr_sindicat_remensa_flag
+			}
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+					NOT = {  has_province_flag = afr_sindicat_remensa_flag }
+				}
+				set_province_flag = afr_sindicat_remensa_flag
+			}
+			random_owned_province = {
+				limit = {
+					is_core = ROOT
+					culture = catalan
+					NOT = { has_province_flag = afr_sindicat_remensa_flag }
+				}
+				set_province_flag = afr_sindicat_remensa_flag
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_afr.14.a
+		trigger = {
+			if = { 
+				limit = { has_dlc = "Domination" }
+				has_estate = estate_burghers
+			}
+		}
+		add_country_modifier = {
+			name = "decentralization_modifier"
+			duration = 3650
+		}
+		if = {
+			limit = { has_dlc = "Domination" }
+			set_country_flag = remensa_privilege_flag
+			set_estate_privilege = estate_burghers_sindicat_remensa_privilege
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = afr_sindicat_remensa_flag
+				}
+				add_province_modifier = { 
+					name = afr_sindicat_remensa 
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_flag = afr_sindicat_remensa_flag
+					}
+					clr_province_flag = afr_sindicat_remensa_flag
+				}
+			}
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	option = {
+		name = flavor_afr.14.b
+		every_owned_province = {
+			limit = {
+				has_province_flag = afr_sindicat_remensa_flag
+			}
+			clr_province_flag = afr_sindicat_remensa_flag
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+			add_local_autonomy = -25
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	
+	option = {
+		name = flavor_afr.14.c
+		
+		if = { 
+			limit = { 
+				stability = 0 
+			}
+			add_stability = -3 
+		}
+		else = { 
+			add_adm_power = -50 
+			add_dip_power = -50
+			add_mil_power = -50
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = afr_sindicat_remensa_flag
+			}
+			clr_province_flag = afr_sindicat_remensa_flag
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		define_ruler = {
+			name = "Èric" 
+			DIP = 6
+			ADM = 5
+			MIL = 4
+			age = 28
+			
+		}
+		if = {
+			limit = { has_dlc = "Rights of Man" }
+			add_ruler_personality = careful_personality
+			add_ruler_personality = peasant_revolt_leader_personality
+		}
+		custom_tooltip = afr_become_p_republic_tt
+		add_stability_or_adm_power = yes 
+		hidden_effect = {
+			change_government = republic 
+			add_government_reform = peasants_republic
+			hidden_effect = { add_republican_tradition = 100 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #Commercial Expansion in Alexandria
+	id = flavor_afr.15 
+	title = flavor_afr.15.t 
+	desc = flavor_afr.15.d 
+	picture = TRADEGOODS_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		OR = { 
+			tag = AFR 
+			was_tag = AFR 
+		}
+		OR = { 
+			mission_completed = gc_afr_alexandria2
+			mission_completed = gc_afr_alexandria
+			bahari_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			delta_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 120 } 
+	
+	option = {
+		name = flavor_afr.15.a 
+		
+		bahari_area = { 
+			add_province_modifier = {
+				name = afr_nile_production_monopoly_modifier
+				duration = 9125 
+			}
+		}
+		delta_area = {
+			add_province_modifier = {
+				name = afr_nile_production_monopoly_modifier
+				duration = 9125 
+			}
+		}
+	}
+}

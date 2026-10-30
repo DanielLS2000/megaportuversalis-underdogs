@@ -1,0 +1,1379 @@
+########################################
+# Flavor Events for Luticia
+########################################
+
+namespace = flavor_luticia_base
+normal_or_historical_nations = yes
+
+# Reform of the Lutician Army
+country_event = {
+	id = flavor_luticia_base.1
+	title = flavor_luticia_base.1.t
+	desc = flavor_luticia_base.1.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = brapru_army_reforms_1
+			AND = {
+				NOT = { has_dlc = "Emperor" }
+				tag = LUT
+				is_year = 1600
+				NOT = { is_year = 1700 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_luticia_base.1.a
+		add_army_tradition = 20
+		add_mil_power = 150
+		add_army_professionalism = 0.02
+	}
+}
+
+# The Lutician African Trade Company
+country_event = {
+	id = flavor_luticia_base.2
+	title = flavor_luticia_base.2.t
+	desc = flavor_luticia_base.2.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		any_active_trade_node = {
+			has_merchant = PREV
+			any_trade_node_member_province = {
+				OR = {
+					region = kongo_region
+					region = south_africa_region
+					region = guinea_region
+					region = niger_region
+					region = central_africa_region
+					region = east_africa_region
+					region = horn_of_africa_region
+				}
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_luticia_base.2.a
+		add_prestige = 5
+		create_explorer = {
+			tradition = 5
+		}
+		add_country_modifier = {
+			name = prussian_african_trade_company
+			duration = -1
+		}
+	}
+}
+
+# Berliner Unwille
+country_event = {
+	id = flavor_luticia_base.3
+	title = flavor_luticia_base.3.t
+	desc = flavor_luticia_base.3.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		owns = 50	# Berlin
+		is_year = 1448
+		NOT = { is_year = 1475 }
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = flavor_luticia_base.3.a #Ignore the rabble
+		50 = { create_revolt = 1 }
+	}
+	option = {
+		name = flavor_luticia_base.3.b #Listen to the people
+		add_ruler_modifier = { name = bra_berliner_unwille }
+	}
+}
+
+# The Sale of Indulgences
+country_event = {
+	id = flavor_luticia_base.4
+	title = flavor_luticia_base.4.t
+	desc = flavor_luticia_base.4.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		is_year = 1480
+		NOT = { is_year = 1505 }
+		religion = catholic
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 70
+	}
+	
+	option = {
+		name = flavor_luticia_base.4.a #Sell Indulgences
+		add_ruler_modifier = { name = bra_sell_indulgences }
+		add_reform_desire = 0.02
+	}
+	option = {
+		name = flavor_luticia_base.4.b #Ignore it
+		add_papal_influence = -1
+	}
+}
+
+# University of Königsberg
+country_event = {
+	id = flavor_luticia_base.5
+	title = flavor_luticia_base.5.t
+	desc = flavor_luticia_base.5.d
+	picture = UNIVERSITY_eventPicture
+	goto = 41
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = konigsberg_university_flag
+			AND = {
+				NOT = { has_dlc = "Emperor" }
+				tag = LUT
+				owns = 41
+				is_year = 1540
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_konigsberg_university
+		}
+	}
+	
+	option = {
+		name = flavor_luticia_base.5.a #Sponsor the University
+		add_years_of_income = -0.25
+		change_innovativeness = 2
+		add_adm_power = 100
+		41 = {
+			if = {
+				limit = { NOT = { has_building = university } }
+				add_building = university
+			}
+			add_province_modifier = {
+				name = teu_pru_university_of_konigsberg
+				duration = -1
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = flavor_luticia_base.5.b #Do nothing
+		add_prestige = -1
+		ai_chance = { factor = 0 }
+	}
+}
+
+# The Grain Tax
+country_event = {
+	id = flavor_luticia_base.6
+	title = flavor_luticia_base.6.t
+	desc = flavor_luticia_base.6.d
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		is_year = 1545
+		NOT = { is_year = 1570 }
+		is_free_or_tributary_trigger = yes
+		has_regency = no
+		inflation = 1
+		NOT = { treasury = 3000 }
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		name = flavor_luticia_base.6.a #Institute the Grain Tax
+		add_ruler_modifier = { name = bra_grain_tax }
+	}
+	option = {
+		name = flavor_luticia_base.6.b #Do nothing
+		add_inflation = 1
+	}
+}
+
+# Leonhard Thurneysser
+country_event = {
+	id = flavor_luticia_base.7
+	title = flavor_luticia_base.7.t
+	desc = flavor_luticia_base.7.d
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1550
+		NOT = { is_year = 1595 }
+		tag = LUT
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = flavor_luticia_base.7.a
+		add_adm_power = 25
+		define_advisor = {
+			type = natural_scientist
+			name = "Leonhard Thurneysser"
+			culture = swiss
+			skill = 2
+			discount = yes
+		}
+	}
+	option = {
+		name = flavor_luticia_base.7.b
+		add_prestige = 5
+	}
+}
+
+# State of Luticia
+country_event = {
+	id = flavor_luticia_base.8
+	title = flavor_luticia_base.8.t
+	desc = flavor_luticia_base.8.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		dynasty = "von Hohenzollern"
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = flavor_luticia_base.8.a  #Let's do this the hard way
+		ai_chance = { factor = 100 }
+		add_adm_power = -35
+		add_ruler_modifier = {
+			name = "bra_new_chancellery"
+			duration = -1
+		}
+		if = {
+			limit = { has_estate = estate_church }
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_PRIVATE_CHANCELLERY
+				influence = -10
+				duration = 9125
+			}
+			take_estate_land_share_small = { estate = estate_church }
+		}
+	}
+	option = {
+		name = flavor_luticia_base.8.b #Let's use financial incentives to buy people's loyalty
+		ai_chance = { factor = 0 }
+		add_corruption = 1
+		if = {
+			limit = { has_estate = estate_church }
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			give_estate_land_share_small = { estate = estate_church }
+		}
+	}
+}
+
+# The Matter of Berlin
+country_event = {
+	id = flavor_luticia_base.9
+	title = flavor_luticia_base.9.t
+	desc = flavor_luticia_base.9.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = renovate_berlin_flag
+			AND = {
+				NOT = { has_dlc = "Emperor" }
+				tag = LUT
+				capital = 50
+				is_year = 1650
+				NOT = { is_year = 1710 }
+				adm_tech = 20
+				years_of_income = 0.2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = flavor_luticia_base.9.a  #Let us commence
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				NOT = { has_country_flag = renovate_berlin_flag }
+			}
+			add_years_of_income = -0.75
+		}
+		set_country_flag = pru_berlin_renovations_flag
+		50 = {
+			add_province_modifier = {
+				name = "pru_berlin_renovations"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = flavor_luticia_base.9.b #
+		trigger = {
+			NOT = { has_country_flag = renovate_berlin_flag }
+		}
+		ai_chance = { factor = 0 }
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Unification of Berlin
+country_event = {
+	id = flavor_luticia_base.10
+	title = flavor_luticia_base.10.t
+	desc = flavor_luticia_base.10.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		had_country_flag = { flag = pru_berlin_renovations_flag days = 3650 }
+		owns_core_province = 50
+		50 = {
+			has_province_modifier = pru_berlin_renovations
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = { #Great!
+		name = flavor_luticia_base.10.a
+		clr_country_flag = pru_berlin_renovations_flag
+		50 = {
+			rename_capital = "Berlin"
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			remove_province_modifier = pru_berlin_renovations
+			add_province_modifier = {
+				name = "pru_unification_of_berlin"
+				duration = -1
+			}
+		}
+	}
+}
+
+# A man of Law and Integrity
+country_event = {
+	id = flavor_luticia_base.11
+	title = flavor_luticia_base.11.t
+	desc = flavor_luticia_base.11.d
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		is_year = 1740
+		NOT = { is_year = 1760 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { #Great!
+		name = flavor_luticia_base.11.a
+		set_country_flag = hired_cocceji
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		define_advisor = {
+			type = statesman
+			name = "Samuel von Cocceji"
+			culture = hessian
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+# Legal Reforms
+country_event = {
+	id = flavor_luticia_base.12
+	title = flavor_luticia_base.12.t
+	desc = flavor_luticia_base.12.d
+	picture = OVEREXTENSION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = pru_legal_reforms_flag
+			AND = {
+				tag = LUT
+				is_year = 1730
+				NOT = { is_year = 1790 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.7
+			has_country_flag = hired_cocceji
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = pru_legal_reforms_flag }
+	}
+	
+	option = { #Yes! Start in God’s name!
+		name = flavor_luticia_base.12.a
+		ai_chance = { factor = 75 }
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = "pru_unified_legal_system"
+			duration = -1
+		}
+	}
+	option = { #We have no time for legal Procedure and other formalities…
+		name = flavor_luticia_base.12.b
+		ai_chance = { factor = 25 }
+		add_adm_power = 200
+	}
+}
+
+# Carl von Clausewitz
+country_event = {
+	id = flavor_luticia_base.13
+	title = flavor_luticia_base.13.t
+	desc = flavor_luticia_base.13.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			has_country_flag = brapru_army_reforms_3
+			AND = {
+				NOT = { has_dlc = "Emperor" }
+				tag = LUT
+				is_year = 1790
+				has_mil_advisor = yes
+				has_regency = no
+				has_consort_regency = no
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+	}
+	
+	option = { # Hire him as an advisor!
+		name = flavor_luticia_base.13.a
+		ai_chance = { factor = 80 }
+		define_advisor = {
+			type = army_reformer
+			name = "Carl von Clausewitz"
+			culture = saxon
+			skill = 3
+			discount = yes
+		}
+	}
+	option = { # Have him lead troops!
+		name = flavor_luticia_base.13.b
+		ai_chance = { factor = 10 }
+		define_general = {
+			name = "Carl von Clausewitz"
+			shock = 3
+			fire = 4
+			manuever = 4
+			siege = 1
+		}
+	}
+	option = { # We don't need his ideas
+		name = flavor_luticia_base.13.c
+		ai_chance = { factor = 10 }
+		add_stability_or_adm_power = yes
+	}
+}
+
+# The Burghers of Königsberg
+country_event = {
+	id = flavor_luticia_base.14
+	title = flavor_luticia_base.14.t
+	desc = flavor_luticia_base.14.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		government = monarchy
+		has_regency = no
+		has_consort_regency = no
+		owns = 41
+		is_year = 1660
+		any_country = {
+			NOT = { reverse_has_opinion = { who = ROOT value = 0 } }
+			NOT = { war_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = { 
+					NOT = { reverse_has_opinion = { who = ROOT value = 0 } }
+					NOT = { war_with = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+				save_event_target_as = some_neighbor_country
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+	}
+	
+	option = {
+		name = flavor_luticia_base.14.a # Send in the troops
+		41 = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = flavor_luticia_base.14.b # We will have to make concessions.
+		every_owned_province = {
+			limit = {
+				is_capital = no
+				OR = {
+					area = west_prussia_area
+					area = east_prussia_area
+				}
+			}
+			add_local_autonomy = 25
+		}
+	}
+}
+
+# Dreaming of Sanssouci
+country_event = {
+	id = flavor_luticia_base.15
+	title = flavor_luticia_base.15.t
+	desc = flavor_luticia_base.15.d
+	picture = OVEREXTENSION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		owns = 1759
+		is_year = 1730
+		has_institution = enlightenment
+		has_regency = no
+		has_consort_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = flavor_luticia_base.15.a  #Build it!
+		ai_chance = { factor = 100 }
+		add_years_of_income = -0.75
+		set_country_flag = pru_sanssouci_palace_flag
+		set_ruler_flag = pru_sanssouci_builder_flag
+		1759 = {
+			add_province_modifier = {
+				name = "pru_building_sanssouci"
+				duration = 730
+			}
+		}
+		hidden_effect = { country_event = { id = flavor_luticia_base.16 days = 731 } }
+	}
+	option = {
+		name = flavor_luticia_base.15.b #
+		ai_chance = { factor = 0 }
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Palace of Sanssouci finished
+country_event = {
+	id = flavor_luticia_base.16
+	title = flavor_luticia_base.16.t
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = pru_sanssouci_palace_flag
+		owns = 1759
+	}
+
+	immediate = {
+		hidden_effect = {
+			1759 = {
+				save_event_target_as = potsdam_province
+			}
+		}
+	}
+
+	desc = { trigger = { has_ruler_flag = pru_sanssouci_builder_flag }
+		desc = flavor_luticia_base.16.da
+	}
+	desc = { trigger = { NOT = { has_ruler_flag = pru_sanssouci_builder_flag } }
+		desc = flavor_luticia_base.16.db
+	}
+
+	option = { #Great!
+		name = flavor_luticia_base.16.a
+		add_prestige = 10
+		1759 = {
+			add_province_modifier = {
+				name = "pru_sanssouci_palace"
+				duration = -1
+			}
+		}
+		clr_country_flag = pru_sanssouci_palace_flag
+		clr_ruler_flag = pru_sanssouci_builder_flag
+	}
+}
+
+# Diet of 1653
+country_event = {
+	id = flavor_luticia_base.17
+	title = flavor_luticia_base.17.t
+	desc = flavor_luticia_base.17.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		government = monarchy
+		is_year = 1650
+		NOT = { is_year = 1700 }
+		OR = {
+			has_regency = no
+			has_consort_regency = yes
+		}
+		num_of_cities = 6
+		OR = {
+			army_size_percentage = 0.7 
+			AND = {
+				is_emperor = yes
+				army_size_percentage = 0.4
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+	option = {
+		name = flavor_luticia_base.17.a #Ally with the Nobles
+		ai_chance = { factor = 100 }
+		add_mil_power = -85
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+				OR = {
+					has_reform = prussian_monarchy_base
+					has_reform = prussian_monarchy
+				}
+			}
+			add_government_power = {
+				mechanic_type = militarization_mechanic
+				power_type = militarized_society
+				value = 20
+			}
+		}
+		add_ruler_modifier = {
+			name = "brandenburg_recess"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+				government = monarchy
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -15
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					NOT = { government = monarchy }
+				}
+			}
+			add_ruler_modifier = {
+				name = "bra_burghers_unhappy"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = flavor_luticia_base.17.b #Ally with the Burghers
+		ai_chance = { factor = 0 }
+		add_years_of_income = -1
+		add_ruler_modifier = {
+			name = "brandenburg_recess"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+				government = monarchy
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					NOT = { government = monarchy }
+				}
+			}
+			add_ruler_modifier = {
+				name = "bra_nobles_unhappy"
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+				OR = {
+					has_reform = prussian_monarchy_base
+					has_reform = prussian_monarchy
+				}
+			}
+			add_government_power = {
+				mechanic_type = militarization_mechanic
+				power_type = militarized_society
+				value = 10
+			}
+		}
+	}
+	option = {
+		name = flavor_luticia_base.17.c #We must respect their ancient privileges
+		ai_chance = { factor = 0 }
+		add_years_of_income = -0.25
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Construction of Canals to Berlin-Cölln
+country_event = {
+	id = flavor_luticia_base.18
+	title = flavor_luticia_base.18.t
+	desc = flavor_luticia_base.18.d
+	picture = HARBOUR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		government = monarchy
+		owns = 50
+		is_at_war = no
+		is_year = 1500
+		NOT = { is_year = 1600 }
+		OR = {
+			has_regency = no
+			has_consort_regency = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	immediate = {
+		hidden_effect = {
+			50 = { save_event_target_as = berlin_province }
+		}
+	}
+	
+	option = {
+		name = flavor_luticia_base.18.a #Throw more money on the project
+		ai_chance = { factor = 0 }
+		add_years_of_income = -1
+		50 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+	option = {
+		name = flavor_luticia_base.18.b #Beg the Nobility for help
+		trigger = { government = monarchy }
+		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				government = monarchy
+				has_estate = estate_nobles
+			}
+			add_dip_power = -85
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_SAVED_A_PROJECT
+				influence = 15
+				duration = 9125
+			}
+		}
+		if = {
+			limit = { NOT = { has_estate = estate_nobles } }
+			add_dip_power = -85
+			add_adm_power = -15
+		}
+		50 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+	option = {
+		name = flavor_luticia_base.18.c # We can't afford it.
+		ai_chance = { factor = 100 } 
+		add_prestige = -5
+	}
+}
+
+# Praxis pietatis melica
+country_event = {
+	id = flavor_luticia_base.19
+	title = flavor_luticia_base.19.t
+	desc = flavor_luticia_base.19.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		owns = 50
+		religion = protestant
+		is_year = 1635
+		NOT = { is_year = 1700 }
+	}
+	
+	mean_time_to_happen = {
+		months = 195
+	}
+	
+	option = {
+		name = flavor_luticia_base.19.a
+		add_prestige = 10
+		define_advisor = {
+			type = artist
+			name = "Johann Crüger"
+			skill = 3
+			discount = yes
+		}
+	}
+}
+
+# Confiscation of Herrschaft Ruppin
+country_event = {
+	id = flavor_luticia_base.20
+	title = flavor_luticia_base.20.t
+	desc = flavor_luticia_base.20.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		government = monarchy
+		owns = 51
+		is_year = 1500
+		NOT = { is_year = 1530 }
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+	}
+	
+	option = {
+		name = flavor_luticia_base.20.a #Our hold over this province has now solidified!
+		51 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+# Johannes Agricola
+country_event = {
+	id = flavor_luticia_base.21
+	title = flavor_luticia_base.21.t
+	desc = flavor_luticia_base.21.d
+	picture = PRAYING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		government = monarchy
+		religion = protestant
+		is_year = 1539
+		NOT = { is_year = 1560 }
+	}
+	
+	mean_time_to_happen = {
+		months = 63
+	}
+	
+	option = {
+		name = flavor_luticia_base.21.a #Bring him here
+		define_advisor = {
+			name = "Johannes Agricola"
+			culture = saxon
+			type = theologian
+			skill = 2
+			discount = yes
+		}
+		add_adm_power = 25
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			add_church_power = 10
+		}
+		every_neighbor_country = {
+			limit = { religion = protestant }
+			add_opinion = {
+				who = ROOT
+				modifier = agricolas_reputation
+			}
+		}
+	}
+	option = {
+		name = flavor_luticia_base.21.b #We cannot abide his reconciliary views.
+		add_legitimacy = 15
+	}
+}
+
+# Resurgence of the Robber-Barons
+country_event = {
+	id = flavor_luticia_base.22
+	title = flavor_luticia_base.22.t
+	desc = flavor_luticia_base.22.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		num_of_cities = 5
+		government = monarchy
+		is_year = 1500
+		NOT = { is_year = 1550 }
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+	option = {
+		name = flavor_luticia_base.22.a #"I never spilled the blood of noblemen..."
+		add_country_modifier = {
+			name = "bra_crushing_the_robber_barons"
+			duration = 10950
+		}
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+				}
+			}
+		}
+		if = {
+			limit = { has_estate = estate_nobles }
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			take_estate_land_share_small = { estate = estate_nobles }
+			give_estate_land_share_small = { estate = estate_burghers }
+		}
+	}
+	option = {
+		name = flavor_luticia_base.22.b 
+		add_country_modifier = {
+			name = "bra_robber_baron_resurgence"
+			duration = 5475
+		}
+		if = {
+			limit = { has_estate = estate_nobles }
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+			take_estate_land_share_small = { estate = estate_burghers }
+			give_estate_land_share_small = { estate = estate_nobles }
+		}
+	}
+}
+
+# Economic Downturn
+country_event = {
+	id = flavor_luticia_base.23
+	title = flavor_luticia_base.23.t
+	desc = flavor_luticia_base.23.d
+	picture = PRAYING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LUT
+		num_of_cities = 5
+		government = monarchy
+		is_year = 1550
+		NOT = { is_year = 1600 }
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.8
+			num_of_loans = 2
+		}
+	}
+	
+	option = {
+		name = flavor_luticia_base.23.a 
+		ai_chance = { factor = 50 }
+		add_ruler_modifier = {
+			name = "bra_kreditwerk"
+			duration = -1
+		}
+	}
+	option = {
+		name = flavor_luticia_base.23.b 
+		ai_chance = { factor = 50 }
+		add_years_of_income = -0.75
+	}
+}
+
+# Toleranzedikt Prelude
+country_event = { 
+	id = flavor_luticia_base.24
+	title = flavor_luticia_base.24.t
+	desc = flavor_luticia_base.24.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes 
+	mean_time_to_happen = {
+		months = 24
+	}
+	trigger = {
+		tag = LUT
+		if = {
+			limit = { religion = protestant }
+			num_of_owned_provinces_with = {
+				religion = reformed
+				value = 5
+			}
+		}
+		else_if = {
+			limit = { religion = reformed }
+			num_of_owned_provinces_with = {
+				religion = protestant
+				value = 5
+			}
+		}
+		else = { always = no }
+	}
+	
+	option = {
+		name = flavor_luticia_base.24.a #A great development.
+		ai_chance = { factor = 100 }
+		country_event = { id = flavor_luticia_base.25 days = 90 }
+	}
+	option = {
+		name = flavor_luticia_base.24.b #The churches can't be united
+		ai_chance = { factor = 100 }
+		add_adm_power = 50
+	}
+}
+
+# Toleranzedikt
+country_event = {
+	id = flavor_luticia_base.25
+	title = flavor_luticia_base.25.t 
+	desc = flavor_luticia_base.25.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_luticia_base.25.a #A great development.
+		ai_chance = { factor = 100 }
+		set_country_flag = ME_PRU_Tolerance
+		add_country_modifier = {
+			name = PRU_bitter_resistance
+			duration = 5475
+		}
+		add_country_modifier = {
+			name = PRU_toleranzedikt
+			duration = 10590
+		}
+	}
+	
+	option = {
+		name = flavor_luticia_base.25.b #The churches can't be united
+		ai_chance = { factor = 100 }
+		if = { 
+			limit = { has_estate = estate_church }
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+			}
+		}
+		else = { add_prestige_or_monarch_power = { amount = 10 } }
+	}
+}
+
+# Kreditwerk
+country_event = {
+	id = flavor_luticia_base.26
+	title = flavor_luticia_base.26.t 
+	desc = flavor_luticia_base.26.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = LUT
+		has_idea_group = economic_ideas 
+	}
+	
+	mean_time_to_happen = { months = 600 } 
+	
+	option = {
+		name = flavor_luticia_base.26.a #Ok
+		ai_chance = { factor = 100 }
+		add_adm_power = 50
+		add_country_modifier = {
+			name = BRA_abolished_kreditwerk
+			duration = 18250
+		}
+	}
+	option = {
+		name = flavor_luticia_base.26.b #Ok
+		ai_chance = { factor = 100 }
+		change_government_reform_progress = 35
+		add_country_modifier = {
+			name = BRA_reformed_kreditwerk
+			duration = 18250
+		}
+	}
+}
+
+# Humboldt brothers
+country_event = {
+	id = flavor_luticia_base.27
+	title = flavor_luticia_base.27.t 
+	desc = flavor_luticia_base.27.d
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		is_year = 1650 
+		tag = LUT
+		OR = {
+			innovativeness = 80
+			prestige = 80 
+		}
+		50 = {
+			owned_by = ROOT 
+			development = 50 
+			has_building = university 
+		}
+		if = {
+			limit = { has_dlc = "Emperor" }
+			mission_completed = emp_brapru_renovate_berlin
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 600
+	}
+	
+	option = {
+		name = flavor_luticia_base.27.a #Ok
+		ai_chance = { factor = 100 }
+		define_advisor = {
+			type = philosopher
+			name = "Wilhelm von Humboldt"
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.33
+		}
+	}
+	option = {
+		name = flavor_luticia_base.27.b #Ok
+		ai_chance = { factor = 100 }
+		define_advisor = {
+			type = natural_scientist
+			name = "Alexander von Humboldt"
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.5
+		}
+	}
+}
+
+# Of Thaler, Groscher und Pfennige
+country_event = {
+	id = flavor_luticia_base.28
+	title = flavor_luticia_base.28.t 
+	desc = flavor_luticia_base.28.d
+	picture = ECONOMY_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		is_year = 1500
+		tag = LUT
+		OR = { 
+			full_idea_group = economic_ideas 
+			full_idea_group = administrative_ideas 
+			adm = 6
+		}
+	}
+	
+	mean_time_to_happen = { months = 120 }
+	
+	option = {
+		name = flavor_luticia_base.28.a #Ok
+		ai_chance = { factor = 100 }
+		change_government_reform_progress = 30
+		add_years_of_income = 1
+		add_mercantilism = 3
+	}
+	option = {
+		name = flavor_luticia_base.28.b #Ok
+		ai_chance = { factor = 100 }
+		add_years_of_income = 0.5
+		add_inflation = -2
+		add_country_modifier = {
+			name = PRU_investing
+			duration = 5475
+		}
+	}
+	option = {
+		name = flavor_luticia_base.28.c #Ok
+		ai_chance = { factor = 100 }
+		highlight = yes
+		trigger = { num_of_cities = 30 }
+		
+		add_years_of_income = -1
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		add_country_modifier = {
+			name = PRU_reichsthaler
+			duration = 18250
+		}
+	}
+}

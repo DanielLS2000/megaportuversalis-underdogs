@@ -14,6 +14,13 @@ afr_consulate_sea = {
 	trade_efficiency = 0.2
 }
 
+afr_book_consulate_sea = {
+	prestige = 0.25
+	dip_tech_cost_modifier = -0.05
+	global_trade_power = 0.1
+	trade_efficiency = 0.05
+}
+
 port_to_asia = {
 	province_trade_power_value = 20
 }

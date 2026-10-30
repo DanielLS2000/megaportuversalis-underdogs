@@ -40,3 +40,141 @@
  flavor_lut.8.t:0 "Volhynia Defies Us"
  flavor_lut.8.desc:0 "The insolent rulers of Volhynia have rejected our generous offer of protection! They refuse to become our vassal and have sent our envoys back with nothing but insults. If they will not bow to our diplomacy, they shall bow to our armies."
  flavor_lut.8.a:0 "This will mean war."
+
+ flavor_luticia_base.1.t:0 "Reform of the Lutician Army"
+ flavor_luticia_base.1.d:0 "For decades, the state's military has relied on a mix of feudal levies and outdated mercenary contracts. To secure Luticia's future in an increasingly dangerous world, our monarch has proposed sweeping military reforms. By modernizing our recruitment, drilling our soldiers, and establishing a professional officer corps, we will forge an army that commands the respect of all Europe."
+ flavor_luticia_base.1.a:0 "An army with a state."
+
+ flavor_luticia_base.2.t:0 "The Lutician African Trade Company"
+ flavor_luticia_base.2.d:0 "As our merchants expand their reach, the lucrative markets of Africa have drawn their attention. Establishing a dedicated Lutician African Trade Company will allow us to streamline operations, protect our commercial interests with naval power, and bring unprecedented wealth back to the homeland."
+ flavor_luticia_base.2.a:0 "Authorize the charter immediately!"
+
+ flavor_luticia_base.3.t:0 "The Displeasure of Berlin"
+ flavor_luticia_base.3.d:0 "The citizens of Berlin have grown increasingly restless. Taxes, heavy-handed administration, and perceived slights against their ancient privileges have led to the 'Berliner Unwille' (The Displeasure of Berlin). Tensions are boiling over in the streets, and the town council demands concessions. Shall we crack down on these insolent burghers, or listen to their grievances?"
+ flavor_luticia_base.3.a:0 "Send the guard to restore order. Ignore the rabble."
+ flavor_luticia_base.3.b:0 "We must listen to the people."
+
+ flavor_luticia_base.4.t:0 "The Sale of Indulgences"
+ flavor_luticia_base.4.d:0 "The Holy See has authorized the sale of indulgences within our borders, promising the forgiveness of sins in exchange for gold. While this highly controversial practice fills the Church's coffers—and lines the pockets of our state through royal cuts—it is causing great unrest among the increasingly reform-minded populace."
+ flavor_luticia_base.4.a:0 "A most profitable arrangement!"
+ flavor_luticia_base.4.b:0 "We shall not permit this exploitation."
+
+ flavor_luticia_base.5.t:0 "The University of Königsberg"
+ flavor_luticia_base.5.d:0 "In an effort to elevate our realm as a center of learning and theology, scholars have proposed the founding of a great University in Königsberg. Securing state funding for this ambitious academic endeavor will foster a new generation of brilliant minds and administrators."
+ flavor_luticia_base.5.a:0 "Provide the necessary funds."
+ flavor_luticia_base.5.b:0 "We have no coin to spare for scholars."
+
+ flavor_luticia_base.6.t:0 "The Grain Tax"
+ flavor_luticia_base.6.d:0 "The treasury is dangerously low, and inflation eats away at our revenues. To balance the royal budget, our advisors suggest instituting a new tax on grain. While it will certainly alleviate our fiscal woes, the peasantry and the nobility alike will despise this heavy-handed measure."
+ flavor_luticia_base.6.a:0 "Institute the Grain Tax."
+ flavor_luticia_base.6.b:0 "We cannot risk a rebellion over bread."
+
+ flavor_luticia_base.7.t:0 "Leonhard Thurneysser"
+ flavor_luticia_base.7.d:0 "The renowned Swiss scholar, alchemist, and physician Leonhard Thurneysser has arrived at our court. His knowledge of metallurgy, botany, and the arcane sciences is unparalleled. Employing him would greatly advance our scientific understanding, though his exorbitant fees are a matter of concern."
+ flavor_luticia_base.7.a:0 "Welcome him to the Lutician court!"
+ flavor_luticia_base.7.b:0 "We do not need the services of a charlatan."
+
+ flavor_luticia_base.8.t:0 "State of Luticia"
+ flavor_luticia_base.8.d:0 "The administration of our realm has become disjointed, relying too heavily on local lords and independent clerical courts. Our monarch seeks to establish a centralized Chancellery to unify the state's bureaucracy. This move will invariably strip power from the estates, particularly the clergy, who hold vast lands and privileges."
+ flavor_luticia_base.8.a:0 "Let's do this the hard way. Centralize power!"
+ flavor_luticia_base.8.b:0 "Use financial incentives to buy their loyalty."
+
+ flavor_luticia_base.9.t:0 "The Matter of Berlin"
+ flavor_luticia_base.9.d:0 "The twin cities of Berlin and Cölln have grown rapidly, yet their infrastructure remains divided and inadequate. To solidify Berlin as the true, unified capital of Luticia, we must embark on a massive public works project to modernize its layout, construct grand avenues, and merge the two settlements."
+ flavor_luticia_base.9.a:0 "Let us commence the great renovation."
+ flavor_luticia_base.9.b:0 "The cost is simply too high right now."
+
+ flavor_luticia_base.10.t:0 "Unification of Berlin"
+ flavor_luticia_base.10.d:0 "The years of heavy investment and tireless construction have finally paid off. The chaotic, divided settlements have been seamlessly integrated into a single, magnificent metropolis. Berlin now stands as a unified, modern capital, a shining testament to the glory of the Lutician state."
+ flavor_luticia_base.10.a:0 "A capital worthy of our ambitions!"
+
+ flavor_luticia_base.11.t:0 "A Man of Law and Integrity"
+ flavor_luticia_base.11.d:0 "The brilliant jurist Samuel von Cocceji has gained a reputation across the realm for his unyielding integrity and sharp legal mind. He proposes a complete overhaul of our convoluted, localized judicial systems to create a unified, efficient code of law. Shall we give him the authority to begin his work?"
+ flavor_luticia_base.11.a:0 "Appoint him at once!"
+
+ flavor_luticia_base.12.t:0 "The Great Legal Reforms"
+ flavor_luticia_base.12.d:0 "Following years of preparation, the grand project to unify the legal system of the entire realm is ready to be implemented. The old, contradictory local laws will be swept away, replaced by a single, rational legal code. While this will greatly increase state efficiency in the long run, the immediate disruption will undoubtedly cause massive unrest among the entrenched nobility."
+ flavor_luticia_base.12.a:0 "Yes! Start in God's name!"
+ flavor_luticia_base.12.b:0 "We have no time for legal procedures and formalities."
+
+ flavor_luticia_base.13.t:0 "Carl von Clausewitz"
+ flavor_luticia_base.13.d:0 "A brilliant young military theorist named Carl von Clausewitz has published several treatises on the philosophy and strategy of war. His insights into the nature of conflict and the 'fog of war' are revolutionary. We must decide how best to utilize his extraordinary talents."
+ flavor_luticia_base.13.a:0 "Hire him to reform our military doctrines!"
+ flavor_luticia_base.13.b:0 "Have him lead our troops on the battlefield!"
+ flavor_luticia_base.13.c:0 "We have no need for armchair generals."
+
+ flavor_luticia_base.14.t:0 "The Burghers of Königsberg"
+ flavor_luticia_base.14.d:0 "The wealthy and fiercely independent burghers of Königsberg, led by the firebrand Hieronymus Roth, have openly defied royal authority. They refuse to pay the new taxes and have even sent envoys to foreign powers seeking protection. This insolence cannot go unanswered."
+ flavor_luticia_base.14.a:0 "Send in the troops. Crush the rebellion!"
+ flavor_luticia_base.14.b:0 "We will have to make humiliating concessions."
+
+ flavor_luticia_base.15.t:0 "Dreaming of Sanssouci"
+ flavor_luticia_base.15.d:0 "Our monarch dreams of a quiet retreat, a place 'without concerns' where art, philosophy, and music can flourish away from the rigid formalities of the capital. The proposed palace of Sanssouci, to be built in Potsdam, will be a marvel of Rococo architecture, though it will cost a fortune."
+ flavor_luticia_base.15.a:0 "Spare no expense! Build it!"
+ flavor_luticia_base.15.b:0 "We must focus on practical matters."
+
+ flavor_luticia_base.16.t:0 "Palace of Sanssouci Finished"
+ flavor_luticia_base.16.da:0 "The grand Palace of Sanssouci is finally complete. Our monarch's vision has been realized in stunning detail. Its terraced gardens and elegant halls have already begun attracting the finest philosophers and artists in Europe, elevating our court's prestige immensely."
+ flavor_luticia_base.16.db:0 "Although the monarch who envisioned Sanssouci did not live to see it completed, the magnificent palace now stands as a testament to our state's wealth and refined culture."
+ flavor_luticia_base.16.a:0 "A true marvel of architecture."
+
+ flavor_luticia_base.17.t:0 "The Diet of 1653"
+ flavor_luticia_base.17.d:0 "The state requires a standing army to ensure its survival, but the treasury is empty. The monarch has convened a grand Diet, demanding the estates grant a permanent tax to fund the military. The nobility are willing to agree, but only if we enshrine their absolute power over the peasantry and gut the privileges of the burghers. Conversely, we could side with the towns."
+ flavor_luticia_base.17.a:0 "Ally with the Nobles. We need the army."
+ flavor_luticia_base.17.b:0 "Ally with the Burghers. Trade is our future."
+ flavor_luticia_base.17.c:0 "We must respect the ancient privileges of all."
+
+ flavor_luticia_base.18.t:0 "Canal Construction Halted"
+ flavor_luticia_base.18.d:0 "The ambitious project to construct a system of canals linking our capital to the major trade arteries has run entirely out of funding. Without an immediate injection of capital, the half-dug trenches will rot, and our investment will be lost."
+ flavor_luticia_base.18.a:0 "Empty the treasury! The project must be finished!"
+ flavor_luticia_base.18.b:0 "Beg the Nobility to finance the remainder."
+ flavor_luticia_base.18.c:0 "We simply cannot afford it. Abandon the canals."
+
+ flavor_luticia_base.19.t:0 "Praxis Pietatis Melica"
+ flavor_luticia_base.19.d:0 "The noted composer Johann Crüger has published the 'Praxis pietatis melica', a hymnal that has deeply resonated with the Protestant faithful across the realm. Patronizing his work would bring great cultural prestige and religious unity to our lands."
+ flavor_luticia_base.19.a:0 "Sponsor this beautiful music."
+
+ flavor_luticia_base.20.t:0 "Confiscation of Herrschaft Ruppin"
+ flavor_luticia_base.20.d:0 "The ancient line holding the Herrschaft of Ruppin has died out without a clear heir. This presents a perfect opportunity for the Crown to directly confiscate the wealthy lands and incorporate them into the royal domain, greatly expanding our direct power."
+ flavor_luticia_base.20.a:0 "Our hold over this province has now solidified!"
+
+ flavor_luticia_base.21.t:0 "Johannes Agricola"
+ flavor_luticia_base.21.d:0 "The prominent Protestant reformer Johannes Agricola has sought refuge in our lands. While his theological views—particularly his stance against the strict application of the Law—are highly controversial and border on antinomianism, his intellect is undeniable."
+ flavor_luticia_base.21.a:0 "Bring him to court and protect him."
+ flavor_luticia_base.21.b:0 "We cannot abide his radical, reconciliatory views."
+
+ flavor_luticia_base.22.t:0 "Resurgence of the Robber-Barons"
+ flavor_luticia_base.22.d:0 "Lawlessness plagues the countryside as rogue elements of the nobility have taken to outright banditry. These 'Robber-Barons' extort merchants, raid villages, and defy royal authority from their fortified castles. We must decide how harshly to bring them to heel."
+ flavor_luticia_base.22.a:0 "Execute the rogues and burn their castles!"
+ flavor_luticia_base.22.b:0 "Tread lightly; we cannot afford a full noble revolt."
+
+ flavor_luticia_base.23.t:0 "Economic Downturn"
+ flavor_luticia_base.23.d:0 "A severe economic downturn has left the state heavily in debt. The traditional revenues are simply not enough. Some advisors suggest creating a 'Kreditwerk'—a state credit institution that would expand the privileges of the estates in exchange for them assuming the national debt."
+ flavor_luticia_base.23.a:0 "Establish the Kreditwerk."
+ flavor_luticia_base.23.b:0 "We will pay our own debts, no matter the pain."
+
+ flavor_luticia_base.24.t:0 "The United Churches"
+ flavor_luticia_base.24.d:0 "For decades, the bitter theological divide between the Lutheran and Calvinist factions has caused friction within our borders. Prominent theologians have now put forward a proposal for a united Protestant church, hoping to end the doctrinal squabbles once and for all."
+ flavor_luticia_base.24.a:0 "A great development. Let us draft an edict."
+ flavor_luticia_base.24.b:0 "The churches cannot be united; we are wasting time."
+
+ flavor_luticia_base.25.t:0 "The Edict of Tolerance"
+ flavor_luticia_base.25.d:0 "Our monarch has officially issued an Edict of Tolerance, enforcing the union of the Protestant churches within our borders. While this bold move secures the long-term unity of the state, hardliners on both sides are fiercely resisting the forced reconciliation."
+ flavor_luticia_base.25.a:0 "They will accept it, by force if necessary."
+ flavor_luticia_base.25.b:0 "Perhaps we should grant the clergy some leniency."
+
+ flavor_luticia_base.26.t:0 "Reform of the Kreditwerk"
+ flavor_luticia_base.26.d:0 "The Kreditwerk, originally established to manage the state's debt by empowering the estates, has become an archaic and bloated institution. We now possess the economic strength to either abolish it entirely or reform it into a modern central bank."
+ flavor_luticia_base.26.a:0 "Abolish the institution entirely."
+ flavor_luticia_base.26.b:0 "Reform it into a proper state bank."
+
+ flavor_luticia_base.27.t:0 "The Humboldt Brothers"
+ flavor_luticia_base.27.d:0 "Two of the most brilliant minds of our age, the brothers Wilhelm and Alexander von Humboldt, have risen to prominence. Wilhelm's revolutionary theories on education and Alexander's unparalleled work in natural sciences are a source of immense national pride. To whom should we grant our primary royal patronage?"
+ flavor_luticia_base.27.a:0 "Wilhelm shall reform our universities."
+ flavor_luticia_base.27.b:0 "Alexander shall lead our scientific expeditions."
+
+ flavor_luticia_base.28.t:0 "Of Thaler, Groschen und Pfennige"
+ flavor_luticia_base.28.d:0 "The chaotic myriad of local currencies, weights, and measures severely hampers our internal trade. By introducing a standardized currency system based on the Reichsthaler, we can streamline our economy, though the immediate minting costs will be high."
+ flavor_luticia_base.28.a:0 "Standardize the currency to boost trade."
+ flavor_luticia_base.28.b:0 "Focus the mints on fighting inflation instead."
+ flavor_luticia_base.28.c:0 "Enforce the Reichsthaler as the sole legal tender."

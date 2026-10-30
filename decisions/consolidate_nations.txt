@@ -1,0 +1,172 @@
+country_decisions = {
+	consolidate_tags_decision = {
+        color = { 176 60 63 }
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = lag_tags_consolidated }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = lag_tags_consolidated
+			
+			# North China - Z14
+			if = {
+				limit = { exists = Z14 }
+				every_country = {
+					limit = {
+						NOT = { tag = Z14 }
+						capital_scope = { region = north_china_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = Z14
+					}
+					Z14 = { inherit = PREV }
+				}
+			}
+			
+			# South China - Z0O
+			if = {
+				limit = { exists = Z0O }
+				every_country = {
+					limit = {
+						NOT = { tag = Z0O }
+						capital_scope = { region = south_china_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = Z0O
+					}
+					Z0O = { inherit = PREV }
+				}
+			}
+			
+			# Mongolia - Z5R
+			if = {
+				limit = { exists = Z5R }
+				every_country = {
+					limit = {
+						NOT = { tag = Z5R }
+						capital_scope = { region = mongolia_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = Z5R
+					}
+					Z5R = { inherit = PREV }
+				}
+			}
+			
+			# Tibet - Z4O
+			if = {
+				limit = { exists = Z4O }
+				every_country = {
+					limit = {
+						NOT = { tag = Z4O }
+						capital_scope = { region = tibet_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = Z4O
+					}
+					Z4O = { inherit = PREV }
+				}
+			}
+			
+			# Sahel - Z0W
+			if = {
+				limit = { exists = Z0W }
+				every_country = {
+					limit = {
+						NOT = { tag = Z0W }
+						capital_scope = { region = sahel_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = Z0W
+					}
+					Z0W = { inherit = PREV }
+				}
+			}
+			
+			# Niger - KNG
+			if = {
+				limit = { exists = KNG }
+				every_country = {
+					limit = {
+						NOT = { tag = KNG }
+						capital_scope = { region = niger_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = KNG
+					}
+					KNG = { inherit = PREV }
+				}
+			}
+			
+			# Xinan - CDL
+			if = {
+				limit = { exists = CDL }
+				every_country = {
+					limit = {
+						NOT = { tag = CDL }
+						capital_scope = { region = xinan_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = CDL
+					}
+					CDL = { inherit = PREV }
+				}
+			}
+			
+			# Central Asia - KHI
+			if = {
+				limit = { exists = KHI }
+				every_country = {
+					limit = {
+						NOT = { tag = KHI }
+						capital_scope = { region = central_asia_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = {
+						add_core = KHI
+					}
+					KHI = { inherit = PREV }
+				}
+			}
+            # Guinea - KBU
+			if = {
+				limit = { exists = KBU }
+				every_country = {
+					limit = {
+						NOT = { tag = KBU }
+						capital_scope = { region = guinea_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = { add_core = KBU }
+					ROOT = { change_variable = { which = removed_tags_count value = 1 } }
+					KBU = { inherit = PREV }
+				}
+			}
+            # Arabia - ALH
+			if = {
+				limit = { exists = ALH }
+				every_country = {
+					limit = {
+						NOT = { tag = ALH }
+						capital_scope = { region = arabia_region }
+						NOT = { num_of_cities = 6 }
+					}
+					every_owned_province = { add_core = ALH }
+					ROOT = { change_variable = { which = removed_tags_count value = 1 } }
+					ALH = { inherit = PREV }
+				}
+			}
+		}
+	}
+}

@@ -139,6 +139,7 @@ series_1_b9b01c46 = {
 		position = 8
 		provinces_to_highlight = { }
 		trigger = {
+			tag = BYZ
 			OR = {
 				num_of_allies = 2
 				army_size_percentage = 0.9
@@ -201,6 +202,7 @@ series_1_b9b01c46 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			bulgaria_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
@@ -1110,6 +1112,7 @@ series_2_b9b01c46 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = aleppo_area
@@ -1161,6 +1164,7 @@ series_2_b9b01c46 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = egypt_region
 				NOT = {
@@ -1241,6 +1245,7 @@ series_2_b9b01c46 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			2316 = {
 				owned_by = ROOT
 				has_production_building_trigger = yes
@@ -2039,6 +2044,7 @@ series_4_e9c5d518 = {
 		position = 12
 		required_missions = { }
 		trigger = {
+			tag = BYZ
 			army_size = 18
 			OR = {
 				manpower = 20
@@ -2068,9 +2074,7 @@ series_4_e9c5d518 = {
 			o_sistema_de_ayrudzi
 		}
 		trigger = {
-			not_in_mission_preview_mode = {
-				key = BYZ
-			}
+			tag = BYZ
 			army_tradition = 60
 			has_mil_advisor_3 = yes
 			capital_scope = {
@@ -2112,6 +2116,7 @@ series_4_e9c5d518 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			151 = {
 				owned_by = ROOT
 				has_trade_building_trigger = yes
@@ -2170,6 +2175,7 @@ series_4_e9c5d518 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			145 = {
 				owned_by = ROOT
 				num_of_times_improved = 7
@@ -2252,6 +2258,7 @@ series_4_e9c5d518 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			151 = {
 				owned_by = ROOT
 				development = 65
@@ -2310,6 +2317,7 @@ series_4_e9c5d518 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			prestige = 50
 			2302 = {
 				owned_by = ROOT
@@ -2360,6 +2368,7 @@ series_4_e9c5d518 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = anatolia_region
 				value = 35
@@ -2883,6 +2892,7 @@ series_3_3a0a3676 = {
 			a_grande_livraria
 		}
 		trigger = {
+			tag = BYZ
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = corsica_sardinia_area
@@ -2920,6 +2930,7 @@ series_3_3a0a3676 = {
 			o_sistema_de_ayrudzi
 		}
 		trigger = {
+			tag = BYZ
 			NOT = {
 				has_estate_privilege = estate_burghers_reliance_on_republics
 			}
@@ -2943,6 +2954,7 @@ series_3_3a0a3676 = {
 			criar_a_marinha_armena
 		}
 		trigger = {
+			tag = BYZ
 			if = {
 				limit = {
 					has_dlc = "Rule Britannia"
@@ -3011,6 +3023,7 @@ series_3_3a0a3676 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			148 = {
 				owned_by = ROOT
 				has_trade_building_trigger = yes
@@ -3085,6 +3098,7 @@ series_3_3a0a3676 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			151 = {
 				owned_by = ROOT
 				development = 28
@@ -3164,6 +3178,7 @@ series_3_3a0a3676 = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			custom_trigger_tooltip = {
 				tooltip = BYZ_has_integrated_galata
 				NOT = {
@@ -3288,9 +3303,7 @@ series_5_2183a13b = {
 			o_sistema_de_ayrudzi
 		}
 		trigger = {
-			not_in_mission_preview_mode = {
-				key = BYZ
-			}
+			tag = BYZ
 			calc_true_if = {
 				all_subject_country = {
 					OR = {
@@ -3336,9 +3349,7 @@ series_5_2183a13b = {
 			refine_os_sooseramartik
 		}
 		trigger = {
-			not_in_mission_preview_mode = {
-				key = BYZ
-			}
+			tag = BYZ
 			army_size = 140
 			num_of_states = 35
 			manpower = 100
@@ -3394,6 +3405,7 @@ series_5_2183a13b = {
 		position = 17
 		provinces_to_highlight = { }
 		trigger = {
+			tag = BYZ
 			monthly_income = 50
 			NOT = {
 				inflation = 0.2
@@ -3420,7 +3432,7 @@ series_5_2183a13b = {
 			}
 		}
 	}
-	BYZ_support_weavers = {
+	ARM_support_weavers = {
 		icon = purely_for_commerce
 		required_missions = {
 			a_megalopole
@@ -3445,6 +3457,7 @@ series_5_2183a13b = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			4701 = {
 				owned_by = ROOT
 				has_production_building_trigger = yes
@@ -3531,6 +3544,7 @@ series_5_2183a13b = {
 			}
 		}
 		trigger = {
+			tag = BYZ
 			164 = {
 				owned_by = ROOT
 				has_production_building_trigger = yes

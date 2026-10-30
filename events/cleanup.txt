@@ -1,0 +1,13 @@
+namespace = lag_cleanup
+
+country_event = {
+	id = lag_cleanup.1
+	title = lag_cleanup.1.t
+	desc = lag_cleanup.1.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = lag_cleanup.1.a
+	}
+}

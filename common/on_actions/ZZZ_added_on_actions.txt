@@ -428,11 +428,5 @@ on_province_owner_change = {
         }
 		remove_province_modifier = estate_nobles_vegvar_system_modifier
 	}
-	if = {
-		limit = {
-			has_province_modifier = ZZZ_enhanced_mighty_temple_being_built
-		}
-		country_event = { id = ZZZ_enhanced_fetishist.83 }
-	}
 
 }

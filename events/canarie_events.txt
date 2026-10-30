@@ -882,3 +882,89 @@ country_event = {
 		}
 	}
 }
+
+# Send them the plague!
+country_event = {
+	id = flavor_cnr.21
+	title = flavor_azt.13.t
+	desc = flavor_azt.13.d
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = european_diseases_struck }
+		capital_scope = {
+			continent = north_america
+		}
+		NOT = { has_institution = feudalism }
+		any_known_country = {
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+				primary_culture = dalmatian
+			}
+			OR = {
+				any_owned_province = {
+					continent = north_america
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						is_capital = no
+						owner = { NOT = { num_of_cities = 2 } }
+					}
+				}
+				set_province_flag = NA_smallpox_here
+				every_neighbor_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					set_province_flag = NA_smallpox_here
+				}
+			}
+			set_country_flag = european_diseases_struck
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.1
+			any_known_country = {
+				OR = {
+					primary_culture = dalmatian
+					capital_scope = {
+						continent = europe
+					}
+				}
+				war_with = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_azt.13.a #Have the gods forsaken us?
+		every_province = {
+			limit = { has_province_flag = NA_smallpox_here }
+			add_province_modifier = {
+				name = inc_smallpox_outbreak
+				duration = 360
+			}
+			set_province_flag = had_smallpox_at_one_point
+			clr_province_flag = NA_smallpox_here
+		}
+	}
+}

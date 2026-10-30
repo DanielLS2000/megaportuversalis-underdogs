@@ -96,3 +96,34 @@
 
  afr_african_silver_and_gold_modifier:0 "Colonial Gold Trade"
  desc_afr_african_silver_and_gold_modifier:0 "A highly efficient extraction and shipping network for New World precious metals has dramatically increased the wealth flowing from our mines."
+ 
+ flavor_afr.10.t:0 "Book of the Consulate of the Sea"
+ flavor_afr.10.d:0 "Following the establishment of our Consulate of the Sea, legal scholars and seasoned merchants have proposed compiling our maritime laws, customs, and arbitration precedents into a definitive legal code. Funding the publication of the 'Book of the Consulate of the Sea' will establish our maritime law as the absolute standard across the Mediterranean."
+ flavor_afr.10.a:0 "Fund its publication to cement our authority."
+ flavor_afr.10.b:0 "We cannot spare the expense at this time."
+
+ flavor_afr.11.t:0 "Antonio Beccadelli"
+ flavor_afr.11.d:0 "The renowned scholar and poet Antonio Beccadelli has traveled to our court. Known for his elegant humanist writings and sharp intellect, he offers to dedicate his literary talents to our monarch. His presence would greatly elevate our court's prestige and cultural standing among the Renaissance elite."
+ flavor_afr.11.a:0 "Welcome him. His poetry will immortalize us."
+
+ flavor_afr.12.t:0 "Iovianus Pontanus"
+ flavor_afr.12.d:0 "Giovanni Pontano, an exceptional humanist philosopher and poet, has risen to prominence in our academic circles. His works on astrology, ethics, and poetry are widely read and admired. Sponsoring his continued studies will ensure our realm remains at the forefront of the intellectual revolution sweeping across Europe."
+ flavor_afr.12.a:0 "A brilliant mind deserves our patronage."
+ flavor_afr.12.b:0 "Put him to work in our administration."
+
+ flavor_afr.13.t:0 "Monastery of Santa María de Sigena"
+ flavor_afr.13.d:0 "The ancient Monastery of Santa María de Sigena is in need of royal patronage. By endowing the monastery with funds, we can either support the expansion of its grand archives and religious foundations, or hire master painters to decorate its halls with breathtaking frescoes, ensuring its place as a jewel of our realm."
+ flavor_afr.13.a:0 "Endow the monastery and support the faithful."
+ flavor_afr.13.b:0 "Commission master painters to decorate its halls."
+ flavor_afr.13.c:0 "We have no gold for monks or painters."
+
+ flavor_afr.14.t:0 "The Sindicat Remença"
+ flavor_afr.14.d:0 "The peasants of our realm, burdened by oppressive feudal obligations and the harsh 'malos usos' (bad customs) of the nobility, have formed a syndicate known as the 'Remença'. They are demanding an end to their serfdom and the right to buy their freedom. The nobility is furious and demands we crush this insolence. How shall the crown respond?"
+ flavor_afr.14.a:0 "Abolish the 'malos usos' and grant them liberties."
+ flavor_afr.14.b:0 "Crush the syndicate! Uphold the rights of the nobles."
+ flavor_afr.14.c:0 "The peasants have a point... let them rule themselves!"
+ afr_become_p_republic_tt:0 "We will transition into a §YPeasants Republic§!."
+
+ flavor_afr.15.t:0 "Commercial Expansion in Alexandria"
+ flavor_afr.15.d:0 "Our mercantile networks have securely anchored themselves in the rich markets of the Nile delta. By leveraging our vast trade fleet and establishing monopolies over the local production of the Bahari and Delta regions, we can dictate the flow of goods from the East into the Mediterranean."
+ flavor_afr.15.a:0 "The wealth of Egypt is ours to command."

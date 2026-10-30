@@ -195,3 +195,9 @@
  flavor_cnr.20.d:  "A young princess named Isabel has shown incredible promise. Possessing a fierce intellect, unwavering piety, and a natural talent for rulership, she is poised to become one of the greatest monarchs our nation has ever seen. The court eagerly anticipates her ascension."
  flavor_cnr.20.a:  "She shall be our heir."
  flavor_cnr.20.b:  "She will serve as an advisor for now."
+
+ consolidate_tags_decision_title: "Consolidate Tags"
+ consolidate_tags_decision_desc: "O número absurdo de micro-nações geradas pela conversão do CK3 está a levar o motor do jogo ao seu limite de memória. Esta decisão irá fundir automaticamente todas as nações irrelevantes nas suas respetivas potências regionais."
+ lag_cleanup.1.t: "Limpeza Concluída"
+ lag_cleanup.1.d: "A consolidação regional foi um sucesso absoluto! Um total de §Y[Root.removed_tags_count.GetValue]§! países menores foram removidos do jogo e fundidos nos reinos maiores.\n\nO motor do jogo e a simulação de comércio agora podem respirar de alívio."
+ lag_cleanup.1.a: "Perfeito."
