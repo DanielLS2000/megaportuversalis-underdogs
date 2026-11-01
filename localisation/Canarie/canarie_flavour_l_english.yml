@@ -8,8 +8,8 @@
  # Consolato del Mar
  consolato_del_mar: "Consolato del Mar"
  desc_consolato_del_mar: "Applying the ancient maritime codes of the Adriatic to the vast Atlantic lanes, the Consolato del Mar asserts the Crown's undisputed authority over transoceanic shipping. Colonial bullion, navigational charters, and mercantile disputes are all strictly governed by this supreme nautical tribunal, channeling the wealth of the New World directly into royal coffers."
- flavor_cnr.1.title: "The Consulate of the Western Seas"
- flavor_cnr.1.desc: "With our armadas anchoring across the Caribbean and unprecedented wealth flowing from overseas settlements, decentralized commercial practices can no longer govern our burgeoning empire. Drawing upon our Mediterranean roots—from the maritime codices of Ragusa to the venerable customs of the Consolato del Mare—merchants and captains demand a unified authority. By royal decree, we shall establish the Consulate of the Western Seas. This supreme maritime council will license every voyage to the New World, secure the crown's customs, adjudicate naval law, and guard the secret charts that ensure our enduring dominion over the ocean."
+ flavor_cnr.1.t: "The Consulate of the Western Seas"
+ flavor_cnr.1.d: "With our armadas anchoring across the Caribbean and unprecedented wealth flowing from overseas settlements, decentralized commercial practices can no longer govern our burgeoning empire. Drawing upon our Mediterranean roots—from the maritime codices of Ragusa to the venerable customs of the Consolato del Mare—merchants and captains demand a unified authority. By royal decree, we shall establish the Consulate of the Western Seas. This supreme maritime council will license every voyage to the New World, secure the crown's customs, adjudicate naval law, and guard the secret charts that ensure our enduring dominion over the ocean."
  flavor_cnr.1.a: "We must rule the waves"
  cnr_event_insight_1_tt: "Let the ocean yield its wealth to our crown."
 
@@ -197,7 +197,7 @@
  flavor_cnr.20.b:  "She will serve as an advisor for now."
 
  consolidate_tags_decision_title: "Consolidate Tags"
- consolidate_tags_decision_desc: "O número absurdo de micro-nações geradas pela conversão do CK3 está a levar o motor do jogo ao seu limite de memória. Esta decisão irá fundir automaticamente todas as nações irrelevantes nas suas respetivas potências regionais."
+ consolidate_tags_decision_desc: "This option will consolidate small tags in region-sized countries around irrelevant places"
  lag_cleanup.1.t: "Limpeza Concluída"
  lag_cleanup.1.d: "A consolidação regional foi um sucesso absoluto! Um total de §Y[Root.removed_tags_count.GetValue]§! países menores foram removidos do jogo e fundidos nos reinos maiores.\n\nO motor do jogo e a simulação de comércio agora podem respirar de alívio."
  lag_cleanup.1.a: "Perfeito."

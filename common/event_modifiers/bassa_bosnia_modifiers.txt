@@ -39,7 +39,7 @@ bsb_revised_legal_code = {
 }
 
 bsb_economic_prosperity = {
-	global_tax_income = 12
+	global_tax_income = 6
 }
 
 bsb_industrialization = {

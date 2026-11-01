@@ -1,4 +1,4 @@
-custom_missions = {
+series1_saudhasijdhiusa = {
 	slot = 1
 	generic = no
 	potential = {
@@ -1385,7 +1385,7 @@ series_3_8d2fc647 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			share_of_starting_income = 2
+			share_of_starting_income = 1.5
 		}
 		effect = {
 			add_country_modifier = {

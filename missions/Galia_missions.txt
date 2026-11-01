@@ -1,4 +1,4 @@
-custom_missions = {
+series_1_custom_missions = {
 	slot = 1
 	generic = no
 	potential = {
