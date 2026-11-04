@@ -24,3 +24,7 @@ FRABRI_entrepot_nantes = {
 	province_trade_power_modifier = 0.2
 }
 
+FRABRI_Theological_Universities_1 = {
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+}

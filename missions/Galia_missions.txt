@@ -3459,6 +3459,10 @@ series_5_e86cacc4 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = FRABRI_Theological_Universities_1
+				duration = -1
+			}
 			custom_tooltip = FRABRI_add_base_tax_tt
 			hidden_effect = {
 				pick_best_provinces = {
