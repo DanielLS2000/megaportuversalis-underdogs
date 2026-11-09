@@ -254,15 +254,6 @@ ARA_ideas = {
 	}
 }
 
-TIM_ideas = {
-	trigger = {
-		OR = {
-			tag = TIM
-			tag = MUG
-		}
-	}
-}
-
 HSA_ideas = {
 	trigger = {
 		num_of_ports = 1
@@ -273,12 +264,6 @@ HSA_ideas = {
 MLO_ideas = {
 	trigger = {
 		tag = MLO
-	}
-}
-
-BYZ_ideas = {
-	trigger = {
-		tag = BYZ
 	}
 }
 

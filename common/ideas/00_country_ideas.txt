@@ -2519,7 +2519,10 @@ BYZ_ideas = {
 	}
 	
 	trigger = {
-		tag = BYZ
+		AND = {
+			tag = BYZ
+			NOT = {primary_culture = armenian}
+		}
 	}
 	free = yes
 	
