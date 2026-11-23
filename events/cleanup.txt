@@ -9,5 +9,9 @@ country_event = {
 	
 	option = {
 		name = lag_cleanup.1.a
+		create_subject = {
+			subject_type = self_governing_colony
+			subject = C03
+		}
 	}
 }

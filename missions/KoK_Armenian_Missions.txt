@@ -2392,7 +2392,7 @@ series_4_e9c5d518 = {
 				custom_tooltip = " "
 			}
 			country_event_with_option_insight = {
-				id = MEE_Byzantine_Events.8
+				id = flavor_armenia.39
 				option_1 = "
 					add_accepted_culture_or_dip_power = { culture = turkish value = 100 }
 			
@@ -3003,66 +3003,55 @@ series_3_3a0a3676 = {
 		}
 		position = 17
 		provinces_to_highlight = {
-			province_id = 148
-			OR = {
-				NOT = {
-					owned_by = ROOT
-				}
-				NOT = {
-					has_trade_building_trigger = yes
-				}
-				NOT = {
-					development = 25
-				}
-				NOT = {
-					trade_share = {
-						country = ROOT
-						share = 40
-					}
-				}
+			is_capital_of = ROOT
+			NOT = {
+				has_tax_building_trigger = yes
 			}
 		}
 		trigger = {
 			tag = BYZ
-			148 = {
-				owned_by = ROOT
-				has_trade_building_trigger = yes
-				development = 25
-				trade_share = {
-					country = ROOT
-					share = 40
+			BYZ_is_not_latin_empire = yes
+			NOT = {
+				has_estate_privilege = estate_church_union_of_the_churches
+			}
+			is_defender_of_faith = yes
+			prestige = 50
+			capital_scope = {
+				has_tax_building_trigger = yes
+			}
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
 				}
 			}
 		}
 		effect = {
-			148 = {
-				add_or_upgrade_trade_building = yes
-				custom_tooltip = " "
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 50
-					key = BYZ_trade_in_thessaloniki
+			custom_tooltip = BYZ_enable_privilege_support_of_dynasty
+			set_country_flag = BYZ_privilege_for_support_of_dynasty
+			custom_tooltip = " "
+			capital_scope = {
+				add_or_upgrade_tax_building = yes
+			}
+			if = {
+				limit = {
+					has_estate = estate_church
 				}
 				custom_tooltip = " "
-				add_province_modifier = {
-					name = BYZ_secondary_trade_capital
-					duration = -1
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 15
 				}
 			}
-			complex_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_constantinople_is_world_port
-				first_limit = "
-					151 = {
-						owned_by = ROOT
-						province_has_center_of_trade_of_level = 3
-					}
-				"
-				first_effect = "
-					148 = {
-						add_center_of_trade_level = 3 # max
-					}
-				"
+			if = {
+				limit = {
+					has_reform = byzantine_autocracy_reform
+				}
+				custom_tooltip = " "
+				add_government_reform = reformed_byzantine_monarchy_reform
 			}
 		}
 	}

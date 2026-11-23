@@ -1,0 +1,32 @@
+namespace = sac_bloc_war
+
+country_event = {
+	id = sac_bloc_war.1
+	title = "Hidden"
+	desc = "Hidden"
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		# Puxa o bloco ATACANTE para a guerra da França (FRA)
+		GAL = {
+			join_all_offensive_wars_of = FRA
+		}
+		ADU = {
+			join_all_offensive_wars_of = FRA
+		}
+		
+		# Puxa o bloco DEFENSOR para a guerra da Holanda (NED)
+		PRU = {
+			join_all_defensive_wars_of = NED
+		}
+		SWA = {
+			join_all_defensive_wars_of = NED
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+}

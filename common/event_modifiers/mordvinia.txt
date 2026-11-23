@@ -5,3 +5,14 @@ mdv_west_slavic_union = {
 mdv_super_slavic_union = {
     num_accepted_cultures = 32
 }
+
+rus_new_world_colonization = {
+	may_explore = yes
+	range = 0.25
+	colonists = 2
+	global_colonial_growth = 100
+}
+
+rus_new_world_colonization_lite = {
+	global_colonial_growth = 100
+}

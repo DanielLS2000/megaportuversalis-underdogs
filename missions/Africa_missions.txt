@@ -737,13 +737,13 @@ africa_3 = {
 			341 = {
 				trade_share = {
 					country = ROOT
-					share = 70
+					share = 25
 				}
 			}
 			1298 = {
 				trade_share = {
 					country = ROOT
-					share = 15
+					share = 5
 				}
 			}
 			341 = {

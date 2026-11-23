@@ -717,7 +717,7 @@ PRU_ideas = {
 	}
 
 	bonus = {
-		trade_efficiency = 0.1
+		land_morale = 0.2
 	}
 
 	trigger = {

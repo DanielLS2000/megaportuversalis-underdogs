@@ -3137,6 +3137,7 @@ MDV_rusvin_4 = {
 					OR = {
 						has_country_flag = rus_finished_kill_mission
 						has_country_flag = has_rus_kill_counter
+						has_government_reform = peters_government_reform
 					}
 				}
 				custom_trigger_tooltip = {
@@ -3744,7 +3745,7 @@ MDV_rusvin_5 = {
 			}
 			add_country_modifier = {
 				name = rus_new_world_colonization
-				duration = 36500
+				duration = 18250
 			}
 			increase_gold_discovery = yes
 			furdan_area = {

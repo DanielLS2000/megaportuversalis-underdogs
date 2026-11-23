@@ -50,7 +50,7 @@
  desc_cnr_port_to_the_new_world: "Boasting heavily fortified anchorages and state-chartered trading facilities, this deepwater port serves as the vital staging ground for overseas convoys, securing immense local trade influence and customs revenue."
 
  # Nova Dalmacia
- flavor_cnr.8.t: "The Dawn of Nova Dalmacia"
+ flavor_cnr.8.t: "The Dawn of Nova Dalmatia"
  flavor_cnr.8.d: "What began as a desperate band of exiles fleeing the fall of Ragusa for the windswept crags of the Atlantic has now ascended to the undisputed pinnacle of world power. Our home waters anchor the richest market on Earth, our armadas dictate oceanic commerce, and our veteran armies have forged an empire across two hemispheres. The humble titles of an island sanctuary or a mere expeditionary kingdom can no longer encompass the magnitude of our realm.\n\nGathered within the high vaulted halls of the court, chancellors, prelates, and admirals urge the Crown to cast aside the lingering memory of our exile. Drawing upon our ancient Roman and Byzantine heritage, they implore us to formally proclaim the birth of Nova Dalmacia—raising the imperial banners of deep crimson and decreeing ambitious state doctrines worthy of a global hegemon."
  flavor_cnr.8.a: "Proclaim Nova Dalmacia in glorious imperial colors!"
  flavor_cnr.8.b: "Adopt the imperial colors and doctrines, but our historic name remains."
@@ -59,8 +59,8 @@
  flavor_cnr.8.f: "Our enduring realm requires no grand pretensions."
 
  # Nomes
- NDA: "Nova Dalmacia"
- NDA_DEF: "Nova Dalmacia"
+ NDA: "Nova Dalmatia"
+ NDA_DEF: "Nova Dalmatia"
  NDA_ADJ: "Neo-Dalmatian"
  NDA_ideas: "Neo Dalmatian Ideas"
 

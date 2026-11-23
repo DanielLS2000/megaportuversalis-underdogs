@@ -91,4 +91,21 @@ country_decisions = {
 		ai_importance = 4000
 	}
 
+	magna_armenia = {
+		major = yes
+		potential = {
+			was_tag = ARM
+			NOT = { has_country_flag = is_BYZARM_flag }
+		}
+
+		allow = {
+			tag = BYZ
+		}
+
+		effect = {
+			override_country_name = BAM
+			set_country_flag = is_BYZARM_flag
+		}
+	}
+
 }

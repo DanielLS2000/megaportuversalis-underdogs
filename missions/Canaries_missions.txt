@@ -1209,6 +1209,13 @@ canarie_3 = {
 			}
 		}
 		effect = {
+			change_country_color = { 
+				color = { 23 137 82 }
+			}
+			set_country_flag = has_overriden_color_flag
+			override_country_name = NDA
+			set_country_flag = has_overriden_name_flag
+
 			add_country_modifier = {
 				name = cnr_nova_dalmacia
 				duration = -1

@@ -3,7 +3,10 @@
 	generic = no
 	has_country_shield = yes
 	potential = {
-		tag = LUT
+		OR = {
+			tag = LUT
+			was_tag = LUT
+		}
 	}
 	luticia_show_of_strength = {
 		icon = a_show_of_strength
@@ -710,7 +713,10 @@ luticia_sorbian_prussian_column_2 = {
 	generic = no
 	has_country_shield = yes
 	potential = {
-		tag = LUT
+		OR = {
+			tag = LUT
+			was_tag = LUT
+		}
 	}
 	luticia_empower_the_junkers = {
 		icon = empower_the_junkers
@@ -1186,7 +1192,10 @@ luticia_sorbian_prussian_column_3 = {
 	generic = no
 	has_country_shield = yes
 	potential = {
-		tag = LUT
+		OR = {
+			tag = LUT
+			was_tag = LUT
+		}
 	}
 	luticia_build_to_force_limit = {
 		icon = mission_teutonic_knights
@@ -2370,7 +2379,10 @@ luticia_sorbian_prussian_column_4 = {
 	generic = no
 	has_country_shield = yes
 	potential = {
-		tag = LUT
+		OR = {
+			tag = LUT
+			was_tag = LUT
+		}
 	}
 	luticia_disciplined_army = {
 		icon = empower_the_junkers
@@ -2966,7 +2978,10 @@ luticia_sorbian_prussian_column_5 = {
 	generic = no
 	has_country_shield = yes
 	potential = {
-		tag = LUT
+		OR = {
+			tag = LUT
+			was_tag = LUT
+		}
 	}
 	luticia_seek_imperial_protection = {
 		icon = join_the_empire

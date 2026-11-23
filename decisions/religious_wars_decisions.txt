@@ -1,0 +1,37 @@
+country_decisions = {
+	trigger_sac_bloc_war = {
+		major = yes
+		
+		# Apenas a França (FRA) controlada por um jogador pode ver a decisão
+		potential = {
+			tag = FRA
+			ai = no
+			NOT = { has_global_flag = sac_bloc_war_started }
+		}
+		
+		# A decisão só pode ser clicada se NED existir e TAMBÉM for controlada por um jogador
+		allow = {
+			NED = {
+				exists = yes
+				ai = no
+			}
+		}
+		
+		effect = {
+			set_global_flag = sac_bloc_war_started
+			
+			declare_war_with_cb = {
+				who = NED
+				casus_belli = cb_humiliate
+			}
+			
+			# Dispara o evento de "puxar" os aliados no dia seguinte (o evento continua o mesmo)
+			hidden_effect = {
+				country_event = {
+					id = sac_bloc_war.1
+					days = 1
+				}
+			}
+		}
+	}
+}

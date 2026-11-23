@@ -6,6 +6,7 @@ country_decisions = {
             tag = CNR
             NOT = { capital = 490 }
             has_discovered = 490
+            capital = 368 
         }
         allow = {
             owns_core_province = 490

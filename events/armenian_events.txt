@@ -1483,3 +1483,80 @@ country_event = {
 		ai_chance = { factor = 10 }
 	}
 }
+
+country_event = {
+	id = flavor_armenia.39
+	title = MEE_Byzantine_Events.8.t
+	desc = MEE_Byzantine_Events.8.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	is_triggered_only = yes 
+	major = yes
+	
+	option = {
+		name = MEE_Byzantine_Events.8.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_accepted_culture_or_dip_power = { culture = anatolian dip_reward = yes }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = BYZ_every_turkish_province
+		tooltip = {
+			add_nationalism = -10
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = anatolian
+				}
+				add_nationalism = -10 
+			}
+		}
+	}
+	
+	option = {
+		name = MEE_Byzantine_Events.8.b
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		set_country_flag = BYZ_culture_conversion_will_be_faster_flag
+		custom_tooltip = BYZ_culture_conversion_will_be_faster
+	}
+	
+	option = {
+		name = MEE_Byzantine_Events.8.c
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		custom_tooltip = BYZ_every_turkish_province
+		tooltip = {
+			add_province_modifier = {
+				name = BYZ_janissary_recruitment
+				duration = 9125
+			}
+		}
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = anatolian
+				}
+				add_province_modifier = {
+					name = BYZ_janissary_recruitment
+					duration = 9125
+				}
+			}
+		}
+		
+		custom_tooltip = BYZ_unlock_janissary_mercenary_company
+		set_country_flag = BYZ_janissary_merc_company
+	}
+}
